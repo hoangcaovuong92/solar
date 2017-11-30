@@ -1,0 +1,149 @@
+body.error404 {
+  overflow: hidden;
+  .wd-blog-breadcrumb.breadcrumb_default,.wd-header-menu-wrap,.wd-blog-breadcrumb.breadcrumb_banner {
+    display: none;
+  }
+  .wd-404-error {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;  
+    &:before{
+      width: 100%;
+      height: 100%;
+      content: '';
+      background:#000;
+      position:absolute;
+      opacity:0.7;
+    }
+    .wd-page-header {
+      .wd-page-title {
+        font-size: 200px;
+      }
+      .wd-text-title {
+        font-size: 54px;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .wd-error-404 {
+      .wd-page-content .searchform
+      {
+        button {
+          background: none;
+          border:solid 2px #fff;
+        }
+        input[type='text'] {
+          border-radius: 0;
+        }
+      }
+      .wd-back-to-home-button {
+        color: #fff;
+        border:solid 2px #fff;
+        padding:10px;
+        margin-top: 20px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600;
+        z-index: 99;
+        position: relative;
+        &:hover{
+          background:#fff;
+          color: #282828;
+          font-weight: 600;
+        }
+      } 
+    } 
+    &.wd-bg-color-error {
+      .wd-error-404 {
+        .wd-page-header h1.wd-page-title {
+          color: $main_title_color_blog;
+        }
+        .wd-page-content {          
+          .searchform {
+            button{
+              background: #282828; 
+              &:hover {
+                background-color: #222;
+              }
+            }
+            input[type='text'] {
+              border-radius: 0;
+            }
+          }
+        } 
+      }     
+    }
+    &.wd-bg-image-error {
+      input[type='text']{
+        &::-webkit-input-placeholder {
+          color: #fff; }
+
+        &:-moz-placeholder {
+          color: #fff; }
+
+        &::-moz-placeholder {
+          color: #fff; }
+
+        &:-ms-input-placeholder {
+          color: #fff; }
+      }
+    }
+
+  }
+}
+
+.images_404{
+  padding-bottom:150px;
+  margin-bottom: 30px;
+}
+
+
+/*=================== 404 PAGE ====================*/
+.wd-404-error{
+  .wd-error-404 .wd-page-header{
+    text-align:center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    @media (max-width: 768px){
+      top: 30%;
+    }
+  }
+  .wd-page-content{
+    text-align:center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 64%;
+    transform: translateY(-50%);
+    @media (max-width: 768px){
+      top: 50%;
+    }
+  }
+  &.wd-bg-image-error{
+    .wd-error-404{
+      .wd-page-header{
+        .wd-page-title{
+          font-weight: 600;
+          font-size: 190px;
+          color: #fff;
+          @media (max-width: 768px){
+            font-size: 125px;
+          }
+        }
+        .wd-text-title{
+          color:#fff;
+          font-weight: 500;
+          font-size: 30px;
+          font-family: 'Kaushan Script';
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

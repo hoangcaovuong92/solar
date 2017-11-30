@@ -1,0 +1,5 @@
+[0306/113130.295:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files\settings.dat: Access is denied. (0x5)
+[0306/113130.320:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0306/113130.327:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files\settings.dat: Access is denied. (0x5)
+[0306/113131.198:ERROR:crashpad_client_win.cc(660)] crash server failed to launch, no dump captured
+[0321/134453.986:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)

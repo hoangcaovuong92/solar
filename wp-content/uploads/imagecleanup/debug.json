@@ -1,0 +1,20 @@
+[0.0156] Info: WP_Query results written to log
+[0.0000] Registered sizes: ["thumbnail","medium","medium_large","large","portfolio_image","wd_team_thumb","yith-woocompare-image","shop_thumbnail","shop_catalog","shop_single","post-thumbnail","wd_image_size_thumbnail","wd_image_size_medium","wd_image_size_large","wd_image_size_cart_dropdown","wd_image_size_square_small","wd_image_size_square_medium","wd_image_size_square_large","wd_small_thumbnail","full"]
+[0.0000] Meta indexed so far: 1 / 306
+[0.0000] Sample meta:
+{"width":1626,"height":650,"file":"2017\/04\/bkg-cate-home1-1.jpg","sizes":{"thumbnail":{"file":"bkg-cate-home1-1-150x150.jpg","width":150,"height":150,"mime-type":"image\/jpeg"},"medium":{"file":"bkg-cate-home1-1-300x120.jpg","width":300,"height":120,"mime-type":"image\/jpeg"},"medium_large":{"file":"bkg-cate-home1-1-768x307.jpg","width":768,"height":307,"mime-type":"image\/jpeg"},"large":{"file":"bkg-cate-home1-1-1024x409.jpg","width":1024,"height":409,"mime-type":"image\/jpeg"},"portfolio_image":{"file":"bkg-cate-home1-1-600x600.jpg","width":600,"height":600,"mime-type":"image\/jpeg"},"wd_team_thumb":{"file":"bkg-cate-home1-1-400x400.jpg","width":400,"height":400,"mime-type":"image\/jpeg"},"yith-woocompare-image":{"file":"bkg-cate-home1-1-220x154.jpg","width":220,"height":154,"mime-type":"image\/jpeg"},"shop_thumbnail":{"file":"bkg-cate-home1-1-94x94.jpg","width":94,"height":94,"mime-type":"image\/jpeg"},"shop_catalog":{"file":"bkg-cate-home1-1-450x577.jpg","width":450,"height":577,"mime-type":"image\/jpeg"},"shop_single":{"file":"bkg-cate-home1-1-560x650.jpg","width":560,"height":650,"mime-type":"image\/jpeg"},"post-thumbnail":{"file":"bkg-cate-home1-1-640x440.jpg","width":640,"height":440,"mime-type":"image\/jpeg"},"wd_image_size_thumbnail":{"file":"bkg-cate-home1-1-150x90.jpg","width":150,"height":90,"mime-type":"image\/jpeg"},"wd_image_size_medium":{"file":"bkg-cate-home1-1-420x250.jpg","width":420,"height":250,"mime-type":"image\/jpeg"},"wd_image_size_large":{"file":"bkg-cate-home1-1-780x465.jpg","width":780,"height":465,"mime-type":"image\/jpeg"},"wd_image_size_cart_dropdown":{"file":"bkg-cate-home1-1-150x150.jpg","width":150,"height":150,"mime-type":"image\/jpeg"},"wd_image_size_square_small":{"file":"bkg-cate-home1-1-300x300.jpg","width":300,"height":300,"mime-type":"image\/jpeg"},"wd_image_size_square_medium":{"file":"bkg-cate-home1-1-500x500.jpg","width":500,"height":500,"mime-type":"image\/jpeg"},"wd_image_size_square_large":{"file":"bkg-cate-home1-1-700x650.jpg","width":700,"height":650,"mime-type":"image\/jpeg"},"wd_small_thumbnail":{"file":"bkg-cate-home1-1-30x30.jpg","width":30,"height":30,"mime-type":"image\/jpeg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}}
+[0.0000] Meta indexed so far: 101 / 306
+[0.0000] Meta indexed so far: 201 / 306
+[0.0000] Meta indexed so far: 301 / 306
+[0.0156] Meta indexed so far: 306 / 306
+[0.0312] Info: Valid and Invalid meta results written to log
+[0.1092] Info: Loaded attachments to memory [68 mb]
+[2.5584] Info: 6166 Images found [71.25 mb]
+[5.1168] Info: 6166 Invalid images found [71.75 mb]
+[6.5832] Info: Retrieved attachment images from DB [68.25 mb]
+[8.2056] Info: Backup meta results written to log [68.25 mb]
+[0.1092] Posts checked for used images 1/37
+[13.7592] Info: Invalid post image meta results written to log
+Warning: skipping script index because of too many image files
+[0.1092] Warning: skipping attachment index because of too many image files
+[0.3432] Info: Unreferenced image file results written to log

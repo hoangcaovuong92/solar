@@ -1,0 +1,295 @@
+
+#qs-image{
+	width:80%;
+	float:right;
+}
+#qs-thumbnails{
+	width:20%;
+}
+@media (max-width: 420px){
+	#qs-image{
+		width:100%;
+	}
+	#qs-thumbnails{
+		width:100%;
+		margin-top: 10px;
+	}
+}
+
+.wd-columns-3 ul.wd-feature-content-list li {
+    width: 33.33% !important;
+    float: left;
+}
+.cloud-zoom-gallery.active img{
+	border: 1px solid #333;
+}
+.wd-single-product-thumbnail-bottom #wd-single-product-thumbnail, .wd-single-product-thumbnail-bottom #wd-single-product-thumbnail {
+	width: 100%;
+	float: left;
+}
+
+.wd-single-product-thumbnail-left #wd-single-product-image {
+	width: 80%;
+	float:right;
+	padding:0 0 20px 20px;
+	@media (max-width: 767px) {
+		width: 100%;
+		float: left;
+		padding:0;
+	}
+	@media (min-width: 768px) and (max-width:992px){
+		width: 85%;
+	}
+}
+.wd-single-product-thumbnail-left #wd-single-product-thumbnail {
+	width: 20%;
+	float:left;
+	position: relative;
+	@media (max-width: 767px) {
+		width: 100%;
+		float: left;
+		padding:10px;
+	}
+	@media (min-width: 768px) and (max-width:992px){
+		width: 15%;
+	}
+}
+.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {
+    float: left;
+    width: 100%;
+    margin-right:0;
+    margin-bottom: 20px;
+    @media (max-width: 480px) {
+		margin:10px;
+		padding:10px;
+	}
+}
+//==COLUMN==//
+.wd-columns-1{
+	ul li{
+		width: 100% !important;
+	}
+}
+.wd-columns-2{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 50% !important;
+		}
+		&.wd-columns-double-width{
+			width: 50% !important;
+			float: left;
+			@media (min-width: 768px) {
+				width: 100% !important;
+			}
+		}
+	}
+}
+.page-hom5{
+	.wd-shortcode-product-grid-list.wd-wrapper-parents-value{
+		.wd-columns-2{
+			ul li{
+				width: 100% !important;
+				float: left;
+				@media (min-width: 992px) {
+					width: 50% !important;
+				}
+			}
+		}
+	}
+}
+.wd-columns-2 .wd-insta-content-wrapper{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 33.33% !important;
+		}
+		@media (min-width: 1200px) {
+			width: 50% !important;
+		}
+	}
+}
+.wd-columns-3{
+	ul li{
+		width: 50% !important;
+		float: left !important;
+	    clear: none !important;
+		@media (min-width: 768px) {
+			width: 33.33% !important;
+		}
+		&.wd-columns-double-width{
+			@media (min-width: 768px) {
+				width: 66.66% !important;
+			}
+		}
+	}
+}
+.wd-columns-3{
+	ul .widget_per_slide li{
+		width: 100% !important;
+		float: left;
+	}
+}
+.wd-columns-3 .wd-insta-content-wrapper{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 33.33% !important;
+		}
+	}
+}
+.wd-columns-4{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 25% !important;
+		}
+		&.wd-columns-double-width{
+			@media (min-width: 768px) {
+				width: 50% !important;
+			}
+		}
+	}
+}
+.wd-columns-4{
+	ul .widget_per_slide li{
+		width: 50% !important;
+		float: left;
+	}
+}
+.wd-columns-4 .wd-insta-content-wrapper{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 25% !important;
+		}
+	}
+}
+.wd-columns-5{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 20% !important;
+		}
+		&.wd-columns-double-width{
+			@media (min-width: 768px) {
+				width: 40% !important;
+			}
+		}
+	}
+}
+.wd-columns-5 .wd-insta-content-wrapper{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 20% !important;
+		}
+	}
+}
+.wd-columns-6{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 16.66% !important;
+		}
+		&.wd-columns-double-width{
+			@media (min-width: 768px) {
+				width: 33.33% !important;
+			}
+		}
+	}
+}
+.wd-columns-6 .wd-insta-content-wrapper{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 33.33% !important;
+		}
+		@media (min-width: 992px) {
+			width: 16.66% !important;
+		}
+	}
+}
+.wd-columns-8{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 12.5% !important;
+		}
+		&.wd-columns-double-width{
+			@media (min-width: 768px) {
+				width: 15% !important;
+			}
+		}
+	}
+}
+.wd-columns-8 .wd-insta-content-wrapper{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 25%!important;
+		}
+		@media (min-width: 992px) {
+			width: 12.5%!important;
+		}
+	}
+}
+.wd-columns-12{
+	ul li{
+		width: 50% !important;
+		float: left;
+		@media (min-width: 768px) {
+			width: 8.33%!important;
+		}
+		&.wd-columns-double-width{
+			@media (min-width: 768px) {
+				width: 16.66% !important;
+			}
+		}
+	}
+}
+.woocommerce, .main-content{
+	.wd-products-wrapper.grid-list-action{
+		&.wd-columns-2{
+			ul.products.grid li{
+				width:50% !important;
+			}
+		}
+		&.wd-columns-3{
+			ul.products.grid li{
+				width:33.33% !important;
+				clear: none;
+				@media only screen and (max-width: 767px){
+					width:50% !important;
+				}
+			}
+		}
+		&.wd-columns-4{
+			ul.products.grid li{
+				width:25% !important;
+				@media only screen and (max-width: 768px){
+					width:50% !important;
+				}
+			}
+		}
+		&.wd-columns-6{
+			ul.products.grid li{
+				width:25% !important;
+				@media only screen and (max-width: 767px){
+					width:50% !important;
+				}
+			}
+		}
+	}
+}

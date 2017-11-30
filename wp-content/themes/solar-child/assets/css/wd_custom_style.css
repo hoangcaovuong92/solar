@@ -1,0 +1,91 @@
+/* JQuery Autocomplete */
+.ui-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  _width: 160px;
+  padding: 20px 25px;
+  margin: 2px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #fff;
+    white-space: nowrap;
+}
+.ui-autocomplete li{
+  cursor: pointer;
+  color:#282828;
+}
+.ui-autocomplete li:hover{
+  color:#a5a5a5;
+}
+.wd-search-form-image-loading{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 65px;
+  bottom: 5px;
+}
+
+
+/* Custom modal bootstrap */
+.wd-modal-responsive{
+  padding-left: 16px;
+}
+.wd-modal-responsive .modal-dialog{
+    overflow-y: initial; 
+    max-height:85%;  
+    margin-top: 50px; 
+    margin-bottom:50px;
+}
+.wd-modal-responsive .modal-body{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+
+

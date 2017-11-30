@@ -1,0 +1,93 @@
+/**
+ * Hover change product image
+ */
+
+.wd-product-has-gallery {
+	position: relative;
+}
+
+.wd-product-has-gallery .onsale {
+	z-index: 999999;
+}
+
+.wd-product-has-gallery .wp-post-image {
+	transform: translateX(0);
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+}
+.widget_per_slide.slick-slide .wd-product-has-gallery .wp-post-image {
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+	transform: none;
+}
+.wd-product-has-gallery .wp-post-image--secondary {
+	visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s linear;
+    -webkit-transition: all .5s linear;
+}
+
+/* backward compatibility - .woocommerce-LoopProduct-link will probably be removed in future releases */
+
+.products li.wd-product-has-gallery a.woocommerce-LoopProduct-link:hover .wp-post-image {
+	visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.products li.wd-product-has-gallery a.woocommerce-LoopProduct-link:hover .wp-post-image--secondary {
+	visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+.products li.wd-product-has-gallery a.woocommerce-loop-product__link:hover .wp-post-image {
+	visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.products li.wd-product-has-gallery a.woocommerce-loop-product__link:hover .wp-post-image--secondary {
+	visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.products .widget_per_slide.slick-slide li.wd-product-has-gallery a.woocommerce-LoopProduct-link:hover .wp-post-image {
+	visibility: hidden;
+    transform: scale(0);
+}
+
+.products .widget_per_slide.slick-slide li.wd-product-has-gallery a.woocommerce-LoopProduct-link:hover .wp-post-image--secondary {
+	visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+.products .widget_per_slide.slick-slide li.wd-product-has-gallery a.woocommerce-loop-product__link:hover .wp-post-image {
+	visibility: hidden;
+    transform: scale(0);
+}
+
+.products .widget_per_slide.slick-slide li.wd-product-has-gallery a.woocommerce-loop-product__link:hover .wp-post-image--secondary {
+	visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

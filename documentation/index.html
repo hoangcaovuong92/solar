@@ -1,0 +1,1252 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>WPDance LaParis Documentation</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to post it on out forum here. Thanks so much!
+
+This documentation was made only with the Documenter (except the images)">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/style.css" media="all">
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/media/iconfavi.ico" />
+
+	<script src="js/jquery.1.6.4.js"></script>
+	<script src="js/cufon.js"></script><script src="js/font.js"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/sticky.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushAS3.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=450,easing='easeOutExpo';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#F3F3F3;color:#585858;background-image:url(assets/media/bg_theme.jpg);background-repeat:repeat;background-attachment:fixed; background-size: cover; background-position: bottom;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/media/logo.png);}
+		a{color:#111111;}
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#333333;color:#F1F1F1;background-image:url(assets/media/image_13.gif);background-repeat:repeat-y;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #444444;-moz-text-shadow:1px 1px 0px #444444;text-shadow:1px 1px 0px #444444;}
+		#documenter_sidebar ol{border-top:1px solid #222222;}
+		#documenter_sidebar ol a{border-top:1px solid #444444;border-bottom:1px solid #222222;color:#F1F1F1;}
+		#documenter_sidebar ol a:hover{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_sidebar ol a.current{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+</head>
+
+<body>
+	<div id="documenter_header">
+		<div class="row">
+			<div class="logo">
+				<img src="assets/media/logo2.png" />
+			</div>
+		</div>
+	</div>
+
+	<div id="documenter_container">
+		<div class="row">
+			<div id="documenter_menu">
+				<div class="documenter_menu_content affix-top">
+					<ul id="documenter_nav">
+						<li class="active parent">
+							<a href="#general_info">General Info</a>
+							<ul class="sub_menu">
+								<li><a href="#documenter_cover">Start</a></li>
+								<li><a href="#introduction">Introduction</a></li>
+								<li><a href="#before-getting-started">Before Getting Started</a></li>
+								<li><a href="#requirements-compatibility">Requirements & Compatibility</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#installation-and-basic-setup">Installation</a>
+							<ul class="sub_menu">
+								<li><a href="#installation-wordpress">WordPress Installation</a></li>
+								<li><a href="#installation-ftp">FTP Installation</a></li>
+								<li><a href="#installation-update">How To Update The Theme</a></li>
+							</ul>
+						</li>
+                        <li class="parent">
+							<a href="#import-dummy-content">Import Dummy Content</a>
+							<ul class="sub_menu">
+								<li><a href="#install-and-active-plugin">Install And Active Plugin</a></li>
+								<li><a href="#import-slider-data">Import Demo Slider Data</a></li>
+								<li><a href="#import-xml-data">Import XML Data</a></li>
+								<li><a href="#import-wie-data">Import WIE Data</a></li>
+							</ul>
+						</li>
+
+						<li class="parent">
+							<a href="#header">Header</a>
+							<ul class="sub_menu">
+								<li><a href="#create-header-template">Create Header Template</a></li>
+								<li><a href="#set-global-header">Set Global Header</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#footer">Footer</a>
+						</li>
+						<li class="parent">
+							<a href="#pages">Pages</a>
+							<ul class="sub_menu">
+								<li class="parent">
+									<a href="#page-templates">Page Shortcode Template</a>
+									<ul class="sub_menu">
+										<li><a href="#page-templates-home">Homepage</a></li>
+										<li><a href="#page-templates-about">About</a></li>
+										<li><a href="#page-templates-contact">Contact</a></li>
+									</ul>
+								</li>
+								<li><a href="#pages-create-new">Create A New Page</a></li>
+								<li><a href="#pages-home">Set Static Homepage</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#blog">Blog</a>
+							<ul class="sub_menu">
+								<li><a href="#blog-creating">Creating Blog Posts</a></li>
+								<li><a href="#blog-assigned">Assigned Blog Page</a></li>
+								<li><a href="#blog-template">Blog Template</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#widget">Widget</a>
+							<ul class="sub_menu">
+								<li><a href="#widget-sidebar-area">Widget Sidebar Area</a></li>
+								<li><a href="#add-widget-to-sidebar">Add Widget To Sidebar</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#customize">Theme Customize</a>
+							<ul class="sub_menu">
+								<li><a href="#customize-page-post-product">Custom Page/Post/Product Layout</a></li>
+								<li><a href="#theme-option-mode">Theme Option Mode</a></li>
+								<li><a href="#customize-mode">Customize Mode</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#packages">WD Packages</a>
+							<ul class="sub_menu">
+								<li><a href="#package-setting">Packages Setting</a></li>
+								<li><a href="#package-manager-mode">Theme Manager Mode</a></li>
+								<li><a href="#package-shortcode">WD Shortcode</a></li>
+								<li><a href="#package-widget">WD Widgets</a></li>
+							</ul>
+						</li>
+						<li><a href="#pages-contact">Contact Form 7</a></li>
+						<li class="parent">
+							<a href="#sliders">Slider Revolution</a>
+							<ul class="sub_menu">
+								<li><a href="#sliders-create-project">Create New Project</a></li>
+								<li><a href="#sliders-add-slide-to-project">Add Slide To Project</a></li>
+								<li><a href="#sliders-import">Import Demo Sliders</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#composer">WPBakery Page Builder</a>
+							<ul class="sub_menu">
+								<li><a href="#composer-basics">Basics</a></li>
+								<li><a href="#composer-role">Role Manager</a></li>
+								<li><a href="#composer-background">Background Section</a></li>
+								<li><a href="#composer-element-column">Column - Element</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="#language">Language</a>
+							<ul class="sub_menu">
+								<li><a href="#language-translation">Translation</a></li>
+								<li><a href="#language-wpml">WPML Plugin</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="documenter_content">
+				<section id="general_info"></section>
+				<section id="documenter_cover">
+					
+						<h1>WPDance LaParis WordPress Theme</h1> 
+						<br/>
+						<h2>Documentation 1.0.0</h2>
+						<hr/>
+						<br/>
+					<div class="site_info" style="width:68%; float:left;">
+						<ul>
+							<li>Created: 24 October 2017</li>
+							<li>Latest Update: 24 October 2017</li>
+							<li>By: <a href="http://wpdance.com/">WPDance.com</a></li>
+						</ul>
+						
+						<p>
+							Thank you for purchasing our theme. If you have any question not included in this user guide, please open a ticket here <a target="_blank" href="http://codespotsupport.com/others/">http://codespotsupport.com/others/</a>. Thank you so much!
+						</p>
+						<br/>
+						<p>	
+							<i>We hope you will enjoy working with our themes.<br/>
+							Yours sincerely, WPDance.</i>
+						</p>
+					</div>
+					<div class="site_image" style="width:30%; float:right;">
+						<img src="assets/images/home.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="introduction">
+					<h1>Introduction</h1>
+					<p>
+						In this user guide, you will find all neccessary information to upload your site and make it run well: including theme installation, setup, and the way to use different post types, page templates and shortcodes.
+					</p>
+					<br/>
+					<p class="warning">
+						<strong>Attention!!!</strong> Kindly note that we cannot support unless you specify your Item Purchase Code. Here's how you can get it: <a target="_blank" href="http://themeforest.net/forums/thread/item-purchase-code/96457">http://themeforest.net/forums/thread/item-purchase-code/96457</a>.
+					</p>
+					<br/>
+					<p>	
+						Also note that this is combined manual for our multipurpose themes that shares similar back- and front-end features. Therefore, some screenshots, interfaces and features may be slightly different from actual theme that you’ve purchased.
+					</p>
+				</section>
+				
+				<section id="before-getting-started">
+					<h1>Before Getting Started</h1> 
+					<p>
+						Please note that it is not hard to use this theme rather than any other premium theme with advanced functions. Moreover, we believe that it’s even much easier! And there’s a good reason for that: the amount of time invested in designing its interfaces, page templates and theme options is simply immense…
+					</p>
+					
+					<p>
+						Nevertheless, please note that this User Guide does NOT cover basic WordPress users. Therefore, if you are not confident of using WordPress, please get accustomed with it BEFORE taking further steps with this manual and theme!
+					</p>
+					
+					<p>	
+						Here are some links that will help you become more confident with WordPress:
+					</p>
+					<ul>
+						<li>
+							First Steps with WordPress (this is one of most complete guides): <a target="_blank" href="http://codex.wordpress.org/First_Steps_With_WordPress">http://codex.wordpress.org/First_Steps_With_WordPress</a>
+						</li>
+						<li>
+							Explanations for most common WordPress terms: <a target="_blank" href="http://en.support.wordpress.com/lexicon/">http://en.support.wordpress.com/lexicon/</a>
+						</li>
+						<li>
+							Best WordPress-related articles for Web Developers (from novices to guru): <a target="_blank" href="http://net.tutsplus.com/articles/web-roundups/top-50-wordpress-tutorials/">http://net.tutsplus.com/articles/web-roundups/top-50-wordpress-tutorials/</a>
+						</li>
+						<li>
+							More links to come later.
+						</li>
+					</ul>
+					
+					<p>
+						<strong>Seriously!!!</strong> If you do not want to spoil your experience with any Premium Theme, please get accustomed with WordPress basics first! 
+					</p>
+				</section>
+				
+				<section id="requirements-compatibility">
+					<h1>Requirements & Compatibility</h1> 
+					<p>
+						Our themes are compatible with the WordPress <strong>versions 4.8</strong> or later ( <strong>PHP 5.2.4</strong> or later, and <strong>mysql 5</strong> or later).
+					</p>
+					
+					<p>
+						Most Browsers enabled with JavaScript will make them work without issues. They are designed and optimized for desktops, tablets and smartphones.
+					</p>
+					
+					<p>	
+						<strong>Currently we are testing themes on:</strong>
+					</p>
+					<ul>
+						<li>
+							Google Chrome (Mac and PC)
+						</li>
+						<li>
+							Firefox (Mac and PC)
+						</li>
+						<li>
+							Internet Explorer 9 and later
+						</li>
+						<li>
+							Safari (Mac and PC)
+						</li>
+					</ul>
+					
+					<p>	
+						<strong>IMPORTANT!!!</strong>
+					</p>
+					<ul>
+						<li>
+							Check to ensure that your web host has the minimum requirements to run WordPress.
+						</li>
+						<li>
+							Always make sure they are running the latest version of WordPress.
+						</li>
+						<li>
+							You can download the latest release of <a target="_blank" href="http://wordpress.org/"><strong>WordPress</strong></a> from official WordPress website
+						</li>
+						<li>
+							Always create secure passwords FTP and Database.
+						</li>
+					</ul>
+				</section>
+				
+				<section id="installation-and-basic-setup">
+					<h1>Installation & Basic Setup</h1>
+					<h6><span class="bt-cir bt-yellow">1</span> Install WordPress </h6>
+					<p>
+						Download and Install <a href="https://wordpress.org/">WordPress 4.7.4</a> or later.
+					</p>
+					<br/>
+					
+					<h6><span class="bt-cir bt-yellow">2</span> Upload Theme  </h6>
+					
+					<p>	
+						If you've just downloaded whole theme package (see fig. 1), unzip it. You will find the theme installation file (called like "theme_name_v.zip"), user manual, dummy content folder, license folder, folder with PSD files, etc.
+					</p>
+					
+					<div class="caption" style="width:322px;">
+						<img src="assets/images/installation_1.jpg" alt="">
+					</div>
+					
+					<p>	
+						Alternatively you can simply download the installation WordPress file. 
+					</p>
+					
+					<div class="caption" style="width:322px;">
+						<img src="assets/images/installation_2.jpg" alt="">
+					</div>
+					
+					<p>
+						You have 2 ways to upload theme:
+					</p>
+					<ol>
+						<li><a href="#installation-wordpress">WordPress Installation</a></li>
+						<li><a href="#installation-ftp">FTP Installation</a></li>
+					</ol>
+					<br/>
+					
+					<h6><span class="bt-cir bt-yellow">3</span> Activate Theme</h6>
+					<p>
+						In <i>"<strong>Appearance</strong> > <strong>Themes</strong> > <strong>Manage Themes</strong> > <strong>Available Themes</strong>"</i> activate the Theme by clicking on the correspondent "<strong>Activate</strong>" link.
+					</p>
+					
+					<p class="warning">
+						<strong>Attention!!!</strong> To make sure your permalinks are being rendered correctly (the web-site does not return <strong>"404 Not Found"</strong> error) after switching the theme, follow <i>"<strong>Dashboard</strong> > <strong>Settings</strong> > <strong>Permalinks</strong>"</i> and click "<strong>Save Changes</strong>".
+					</p>
+					
+					<p>
+						After activating the Theme, you will notice Theme Options and Required Plugins (<strong>WPBakery Page Builder, Slider Revolution, WooCommerce, WD Packages</strong>, etc...) in your WordPress admin panel.
+					</p>
+					<br/>
+					
+					<h6><span class="bt-cir bt-yellow">4</span> Cache Theme - Uploads folder</h6>
+					<p>
+						If you're using FTP client, go to <strong>"your_site/wp-content/themes/wpdancelaparis"</strong> <a target="_blank" href="http://www.stadtaus.com/en/tutorials/chmod-ftp-file-permissions.php">CHMOD</a> to <strong>777</strong> this folder : <strong>cache_theme</strong>. You also change <strong>CHMOD</strong> to <strong>777</strong> for <strong>Uploads folder</strong>.
+					</p>
+				</section>
+				
+				<section id="installation-wordpress">			
+					<h1>WordPress Installation:</h1>
+
+					<p>Follow steps below to install via WordPress</p>
+					<ol>
+						<li>In your WordPress Admin Panel (wp-admin) go to <strong>Appearance > Themes</strong></li>
+						<li>Click on <strong>Add New</strong> and press the <strong>Upload Theme</strong> button</li>
+						<li>Navigate to find the <strong>"wpdancelaparis_rxxx.zip"</strong> file on your computer and click on <strong>"Install Now"</strong></li>
+						<li>Wait while the theme is uploaded and installed</li>
+						<li>Activate the newly installed theme. Go to <strong>Appearance > Themes</strong> and activate it</li>
+						<li>Then you will see a notification to activate the required plugins. Follow steps to install and activate. The other plugins we include are integrated into the theme and all will be ready to use.</li>
+					</ol>
+					
+					<div class="caption">
+						<img src="assets/images/installation_3.jpg" alt="">
+					</div>
+					
+					<p class="warning">
+						<strong>Please note</strong> that some hostings impose restriction on size of a file that you are uploading. If any <strong>warnings</strong> appear, most probably, your hosting has <strong>limit on file size</strong>. And the theme .zip file is too large to be uploaded through WordPress Panel.
+						<br/>
+						<br/>
+						To solve this problem you should either increase your maximum upload size in your hosting admin panel or try to contact your hosting provider to enable it for you if you do not have right to alter your server php settings. This is a very common request and they should be able to help you out. Once the limit is increased, you can re-try to install and you’ll go ahead well.
+						<br/>
+						<br/>
+						Also, you can install the theme via FTP.
+					</p>
+				</section>
+				
+				<section id="installation-ftp">			
+					<h1>FTP Installation:</h1>
+
+					<p>
+						Otherwise <strong>you can install theme via FTP</strong>. Simply unzip the installable file and upload the theme folder via FTP to <i><strong>"your_site/wp-content/themes/"</strong></i>.
+					</p>
+					
+					<ol>
+						<li>Log into your hosting space via an FTP software</li>
+						<li>Unzip the <strong>wpdancelaparis_rxxx.zip</strong> file and <strong>ONLY</strong> use the extracted wpdancelaparis theme folder</li>
+						<li>Upload theme folder extracted "<strong>WPDanceLaParis</strong>" to <strong>wp-content > themes</strong> folder</li>
+						<li>Activate the newly installed theme. Go to <strong>Appearance > Themes</strong> and activate it</li>
+						<li>Then you will get a notification to activate the required plugins. Follow these steps to install and activate. The other plugins included are integrated in the theme and they will be ready to use.</li>
+					</ol>
+					<br/>
+					<p class="warning">
+						<strong>Attention!!!</strong> Theme will work well on the vast majority of correctly installed and configured WordPress sites without any additional settings. However, on some (very few) hosting configurations you can notice that <strong>images on your site are not displayed</strong>. If you are experiencing this issue, please follow these steps to fix it:
+					</p>
+					<ol>
+						<li>Make sure that theme installed strictly to <i><strong>"your_site/wp-content/themes/"</strong></i> folder.</li>
+						<li>The folder <i><strong>"your_site/wp-content/uploads"</strong></i> must be created. On some hostings you'll need to set its <strong>CHMOD</strong> to <strong>755</strong>, on others – to <strong>777</strong>.</li>
+					</ol>
+					
+					<p>
+						<i>If above steps did not yield any result, please don’t hesitate to address this issue directly by asking your hosting company. Since this is the common server-related problem, we will not be able to help you!</i>
+					</p>
+				</section>
+				
+				<section id="installation-update">			
+					<h1>How To Update The Theme:</h1>
+
+					<p>
+						You can update your theme via FTP or via WordPress. Read the information below for each method. However, the first thing you need to do is download the new theme files from Themeforest.
+					</p>
+					
+					<h6>First, Download New Theme Files From Themeforest</h6>			
+					<ol>
+						<li>Log into your Themeforest account and navigate to your downloads tab. Find the "<strong>WPDanceLaParis</strong>" theme purchase.</li>
+						<li>Click on the <strong>"download"</strong> button next to it and choose to download the <strong>"Installable WordPress Theme"</strong> which is just the WordPress file, or choose the <strong>"Main Files"</strong>, the entire package of everything.</li>
+						<li>Then you need to decide if you want to install the update via FTP or via WordPress. Directions for both methods are mentioned below.</li>
+					</ol>
+					<br/>
+					
+					<h6>How To Update Your Theme Via FTP</h6>
+					<ol>
+						<li>Go to <strong>"wp-content > themes"</strong> location and backup your "<strong>WPDanceLaParis</strong>" theme folder by saving it to your computer, or you can choose to simply delete it. Your content will not be lost.</li>
+						<li>Retrieve the <strong>"wpdancelaparis_rxxx.zip"</strong> file from your new Themeforest download and extract the file to get the "<strong>WPDanceLaParis</strong>" theme folder.</li>
+						<li>Then simply drag and drop the new "<strong>WPDanceLaParis</strong>" theme folder into <strong>"wp-content > themes"</strong> location. Choose to <strong>"Replace"</strong> the current one if you did not delete it.</li>
+					</ol>
+					<br/>
+					
+					<h6>How To Update Your Theme Via WordPress</h6>
+					<ol>
+						<li>You need to deactivate the current "<strong>WPDanceLaParis</strong>" theme in section <strong>"appearance > themes"</strong> by simply activating a different theme. Once you activate a different theme, you can delete the "<strong>WPDanceLaParis</strong>" theme. Don't worry, your content will not be lost.</li>
+						<li>Retrieve the <strong>"wpdancelaparis_rxxx.zip"</strong> file from your new Themeforest download. If you downloaded the <strong>"Main Files"</strong> from Themeforest, then you'll need to unzip the archive file you received, the <strong>wpdancelaparis_rxxx.zip</strong> will be located in that folder.</li>
+						<li>Then simply upload the <strong>"wpdancelaparis_rxxx.zip"</strong> file in the <strong>"appearance > themes"</strong> section. Click on the <strong>"Install Themes"</strong> tab at the top and choose to upload the zip file.</li>
+						<li>Once it is uploaded, choose to activate it. You’re done!</li>
+					</ol>
+					<br/>
+					
+					<h6>Important Backup Information</h6>
+					<p class="warning">
+						Whenever you update the theme, a good idea is to backup your current theme folder. Log into your server and make a copy of the "<strong>WPDanceLaParis</strong>" theme folder located at <strong>wp-content > themes</strong>. If you are using the Revolution Slider and added custom css, please make a backup of styles because those will be removed when you update. You can also backup your theme options on the backup tab in <strong>Appearance > Theme Options</strong>.
+					</p>
+					<br/>
+					
+					<h6>Non-Production Environment</h6>
+					<p class="warning">
+						We notice you should use this environment to test. If there is no problem, you can tranfer to live site.
+					</p>
+				</section>
+                
+                <section id="import-dummy-content">
+					<h1>Import Dummy Data</h1>
+					<h6>Please follow the instructions below to import sample data:</h6>
+					<br />
+				</section>
+
+				<section id="install-and-active-plugin">
+					<h6>Step 1: Install & Active all Plugins Requirement</h6>
+                    <p><span class="bt-cir bt-yellow">1</span>Click Button Begin Installing Plugins Required</p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/install_plugins_1.jpg" alt="">
+					</div>
+                    
+                    <br />	
+                    <p><span class="bt-cir bt-yellow">2</span> Check all plugins > select option <strong>Install</strong> > Click button <strong>Apply</strong></p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/install_plugins_2.jpg" alt="">
+					</div>
+                    
+                    <br />	
+                    <p><span class="bt-cir bt-yellow">3</span>Install all plugins Success</p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/install_plugins_3.jpg" alt="">
+					</div>
+                    
+                    <br />	
+                    <p><span class="bt-cir bt-yellow">4</span>Check all plugins > select option <strong>Active</strong> > Click button <strong>Apply</strong></p>
+                    <p class="warning">
+						To avoid this error, you should activate the following plugins before activating other plugins: <strong>Woocommerce, WPBakery Page Builder (Visual Composer), WD Packages</strong>
+					</p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/install_plugins_4.jpg" alt="">
+					</div>
+                    
+                    <br />	
+                    <p><span class="bt-cir bt-yellow">5</span>Active all plugins success</p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/install_plugins_5.jpg" alt="">
+					</div>	
+                    <br />	
+                </section>   
+
+				<section id="import-slider-data">
+					<h6>Step 2: Import Slider data</h6>
+                    <p><span class="bt-cir bt-yellow">1</span>Go to <strong>Revolution Slider</strong> > Click <strong>Import Slider</strong></p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/import_slider1.jpg" alt="">
+					</div>
+                    <br />	
+                    <p><span class="bt-cir bt-yellow">2</span>Choose <strong>one by one</strong> slider data sample in folder <strong>documentation/slider-demo</strong></p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/import_slider2.jpg" alt="">
+					</div>
+                    <br />	
+                    <p><span class="bt-cir bt-yellow">3</span>Import slider successful</p>
+					<div class="caption" style="width: 700px;">
+						<img src="assets/images/import_slider3.jpg" alt="">
+					</div>
+                    <br />
+				</section>
+
+				<section id="import-xml-data">
+					<h6>Step 3: Import sample-data.xml file</h6>
+				 	<p>
+						<span class="bt-cir bt-yellow">1</span>In order to import demo content file, follow <strong>Tools > Import ></strong> install and active a plugin <strong>Import Wordpress > Run Importer</strong>" 
+					</p>
+					<div class="caption" style="width:900px;">
+						<img src="assets/images/general_demo_1.jpg" alt="">
+					</div>
+					<br />					
+					<p>
+						<span class="bt-cir bt-yellow">2</span>Click on <strong>"Browse"</strong> button and select the demo XML file ( <strong>"sample-data.xml"</strong> ) in folder <strong>documentation/sample-data</strong>, then press "<strong>Upload file and import</strong>" button.
+					</p>
+					<br />	
+					<div class="caption" style="width: 1000;">
+						<img src="assets/images/general_demo_2.jpg" alt="">
+					</div>
+                    <p class="warning"><b>It can take a few minutes to complete. if it has timeout error please increase PHP timeout. Please don't close your browser while importing</b></p>
+                    <br />
+				</section>
+
+				<section id="import-wie-data">
+                    <h6>Step 4: Import sample-widget.wie file</h6>
+				 	<p>
+						<span class="bt-cir bt-yellow">1</span>Install and Active the Plugin <strong>Widget Importer & Exporter</strong>
+					</p>
+					<div class="caption" style="width:900px;">
+						<img src="assets/images/general_demo_4.jpg" alt="">
+					</div>
+									
+					<p>
+						<span class="bt-cir bt-yellow">2</span>Chose Tab <strong>Widget Importer & Exporter</strong> > Click on "<strong>Browse</strong>" button and select the demo XML file ( <strong>"sample-data.wie"</strong> ) in folder <strong>documentation/sample-data</strong>, then press "<strong>Import Widgets</strong>" button.
+					</p>
+					<br />	
+					<div class="caption" style="width: 1000;">
+						<img src="assets/images/general_demo_3.jpg" alt="">
+					</div>
+					<br />
+                    <h6>Step 5: Setting Front page displays</h6>
+                    <p>After import dummy data completed. You can go to <strong>Setting > Reading > Setting Front Page Displays > Select A Statis Page ></strong> Select the homepage that you want to set for front page</p>
+                    <div class="caption" style="width:900px;">
+						<img src="assets/images/general_homepage_1.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="header">
+					<h1>Header</h1>
+					<p class="info">
+						The header is probably one of the first things. The header contains many things above and the menu. There are many different elements in the header and many ways to customize it, including images, colors, content, design and more.
+					</p>
+					<div class="caption">
+						<img src="assets/images/header.jpg" alt="">
+					</div>
+					
+					<br/>
+				</section>
+				
+				<section id="create-header-template">
+					<h1>Create Header Template</h1>
+					<p class="info">
+						To use Page Buider Mode & shortcodes for creating layout headers, you need to enable the WPBakery Page Builder plugin and <strong><a href="#composer-role">click here</a></strong> for setup instructions.
+					</p>
+					
+					<br/>
+					<p><span class="bt-cir bt-yellow">1</span> Go to <strong>Headers HTML > Add New</strong>.
+						<div class="caption">
+							<img src="assets/images/create-header-template-1.jpg" alt="">
+						</div>
+					</p>
+					<br/>
+					<p><span class="bt-cir bt-yellow">2</span> Custom content for header template
+					<ul>
+						<li><strong>(1)</strong> Enter a title for Header</li>
+						<li><strong>(2)</strong> Click <strong>"BACK END EDITOR"</strong> Mode.</li>
+						<li><strong>(3)</strong> Select header thumbnail.</li>
+						<li><strong>(4)</strong> Press <strong>Public</strong> button to complete.</li>
+					</ul>
+					<div class="caption">
+						<img src="assets/images/create-header-template-2.jpg" alt="">
+					</div>
+					</p>
+				</section>
+				
+				<section id="set-global-header">
+					<h1>Set Global Header</h1>
+					<p class="info"> 
+  					The first time you activate a theme, you will use the default header template. Of course you can change it flexibly by <a href="#create-header-template"><strong>creating a Header Template</strong></a>, then customize as follows:
+					</p>
+					<br/>
+					<h6>I. THEME OPTION MODE</h6>
+					<p>Go to <strong>Theme Option > Header</strong> > Select the header template > <strong>Save Changes</strong>.
+						<div class="caption">
+							<img src="assets/images/set-global-header-4.jpg" alt="">
+						</div>
+					</p>
+					<h6>II. CUSTOMIZE MODE</h6>
+					<p><span class="bt-cir bt-yellow">1</span> Go to <strong>Appearance > Customize</strong>.
+						<div class="caption">
+							<img src="assets/images/set-global-header-1.jpg" alt="">
+						</div>
+					</p>
+					<br/>
+					<p><span class="bt-cir bt-yellow">2</span> Select the <strong>WPDANCE - Header</strong> on the left menu.
+						<div class="caption">
+							<img src="assets/images/set-global-header-2.jpg" alt="">
+						</div>
+					</p>
+					<br/>
+					<p><span class="bt-cir bt-yellow">3</span> Select Header Template > Click <strong>Save & Publish</strong> to finish
+						<div class="caption">
+							<img src="assets/images/set-global-header-3.jpg" alt="">
+						</div>
+					</p>
+					<br/>
+					<h5>Header displayed in frontend:</h5>
+					<div class="caption">
+						<img src="assets/images/header.jpg" alt="">
+					</div>	
+				</section>
+				
+				<section id="footer">
+					<h1>Footer</h1>
+					<p class="info">
+						The steps for creating and customizing Footer are the same as for Header. You can click on the following links to learn more one more time.<br/>
+						<a class="mk-button medium" href="#create-header-template">How To Create Header Template</a><br/>
+						<a class="mk-button medium" href="#set-global-header">How To Set Global Header</a><br/>
+					</p>
+					<br/>
+					
+					<p>For the default footer, we have created the <strong>"Footer Information"</strong> widgets area so that you can add content to the footer:</p>
+					<div class="caption">
+						<img class="border" src="assets/images/footerwg.jpg" alt="">
+					</div>
+					<br/>
+
+					<h6>Demo footer template:</h6>
+					<div class="caption">
+						<img class="border" src="assets/images/footer.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="pages">
+					<h1>Pages</h1>
+					<p>
+						You can create unlimited number of pages with content. "<strong>WPDanceLaParis</strong>" includes several page templates to choose from, and you will need to choose the page template that suits your needs
+					</p>
+				</section>
+				
+				<section id="page-templates">
+					<h1>Page Shortcode Templates</h1>
+
+					<p>
+						You can quickly build a home page by using one of available layouts you see in the theme demo.
+					</p>
+					<p>
+						To ensure flexibility, all pages are built by using one of the available page templates in combination with shortcodes, which is available on this page, for each homepage version. Take the following steps to create a new home page.
+					</p>
+					<ol>
+						<li>Navigate to <strong>Pages > Add New</strong>.</li>
+						<li>Copy the text combination associated with your chosen home page version and paste it to your newly created page.</li>
+						<li>Next click on the <strong>TEXT tab</strong> (not the <strong>VISUAL tab</strong>) and paste the content into the field. <strong>Publish</strong> the page and you're done!</li>
+					</ol>
+				</section>
+
+				<section id="page-templates-home">
+					<h1>Homepage Shortcode</h1>
+					<div class="two-third">
+						<div class="home-sample-content">
+							<textarea readonly>
+							[vc_row full_width="stretch_row_content_no_spaces"][vc_column][rev_slider_vc alias="slider-home-1"][/vc_column][/vc_row][vc_row css=".vc_custom_1508312463013{margin-top: 80px !important;background-image: url(http://wp-demo.wpdance.com/demo/wp-content/uploads/2017/04/banner01-bg-home1.png?id=42) !important;}"][vc_column el_class="wd-slider-tab"][tvlgiao_wpdance_banner_image_2 banner_image="43" show_line="0" position_content="outside-left" id_category="29" button_text="View Categories" heading_text="" title="" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam." heading_line_1="The Woman" heading_line_2="Colection"][vc_row_inner][vc_column_inner el_class="wd-banner-image-left-home1" width="1/2"][tvlgiao_wpdance_banner_image_2 banner_image="45" button_style="style-2" id_category="28" button_text="LOOKBOOK" heading_text="" title="" description="HOT DISCOUNT OF THIS WEEKEND" heading_line_1="Hello" heading_line_2="Summer"][/vc_column_inner][vc_column_inner el_class="banners-laparis-6" width="1/2"][tvlgiao_wpdance_banner_image_2 banner_image="262" position_content="outside-right" button_style="style-3" id_category="29" button_text="VIEW COLLECTION" heading_text="" title="" heading_line_1="The" heading_line_2="MAN STYLE"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row el_class="wd-slider-news"][vc_column css=".vc_custom_1505983277751{margin-top: 25px !important;padding-bottom: 0px !important;}"][tvlgiao_wpdance_title heading_element="h2" text_align="text-center" display_button="0" title="NEW ARRIVALS"][/vc_column][/vc_row][vc_row][vc_column el_class="wd-slider-tab" css=".vc_custom_1505813052439{margin-top: 30px !important;padding-right: 0px !important;padding-left: 0px !important;}"][tvlgiao_wpdance_products_by_category_tabs type="categories" title="" ids="19,20,21" style_tab="tab-on-top-content" view_all_tab="1" columns="4" posts_per_page="8" orderby="date" order="ASC"][tvlgiao_wpdance_buttons id_category="-1" button_text="Load More" class="text-center"][/vc_column][/vc_row][vc_row full_width="stretch_row" el_class="wd-home-category" css=".vc_custom_1506415806720{margin-top: 45px !important;padding-top: 80px !important;padding-bottom: 35px !important;background-image: url(http://wp-demo.wpdance.com/demo/wp-content/uploads/2017/04/bkg-cate-home1-1.jpg?id=3125) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column css=".vc_custom_1499052852379{padding-right: 0px !important;}"][tvlgiao_wpdance_products_by_category_tabs type="categories" ids="19,20,21,22,23" style_tab="tab-on-left-content" view_all_tab="1" columns="3" posts_per_page="10" is_slider="1" orderby="date" order="ASC"][/vc_column][/vc_row][vc_row el_class="wd-slider-news"][vc_column css=".vc_custom_1498709907929{margin-top: 25px !important;padding-bottom: 15px !important;}"][tvlgiao_wpdance_title heading_element="h2" text_align="text-center" display_button="0" title="LASTEST NEWS"][tvlgiao_wpdance_special_blog style="list" columns="2" show_placeholder_image="1" show_excerpt="0" show_readmore="1" show_nav="0" per_slide="1" show_data_image_slider="0"][/vc_column][/vc_row][vc_row el_class="wd-home-01"][vc_column][tvlgiao_wpdance_brand_slider][tvlgiao_wpdance_instagram insta_follow="0" insta_columns="5" insta_number="10" insta_padding="2.5" insta_columns_sty01="wd-instagram-columns-5" insta_title="#LAPARIS ON INSTAGRAM" insta_user="lapariscodespot" insta_desc="Aenean interdum hendrerit lectus sagittis turpis sit amet neque varius"][/vc_column][/vc_row]
+                  			</textarea>
+						</div>
+					</div>
+					
+					<div class="one-third column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/home.jpg" alt="">
+						</div>
+					</div>
+        			<div class="clearfix"></div>
+					<br/>	
+				</section>
+
+				<section id="page-templates-about">
+					<h1>About Page Shortcode</h1>
+					<div class="two-third">
+						<div class="about-sample-content">
+							<textarea readonly>
+							[vc_row el_class="slider-about"][vc_column][tvlgiao_wpdance_title heading_type="wd-title-for-special-page" text_align="text-center" display_button="0" title="300" description="WE NOW HAVE OVER 300 TEAM MEMBERS"][tvlgiao_wpdance_banner_image bg_image="2949"][/vc_column][/vc_row][vc_row css=".vc_custom_1507082801962{margin-top: 50px !important;}"][vc_column][tvlgiao_wpdance_title heading_type="wd-title-for-special-page" text_align="text-center" display_button="0" title="200 BRANDS" description="...AND CARRY OVER 200 WOMENS AND MENS BRANDS SUCH AS"][/vc_column][/vc_row][vc_row][vc_column width="1/4"][tvlgiao_wpdance_banner_image bg_image="2506"][tvlgiao_wpdance_title heading_type="wd-title-section-style-2" heading_element="h2" text_align="text-left" display_button="0" title="WOMEN'S CLOTHING"][tvlgiao_wpdance_product_categories_list title="" ids_category="28,29,20,62,26,22" text_align="text-left" view_all="1"][/vc_column][vc_column width="1/4"][tvlgiao_wpdance_banner_image bg_image="2507"][tvlgiao_wpdance_title heading_type="wd-title-section-style-2" heading_element="h2" text_align="text-left" display_button="0" title="MEN'S CLOTHING"][tvlgiao_wpdance_product_categories_list title="" ids_category="29,62,28,20,25,24" text_align="text-left" view_all="1"][/vc_column][vc_column width="1/4"][tvlgiao_wpdance_banner_image bg_image="2508"][tvlgiao_wpdance_title heading_type="wd-title-section-style-2" heading_element="h2" text_align="text-left" display_button="0" title="ACCESSORIES"][tvlgiao_wpdance_product_categories_list title="" ids_category="23,28,59,29,20,21" text_align="text-left" view_all="1"][/vc_column][vc_column width="1/4"][tvlgiao_wpdance_banner_image bg_image="2505"][/vc_column][/vc_row][vc_row css=".vc_custom_1499829103589{margin-top: 90px !important;}"][vc_column el_class="img-slider-about"][tvlgiao_wpdance_special_products_slider view_all_link_display="0" id_category="-1" product_style="image_thumb_only" columns="3" per_slide="1"][/vc_column][/vc_row][vc_row el_class="page-about" css=".vc_custom_1507082813472{margin-top: 30px !important;}"][vc_column][tvlgiao_wpdance_title heading_type="wd-title-for-special-page" text_align="text-center" display_button="0" title="20 MILLION" description="20 MILLION PAGE VISITS EACH MONTH"][tvlgiao_wpdance_feature_category id="68" columns="3" number_feature="3" text_align="text-center" title="0"][/vc_column][/vc_row]
+                  			</textarea>
+						</div>
+					</div>
+					
+					<div class="one-third column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/about.jpg" alt="">
+						</div>
+					</div>
+        			<div class="clearfix"></div>
+					<br/>	
+				</section>
+
+				<section id="page-templates-contact">
+					<h1>Contact Page Shortcode</h1>
+					<div class="two-third">
+						<div class="contact-sample-content">
+							<textarea readonly>
+							[vc_row el_class="contact-page"][vc_column width="2/3"][tvlgiao_wpdance_feature id="2328" icon_fontawesome="fa fa-comments"][tvlgiao_wpdance_feature id="2329" icon_fontawesome="fa fa-mobile"][tvlgiao_wpdance_feature id="2330" icon_fontawesome="fa fa-envelope-o"][tvlgiao_wpdance_feature id="2332" icon_fontawesome="fa fa-map-marker"][/vc_column][vc_column width="1/3"][tvlgiao_wpdance_feature id="2333" show_icon_font_thumbnail="0"][/vc_column][/vc_row][vc_row el_class="contact-page"][vc_column css=".vc_custom_1495612227432{margin-bottom: 30px !important;}" el_class="title-contact"][tvlgiao_wpdance_title text_align="text-center" display_button="0" title="SEND US AN EMAIL" description="Email us anytime and we will get back to you within 24hours. Get answers to all your questions about our online service here."][contact-form-7 id="4"][/vc_column][/vc_row]
+                  			</textarea>
+						</div>
+					</div>
+					
+					<div class="one-third column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/contact.jpg" alt="">
+						</div>
+					</div>
+        			<div class="clearfix"></div>
+					<br/>	
+				</section>
+
+				<section id="pages-create-new">
+					<h1>Create A New Page</h1>
+					<p class="info">For sites that use WooCommerce, Shop, Products... shortcode, you will need to choose the appropriate page template <strong>(Woocommerce Template)</strong>. This will help the content can be displayed accurately and fully.</p>
+					<ol class="one-half">
+						<li>Navigate to <strong>Pages</strong> and click <strong>Add New</strong></li>
+						<li>Input a new name for your page, then find the <strong>Page Attributes</strong> box on right side</li>
+						<li>Set your <strong>Parent</strong> page; it's usually set to <strong>No Parent</strong></li>
+						<li>Set your <strong>template</strong> from the dropdown list. See list of page templates below</li>
+						<li>Select page options in the <strong>Page Configuration</strong> box. See the Page Options section of this document</li>
+						<li>Content of your page goes in the editing field, use the <strong>Visual</strong> or <strong>Text</strong> editor. Page content is mainly built by using <strong>Shortcodes</strong> and <strong>WPBakery Page Builder</strong>, see the Shortcodes section for how to use them. You can also use our demo content, see the <a href="#homepage-templates">Homepage Templates</a> section of this document for the demo code of each home page</li>
+					</ol>
+					
+					<div class="one-half column-last">
+						<div class="caption">
+							<img src="assets/images/pages_1.jpg" alt="">
+						</div>
+					</div>
+				</section>
+
+				<section id="pages-home">
+					<h1>Setting Up HomePage</h1>
+					<ol>
+						<li>Navigate to the <i>"<strong>WP-admin</strong> > <strong>Settings</strong> > <strong>Reading</strong>"</i> interface.</li>
+						<li>In the section <strong>"<strong>Front page displays</strong>"</strong>, choose "<strong>static page (select below)</strong>" radio-button.</li>
+						<li>In the "<strong>Front page:</strong>" selector choose the page created as Homepage.</li>
+						<li>Optional. Also you can choose which page will display your blog posts in the "Posts page". But, you should use Blog Template to display your blog posts, it will be better.</li>
+					</ol>
+					
+					<div class="caption">
+						<img src="assets/images/general_homepage_1.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="blog">
+					<h1>Blog</h1>
+					<p>
+					"<strong>WPDanceLaParis</strong>" contains powerful options for the blog. It offers many different options for you to present your blog posts, along with several different blog layouts. In addition, there are numerous theme options and shortcodes that allow you to customize how posts are displayed. There are 2 ways to display your blog posts. The following sections will cover each method.
+					</p>
+					<ul>
+						<li><strong>Assign Blog Page</strong></li>
+						<li><strong>Use Blog Template</strong></li>
+					</ul>
+					<p>First, you need to know how to add new blog post. See the section below.</p>
+				</section>
+				
+				<section id="blog-creating">
+					<h1>Creating Blog Posts</h1>
+					<p>
+						No matter what sorts of method you'll use to display your blog posts, the first thing needed is to create the blog posts. See information on how to create blog posts below:
+					</p>
+					
+					<h5>Follow the Steps Below To Create A Blog Post</h5>
+					<ol class="two-third">
+						<li>Navigate to Posts in your WordPress admin</li>
+						<li>Click on <strong>Add New</strong> to make a new post. Create a title and insert your post content in the editing field. You can use any of our shortcode builder elements inside the post</li>
+						<li>Add <strong>Categories</strong> from the right side. To assign it to the post, check the box next to the Category name</li>
+						<li>Add <strong>Tags</strong> from the right side. Type the name of the tag in the field, separate multiple tags with <strong>commas</strong></li>
+						<li>For a single image, click the first <strong>Featured Image</strong> box, select an image and click <strong>"Set Featured Image"</strong></li>
+						<li>Once you are finished, click on <strong>Publish</strong> to save the post</li>
+					</ol>
+					
+					<div class="one-third column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/blog_1.jpg" alt="" />
+						</div>
+					</div>
+					
+					<br/>
+					<br/>
+					<br/>
+				</section>
+
+				<section id="blog-assigned">
+					<h1>Assigned Blog Page</h1>
+					<p>
+						The first blog method covered is the standard WordPress method in order to set up an assigned blog or "post" page. It's as simple as creating a new page, and then telling WordPress to use that page as the post page.
+					</p>
+					
+					<h5>Follow These Steps Below To Assign A Post Page</h5>
+					<ol class="one-half">
+						<li>Navigate to Pages and click <strong>Add New</strong></li>
+						<li>Write a new name for your page</li>
+						<li>Click on <strong>Publish</strong> to save the page</li>
+						<li>To set the page as your post page, navigate to <strong>Settings > Reading</strong> and select your blog page name for the Posts Page. These actions will automatically pull your blog posts and place them on the page</li>
+					</ol>
+					
+					<div class="one-half column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/blog_2.jpg" alt="">
+						</div>
+					</div>
+					<br/>
+				</section>
+				
+				<section id="blog-template">
+					<h1>Blog Template</h1>
+					<p>The second method covered is our template. It's as simple as making a new page, select a page template from a list of templates</p>
+					<h5>Follow These Steps Below To Assign A Post Page</h5>
+					<div class="two-third">
+						<ul>
+							<li>Navigate to Pages and click <strong>Add New</strong></li>
+							<li>Input a new name for your page, then find the <strong>Page Attributes</strong> box on right side</li>
+							<li>Select the <strong>Default Template</strong> page template from the dropdown list</li>
+							<li>Click <strong>Publish</strong> to save the page</li>
+						</ul>
+					</div>
+					<div class="one-third column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/blog_3.jpg" alt="">
+						</div>
+					</div>
+				</section>
+				
+				<section id="widget">
+					<h1>What is: Widgets</h1>
+					<p class="info">A WordPress Widget is a small block that performs a specific function. You can add these widgets in sidebars also known as widget-ready areas on your web page.<br/>
+
+					WordPress widgets were originally created to provide a simple and easy-to-use way of giving design and structure control of the WordPress theme to the user. Widgets can be easily dragged and dropped into a specific widget area. You can find the list of available widgets and widget areas by going to the <strong>Appearance » Widgets</strong> section in your WordPress dashboard. (wpbeginner.com)</p>
+				</section>
+
+				<section id="widget-sidebar-area">
+					<h1>Widget Area</h1>
+					<p>"<strong>WPDanceLaParis</strong>" contains many widget areas. You can use them for diffrent pages. The below image shows all widgets that are used for the sidebars</p>
+					<div class="caption">
+						<img src="assets/images/widget.jpg" alt="">
+					</div>
+				</section>
+
+				<section id="add-widget-to-sidebar">
+					<h1>Add widgets To Sidebar</h1>
+					<h6>To Add Widgets To The Sidebar, Follow The Steps Below</h6>
+					<ol>
+						<li>To add widgets, Navigate to <strong>Appearance</strong> > <strong>Widgets</strong></li>
+						<li>You will see list widget sections on the right hand side. Your widgets are located on the left hand side</li>
+						<li>Simply drag and drop widgets you want from the left side into the sliding bar widget sections on the right side. See the screenshot captured below.</li>
+					</ol>
+					
+					<div class="caption">
+						<img class="border" src="assets/images/add-widget-to-sidebar.jpg" alt="">
+					</div>
+					<br/>
+				</section>
+
+				<section id="customize"></section>
+
+				<section id="customize-page-post-product">
+					<h1>Custom Page/Post/Product Layout</h1>
+					<div class="one-half">
+						<p class="info">
+							Each Page/Post/Product you create has a full set of options to customize each individual page. Each page opened in your WordPress admin will have a <strong>"Page Configuration"</strong> / <strong>"Post Configuration"</strong> / <strong>"Product Configuration"</strong> Box with all the different settings in it. Some settings will work only if you use a specific template. Below are screenshots of the Page Configuration box.
+						</p>
+						<p><strong>The list of attributes is customizable:</strong></p>
+						<ul>
+				            <li><strong>Custom Header</strong></li>
+				            <li><strong>Custom Footer</strong></li>
+							<li><strong>Page Layout</strong></li>
+							<li><strong>Breadcrumb Style</strong></li>
+							<li><strong>Image Breadcrumb</strong></li>
+						</ul>
+						<br/> 
+						<div class="clearfix"></div>
+					</div>
+					<div class="one-half column-last">
+						<div class="caption">
+							<img src="assets/images/set-header-for-page.jpg" alt="">
+						</div>	
+					</div>
+				</section>
+
+				<section id="theme-option-mode">
+					<h1>Theme Option Mode</h1>
+					<p>To configure, go to <strong>"Theme Option"</strong> menu on the left sidebar.</p>
+					
+					<div class="caption">
+						<img class="border" src="assets/images/theme_option_general.jpg" alt="">
+					</div>
+					<ul>
+						<li><strong>Genenal</strong>: Config logo, favicon, background body</li>
+						<li><strong>Accessibility</strong>: Config Breadcrumb, Back To Top button, social share.</li>
+						<li><strong>Header</strong>: Config header template and default header.</li>
+						<li><strong>Footer</strong>: Config footer template and default footer.</li>
+						<li><strong>Comments</strong>: Config wordpress comment, facebook comment.</li>
+						<li><strong>Blog Settings</strong>: Config Blog layout, blog archive, single blog, blog page default.</li>
+						<li><strong>Page Settings</strong>: Config page default, 404 page, search page.</li>
+						<li><strong>Woocommerce</strong>: Config product layout, product archive, single product, woocommerce page template, cart page custom content, mini cart icon, product sale flash.</li>
+						<li><strong>Color Setting</strong>: Config colors on theme.</li>
+						<li><strong>Font Setting</strong>: Config font family on theme.</li>
+						<li><strong>Custom Css/Script</strong>: Customize theme theme in Css / Script (Only for those who have knowledge of web programming)</li>
+					</ul>
+				</section>
+
+				<section id="customize-mode">
+					<h1>Customize Mode</h1>
+					<p>To configure the theme, go to <strong>Appearance</strong> > <strong>Customize</strong>. Almost everything you can customize is here.</p>
+					
+					<div class="caption">
+						<img class="border" src="assets/images/customize.jpg" alt="">
+					</div>
+					<ul>
+						<li><strong>WPDANCE - Theme Option</strong>: Config Breadcrumb, Back To Top Button.</li>
+						<li><strong>WPDANCE - Header</strong>: Config Logo Site, Header Template.</li>
+						<li><strong>WPDANCE - Footer</strong>: Config Footer Template.</li>
+						<li><strong>WPDANCE - Layout Setting</strong>: Config Page, Blog, Archive, Single, Woocommerce Template Layout.</li>
+						<li><strong>WPDANCE - Product Config</strong>: Config Product, Archive Product, Single Product, Cart Page Layout.</li>
+						<li><strong>WPDANCE - Color Setting</strong>: Config colors on theme.</li>
+						<li><strong>WPDANCE - Font Setting</strong>: Config font family on theme.</li>
+					</ul>
+				</section>
+
+				<section id="packages">
+					<h1>WD Packages</h1>
+					<p class="info"><strong>WD Packages plugin</strong> supports a lot of special functions for website. With the <strong>WD Packages</strong>, you can easily turn off page extensions through the management page.</p>
+				</section>
+
+				<section id="package-setting">
+					<h1>Package Setting</h1>
+					<p>Go to the <strong>"WD Packages"</strong> menu on the left sidebar. Set options in the form then press <strong>"SAVE PARKAGES SETTINGS"</strong> to complete.</p>
+					<div class="caption">
+						<img class="border" src="assets/images/package_1.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="package-manager-mode">
+					<h1>Theme Manager Mode</h1>
+					<p class="info"><strong>Theme Manager Mode</strong> allows users to select content customization mode with <a href="#theme-option-mode"><strong>"Theme Option"</strong></a> or <a href="#customize-mode"><strong>"Customize"</strong></a>. For the "<strong>WPDanceLaParis</strong>" theme, we encourage using the <strong>"Theme Option"</strong> for more optimized customizations.</p>
+					<div class="caption">
+						<img class="border" src="assets/images/package_2.jpg" alt="">
+					</div>
+				</section>
+
+				<section id="package-shortcode">
+					<h1>WD Shortcode</h1>
+					<h5>To Use The Shortcode Generator, Follow The Steps Below</h5>
+					<ol>
+						<li>Open a page or post and go to the <strong>WPBakery Page Builder</strong> editor</li>
+						<li>Click on <strong>Add New Element</strong> button</li>
+						<li>In the popup window, select "<strong>WPDance Shortcode</strong>" tab</li>
+						<li>Select an element from list</li>
+					</ol>
+					
+					<div class="caption">
+						<img class="border" src="assets/images/package_3.jpg" alt="">
+					</div>
+					<p class="info">There are too many shortcodes to take a look in this document. Please take some times and navigate to each menu item.</p>
+				</section>
+
+				<section id="package-widget">
+					<h1>WD Widgets</h1>
+					<p class="info">To Use The "WD Widgets", Drag and drop as regular widgets.</p>
+					<div class="caption">
+						<img class="border" src="assets/images/package_4.jpg" alt="">
+					</div>
+				</section>
+
+				<section id="pages-contact">
+					<h1>Contact Form 7</h1>
+					<p>Good News for those who is familiar with great plugin <a href="http://wordpress.org/plugins/contact-form-7/"><strong>Contact form 7</strong></a> : We covered all styles required to build your forms without worrying about its appearance. You don't need to do anything, intalling <strong>Contact Form 7</strong> and "<strong>WPDanceLaParis</strong>" will take over the rest. We will dequeue its styles and add our own customised version to make it work seamlessly with "<strong>WPDanceLaParis</strong>".</p>
+					<br/>
+					<h4>If you are not familiair with this plugin, check out resources below</h4>
+					<a class="mk-button medium" href="http://wordpress.org/plugins/contact-form-7/">Contact Form 7 Plugin page</a><br/>
+					<a class="mk-button medium" href="http://contactform7.com/docs/">Contact Form 7 Documentation</a>
+					<br/>
+					
+					<p class="warning">
+						Please be informed that we do not give support to questions and issues of any third party plugin. We are only willing to answer simple usage questions or issues related to incompatibility with the theme. Exception is made only for our supported Plugins (Revolution slider, Contact form 7, bbPress and Woocommerce).
+					</p>
+				</section>
+				
+				<section id="sliders">
+					<h1>Slider Revolution</h1>
+					<p>
+						Admitedly, everyone loves sliders. This is the perfect way to catch your viewers' attention by displaying your important content. Scarlett includes the <strong>Revolution Slider</strong>. We also include other slider types for pages/posts and carousels. Each slider can be used on any page or post. When you install the theme, you need to intall the <strong>Revolution Slider</strong> plugin and you and will be able to access to the sidebar of your wordpress admin. The <strong>Revolution Slider</strong> is one standalone plugin activated via <strong>TGM plugin activation</strong>, please install and activate it. Each slider is different and contains various features. The following sections will cover several different sections of the slider listed as belows:
+					</p>
+				</section>
+				
+				<section id="sliders-create-project">
+					<h1>Create New Project</h1>
+					<p>
+						"<strong>WPDanceLaParis</strong>" includes the popular <a href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380">Revolution Slider Created By ThemePunch</a>. This slider is a beautifully animated slider and 100% responsive with amazing options. We cannot cover everything here but we outline how to setup a slider and how to add slides to it. If you download our main files from Themeforest, you will get the original documentation created by ThemePunch, which is located in the slider-revolution-documentation folder.
+					</p>
+					<br/>
+					
+					<h5>Create A New Revolution Slider, Follow The Steps Below</h5>
+					<ol>
+						<li>Click on the <strong>Revolution Slider</strong> sidebar item in your admin section, then click the <strong>Create New Slider</strong> button
+							<div class="caption">
+								<img class="border" src="assets/images/sliders_4.jpg" alt="">
+							</div>
+						</li>
+						<li>Insert a slider name and alias. The alias text will generate a shortcode that can be used in the editing field of pages or posts.
+							<div class="caption">
+								<img class="border" src="assets/images/sliders_5.jpg" alt="">
+							</div>
+						</li>
+						<li>Then select the <strong>Source Type</strong>. If you choose <strong>Posts or Specific Posts</strong>, please refer to the <strong><a href="./slider-revolution-documentation/index.html">Revolution Slider Docs</a></strong> for information on how to set that up. Our demos use Gallery.
+							<div class="caption">
+								<img class="border" src="assets/images/sliders_6.jpg" alt="">
+							</div>
+						</li>
+						<li>Then select the <strong>Slider Layout type</strong>, each type will have its own settings. Set the <strong>Auto Responsive</strong> settings here also. View the layout example diagram below this area to understand what each section includes.
+							<div class="caption">
+								<img class="border" src="assets/images/sliders_7.jpg" alt="">
+							</div>
+						</li>
+						<li>Once you are done, click <strong>Create Slide</strong>r and your new slider will be made.
+							<div class="one-half">
+								<div class="caption">
+									<img class="border" src="assets/images/sliders_8.jpg" alt="">
+								</div>
+							</div>
+							<div class="one-half column-last">
+								<p class="info">On the right hand side are many other options you can set. All are self explanatory with descriptions. Test them out.</p>
+							</div>
+						</li>
+					</ol>
+				</section>
+
+				<section id="sliders-add-slide-to-project">
+					<h1>Add Slide To Project</h1>
+					<ol class="one-half">
+						<li>Click the Edit Slides button in the <strong>Revolution Slider settings</strong>.</li>
+						<li>Click the <strong>Add Slide</strong> button.</li>
+						<li>When done, you will see a new slide box. This is where you add all content of your slide.</li>
+						<li>Edition for slider has many different sections that allow you to customize it. We cannot cover them all, but please do check out each one.</li>
+						<li>To add a text layer, click on the "<strong>Add Layer</strong>" button below the slider preview window. Enter your text in the Text/HTML field shown in the <strong>Layer General Parameter box</strong>. To style it, select one of the styles from the dropdown or make your own by clicking "<strong>Edit Style</strong>".</li>
+						<li>To add an image or video, click on the "<strong>Add Layer: Image</strong>" or "<strong>Add Layer: Video</strong>".</li>
+						<li>Below the slide preview box on the left hand side are 3 sections: <strong>Layer Parameters, Layer Animations, Layer Links & Advanced Parameters</strong>. Select the settings you wish to have, and click on <strong>Preview Slide</strong> to preview what will appear.</li>
+						<li>On the right hand side below the slider preview box, there is the <strong>Layers Timing & Sorting box</strong> where you set the time it takes for each layer to show on the screen.</li>
+						<li>When you finish, click on <strong>Update Slide</strong> to save it. Repeat process for other slides.</li>
+					</ol>
+					<div class="one-half column-last">
+						<div class="caption">
+							<img class="border" src="assets/images/Slider_6.jpg" alt="">
+						</div>
+					</div>
+					<br/>
+				</section>
+
+				<section id="sliders-import">
+					<h1>Import Demo Sliders</h1>
+					<p>
+						<strong><a href="./slider-revolution-documentation/index.html">Our Document</a></strong> includes the sample sliders from the <strong>Revolution Slider</strong>. It also contains our demo sliders (<strong>slider-demo</strong> folder). Please read each section carefully. Each slider has its own method to import, see each one below.
+					</p>
+					<br/>
+					
+					<h5>How To Export/Import Your Revolution Sliders</h5>
+					<p>
+						The <strong>Revolution Slider</strong> allows you to easily export/import your slides. It's always a good idea to backup your slides so you can easily import them again. Creating animated slides takes a lot of time, make sure you export the data so you don't ever lose the time spent on them. The <strong>Revolution Slider</strong> requires you to export each slider individually. Export each slide made and it will give you an individual zip file of all the necessary files.
+					</p>
+					<br>
+					<p class="one-half">
+						<strong>How To Export Revolution Sliders</strong> – Open the <strong>Revolution Slider</strong> page and find the <strong>import/export</strong> section below the main settings. Click on the "<strong>Export</strong>" button and you will receive a zip file of all the needed files in that.
+					</p>
+					
+					<p class="one-half column-last">
+						<strong>How To Import Revolution Sliders</strong> – Firstly, you must create a new slider. Next find the <strong>import/export</strong> section below the main slider settings. Click on "<strong>Choose File</strong>" button and select your zip file then click on "<strong>Import</strong>".
+					</p>
+					<img src="assets/images/rev_export.png" alt="" />
+					<br/>
+				</section>
+
+				<section id="composer">
+					<h1>WPBakery Page Builder</h1>
+					<p>
+						<strong>WPBakery Page Builder</strong> is the generator for visual shortcode that you can use to build your layout painlessly without wasting time on writing shortcodes. We built <strong>WPBakery Page Builder</strong> based on Famous plugin called <a href="http://codecanyon.net/item/visual-composer-for-wordpress/242431"><strong>WPBakery Page Builder by wpbakery</strong></a>.
+
+						There's one concept/design pattern you should know.
+						In the <strong>WPBakery Page Builder</strong> editor mode, you'll see "Add element" button, which you should click on or drag to the working canvas, to add content block or row to your page.
+						Clicking on the <strong>"Add element"</strong> button will show the menu to select content element. Content blocks are divided into categories so that you can filter. Alternatively, you can type the shortcode name to filter down the items instead of search them visually.
+					</p>
+				</section>
+				
+				<section id="composer-basics">
+					<h1>Basic Knowledge</h1>
+					<p>
+						It has very simple and intuitive interface, but before starting to build layouts, you need to get accustomed with <strong><strong>WPBakery Page Builder</strong> documentation</strong>: <a href="http://kb.wpbakery.com/index.php?title=Visual_Composer">http://kb.wpbakery.com/index.php?title=Visual_Composer</a>.
+					</p>
+					
+					<p>
+						You can control global settings of <strong>WPBakery Page Builder</strong> such as disable/enable in a post type and user roles that can use a shortcode. You can find these settings from WordPress "<strong>WP-admin > Settings > <strong>WPBakery Page Builder</strong></strong>".
+					</p>
+					
+					<h6>General Settings:</h6>
+						<ul>
+							<li><strong>Content types:</strong> This option allows you to choose post type to have the <strong>WPBakery Page Builder</strong> feature. Please note that only post types will have this feature that they have WP editor feature. For example, clients will not have <strong>WPBakery Page Builder</strong> even if you check mark its post type.</li>
+							<li><strong>Rules for user groups access :</strong> This option will give you the ability to select which shortcode should be appeared in the specific user role. It is useful when you give subscribers the ability to post, so you can disable some shortcodes for them.</li>
+							<li><strong>Display reponsive content elements:</strong> Check this checkbox to prevent content elements from "stacking" one on top other (on small media screens, eg. mobile).</li>
+							<li><strong>Google font subsets:</strong> Choose which subsets you want to load for your Custom Heading Element. Take into account that each subset will have impact on page loading.</li>
+						</ul>
+					<h6>Product License:</h6>
+					<p>This options allow you to make update the plugin automatically.</p>
+					<h6>My shortcodes:</h6>
+					<p>This tab allows you to map your shortcode. Your shortcode will be shown on the list of WPBakery Page Builder elements menu.</p>
+					
+					<div class="caption">
+						<img class="border" src="assets/images/composer_1.jpg" alt="">
+					</div>
+					
+					<br/>
+					
+					<p>
+						To start creating new layout click "<strong>BACKEND EDITOR</strong>" button on the top left of WYSIWYG (text editor):
+					</p>
+					<div class="caption">
+						<img class="border" src="assets/images/composer_3.jpg" alt="">
+					</div>
+					<br/>
+					
+					<p>
+						WYSIWYG editor change to <strong>WPBakery Page Builder</strong> canvas. You can work with it as you do with regular <strong>WPBakery Page Builder</strong>.
+					</p>
+					<div class="caption">
+						<img class="border" src="assets/images/composer_4.jpg" alt="">
+					</div>
+
+					<br/>
+					
+					<p class="info">If you have a notice of <strong>WPBakery Page Builder</strong> about the license, you will do nothing. Because we bought this plugin and included it in the theme package. Also you can't enable function for automatic updates of this plugin. But you can use it normally. If it has new version, we will update it for you.</p>
+				</section>
+
+				<section id="composer-role">
+					<h1>Role Manager</h1>
+					<p class="info">
+						Set the role for <strong>WPBakery Page Builder Plugin</strong> to use page buider mode on custom post types!
+					</p>
+					
+					<p><span class="bt-cir bt-yellow">1</span>
+						Go to <strong>"WPBakery Page Builder Menu > Role Manager"</strong>.
+						<div class="caption">
+							<img class="border" src="assets/images/vc_role_manager_1.jpg" alt="">
+						</div>
+					</p>
+					<p><span class="bt-cir bt-yellow">2</span>
+						Select the post type in <strong>"Post types"</strong> to activate. For the <strong>WPDANCE Team theme</strong>, activating the two post types <strong>"wpdance_header"</strong> and <strong>"wpdance_footer"</strong> is very important.
+					</p>
+				</section>
+				
+				<section id="composer-background">
+					<h1>Background Section</h1>
+					<p>
+						Row element allows you to add your content. To add row, you click "<strong>Add new element</strong>" button, then select Row element from the list.
+					</p>
+					<div class="caption">
+						<img class="border" src="assets/images/composer_5.jpg" alt="">
+					</div>
+					<br />
+					<p>
+						<strong>WPBakery Page Builder</strong> allows you to setting up the row with many options.
+					</p>
+					<div class="caption">
+						<img class="border" src="assets/images/composer_6.jpg" alt="">
+					</div>
+					
+					<br/>
+					
+					<p>
+						Row editing interface will be displayed. Additionally, you can configure stripe with custom background, paddings, margins, etc.
+					</p>
+					<div class="caption">
+						<img class="border" src="assets/images/composer_7.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="composer-element-column">
+					<h1>Column - Element</h1>
+					<p>Rows are used to divide your page into the logic blocks with columns, columns later will hold your content blocks. To divide columns, you hover on Column button and select layout you want to show. Then, click Add New Element button in column section to add new element for column</p>
+					<div class="caption">
+						<img class="border" src="assets/images/composer_8.jpg" alt="">
+					</div>
+				</section>
+				
+				<section id="language">
+					
+				</section>
+				
+				<section id="language-translation">
+					<h1>Translation</h1>
+					<p>"<strong>WPDanceLaParis</strong>" theme is ready to translate. You can use PO file to do it. There are 2 methods to do:</p>
+					<ul>
+						<li>Use <a href="http://poedit.net/download.php" target="_blank">Poedit program</a> and follow <a href="http://localization-guide.readthedocs.org/en/latest/guide/poedit.html" target="_blank">this document</a>.</li>
+						<li>Use <a href="http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en" target="_blank">Codestyling Localization</a> plugin.</li>
+					</ul>
+					<p>After translating, you need to <a href="http://codex.wordpress.org/Installing_WordPress_in_Your_Language" target="_blank">config wordpress language</a>.</p>
+				</section>
+				<section id="language-wpml">
+					<h1>WPML Plugin</h1>
+					<p>
+						We have tested and ensured that "<strong>WPDanceLaParis</strong>" is WPML compatible. If you need a multi-language site, then we recommend using the <a href="http://wpml.org/purchase/"> WPML Plugin</a>. You would need to buy a license for the plugin, then install it and set it up. All the information you need to get started and use it is on the <a href="http://wpml.org">WPML.org</a> page. Below are all the resource links you will need.
+					</p>
+					<p>
+						"<strong>WPDanceLaParis</strong>" is, in their words, incredibly responsive, with a refreshingly clean design. And it has some awesome features, premium sliders, unlimited colors, advanced theme options and much more! If you selected "<strong>WPDanceLaParis</strong>" as your site’s theme, we’ll guide you in this tutorial how to turn it multilingual with WPML.
+					</p>
+					<h5>What you'll need:</h5>
+					<ul>
+						<li>The "<strong>WPDanceLaParis</strong>" theme, also available from Themeforest.</li>
+						<li>A recent version of <a href="http://wpml.org/purchase/">WPML</a>, including the <strong>String Translation</strong> and <strong>Translation Management</strong> modules.</li>
+					</ul>
+					<h5><a href="http://wpml.org/documentation/">Click on the links to jump WPML Documentation</a></h5>
+					<br/>
+					<h6>Translating Widgets</h6>
+					<p>Tutorial recommended by wpml team for translating widgets <a href="http://wpml.org/2011/03/howto-display-different-widgets-per-language/">http://wpml.org/2011/03/howto-display-different-widgets-per-language/</a></p>
+					<br/>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>

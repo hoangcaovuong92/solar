@@ -1,0 +1,4653 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-03 03:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: 404.php:38
+msgid "Sorry, Page Not Found!"
+msgstr ""
+
+#: 404.php:39
+msgid "404"
+msgstr ""
+
+#: comments.php:17
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:29
+msgid "POST A COMMENT"
+msgstr ""
+
+#: framework/abstract.php:136 framework/functions/wd_set_default.php:97
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:82
+msgid "Primary Menu"
+msgstr ""
+
+#: framework/abstract.php:137 framework/functions/wd_set_default.php:98
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:83
+msgid "Secondary Menu"
+msgstr ""
+
+#: framework/abstract.php:138 framework/functions/wd_set_default.php:99
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:84
+msgid "Mobile Menu"
+msgstr ""
+
+#. Name of the template
+msgid "Blog Template"
+msgstr ""
+
+#. Name of the template
+msgid "Home Template (Header Left)"
+msgstr ""
+
+#. Name of the template
+msgid "Home Template"
+msgstr ""
+
+#. Name of the template
+msgid "Page Without Header/Footer"
+msgstr ""
+
+#. Name of the template
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:36
+msgid "Woocommerce Template"
+msgstr ""
+
+#: template-parts/content-none.php:22
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:30
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:33
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:17 template-parts/content-single.php:13
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:22
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/content-single.php:23
+#: framework/functions/blog/wd_blog_function.php:362
+msgid ", "
+msgstr ""
+
+#: template-parts/related.php:37
+msgid "Lastest News"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:33
+#, php-format
+msgid "%s review for %s%s%s"
+msgid_plural "%s reviews for %s%s%s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:35
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:56
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:69
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:69
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:70
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:73
+#: framework/functions/wd_comment_form.php:212
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:74
+msgid "Your Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:75
+#: framework/functions/wd_comment_form.php:213
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:76
+msgid "Your Email *"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:84
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:88
+msgid "Rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:89
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:92
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:94
+msgid "Very Poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:98
+#: framework/functions/wd_set_default.php:210
+#: framework/functions/woocommerce/wd_woo_hook.php:132
+msgid "Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:98
+msgid "Your comment..."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:107
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/wishlist-view.php:32
+msgid "Edit title"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:41
+msgid "Save"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:45
+msgid "Cancel"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:80
+msgid "Product Name"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:87
+msgid "Unit Price"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:100
+msgid "Stock Status"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:150 woocommerce/wishlist-view.php:226
+msgid "Remove this product"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:167
+msgid "Free!"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:173
+msgid "Out of Stock"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:173
+msgid "In Stock"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:182
+#, php-format
+msgid "Added on : %s"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:194
+msgid "Move"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:206
+msgid "Shared"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:209
+msgid "Private"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:212
+msgid "Public"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:226
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:379
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:379
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:426
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:426
+msgid "Remove"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:236
+msgid "No products were added to the wishlist"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:253
+msgid "Add the selected products to the cart"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:261 woocommerce/wishlist-view.php:307
+msgid "Ask for an estimate"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:297
+#: framework/functions/wd_comment_form.php:219
+msgid "Your email"
+msgstr ""
+
+#: framework/functions/wd_accessibility.php:133
+msgid "X"
+msgstr ""
+
+#: framework/functions/wd_accessibility.php:195
+#: woocommerce/single-product/product-image.php:76
+msgid "Close"
+msgstr ""
+
+#: framework/functions/wd_accessibility.php:225
+msgid "Dont show this again"
+msgstr ""
+
+#: framework/functions/wd_accessibility.php:310
+msgid "Share "
+msgstr ""
+
+#: framework/functions/wd_accessibility.php:339
+msgid "To Top"
+msgstr ""
+
+#: framework/functions/wd_ajax_function.php:77
+msgid "Unknown error!"
+msgstr ""
+
+#: framework/functions/wd_ajax_function.php:82
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: framework/functions/wd_ajax_function.php:88
+msgid "Wrong username or password!"
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:106
+msgid "SEARCH"
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:110
+msgid "SHOP"
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:136
+#: framework/functions/woocommerce/wd_woo_function.php:130
+msgid "Home"
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:140
+msgid "Search results for "
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:141
+msgid "Error 404"
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:142
+msgid "Tagged "
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:143
+msgid "Articles posted by "
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:144
+msgid "Page"
+msgstr ""
+
+#: framework/functions/wd_breadcrumbs.php:145
+msgid "Portfolio"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:107
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:112
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:116
+msgid "REPLY"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:140
+#, php-format
+msgid "%s Comment on \"%s\""
+msgid_plural "%s Comments on \"%s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_comment_form.php:148
+#: framework/functions/wd_comment_form.php:181
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:149
+#: framework/functions/wd_comment_form.php:182
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:188
+msgid "Comments are closed."
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:214
+msgid "Website"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:215
+msgid "Comment"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:218
+msgid "Your name"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:220
+msgid "Your website"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:221
+msgid "Your Comment"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:243
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:244
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:249
+msgid "Leave a comment"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:250
+#, php-format
+msgid "Leave a reply to %s"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:251
+msgid "Cancel reply"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:252
+msgid "POST COMMENT"
+msgstr ""
+
+#: framework/functions/wd_comment_form.php:253
+msgid "Please note: comments may need to be approved before publishing!"
+msgstr ""
+
+#: framework/functions/wd_main.php:50
+msgid "Previous"
+msgstr ""
+
+#: framework/functions/wd_main.php:51
+msgid "Next"
+msgstr ""
+
+#: framework/functions/wd_pagination.php:111
+msgid "First"
+msgstr ""
+
+#: framework/functions/wd_pagination.php:112
+msgid "Previous Post"
+msgstr ""
+
+#: framework/functions/wd_pagination.php:116
+#: framework/functions/wd_pagination.php:132
+msgid "..."
+msgstr ""
+
+#: framework/functions/wd_pagination.php:137
+msgid "Next Post"
+msgstr ""
+
+#: framework/functions/wd_pagination.php:138
+msgid "Last"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:6
+msgid "WPBakery Page Builder"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:16
+msgid "Revolution Slider"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:26
+msgid "Uber Menu"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:36
+msgid "Redux Framework"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:41
+msgid "Woocommerce"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:46
+msgid "GTranslate"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:51
+msgid "Woocommerce Currency Switcher"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:56
+msgid "Contact Form 7"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:61
+msgid "YITH WooCommerce Wishlist"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:66
+msgid "YITH WooCommerce Compare"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:71
+msgid "Testimonials by WooThemes"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:76
+msgid "Regenerate Thumbnails"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:81
+msgid "WD Packages"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:100
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:101
+msgid "Install Plugins"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:102
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:103
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:104
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:105
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:106
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s plugins."
+" Contact the administrator of this site for help on getting the plugins "
+"installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:107
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:108
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:109
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s plugin."
+" Contact the administrator of this site for help on getting the plugin "
+"activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:110
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:111
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:112
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:113
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:114
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:115
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/functions/wd_register_tgmpa_plugin.php:116
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: framework/functions/wd_search_form.php:25
+msgid "Search blog"
+msgstr ""
+
+#: framework/functions/wd_search_form.php:25
+msgid "Search product"
+msgstr ""
+
+#: framework/functions/wd_search_form.php:40
+msgid "Search item here"
+msgstr ""
+
+#: framework/functions/wd_search_form.php:42
+msgid "Search"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:79
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:309
+msgid "1 Column"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:80
+#: framework/functions/woocommerce/wd_woo_function.php:30
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:310
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:503
+msgid "2 Columns"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:81
+#: framework/functions/woocommerce/wd_woo_function.php:31
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:311
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:504
+msgid "3 Columns"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:82
+#: framework/functions/woocommerce/wd_woo_function.php:32
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:312
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:505
+msgid "4 Columns"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:93
+msgid "Show Logo"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:94
+msgid "Show Site Title"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:111
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:31
+#, php-format
+msgid "Copyright %s. All rights reserved."
+msgstr ""
+
+#: framework/functions/wd_set_default.php:117
+#: framework/functions/wd_set_default.php:340
+#: framework/functions/wd_set_default.php:359
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:211
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:91
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:258
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:41
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:140
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:240
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:340
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:440
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:540
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:901
+#: framework/wpdance/supports/theme_option/parts/options_page.php:69
+#: framework/wpdance/supports/theme_option/parts/options_page.php:214
+msgid "Background Color"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:118
+#: framework/functions/wd_set_default.php:339
+#: framework/functions/wd_set_default.php:358
+#: framework/metabox/wd_custom_fields.php:180
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:90
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:257
+#: framework/wpdance/supports/theme_option/parts/options_page.php:79
+#: framework/wpdance/supports/theme_option/parts/options_page.php:224
+msgid "Background Image"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:119
+#: framework/metabox/wd_custom_fields.php:181
+msgid "No Breadcrumb"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:122
+msgid "Inline"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:123
+msgid "Block"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:126
+msgid "Text Center"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:127
+msgid "Text Left"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:128
+msgid "Text Right"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:129
+msgid "Text Justified"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:151
+msgid "After Content Detail"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:152
+msgid "Before Content Detail"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:205
+msgid "Left"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:206
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:633
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:881
+msgid "Bottom"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:209 woocommerce/cart/cart.php:84
+#: framework/functions/woocommerce/wd_woo_hook.php:131
+#: woocommerce/single-product/add-to-cart/variable.php:110
+msgid "Price"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:211
+#: framework/functions/woocommerce/wd_woo_hook.php:133
+msgid "Sku"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:212
+#: framework/functions/woocommerce/wd_woo_function.php:514
+#: framework/functions/woocommerce/wd_woo_hook.php:134
+msgid "Availability"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:213
+#: framework/functions/woocommerce/wd_woo_hook.php:135
+msgid "Excerpt"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:214
+#: framework/functions/woocommerce/wd_woo_hook.php:136
+msgid "Add To Cart"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:215
+#: framework/functions/woocommerce/wd_woo_hook.php:137
+msgid "Categories"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:247
+msgid "Cart Icon"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:248
+msgid "Cart Text"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:249
+msgid "Cart Item"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:250
+msgid "Cart Total"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:302
+#: framework/functions/wd_set_default.php:313
+#: framework/functions/wd_set_default.php:327
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:412
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:470
+msgid "List"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:303
+#: framework/functions/wd_set_default.php:314
+#: framework/functions/wd_set_default.php:328
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:413
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:471
+msgid "Grid"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:362
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:293
+msgid "Search Blog"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:363
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:294
+msgid "Search Product"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:378
+msgid "Icon Only"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:379
+msgid "Icon & Background"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:382
+msgid "Rounded"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:383
+msgid "Square"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:412
+msgid "Feedburner Form"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:413
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:751
+#: framework/wpdance/supports/theme_option/parts/options_page.php:156
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:293
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:379
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:463
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:489
+msgid "Custom Content"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:438
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:126
+msgid "Show"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:439
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:127
+msgid "Hide"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:452
+msgid "Send a message to us..."
+msgstr ""
+
+#: framework/functions/wd_set_default.php:453
+msgid "Visit us on facebook"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:466
+msgid "Wordpress Comment"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:467
+msgid "Facebook Comment"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:470
+msgid "Multi Domain"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:471
+msgid "Single Domain"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:474
+msgid "Tab"
+msgstr ""
+
+#: framework/functions/wd_set_default.php:475
+msgid "Normal"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:17 framework/functions/wd_sidebar.php:41
+msgid "Show Content Sidebar"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:63
+#: framework/metabox/wd_custom_fields.php:133
+msgid "Left Sidebar"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:65
+msgid "Main sidebar that appears on the left."
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:72
+#: framework/metabox/wd_custom_fields.php:134
+msgid "Right Sidebar"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:74
+msgid "Main sidebar that appears on the right."
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:81
+msgid "Left Sidebar Product"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:83
+msgid "Left Sidebar for single product"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:90
+msgid "Right Sidebar Product"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:92
+msgid "Right Sidebar for single product"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:99
+msgid "Left Sidebar Shop"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:101
+msgid "Left Sidebar for shop page"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:108
+msgid "Right Sidebar Shop"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:110
+msgid "Right Sidebar for shop page"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:118
+msgid "Header Information"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:120
+msgid "Display only on header menu mobile"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:127
+msgid "Footer Social"
+msgstr ""
+
+#: framework/functions/wd_sidebar.php:129
+msgid "Display widgets on footer default template"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:27
+msgid "POST CONFIGURATION"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:36
+msgid "PAGE CONFIGURATION"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:45
+msgid "PRODUCT CONFIGURATION"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:100
+#: framework/metabox/metaboxes/wd_custom_category.php:24
+#: framework/metabox/metaboxes/wd_custom_layout_config.php:3
+msgid "Select Header"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:103
+msgid "Custom Header: "
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:115
+#: framework/metabox/metaboxes/wd_custom_category.php:25
+#: framework/metabox/metaboxes/wd_custom_layout_config.php:4
+msgid "Select Footer"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:118
+msgid "Custom Footer: "
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:131
+#: framework/metabox/wd_custom_fields.php:204
+msgid "Default"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:132
+msgid "Fullwidth"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:135
+msgid "Left & Right Sidebar"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:139
+msgid "Layout:"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:155
+msgid "Left Sidebar:"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:165
+msgid "Right Sidebar:"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:179
+msgid "Default (Customize)"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:185
+msgid "Breadcrumb Style:"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:198
+msgid "Image Breadcrumb:"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:204
+msgid "Upload Background"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:214
+msgid "Custom Classes:"
+msgstr ""
+
+#: framework/metabox/wd_custom_fields.php:226
+msgid "Custom ID:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:53
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:79
+#: framework/functions/woocommerce/wd_woo_function.php:379
+#: framework/functions/woocommerce/wd_woo_function.php:392
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:92 woocommerce/cart/cart.php:94
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:111 woocommerce/checkout/review-order.php:112
+#: framework/functions/woocommerce/wd_woo_cart.php:155
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:122
+#: framework/functions/woocommerce/wd_woo_cart.php:138
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:141
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:146
+msgid "Discount Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:147
+msgid "Enter coupon code bellow if you have one."
+msgstr ""
+
+#: woocommerce/cart/cart.php:148
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:148
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:164 woocommerce/checkout/thankyou.php:63
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:165
+msgid "Laparis continuously strives to give customers the best service."
+msgstr ""
+
+#: woocommerce/checkout/cart-errors.php:27
+msgid ""
+"There are some issues with the items in your cart (shown above). Please go "
+"back to the cart page and resolve these issues before checking out."
+msgstr ""
+
+#: woocommerce/checkout/cart-errors.php:31
+msgid "Return to cart"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:29
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:55
+msgid "Order Review"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:65
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:30
+msgid ""
+"Unfortunately your order cannot be processed as the originating "
+"bank/merchant has declined your transaction. Please attempt your purchase "
+"again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:33
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:35
+msgid "My account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:41 woocommerce/checkout/thankyou.php:78
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:46
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:51
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:56
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/loop/price.php:30
+msgid "Updating"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:27
+msgid "Access Your Account"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:33
+msgid "First name *"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:37
+msgid "Last name *"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:43
+msgid "Email address *"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:47
+msgid "Password change"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:51
+msgid "Current password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:55
+msgid "New password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:59
+msgid "Confirm new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:68
+msgid "Save changes"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:37
+#: woocommerce/myaccount/form-login.php:56
+msgid "Login"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:44
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:48
+#: woocommerce/myaccount/form-login.php:98
+#: framework/functions/woocommerce/wd_woo_account.php:67
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:199
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:58
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:62
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:75
+#: woocommerce/myaccount/form-login.php:111
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:84
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:91
+#: framework/functions/woocommerce/wd_woo_function.php:228
+#: framework/functions/woocommerce/wd_woo_function.php:297
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:105
+msgid "Anti-spam"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:32
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:28
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:41
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:53
+msgid "Edit"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:72
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: woocommerce/myaccount/navigation.php:27
+#: framework/functions/woocommerce/wd_woo_account.php:147
+#: framework/functions/woocommerce/wd_woo_account.php:148
+msgid "My Account"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:78
+#: woocommerce/single-product/product-image.php:78
+msgid "Product Image Popup"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:37
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:45
+msgid "RELATED ITEMS"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:26
+msgid "YOU MAY ALSO LIKE..."
+msgstr ""
+
+#: framework/functions/blog/wd_blog_content.php:98
+#: framework/functions/blog/wd_blog_function.php:430
+msgid "Read More"
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:16
+msgid "To view this protected post, enter the password below: "
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:17
+msgid "Password: "
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:18
+msgid "Submit "
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:296
+#: framework/functions/blog/wd_blog_function.php:345
+msgid "by "
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:330
+msgid "Sticky"
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:361
+msgid "in "
+msgstr ""
+
+#: framework/functions/blog/wd_blog_function.php:398
+#, php-format
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:45
+msgid "View Account Page"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:50
+msgid "View login page"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:64
+msgid "Email Address / Username"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:70
+msgid "Keep me signed in"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:84
+msgid "SIGN IN"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:91
+msgid "Reset your password"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:91
+msgid "Forgetten your password?"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:92
+msgid "Create new acccount"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:92
+msgid "Register new account"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:105
+msgid "My Orders"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:105
+msgid "My Order"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:107
+msgid "My Downloads"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:107
+msgid "My Download"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:109
+#: framework/functions/woocommerce/wd_woo_account.php:109
+#: framework/functions/woocommerce/wd_woo_account.php:150
+#: framework/functions/woocommerce/wd_woo_account.php:151
+msgid "Logout"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:154
+msgid "Login or Register"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:155
+msgid "Login / Register"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_account.php:172
+msgid "Woocommerce Plugin do not active"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:57
+msgid "View your cart"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:75
+msgid "Cart"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:108
+#, php-format
+msgid "<strong>%s</strong> Items On Your Cart"
+msgid_plural "<strong>%s</strong> Items On Your Cart"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:148
+#: framework/functions/woocommerce/wd_woo_cart.php:148
+msgid "Empty Cart"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:160
+msgid "View Cart"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:160
+msgid "View cart"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:161
+msgid "Checkout Page"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:161
+msgid "Checkout"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:167
+msgid "Shopping cart is empty."
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_cart.php:171
+msgid "Go Shopping"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:14
+msgid "List view"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:17
+msgid "Grid view"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:199
+#: framework/functions/woocommerce/wd_woo_function.php:232
+#: framework/functions/woocommerce/wd_woo_function.php:268
+#: framework/functions/woocommerce/wd_woo_function.php:305
+msgid "First name"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:202
+#: framework/functions/woocommerce/wd_woo_function.php:235
+#: framework/functions/woocommerce/wd_woo_function.php:271
+#: framework/functions/woocommerce/wd_woo_function.php:308
+msgid "Last name"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:205
+#: framework/functions/woocommerce/wd_woo_function.php:238
+#: framework/functions/woocommerce/wd_woo_function.php:274
+#: framework/functions/woocommerce/wd_woo_function.php:311
+msgid "Company name"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:210
+#: framework/functions/woocommerce/wd_woo_function.php:243
+#: framework/functions/woocommerce/wd_woo_function.php:279
+#: framework/functions/woocommerce/wd_woo_function.php:316
+msgid "House number and street name"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:213
+#: framework/functions/woocommerce/wd_woo_function.php:246
+#: framework/functions/woocommerce/wd_woo_function.php:282
+#: framework/functions/woocommerce/wd_woo_function.php:319
+msgid "Apartment, suite, unit etc. (optional)"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:216
+#: framework/functions/woocommerce/wd_woo_function.php:249
+#: framework/functions/woocommerce/wd_woo_function.php:285
+#: framework/functions/woocommerce/wd_woo_function.php:322
+msgid "Town / City"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:219
+#: framework/functions/woocommerce/wd_woo_function.php:252
+#: framework/functions/woocommerce/wd_woo_function.php:288
+#: framework/functions/woocommerce/wd_woo_function.php:325
+msgid "State / County"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:222
+#: framework/functions/woocommerce/wd_woo_function.php:255
+#: framework/functions/woocommerce/wd_woo_function.php:291
+#: framework/functions/woocommerce/wd_woo_function.php:328
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:225
+#: framework/functions/woocommerce/wd_woo_function.php:294
+msgid "Phone"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:259
+msgid "Notes about your order, e.g. special notes for delivery."
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:357
+#: framework/functions/woocommerce/wd_woo_function.php:362
+#: framework/functions/woocommerce/wd_woo_function.php:382
+#: framework/functions/woocommerce/wd_woo_function.php:402
+msgid "In stock"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:362
+#, php-format
+msgid "Only %s left in stock"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:365
+#, php-format
+msgid "%s in stock"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:373
+msgid "(backorders allowed)"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:385
+#: framework/functions/woocommerce/wd_woo_function.php:395
+#: framework/functions/woocommerce/wd_woo_function.php:399
+msgid "Out of stock"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:502
+msgid "Add your review"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:505
+msgid "Be the first to review"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:522
+msgid "Sku:"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:580
+msgid "Product Tags"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:608
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:3
+msgid "Comments"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:620
+msgid "Categories: "
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:696
+msgid "Hot"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:726
+msgid "Sale!"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:748
+msgid "Hurry Up! Offer ends in:"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:754
+msgid "Year"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:758
+msgid "Month"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:762
+msgid "Day"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:767
+msgid "Hours"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:771
+msgid "Mins"
+msgstr ""
+
+#: framework/functions/woocommerce/wd_woo_function.php:775
+msgid "Secs"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/simple.php:51
+msgid "QUANTITY: "
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:34
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:67
+msgid "Choose an option"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:103
+msgid "Clear selection"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:125
+msgid "Add to cart"
+msgstr ""
+
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:392
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:392
+msgid "Add"
+msgstr ""
+
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:725
+msgid "Remove Image"
+msgstr ""
+
+#: framework/metabox/metaboxes/Tax-meta-class/Tax-meta-class.php:727
+msgid "Upload Image"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:248
+msgid ""
+"This short guide will help you get started and quickly familiar with the "
+"theme. Teach you step by step how to build site like your demo site in few "
+"minutes without technical knowledge. Help you elimite too much time to read "
+"the complete user guide."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:250
+msgid "Let's get started now"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:262
+msgid "All recommended plugins are already activated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:266
+msgid "Install and activate all recommended plugins"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:268
+#, php-format
+msgid "Some plugins are still not activated: <strong>%s</strong>"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:270
+#, php-format
+msgid ""
+"Please go to <strong><a href=\"%s\">Install Plugins</a></strong> page to "
+"start install and activate the missing plugins."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:272
+msgid ""
+"If plugin is <strong>commercial</strong> and <strong>not included</strong> "
+"in the theme you can ignore it."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:274
+msgid "Go to Install Plugins"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:276
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:391
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:432
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:483
+msgid "Skip this step"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:293
+msgid "All sample Slider Revolution are already imported"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:297
+msgid "Import sample Slider Revolution come with the theme"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:299
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:318
+#, php-format
+msgid "Some sample sliders are missing: <code>%s</code>."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:300
+#, php-format
+msgid ""
+"Please go to <strong><a href=\"%s\">Slider Revolution</a></strong>, choose "
+"<strong>Import Slider</strong> to start importing sample sliders come with "
+"the theme."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:301
+msgid ""
+"Each sample slider is a zip file in the directory <code>sample-"
+"data/revslider/</code> inside the zip file <strong>\"All files and "
+"documentation\"</strong>, you should have downloaded it when you purchased "
+"the theme."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:303
+msgid "Go to Slider Revolution"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:312
+msgid "All sample Smart Sliders 3 are already imported"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:316
+msgid "Import sample Smart Sliders 3 come with the theme"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:319
+#, php-format
+msgid ""
+"Please go to <strong><a href=\"%s\">Smart Slider 3</a></strong>, choose "
+"<strong>Import Slider</strong> to start importing sample sliders come with "
+"the theme."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:320
+msgid ""
+"Each sample slider is a zip file in the directory <code>sample-data/demo-"
+"smart-slider/</code> inside the zip file <strong>\"All files and "
+"documentation\"</strong>, you should have downloaded it when you purchased "
+"the theme."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:322
+msgid "Go to Smart Slider 3"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:339
+msgid "You have completed learning about importing sample data"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:344
+msgid "You have skip learning about importing sample data"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:348
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:373
+msgid ""
+"Sample data are provided inside the directory <code>sample-data/</code> of "
+"the zip file \"All files and documentation\" which you should have "
+"downloaded when purchased the theme. Sample data include:"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:352
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:377
+#, php-format
+msgid "<code>%1s</code> for %2s"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:357
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:382
+msgid ""
+"1/ Import XML data: go to <strong>Tools</strong> &gt; <strong>Import</strong>"
+" &gt; and choose <strong>WordPress</strong> &gt; select the XML file which "
+"you want to import."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:358
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:383
+msgid ""
+"2/ Import WIE data: go to <strong>Tools</strong> &gt; <strong>Widget "
+"Importer & Exporter</strong> &gt; and select the WIE file which you want to "
+"import."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:360
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:385
+msgid "Import XML Tool"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:362
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:387
+msgid "Import WIE Tool"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:364
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:389
+msgid "Confirm you got it"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:371
+msgid "Instruction for importing sample data"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:406
+msgid "All recommended widgets are already registered"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:412
+msgid "You have skip learning about register any recommended widgets"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:416
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:427
+#, php-format
+msgid "Some widgets are still not registered: <strong>%s</strong>"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:418
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:429
+msgid ""
+"If widget is <strong>commercial</strong> and <strong>not included</strong> "
+"in the theme you can ignore it."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:425
+msgid "Register all recommended widgets"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:448
+msgid "The homepage is a static page already"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:454
+msgid "You have skip learning about set a static page as homepage"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:458
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:474
+msgid "Below instruction will teach you configure a static page as homepage:"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:460
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:476
+msgid ""
+"Go to <strong>Settings</strong> &gt; <strong>Reading</strong> &gt; choose "
+"<strong>Front page displays</strong> option is <strong>A static page</strong>"
+". Then select a page in the dropdown option <strong>Front page</strong>. "
+"Click <strong>Save Changes</strong> button to save."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:465
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:481
+msgid "Go to Setting Reading Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:472
+msgid "Set a static page as homepage"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:495
+msgid "Finish guide"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:504
+msgid ""
+"The tutorial has been completed! If you want to learn again, please press "
+"the button below. Thank you for your trust and support WDTEAM. :)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:505
+msgid "Start guide again now"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:584
+msgid " Theme Install - Get Started"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:585
+msgid "Theme installation is in progress..."
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:587
+msgid "Return Theme installation page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:590
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:604
+msgid "Dismiss this forever!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:598
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:630
+msgid " Theme - Get Started"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:599
+msgid ""
+"Many issues need to be installed before using this theme. Come WPDance Guide "
+"page on admin panel to check it!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:601
+msgid "Click here"
+msgstr ""
+
+#: framework/wpdance/supports/theme_guide/install_theme_guide.php:630
+msgid "Refresh"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/wd_theme_options.php:108
+#: framework/wpdance/supports/theme_option/wd_theme_options.php:109
+msgid "Theme Options"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/wd_theme_options.php:209
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/wd_theme_options.php:228
+msgid "Documentation"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/wd_theme_options.php:343
+msgid "Section via hook"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/wd_theme_options.php:344
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/libs/wd-add-control-custom-font.php:47
+msgid "Web Fonts"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/libs/wd-add-control-custom-font.php:53
+msgid "Google Fonts"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:6
+msgid "WD - Accessibility"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:11
+msgid "Breadcrumb Config"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:18
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:148
+msgid "Back To Top Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:24
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:643
+msgid "Visual Effects"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:30
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:948
+msgid "Social Share"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:45
+msgid "Select the layout breadcrumb"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:61
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:100
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:267
+msgid "Select Color Background"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:73
+msgid "Banner Breadcrumb"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:84
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:64
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:163
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:263
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:363
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:463
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:615
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:780
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:863
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:200
+msgid "Height"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:88
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:66
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:165
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:265
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:365
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:465
+msgid "Unit: pixels"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:99
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:74
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:173
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:273
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:373
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:473
+msgid "Title & Slug Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:110
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:82
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:181
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:281
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:381
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:481
+msgid "Title & Slug Style"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:127
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:93
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:192
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:292
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:392
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:492
+msgid "Text Align"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:149
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:166
+msgid "Enable/Disable scroll button in website"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:165
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:528
+msgid "Select Style"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:182
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:587
+msgid "Select Icon"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:200
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:598
+msgid "Icon Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:222
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:575
+msgid "Background Shape"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:240
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:652
+msgid "Loading Effect"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:241
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:653
+msgid "Enable/Disable loading effect in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:257
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:661
+msgid "Sidebar Fixed"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:258
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:662
+msgid "Enable/Disable sidebar fixed effect in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:275
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:518
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:680
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:836
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:957
+msgid "Display"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:276
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:958
+msgid "Enable/Disable all social share button in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_accessibility.php:292
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:967
+msgid "Addthis Profile ID"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:6
+msgid "WD - Blog Setting"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:11
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:11
+msgid "Blog Config"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:18
+msgid "Blog Default"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:19
+msgid "Set properties for the default blog..."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:25
+msgid "Archive Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:31
+msgid "Single Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:45
+msgid "Show Title Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:46
+msgid "Show/Hide title blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:61
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:60
+msgid "Placeholder Image"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:62
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:61
+msgid "Placeholder image display when post no thumbnail"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:78
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:49
+msgid "Show By Post Format"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:79
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:50
+msgid ""
+"Enable to display posts by post format (video, audio, quote, gallery ...)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:95
+msgid "Show placeholder_image Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:96
+msgid "Show/Hide placeholder_image blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:112
+msgid "Show Date Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:113
+msgid "Show/Hide date blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:129
+msgid "Show Meta Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:130
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:89
+msgid "show author, category or number facebook comment..."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:146
+msgid "Show Author Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:147
+msgid "Show/Hide author blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:163
+msgid "Show Number Comment"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:164
+msgid "Show/Hide Number Comment"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:181
+msgid "Show Category Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:182
+msgid "Show/Hide category blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:197
+msgid "Show Excerpt Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:198
+msgid "Show/Hide excerpt blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:213
+msgid "Show Read More Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:214
+msgid "Show/Hide read more blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:230
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:157
+msgid "Number Excerpt Word"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:244
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:367
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:425
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:22
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:21
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:42
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:212
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:317
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:446
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:530
+msgid "Select the layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:285
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:266
+msgid "Author Information"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:286
+msgid "Show/Hide Author Information"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:302
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:276
+msgid "Previous/Next Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:303
+msgid "Show/Hide Previous/Next Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:319
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:286
+msgid "Recent Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:320
+msgid "Show/Hide Recent Blog"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:336
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:306
+msgid "Recent Blog Style"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:353
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:315
+#: framework/wpdance/supports/theme_option/parts/options_page.php:244
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:284
+msgid "Columns"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:357
+msgid "The number of columns displayed with the slider"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:407
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_blog.php:465
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:217
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:371
+msgid "Layout Style"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_font.php:6
+msgid "WD - Font Setting"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_font.php:7
+msgid "Custom font in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:6
+msgid "WD - Footer"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:36
+msgid "Footer copyright text"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:40
+msgid ""
+"Copyright or other text to be displayed in the site footer. HTML allowed."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:49
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:63
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:910
+#: framework/wpdance/supports/theme_option/parts/options_general.php:11
+#: framework/wpdance/supports/theme_option/parts/options_general.php:21
+msgid "Logo"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_footer.php:52
+msgid "Footer logo is only visible to the default footer template."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:6
+msgid "WD - Header"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:7
+msgid "Custom header site."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:37
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:79
+msgid "This setting is only visible to the default header template."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:51
+#: framework/wpdance/supports/theme_option/parts/options_general.php:32
+#: framework/wpdance/supports/theme_option/parts/options_general.php:42
+msgid "Favicon"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:54
+#: framework/wpdance/supports/theme_option/parts/options_general.php:34
+msgid ""
+"Favicon is the little icon that browsers display next to a page's title on a "
+"browser tab, or in the address bar next to its URL."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_header.php:66
+msgid "Header logo is only visible to the default header template."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:6
+msgid "WD - Page Setting"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:12
+msgid "Page Default"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:13
+msgid "Set properties for the default page template..."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:20
+msgid "Page 404 Config"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:27
+msgid "Page Search Config"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:85
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:252
+msgid "Background Image Or Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:110
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:277
+msgid "Select Background Image"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:121
+#: framework/wpdance/supports/theme_option/parts/options_page.php:90
+msgid "Header & Footer"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:137
+#: framework/wpdance/supports/theme_option/parts/options_page.php:100
+msgid "Search Form"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:138
+msgid "Show/Hide Search Form"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:155
+#: framework/wpdance/supports/theme_option/parts/options_page.php:110
+msgid "Back To Home Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:156
+msgid "Show/Hide Back To Home Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:167
+msgid "Back To Homepage"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:172
+#: framework/wpdance/supports/theme_option/parts/options_page.php:129
+msgid "Text Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:185
+#: framework/wpdance/supports/theme_option/parts/options_page.php:139
+msgid "Class Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:198
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:597
+msgid "Shortcode Cart"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:288
+#: framework/wpdance/supports/theme_option/parts/options_page.php:235
+msgid "Type"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:304
+msgid "Result Columns"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:314
+#: framework/wpdance/supports/theme_option/parts/options_page.php:246
+msgid "Set columns for blog search page."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:323
+#: framework/wpdance/supports/theme_option/parts/options_page.php:255
+msgid "Autocomplete"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:328
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:343
+msgid "Enable"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:329
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:344
+msgid "Disabled"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_page.php:338
+#: framework/wpdance/supports/theme_option/parts/options_page.php:265
+msgid "Ajax"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:6
+msgid "WD - Color Setting"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:7
+msgid "Custom body, color in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:11
+msgid "Primary Color All Theme"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:12
+msgid "Custom primary color all theme"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:17
+msgid "Custom General Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:18
+msgid "Custom general color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_styling.php:41
+msgid "Select Primary Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:7
+msgid "WD - Woocommerce Config"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:8
+msgid "Theme Sidebar Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:12
+msgid "Product Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:13
+msgid "General Product Config"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:18
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:164
+msgid "Product Visual"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:19
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:168
+msgid "Setting Product Visual Effect"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:24
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:236
+msgid "Archive Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:25
+msgid "Custom archive product page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:30
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:42
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:302
+msgid "Single Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:31
+msgid "Custom single product page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:42
+msgid "Page Cart"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:43
+msgid "Custom page cart product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:67
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:22
+msgid "Display Buttons"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:68
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:23
+msgid "Show/Hide Add To Cart, Compare, Wishlist button on your site"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:84
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:42
+msgid "Button Position"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:85
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:43
+msgid "Position of the buttons: add to cart, compare, wishlist on shop loop"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:101
+msgid "Wishlist Button Default"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:102
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:54
+msgid ""
+"In some cases, the layout will have surplus wishlist buttons on single "
+"product page. Disable them to avoid errors."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:117
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:64
+msgid "Compare Button Default"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:118
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:65
+msgid ""
+"In some cases, the layout will have surplus compare buttons on single "
+"product page. Disable them to avoid errors."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:134
+msgid "Show Title Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:135
+msgid "Show/Hide title product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:151
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:93
+msgid "Number Title Word"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:155
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:95
+msgid "Set -1 to display the full title."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:164
+msgid "Show Description Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:165
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:104
+msgid ""
+"Hide Product Description may not work with some cases: list view mode in the "
+"shop page, shortcode single product detail..."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:181
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:113
+msgid "Number Description Word"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:185
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:115
+msgid "Set -1 to display the full description."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:194
+msgid "Show Rating Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:195
+msgid "Show/Hide rating product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:210
+msgid "Show Price Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:211
+msgid "Show/Hide price product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:227
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:143
+msgid "Price Decimals"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:228
+msgid "Show/Hide price decimal"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:245
+msgid "Show Meta Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:246
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:155
+msgid "Show/Hide sale/featured product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:265
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:173
+msgid "Popup Add To Cart"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:266
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:174
+msgid ""
+"Enable / Disable popup display mini cart info after add to cart with ajax."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:283
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:217
+msgid "Hover Change Thumbnail"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:284
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:218
+msgid ""
+"Enable / Disable thumbnail change effect when hover product image. Effects "
+"disabled on mobile devices."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:301
+msgid "Select Style Hover Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:357
+msgid "Select the position"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:372
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:351
+msgid "Thumbnail Number"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:376
+msgid ""
+"The maximum number of thumbnails appears on the slider thumbnail single "
+"product."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:385
+msgid "Show Recent Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:400
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:415
+msgid "Upsell Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:415
+msgid "Full Content Detail"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:419
+msgid "If you want full width detail, you must select layout the full width"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:432
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:515
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:571
+msgid "Custom Shortcode"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:436
+msgid ""
+"Custom content will appear below the Product Summary section. You can create "
+"a shortcode from the new page creation interface."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:487
+msgid "Number Product Of Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:498
+msgid "Columns Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:519
+msgid ""
+"Custom content will appear below the content of Archive Product page. You "
+"can create a shortcode from the new page creation interface."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:575
+msgid ""
+"Custom content will appear below the content of the page use Woocommerce "
+"Template. You can create a shortcode from the new page creation interface."
+msgstr ""
+
+#: framework/wpdance/supports/theme_customize/parts/wd_customize_woocommerce.php:585
+msgid "Payment Method"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:3
+msgid "Basic Fields"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:5
+msgid "These are really basic fields!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:12
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:30
+msgid "Checkbox Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:13
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:31
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:39
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:58
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:66
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:83
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:97
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:904
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:918
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1003
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1025
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1050
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1083
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1092
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1100
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1109
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1117
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1126
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1134
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1143
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1151
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1160
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1178
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1187
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1195
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1204
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1212
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1220
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1236
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1281
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1530
+msgid "No validation can be done on this field type"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:14
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:32
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:40
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:59
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:67
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:84
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:98
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:114
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:128
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:228
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:369
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:409
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:434
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:501
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:519
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:649
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:905
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:919
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1004
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1026
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1051
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1084
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1093
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1101
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1110
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1118
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1127
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1135
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1144
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1152
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1161
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1171
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1179
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1188
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1196
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1205
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1221
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1282
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1531
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1645
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1655
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1664
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1671
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1680
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1689
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1698
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1720
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1757
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1766
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1775
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1793
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:21
+msgid "Checkbox"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:25
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:77
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:107
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:146
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:186
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:201
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:220
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:246
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:279
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:337
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:360
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:379
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:400
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:425
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:485
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:491
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:535
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:571
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:641
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:657
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:710
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:739
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:752
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:847
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:897
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:936
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:995
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1228
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1323
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1357
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1421
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1441
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1523
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1539
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1587
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1619
+msgid "For full documentation on this field, visit: "
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:38
+msgid "Multi Checkbox Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:57
+msgid "Multi Checkbox Option (with menu data)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:65
+msgid "Multi Checkbox Option (with sidebar data)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:73
+msgid "Radio"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:82
+msgid "Radio Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:96
+msgid "Radio Option w/ Menu Data"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:104
+msgid "Sortable"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:112
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:126
+msgid "Sortable Text Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:113
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:127
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:14
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:509
+msgid "Define and reorder these however you want."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:145
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:537
+msgid "Text"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:154
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:174
+msgid "Text Field"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:155
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:163
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:175
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:227
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1594
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1603
+msgid "Subtitle"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:156
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:164
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:176
+msgid "Field Description"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:162
+msgid "Text Field w/ Hint"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:184
+msgid "Multi Text"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:192
+msgid "Multi Text Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:193
+msgid "Field subtitle"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:194
+msgid "Field Decription"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:218
+msgid "Textarea"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:226
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1773
+msgid "Textarea Option - HTML Validated Custom"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:236
+msgid "Editors"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:243
+msgid "WordPress Editor"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:252
+msgid "Editor"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:253
+msgid "Use any of the features of WordPress editor inside your panel!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:259
+msgid "Editor w/o Media Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:275
+msgid "Editor - Full Width"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:283
+msgid "ACE Editor"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:287
+msgid "For full documentation on the this field, visit: "
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:292
+msgid "CSS Code"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:293
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:302
+#: framework/wpdance/supports/theme_option/parts/options_custom.php:22
+msgid "JS Code"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:303
+#: framework/wpdance/supports/theme_option/parts/options_custom.php:23
+msgid "Paste your JS code here."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:313
+msgid "PHP Code"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:314
+msgid "Paste your PHP code here."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:328
+msgid "Color Selection"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:335
+msgid "Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:344
+msgid "Site Title Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:345
+msgid "Pick a title color for the theme (default: #000)."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:351
+msgid "Footer Background Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:352
+msgid "Pick a background color for the footer (default: #dd9933)."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:359
+msgid "Color Gradient"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:367
+msgid "Header Gradient Color Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:368
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:408
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:433
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:498
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:515
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:378
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:386
+msgid "Color RGBA"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:387
+msgid "Gives you the RGBA color."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:399
+msgid "Link Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:407
+msgid "Links Color Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:424
+msgid "Palette Colors"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:432
+msgid "Palette Color Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:464
+msgid "Design Fields"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:471
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:51
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:150
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:250
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:350
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:450
+#: framework/wpdance/supports/theme_option/parts/options_general.php:52
+msgid "Background"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:479
+msgid "Body Background"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:480
+msgid "Body background with image, color, etc."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:489
+msgid "Border"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:497
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:514
+msgid "Header Border Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:533
+msgid "Dimensions"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:543
+msgid "Dimensions (Width/Height) Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:544
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:557
+msgid "Allow your users to choose width, height, and/or unit."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:545
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:558
+msgid ""
+"You can enable or disable any piece of this field. Width, Height, or Units."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:556
+msgid "Dimensions (Width) Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:569
+msgid "Spacing"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:591
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:616
+msgid "Padding/Margin Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:592
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:617
+msgid "Allow your users to choose the spacing or margin they want."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:593
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:618
+msgid ""
+"You can enable or disable any piece of this field. Top, Right, Bottom, Left, "
+"or Units."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:631
+msgid "Media Uploads"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:639
+msgid "Gallery"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:647
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:648
+msgid ""
+"Create a new Gallery by selecting existing or uploading new images using the "
+"WordPress native uploader"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:655
+msgid "Media"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:664
+msgid "Media w/ URL"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:667
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:701
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:668
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:680
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:688
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:702
+msgid "Upload any media using the WordPress native uploader"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:678
+msgid "Media w/o URL"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:679
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:687
+msgid ""
+"This represents the minimalistic view. It does not have the preview box or "
+"the display URL in an input box. "
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:686
+msgid "Media No Preview"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:697
+msgid "Upload Anything - Disabled Mode"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:708
+msgid "Slides"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:716
+msgid "Slides Options"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:717
+msgid "Unlimited slides with drag and drop sortings."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:718
+msgid ""
+"This field will store all slides values into a multidimensional array to use "
+"into a foreach loop."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:720
+msgid "This is a title"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:721
+msgid "Description Here"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:722
+msgid "Give us a link!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:730
+msgid "Presentation Fields"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:737
+msgid "Divide"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:739
+msgid ""
+"The spacer to the section menu as seen to the left (after this section block)"
+" is the divide \"section\". Also the divider below is the divide \"field\"."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:750
+msgid "Info"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:758
+msgid "This is the info field, if you want to break sections up."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:764
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:771
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:779
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:787
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:796
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:803
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:811
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:820
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:829
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:838
+msgid "This is a title."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:765
+msgid ""
+"This is an info field with the <strong>info</strong> style applied. By "
+"default the <strong>normal</strong> style is applied."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:772
+msgid "This is an info field with the <strong>warning</strong> style applied."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:780
+msgid ""
+"This is an info field with the <strong>success</strong> style applied and an "
+"icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:788
+msgid ""
+"This is an info field with the <strong>critical</strong> style applied and "
+"an icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:797
+msgid ""
+"This is an info field with the <strong>custom</strong> style applied, color "
+"arg passed, and an icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:804
+msgid ""
+"This is an info non-notice field with the <strong>normal</strong> style "
+"applied."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:812
+msgid ""
+"This is an info non-notice field with the <strong>info</strong> style "
+"applied."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:821
+msgid ""
+"This is an info non-notice field with the <strong>warning</strong> style "
+"applied and an icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:830
+msgid ""
+"This is an info non-notice field with the <strong>success</strong> style "
+"applied and an icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:839
+msgid ""
+"This is an non-notice field with the <strong>critical</strong> style applied "
+"and an icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:845
+msgid "Section"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:853
+msgid "Section Example"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:854
+msgid "With the \"section\" field you can create indented option sections."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:860
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:866
+msgid "Field Title"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:861
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:867
+msgid "Field Subtitle"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:877
+msgid "And now you can add more fields below and outside of the indent."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:888
+msgid "Switch & Button Set"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:895
+msgid "Button Set"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:903
+msgid "Button Set Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:917
+msgid "Button Set, Multi Select"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:934
+msgid "Switch"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:943
+msgid "Switch On"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:944
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:951
+msgid "Look, it's on!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:950
+msgid "Switch Off"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:958
+msgid "Switch - Nested Children, Enable to show"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:959
+msgid "Look, it's on! Also hidden child elements!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:968
+msgid "Switch - This and the next switch required for patterns to show"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:969
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:978
+msgid "Also called a \"fold\" parent."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:970
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:979
+msgid ""
+"Items set with a fold to this ID will hide unless this is set to the "
+"appropriate value."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:977
+msgid "Switch2 - Enable the above switch and this one for patterns to show"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:987
+msgid "Select Fields"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:993
+msgid "Select"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1002
+msgid "Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1016
+msgid "Theme Stylesheet"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1017
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1024
+msgid "Select Option with optgroup"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1049
+msgid "Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1064
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1321
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1330
+msgid "Select Image"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1065
+msgid "A preview of the selected image will appear underneath the select box."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1076
+msgid "You can easily add a variety of data from WordPress."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1082
+msgid "Categories Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1091
+msgid "Categories Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1099
+msgid "Pages Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1108
+msgid "Pages Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1116
+msgid "Tags Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1125
+msgid "Tags Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1133
+msgid "Menus Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1142
+msgid "Menus Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1150
+msgid "Post Type Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1159
+msgid "Post Type Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1169
+msgid "Post Type Multi Select Option + Sortable"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1170
+msgid "This field also has sortable enabled!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1177
+msgid "Posts Select Option2"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1186
+msgid "Posts Multi Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1194
+msgid "User Role Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1203
+msgid "Capabilities Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1211
+msgid "Elusive Icons Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1213
+msgid "Here's a list of all the elusive icons by name and icon."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1219
+msgid "Users Select Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1226
+msgid "Image Select"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1235
+msgid "Images Option for Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1237
+msgid ""
+"This uses some of the built in images, you can use them for layout options."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1271
+msgid "Images Option (with tiles => true)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1272
+msgid "Select a background pattern."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1280
+msgid "Images Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1297
+msgid "Preset"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1298
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1300
+msgid ""
+"This allows you to set a json string or array to override multiple "
+"preferences in your theme."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1348
+msgid "Slider / Spinner"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1355
+msgid "Slider"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1363
+msgid "Slider Example 1"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1364
+msgid "This slider displays the value as a label."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1365
+msgid "Slider description. Min: 1, max: 500, step: 1, default value: 250"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1375
+msgid "Slider Example 2 with Steps (5)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1376
+msgid "This example displays the value in a text box"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1377
+msgid "Slider description. Min: 0, max: 300, step: 5, default value: 75"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1387
+msgid "Slider Example 3 with two sliders"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1388
+msgid "This example displays the values in select boxes"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1389
+msgid ""
+"Slider description. Min: 0, max: 500, step: 5, slider 1 default value: 100, "
+"slider 2 default value: 300"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1403
+msgid "Slider Example 4 with float values"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1404
+msgid "This example displays float values"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1405
+msgid "Slider description. Min: 0, max: 1, step: .1, default value: .5"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1419
+msgid "Spinner"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1427
+msgid "JQuery UI Spinner Example 1"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1428
+msgid ""
+"JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1439
+msgid "Typography"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1447
+msgid "Body Font"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1448
+msgid "Specify the body font properties."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1460
+msgid "Typography h2.site-description"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1482
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1497
+msgid "Additional Types"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1521
+msgid "Date"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1529
+msgid "Date Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1537
+msgid "Sorter"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1585
+msgid "Raw"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1593
+msgid "Standard Raw Field"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1595
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1604
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:799
+msgid "Description"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1602
+msgid "Raw Field <code>full_width</code> False"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1611
+msgid "Advanced Features"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1617
+msgid "Callback"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1625
+msgid "Custom Field Callback"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1626
+msgid "This is a completely unique field type"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1627
+msgid ""
+"This is created with a callback function, so anything goes in this field. "
+"Make sure to define the function though."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1635
+msgid "Field Validation"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1637
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1803
+msgid "For full documentation on validation, visit: "
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1643
+msgid "Text Option - Email Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1644
+msgid ""
+"This is a little space under the Field Title in the Options table, "
+"additional info is good in here."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1653
+msgid "Text Option with Data Attributes"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1654
+msgid ""
+"You can also pass an options array if you want. Set the default to whatever "
+"you like."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1661
+msgid "Multi Text Option - Color Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1663
+msgid ""
+"If you enter an invalid color it will be removed. Try using the text "
+"\"blue\" as a color.  ;)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1669
+msgid "Text Option - URL Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1670
+msgid "This must be a URL."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1678
+msgid "Text Option - Numeric Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1679
+msgid "This must be numeric."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1687
+msgid "Text Option - Comma Numeric Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1688
+msgid "This must be a comma separated string of numerical values."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1696
+msgid "Text Option - No Special Chars Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1697
+msgid "This must be a alpha numeric only."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1705
+msgid "Text Option - Str Replace Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1706
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1719
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1732
+msgid "You decide."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1707
+msgid "This field's default value was changed by a filter hook!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1718
+msgid "Text Option - Preg Replace Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1731
+msgid "Text Option - Custom Callback Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1733
+msgid ""
+"Enter <code>1</code> and click <strong>Save Changes</strong> for an error "
+"message, or enter <code>2</code> and click <strong>Save Changes</strong> for "
+"a warning message."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1755
+msgid "Textarea Option - No HTML Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1756
+msgid "All HTML will be stripped"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1764
+msgid "Textarea Option - HTML Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1765
+msgid "HTML Allowed (wp_kses)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1774
+msgid "Custom HTML Allowed (wp_kses)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1791
+msgid "Textarea Option - JS Validated"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1792
+msgid "JS will be escaped"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1801
+msgid "Field Required / Linking"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1907
+msgid "WPML Integration"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1908
+msgid ""
+"These fields can be fully translated by WPML (WordPress Multi-Language). "
+"This serves as an example for you to implement. For extra details look at "
+"our <a href=\"//docs.reduxframework.com/core/advanced/wpml-integration/\" "
+"target=\"_blank\">WPML Implementation</a> documentation."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1915
+msgid "WPML Text"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1916
+msgid "This string can be translated via WPML."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1921
+msgid "WPML Multi Checkbox"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1922
+msgid "You can literally translate the values via key."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1935
+msgid "Customizer Only"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1936
+msgid ""
+"<p class=\"description\">This Section should be visible only in "
+"Customizer</p>"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1942
+msgid "Customizer Only Option"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1943
+msgid "The subtitle is NOT visible in customizer"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/demo_data.php:1944
+msgid "The field desc is NOT visible in customizer."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:3
+msgid "Accessibility"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:11
+msgid "Breadcrumb"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:21
+#: framework/wpdance/supports/theme_option/parts/options_general.php:3
+msgid "General"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:30
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:128
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:228
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:328
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:428
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:187
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:236
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:341
+#: framework/wpdance/supports/theme_option/parts/options_page.php:20
+#: framework/wpdance/supports/theme_option/parts/options_page.php:174
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:245
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:311
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:434
+msgid "Select The Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:42
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:75
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:141
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:174
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:241
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:274
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:341
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:374
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:441
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:474
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:902
+#: framework/wpdance/supports/theme_option/parts/options_page.php:70
+#: framework/wpdance/supports/theme_option/parts/options_page.php:215
+#, php-format
+msgid "(Default: %s)."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:110
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:178
+msgid "Blog Archive"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:111
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:411
+msgid "Disable this if you want to use the settings in the General section"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:119
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:218
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:319
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:419
+msgid "Customize"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:209
+msgid "Product Archive"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:210
+msgid ""
+"Use for Product Taxonomy Archive/Product Category. Disable this if you want "
+"to use the settings in the General section"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:310
+msgid "Woocommerce Special Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:311
+msgid ""
+"Use for Cart/Checkout page. Disable this if you want to use the settings in "
+"the General section"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:410
+#: framework/wpdance/supports/theme_option/parts/options_page.php:165
+msgid "Search Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:509
+msgid "Back To Top"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:511
+msgid "This feature will not show on mobile devices!"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:519
+msgid "Enable/Disable scroll button in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:566
+msgid "Border Color"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:606
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:771
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:854
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:191
+msgid "Width"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:624
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:872
+msgid "Right"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:671
+msgid "Email Subscriber Popup"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:681
+msgid "Enable/Disable email subscriber popup in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:689
+msgid "Only Home"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:690
+msgid "Enable/Disable email subscriber popup only on homepage."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:700
+msgid "Mobile"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:701
+msgid "Enable/Disable email subscriber popup on mobile devices."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:710
+msgid "Delay Time"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:711
+msgid "Unit: seconds (s)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:712
+msgid "Time delay after page load to show popup."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:719
+msgid "Session expire"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:720
+msgid "Unit: minutes (m)"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:721
+msgid ""
+"Time does not allow popup display on page (for \"Dont show this again\" "
+"option). Set -1 to forever."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:729
+msgid "Banner"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:739
+msgid "Source"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:752
+msgid "Custom HTML / Shortcode"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:753
+#: framework/wpdance/supports/theme_option/parts/options_page.php:158
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:295
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:381
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:465
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:483
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:491
+msgid "You can create a shortcode from the new page creation interface."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:762
+msgid "Feedburner ID"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:772
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:781
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:192
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:201
+msgid "Unit: Pixel"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:790
+msgid "Title"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:808
+msgid "Placeholder"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:817
+msgid "Button Text"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:827
+msgid "Facebook Chatbox"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:837
+msgid "Enable/Disable facebook chatbox in website."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:845
+msgid "Fanpage URL"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:846
+msgid "Enter your fanpage facebook url..."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:890
+msgid "Default Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:920
+msgid "Text Footer"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:922
+msgid "Text displays when the chatbox window is hidden"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:929
+msgid "Link Caption"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_accessibility.php:938
+msgid "Link URL"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:3
+msgid "Blog Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:20
+msgid "Blog Title"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:30
+msgid "Blog Thumbnail"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:40
+msgid "Blog Thumbnail Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:78
+msgid "Blog Date"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:88
+msgid "Blog Meta"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:98
+msgid "Blog Meta Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:107
+msgid "Blog Author"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:118
+msgid "Number Comment"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:129
+msgid "Blog Category"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:147
+msgid "Blog Excerpt"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:166
+msgid "Readmore Button"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:197
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:246
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:351
+#: framework/wpdance/supports/theme_option/parts/options_page.php:30
+#: framework/wpdance/supports/theme_option/parts/options_page.php:184
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:255
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:321
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:444
+msgid "Select Left Sidebar"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:207
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:256
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:361
+#: framework/wpdance/supports/theme_option/parts/options_page.php:40
+#: framework/wpdance/supports/theme_option/parts/options_page.php:194
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:265
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:331
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:454
+msgid "Select Right Sidebar"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:227
+msgid "Blog Single"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:296
+msgid "Recent Blog Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:316
+msgid "Number of columns displayed with slider"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_blog.php:332
+msgid "Blog Default Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_color.php:3
+msgid "Color Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:13
+msgid "Comment Form"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:23
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:508
+msgid "Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:33
+msgid "Facebook Comment Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:43
+msgid "Show facebook comment form on product details page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:51
+msgid "Number Comment Display"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:59
+msgid "Comment Mode"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_comments.php:60
+msgid ""
+"Select \"Multi Domain\" if you intend to change the domain and want to keep "
+"the old comments."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_custom.php:3
+msgid "Custom Script"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_font.php:3
+msgid "Font Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:3
+msgid "Footer"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:13
+#: framework/wpdance/supports/theme_option/parts/options_header.php:13
+msgid "Select The Template"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:14
+#: framework/wpdance/supports/theme_option/parts/options_header.php:14
+msgid "Dont select to use default template"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:27
+msgid "Footer Default Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:28
+msgid "The custom sections below are only visible to the default footer."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:38
+#: framework/wpdance/supports/theme_option/parts/options_header.php:48
+msgid "Custom Logo"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:41
+msgid ""
+"If no image is selected, the footer will use Logo in the general settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_footer.php:49
+msgid "Copyright Text"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:54
+msgid "Customize the background image for the body tag."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:61
+msgid "Display Background Image"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:72
+msgid "Background Body"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:86
+msgid "Facebook API"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:95
+msgid "User ID"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:97
+msgid "Enter the facebook id of the administrator"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_general.php:103
+msgid "App ID"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_header.php:3
+msgid "Header"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_header.php:26
+msgid "Header Default Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_header.php:27
+msgid ""
+"The custom sections below are only visible to the default header, header "
+"mobile."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_header.php:36
+msgid "Title/Logo"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_header.php:51
+msgid ""
+"If no image is selected, the header will use Logo in the general settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_header.php:59
+msgid "Select Menu Locations"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:3
+msgid "Page Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:11
+msgid "Default Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:50
+msgid "404 Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:59
+#: framework/wpdance/supports/theme_option/parts/options_page.php:204
+msgid "Background Style"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:119
+msgid "Button Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:157
+msgid "HTML/Shortcode will display below 404 page content."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:256
+msgid "Show suggested results with keywords."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_page.php:266
+msgid "Load content with ajax."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:3
+msgid "Replace URL"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:5
+msgid ""
+"Search for and replace the path of all the photo options in the Theme Option "
+"panel and database.<br/> If you do not get the wrong path after the domain "
+"name conversion, do not worry about this part."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:12
+msgid "Old URL String"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:13
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:22
+msgid "Enter URL without '/' at the end"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:20
+msgid "New URL String"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:21
+msgid "Leave blank if you want to use Site URL"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_replace_url.php:23
+#, php-format
+msgid "Site URL: <strong>%s</strong>."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:4
+msgid "WooCommerce"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:12
+msgid "Product layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:32
+msgid "Group Button Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:53
+msgid "Wishtlist Button Default"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:83
+msgid "Product Title"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:103
+msgid "Product Description"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:123
+msgid "Product Rating"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:133
+msgid "Product Price"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:154
+msgid "Product Meta"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:182
+msgid "Popup Settings"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:226
+msgid "Thumbnail Hover Style"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:275
+msgid "Posts Per Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:277
+msgid "Number products display on each page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:294
+msgid "HTML/Shortcode will be displayed at the bottom of the product archive."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:341
+msgid "Position Thumbnail"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:342
+msgid "The position of the thumbnail slider compared to the large thumbnail."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:352
+msgid "The maximum number of thumbnails on the slider."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:361
+msgid "Product Summary Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:362
+msgid ""
+"Custom content layout for single product template. Define and reorder these "
+"however you want."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:370
+msgid "Product Summary Custom Content"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:371
+msgid "Custom content will appear below the Product Summary section"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:380
+msgid "HTML/Shortcode will display after single product summary."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:395
+msgid "Fullwidth Layout"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:396
+msgid "Turn on it if you want fullwidth detail"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:405
+msgid "Recent Product"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:425
+msgid "Woo Page Template"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:429
+msgid "Setting for pages use layout WooCommerce Template"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:464
+msgid ""
+"HTML/Shortcode will be displayed at the bottom of the page use Woocommerce "
+"Template."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:472
+msgid "Cart Page"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:481
+msgid "Payment Mothod"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:482
+msgid "HTML/Shortcode will display on the left Cart Total."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:490
+msgid "HTML/Shortcode will display below cart content."
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:498
+msgid "Mini Cart"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:517
+msgid "Select Cart Icon"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:528
+msgid "Sale Flash"
+msgstr ""
+
+#: framework/wpdance/supports/theme_option/parts/options_woocommerce.php:545
+msgid "Percent Sale"
+msgstr ""
+
+#. Name of the theme
+msgid "LaParis"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"our default theme lets you create a strongest website with many features."
+msgstr ""
+
+#. URI of the theme
+msgid "http://wpdance.com"
+msgstr ""
+
+#. Author of the theme
+msgid "tvlgiao"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://wpdance.com/services.html"
+msgstr ""

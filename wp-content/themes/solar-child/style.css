@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*
+ Theme Name:   Solar Child
+ Theme URI:    http://wpdance.com
+ Description:  Solar ChildTheme
+ Author:       tvlgiao
+ Author URI:   http://wpdance.com/services.html
+ Template:     solar
+ Version:      1.0.1
+ License:      GNU General Public License version 1
+ License URI:  license.txt
+ Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ Text Domain:  solar
+*/
+@import url("../solar/style.css");

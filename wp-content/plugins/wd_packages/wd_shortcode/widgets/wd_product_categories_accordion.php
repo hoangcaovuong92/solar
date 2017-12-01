@@ -5,9 +5,9 @@
 if(!class_exists('tvlgiao_wpdance_widget_product_categories_accordion')){
 	class tvlgiao_wpdance_widget_product_categories_accordion extends WP_Widget {
 		function __construct() {
-			$widget_ops 		= array('classname' => 'wd_widget_product_categories', 'description' => __('Display Woocommerce Product Categories','wpdance'));
+			$widget_ops 		= array('classname' => 'wd_widget_product_categories_accordion', 'description' => __('Display Woocommerce Product Categories list with Accordion','wpdance'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('wd_product_categories', __('WD - Product Categories','wpdance'), $widget_ops);
+			parent::__construct('wd_product_categories', __('WD - Product Categories Accordion','wpdance'), $widget_ops);
 		}
 
 		function widget( $args, $instance ) {

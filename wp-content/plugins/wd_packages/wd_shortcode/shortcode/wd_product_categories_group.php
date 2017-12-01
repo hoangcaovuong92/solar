@@ -35,7 +35,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 				</ul><!-- .categories-group -->
 			</div><!--.categories-group-wrapper-->
 			<?php
-			echo ob_get_clean();
+			return ob_get_clean();
 		}
 	}
 	add_shortcode( 'tvlgiao_wpdance_categories_group', 'tvlgiao_wpdance_categories_group' );

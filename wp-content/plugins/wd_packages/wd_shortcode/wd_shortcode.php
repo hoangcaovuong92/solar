@@ -177,7 +177,6 @@ if (!class_exists('WD_Shortcode')) {
 				'quote',
 				'information',
 		 		'recent_comment',
-		 		'testimonials',
 		 		'pricing_table',
 	 		);
 		}
@@ -292,6 +291,7 @@ if (!class_exists('WD_Shortcode')) {
 				wp_enqueue_style('jquery-ui-core');
 				wp_enqueue_script('jquery-ui-core');
 			}
+			wp_enqueue_script( 'jquery-ui-datepicker');
 		}		
 
 		/******************************** AJAX ***********************************/

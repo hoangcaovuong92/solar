@@ -75,6 +75,8 @@ if (!class_exists('Tvlgiao_Wpdance_GeneralTheme')) {
 			define('TVLGIAO_WPDANCE_THEME_FRAMEWORK_URI'	, TVLGIAO_WPDANCE_THEME_URI 			. '/framework');
 			//Folder in Framework
 			define('TVLGIAO_WPDANCE_THEME_FUNCTIONS'		, TVLGIAO_WPDANCE_THEME_FRAMEWORK 		. '/functions');	
+			define('TVLGIAO_WPDANCE_THEME_FUNCTIONS_URI'	, TVLGIAO_WPDANCE_THEME_FRAMEWORK_URI 	. '/functions');
+				
 			define('TVLGIAO_WPDANCE_THEME_PLUGIN'			, TVLGIAO_WPDANCE_THEME_FRAMEWORK 		. '/plugins');
 			define('TVLGIAO_WPDANCE_THEME_SHORTCODES'		, TVLGIAO_WPDANCE_THEME_FRAMEWORK 		. '/shortcodes');
 			define('TVLGIAO_WPDANCE_THEME_METABOX'			, TVLGIAO_WPDANCE_THEME_FRAMEWORK 		. '/metabox');
@@ -171,6 +173,7 @@ if (!class_exists('Tvlgiao_Wpdance_GeneralTheme')) {
 		protected function init_arr_functions(){
 			$this->arr_functions = array(
 				'class/class-tgm-plugin-activation',
+				'class/post_like/post-like',
 				'wd_main',
 				'wd_html_block',
 				'wd_set_default',

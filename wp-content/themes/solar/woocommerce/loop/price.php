@@ -23,6 +23,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 ?>
 <div class="wd-shop-loop-price">
+	<?php 
+	/**
+	 * tvlgiao_wpdance_before_shop_loop_price hook
+	 *
+	 * @hooked woocommerce_template_loop_rating - 10
+	 * @hooked tvlgiao_wpdance_shop_loop_product_attribute_color - 15
+	 * @hooked tvlgiao_wpdance_offer_shop - 20
+	 */
+	do_action('tvlgiao_wpdance_before_shop_loop_price') ?>
 	<span itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer" class="price">
 		<?php if ( $product->get_price() ) : ?>
 			<?php echo $product->get_price_html(); ?>
@@ -31,13 +40,6 @@ global $product;
 		<?php endif; ?>
 	</span>
 	<?php 
-	/**
-	 * tvlgiao_wpdance_after_shop_loop_price hook
-	 *
-	 * @hooked woocommerce_template_loop_rating - 10
-	 * @hooked tvlgiao_wpdance_shop_loop_product_attribute_color - 15
-	 * @hooked tvlgiao_wpdance_offer_shop - 20
-	 */
 	do_action('tvlgiao_wpdance_after_shop_loop_price') ?>
 </div>
 

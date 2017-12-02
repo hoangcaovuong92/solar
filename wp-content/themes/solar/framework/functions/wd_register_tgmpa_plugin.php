@@ -52,7 +52,7 @@ if(!function_exists ('tvlgiao_wpdance_register_tgmpa_plugin')){
                 'slug'                  => 'woocommerce', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
             ),
-            array(
+           /* array(
                 'name'                  => esc_html__('GTranslate', 'laparis'), // The plugin name
                 'slug'                  => 'gtranslate', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
@@ -61,13 +61,13 @@ if(!function_exists ('tvlgiao_wpdance_register_tgmpa_plugin')){
                 'name'                  => esc_html__('Woocommerce Currency Switcher', 'laparis'), // The plugin name
                 'slug'                  => 'woocommerce-currency-switcher', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
-            ),
+            ),*/
             array(
                 'name'                  => esc_html__('Contact Form 7', 'laparis'), // The plugin name
                 'slug'                  => 'contact-form-7', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
             ),
-            array(
+            /*array(
                 'name'                  => esc_html__('YITH WooCommerce Wishlist', 'laparis'), // The plugin name
                 'slug'                  => 'yith-woocommerce-wishlist', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
@@ -81,7 +81,7 @@ if(!function_exists ('tvlgiao_wpdance_register_tgmpa_plugin')){
                 'name'                  => esc_html__('Testimonials by WooThemes', 'laparis'), // The plugin name
                 'slug'                  => 'testimonials-by-woothemes', // The plugin slug (typically the folder name)
                 'required'              => true, // If false, the plugin is only 'recommended' instead of required
-            ),
+            ),*/
             array(
                 'name'                  => esc_html__('Regenerate Thumbnails', 'laparis'), // The plugin name
                 'slug'                  => 'regenerate-thumbnails', // The plugin slug (typically the folder name)

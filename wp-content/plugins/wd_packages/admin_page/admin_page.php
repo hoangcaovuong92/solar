@@ -19,12 +19,13 @@ if (!class_exists('WD_Packages_Admin_Page')) {
 			'wd_theme_guide' 				=> 'Theme Guide',
 			'wd_package_shortcode' 			=> 'Shortcodes',
 			'wd_package_widget' 			=> 'Widgets',
-			'wd_package_portfolio' 			=> 'Portfolio',
+			/*'wd_package_portfolio' 			=> 'Portfolio',
 			'wd_package_team' 				=> 'Team Member',
-			'wd_package_quickshop' 			=> 'Quickshop (Woo)',
+			'wd_package_quickshop' 			=> 'Quickshop (Woo)',*/
 			'wd_package_shop_by_color' 		=> 'Shop By Color (Woo)',
 			'wd_package_faq_post_type' 		=> 'FAQs (Post Type)',
 			'wd_package_feature_post_type' 	=> 'Feature (Post Type)',
+			'wd_package_testimonials' 		=> 'Testimonials',
 			/*'wd_package_smooth_croll' 		=> 'Smooth Mouse Scroll (JS)',*/
 		);
 

@@ -24,10 +24,13 @@ if (!class_exists('WD_Packages')) {
 
 		protected $arr_packages = array(
 				'wd_shortcode' 				=> '1',
-				'wd_portfolio' 				=> '1',
+				/*'wd_portfolio' 				=> '1',
 				'wd_team' 					=> '1',
-				'wd_quickshop' 				=> '1',
+				'wd_quickshop' 				=> '1',*/
 				'wd_shop_by_color' 			=> '1',
+				'wd_testimonials' 			=> '1',
+				'wd_product_field'			=> '1',
+				'wd_project'				=> '1',
 			);
 
 		protected $arr_js = array(
@@ -60,14 +63,17 @@ if (!class_exists('WD_Packages')) {
 				$parkages = get_option('wd_packages');
 				if (!empty($parkages['verify_submit'])) {
 					$this->arr_packages = array(
-						'wd_shortcode' 				=> (!empty($parkages['wd_package_shortcode'])) ? $parkages['wd_package_shortcode'] : '',
-						'wd_portfolio' 				=> (!empty($parkages['wd_package_portfolio'])) ? $parkages['wd_package_portfolio'] : '',
-						'wd_team' 					=> (!empty($parkages['wd_package_team'])) ? $parkages['wd_package_team'] : '',
-						'wd_quickshop' 				=> (!empty($parkages['wd_package_quickshop'])) ? $parkages['wd_package_quickshop'] : '',
-						'wd_shop_by_color' 			=> (!empty($parkages['wd_package_shop_by_color'])) ? $parkages['wd_package_shop_by_color'] : '',
+						'wd_shortcode' 				=> (!empty($parkages['wd_package_shortcode'])) ? $parkages['wd_package_shortcode'] : '1',
+						/*'wd_portfolio' 				=> (!empty($parkages['wd_package_portfolio'])) ? $parkages['wd_package_portfolio'] : '1',
+						'wd_team' 					=> (!empty($parkages['wd_package_team'])) ? $parkages['wd_package_team'] : '1',
+						'wd_quickshop' 				=> (!empty($parkages['wd_package_quickshop'])) ? $parkages['wd_package_quickshop'] : '1',*/
+						'wd_shop_by_color' 			=> (!empty($parkages['wd_package_shop_by_color'])) ? $parkages['wd_package_shop_by_color'] : '1',
+						'wd_testimonials' 			=> (!empty($parkages['wd_package_testimonials'])) ? $parkages['wd_package_testimonials'] : '1',
+						'wd_product_field' 			=> (!empty($parkages['wd_package_product_field'])) ? $parkages['wd_package_product_field'] : '1',
+						'wd_project' 				=> (!empty($parkages['wd_package_project'])) ? $parkages['wd_package_project'] : '1',
 					);
 					$this->arr_js 		= array(
-						'smooth_scroll' 	=> (!empty($parkages['wd_package_smooth_croll'])) ? $parkages['wd_package_smooth_croll'] : '',
+						'smooth_scroll' 	=> (!empty($parkages['wd_package_smooth_croll'])) ? $parkages['wd_package_smooth_croll'] : '1',
 					);
 				}
 			}

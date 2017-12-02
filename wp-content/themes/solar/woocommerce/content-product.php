@@ -55,6 +55,15 @@ if (isset($custom_width_class) && $custom_width_class != '') {
 			 */
 			do_action( 'tvlgiao_wpdance_shop_loop_link_open' );
 		?>
+		<?php 
+			/**
+			 * woocommerce_after_shop_loop_item_title hook.
+			 *
+			 * @hooked woocommerce_template_loop_rating - 5
+			 * @hooked woocommerce_template_loop_price - 10
+			 */
+			do_action( 'woocommerce_after_shop_loop_item_title' );
+		?>
 		<div class="wd-thumbnail-product">
 			<?php
 				/**
@@ -128,15 +137,6 @@ if (isset($custom_width_class) && $custom_width_class != '') {
 				 * @hooked woocommerce_template_loop_product_link_close - 5
 				 */
 				do_action( 'tvlgiao_wpdance_shop_loop_link_close' );
-
-				/**
-				 * woocommerce_after_shop_loop_item_title hook.
-				 *
-				 * @hooked woocommerce_template_loop_price - 5
-				 * @hooked woocommerce_template_loop_rating - 10
-				 */
-				do_action( 'woocommerce_after_shop_loop_item_title' );
-			
 				/**
 				 * woocommerce_after_shop_loop_item hook.
 				 *

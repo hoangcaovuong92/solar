@@ -5,22 +5,20 @@
 if(!function_exists('tvlgiao_wpdance_special_blog_function')){
 	function tvlgiao_wpdance_special_blog_function($atts,$content){
 		extract(shortcode_atts(array(
+			'layout'				=> 'title, meta, excerpt, readmore',
+			'style'					=> 'grid',
+			'columns'				=> 3,
 			'title'					=> '',
 			'number'				=> 6,
 			'data_post'				=> 'recent-post',
-			'columns'				=> 3,
-			'style'					=> 'grid',
-			'show_title' 			=> '1',
-			'show_thumbnail' 		=> '1',
+			'show_thumbnail'  		=> '1',
 			'show_placeholder_image'  => '0',
-			'show_meta'				=> '0',
+			'image_size'  			=> 'post-thumbnail',
+			'show_date'				=> '1',
 			'show_author'			=> '1',
 			'show_category'			=> '1',
 			'show_number_comments'	=> '1',
-			'show_date'				=> '1',
-			'show_excerpt'			=> '1',
 			'number_excerpt'		=> '10',
-			'show_readmore'			=> '0',
 			'is_slider'				=> '1',
 			'show_nav'				=> '1',
 			'auto_play'				=> '1',
@@ -28,11 +26,10 @@ if(!function_exists('tvlgiao_wpdance_special_blog_function')){
 			'class'					=> ''
 		),$atts));
 
-		$grid_list_class 	= "wd-blog-grid-style";
-		if($style == 'list'){
-			$grid_list_class = "wd-blog-list-style";
-		}
-		$show_detail = 0;
+		$grid_list_class 	= ($style == 'grid') ? "wd-blog-grid-style" : "wd-blog-list-style";
+		$columns_class 		= ($is_slider == '0') ? 'wd-columns-'.$columns : '';
+		$layout 			= ($layout) ? explode(',', $layout) : array();
+
 		$args = array(
 			'post_type'				=> 'post',
 			'ignore_sticky_posts'	=> 1,
@@ -55,7 +52,7 @@ if(!function_exists('tvlgiao_wpdance_special_blog_function')){
 			}
 			$random_id = 'wd-special-post'.mt_rand();
 			?>
-			<div id="<?php echo esc_attr( $random_id ); ?>" class="wd-special-post-wrapper <?php echo ($show_nav)?'has_navi':''; ?> <?php echo esc_attr( $grid_list_class ); ?> <?php echo esc_attr( $class ); ?>">
+			<div id="<?php echo esc_attr( $random_id ); ?>" class="wd-special-post-wrapper <?php echo ($show_nav)?'has_navi':''; ?> <?php echo esc_attr( $grid_list_class ); ?> <?php echo esc_attr( $columns_class ); ?> <?php echo esc_attr( $class ); ?>">
 				<?php if($title != "") : ?>
 					<div class="wd-title wd-special-post-title">
 						<h2><?php echo esc_attr( $title ); ?></h2>
@@ -73,35 +70,27 @@ if(!function_exists('tvlgiao_wpdance_special_blog_function')){
 						<?php } ?>
 								<li> 
 									<div class="wd-wrap-content-blog"> 
-										<!-- Post type: Show Thumbnail -->
-										<?php echo tvlgiao_wpdance_get_post_thumbnail_html( 'post-thumbnail', $show_thumbnail, 1, $show_placeholder_image ); ?>
+										<?php echo tvlgiao_wpdance_get_post_thumbnail_html( $image_size, $show_thumbnail, 1, $show_placeholder_image ); ?>
 										<div class="wd-info-post">
-											<div class="wd-meta-post">
-												<!-- Sticky Post -->
-												<?php tvlgiao_wpdance_display_post_sticky(); ?>
-												<!-- Show Post Date -->
-												<?php tvlgiao_wpdance_display_post_date($show_date); ?>
-												
-												<?php if ($show_meta): ?>
+											<?php foreach ($layout as $layout_part){
+												$layout_part = trim($layout_part);
+												if ($layout_part == 'title') {
+													tvlgiao_wpdance_display_post_title(true);
+												}elseif ($layout_part == 'meta') {
+													tvlgiao_wpdance_display_post_sticky();
+													tvlgiao_wpdance_display_post_date($show_date); ?>
 													<div class="wd-meta-post-wrap">
-														<!-- Show Post Author -->
 														<?php tvlgiao_wpdance_display_post_author($show_author); ?>
-														<!-- Show Post Category -->
 														<?php tvlgiao_wpdance_display_post_category($show_category); ?>
-														<!-- Show Number Comment -->
 														<?php tvlgiao_wpdance_display_post_number_comment($show_number_comments); ?>
 													</div>
-												<?php endif ?>
-												
-											</div>
-											<!-- Show Post Title -->
-											<?php tvlgiao_wpdance_display_post_title($show_title); ?>
-											<?php if ($show_excerpt): ?>
-												<!-- Show Post Excerpt -->
-												<?php tvlgiao_wpdance_display_post_excerpt($show_excerpt, $number_excerpt); ?>
-											<?php endif ?>
-											<!-- Show Readmore Button -->
-											<?php tvlgiao_wpdance_display_post_readmore($show_readmore); ?>
+												<?php
+												}elseif ($layout_part == 'excerpt') {
+													tvlgiao_wpdance_display_post_excerpt(true, $number_excerpt);
+												}elseif ($layout_part == 'readmore') {
+													tvlgiao_wpdance_display_post_readmore(true);
+												}
+											} ?>
 										</div>
 									</div>
 								</li>

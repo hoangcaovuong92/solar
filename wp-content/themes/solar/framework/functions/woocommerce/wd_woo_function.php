@@ -538,7 +538,7 @@ if(!function_exists ('tvlgiao_wpdance_template_single_sku')){
 	function tvlgiao_wpdance_template_single_sku(){
 		global $product, $post;
 		if (trim($product->get_sku())) {
-			$sku_label = esc_html__("Sku:",'laparis');
+			$sku_label = esc_html__("",'laparis');
 			echo "<p class='wd_product_sku product_meta'>" . $sku_label . " <span class=\"product_sku sku\" itemprop=\"mpn\">" . esc_attr($product->get_sku()) . "</span></p>";
 		}
 	}

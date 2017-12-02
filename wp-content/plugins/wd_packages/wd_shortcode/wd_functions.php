@@ -31,6 +31,29 @@ if(!function_exists ('tvlgiao_wpdance_get_data')){
 	}
 }
 
+if ( ! function_exists( 'tvlgiao_wpdance_get_list_blog_special_layout' ) ) {
+	function tvlgiao_wpdance_get_list_blog_special_layout() {
+		return  array(
+			array(
+				0 => 'title',
+		      	1 =>  __( 'Title', 'wpdancelaparis' ),
+			),
+			array(
+				0 => 'meta',
+		      	1 =>  __( 'Meta', 'wpdancelaparis' ),
+			),
+			array(
+				0 => 'excerpt',
+		      	1 =>  __( 'Excerpt', 'wpdancelaparis' ),
+			),
+			array(
+				0 => 'readmore',
+		      	1 =>  __( 'Readmore', 'wpdancelaparis' ),
+			),
+		);
+	}
+}
+
 // Get Data Choose for visual composer
 if(!function_exists ('tvlgiao_wpdance_get_sub_categories_accordion')){
 	function tvlgiao_wpdance_get_sub_categories_accordion($category_id, $instance, $current_cat, $level){

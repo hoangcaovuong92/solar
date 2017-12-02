@@ -71,7 +71,7 @@ if(!class_exists('tvlgiao_wpdance_widget_product_categories_accordion')){
 					"use strict";
 					var _random_id = '<?php echo $random_id; ?>';
 					jQuery('#'+_random_id).find('ul').dcAccordion({
-						classArrow: 'wd-product-cat-accordion-icon',
+						classArrow: 'wd-product-cat-accordion-icon  fa fa-angle-right',
 						classParent: 'wd-product-cat-accordion-parrent-wrap',
 						classCount: 'wd-product-cat-accordion-count',
        					classExpand: 'wd-product-cat-accordion-current-parent', 
@@ -86,6 +86,11 @@ if(!class_exists('tvlgiao_wpdance_widget_product_categories_accordion')){
 					});
 					jQuery('#'+_random_id+' .wd-product-cat-accordion-icon').click(function(e){
 						e.preventDefault();
+						if (!jQuery(this).parents('.wd-product-cat-accordion-parrent-wrap').hasClass('active')) {
+							jQuery(this).removeClass('fa-angle-right').addClass('fa-chevron-up');
+						}else{
+							jQuery(this).addClass('fa-angle-right').removeClass('fa-chevron-up');
+						}
 					});
 				});
 			</script>

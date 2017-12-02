@@ -46,12 +46,12 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 				'revslider',
 				'ubermenu',
 				'woocommerce',
-				'gtranslate',
-				'woocommerce-currency-switcher',
+				/*'gtranslate',*/
+				/*'woocommerce-currency-switcher',*/
 				'contact-form-7',
-				'yith-woocommerce-wishlist',
+				/*'yith-woocommerce-wishlist',
 				'yith-woocommerce-compare',
-				'testimonials-by-woothemes',
+				'testimonials-by-woothemes',*/
 				'regenerate-thumbnails',
 				'wd_packages',
 			);

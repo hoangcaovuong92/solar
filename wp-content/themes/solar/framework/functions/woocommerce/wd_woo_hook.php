@@ -77,11 +77,14 @@ if(!function_exists ('tvlgiao_wpdance_woo_hook_action')){
 		add_action('woocommerce_shop_loop_item_title','tvlgiao_wpdance_title_product',10); 
 		add_action('tvlgiao_wpdance_button_add_to_cart','woocommerce_template_loop_add_to_cart',5); 
 		add_action('woocommerce_after_shop_loop_item_title','woocommerce_template_loop_price',5);
-		add_action('tvlgiao_wpdance_after_shop_loop_price','woocommerce_template_loop_rating',10);
+
+		add_action('tvlgiao_wpdance_before_shop_loop_price','tvlgiao_wpdance_template_single_sku', 5);
+		add_action('tvlgiao_wpdance_before_shop_loop_price','woocommerce_template_loop_rating',10);
+		
 		//add product attribute color (another hook: woocommerce_before_shop_loop_item_title)
-		add_action('tvlgiao_wpdance_after_shop_loop_price','tvlgiao_wpdance_shop_loop_product_attribute_color',15); 
+		add_action('tvlgiao_wpdance_before_shop_loop_price','tvlgiao_wpdance_shop_loop_product_attribute_color',15); 
 		//Sale Date Countdown
-		add_action('tvlgiao_wpdance_after_shop_loop_price','tvlgiao_wpdance_offer_shop',20);
+		add_action('tvlgiao_wpdance_before_shop_loop_price','tvlgiao_wpdance_offer_shop',20);
 
 		//add desicription product
 		add_action('woocommerce_after_shop_loop_item','tvlgiao_wpdance_short_description_product', 15);
@@ -95,11 +98,11 @@ if(!function_exists ('tvlgiao_wpdance_woo_hook_action')){
 	    	//remove_action( 'woocommerce_after_shop_loop_item', 'tvlgiao_wpdance_short_description_product', 15 );
 	    }
 	    if(!$show_rating){
-	    	remove_action('tvlgiao_wpdance_after_shop_loop_price','woocommerce_template_loop_rating',10);
+	    	remove_action('tvlgiao_wpdance_before_shop_loop_price','woocommerce_template_loop_rating',10);
 	    }
 	    if(!$show_price){
 	    	remove_action('woocommerce_after_shop_loop_item_title','woocommerce_template_loop_price',5);
-	    	remove_action('tvlgiao_wpdance_after_shop_loop_price','tvlgiao_wpdance_shop_loop_product_attribute_color',15); //remove attribute color
+	    	remove_action('tvlgiao_wpdance_before_shop_loop_price','tvlgiao_wpdance_shop_loop_product_attribute_color',15); //remove attribute color
 	    }
 	    if(!$show_meta){
 	    	//remove_action('woocommerce_before_shop_loop_item_title','woocommerce_show_product_loop_sale_flash',10);

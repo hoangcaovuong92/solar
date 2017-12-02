@@ -5,7 +5,7 @@
 if(!function_exists('tvlgiao_wpdance_feature_category_function')){
 	function tvlgiao_wpdance_feature_category_function($atts){
 		extract(shortcode_atts(array(
-			'id'						=> 0,
+			'id'						=> -1,
 			'columns'					=> 4,
 			'number_feature'			=> 4,
 			'sort'						=> 'ASC',
@@ -33,7 +33,7 @@ if(!function_exists('tvlgiao_wpdance_feature_category_function')){
 			'orderby'				=> $order_by,
 		);
 
-		if( $id != 0 ){
+		if( $id != -1 ){
 			$args['tax_query']= array(
 		    	array(
 			    	'taxonomy' 		=> 'wpdance_feature_categories',

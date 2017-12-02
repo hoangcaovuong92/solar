@@ -71,7 +71,7 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		            'page_default'  	=> '0-0-0',
 		            'page_search'  		=> '0-0-0',
 		            'single_product'	=> '0-0-0',
-		            'product_archive'	=> '0-0-0',
+		            'product_archive'	=> '1-0-0',
 		        )
 	    	),
 	    	'columns'       	=> array(

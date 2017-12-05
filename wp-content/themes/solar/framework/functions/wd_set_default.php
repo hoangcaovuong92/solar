@@ -217,7 +217,7 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 			        ),
 			        'default'       => array(
 			            'position_thumbnail'    => 'left',
-			            'thumbnail_number'		=> '4',
+			            'thumbnail_number'		=> '3',
 			            'summary_layout'		=> array(
 		                    'woocommerce_template_single_price'             => true,
 		                    'tvlgiao_wpdance_template_single_review'        => true,

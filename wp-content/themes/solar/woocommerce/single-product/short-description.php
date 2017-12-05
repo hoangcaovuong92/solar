@@ -28,9 +28,10 @@ if ( ! $post->post_excerpt ) {
 */
 ?>
 <?php do_action('tvlgiao_wpdance_before_single_product_desc'); ?>
-<?php if (get_the_content()): ?>
+<?php if ( $post->post_excerpt || get_the_content() ) { ?>
+	<div class="wd-single-product-title"><?php esc_html_e( 'Mô tả sản phẩm', 'solar' ) ?></div>
 	<div class="woocommerce-product-details__short-description">
-	    <?php the_content(); ?>
+	    <?php echo ($post->post_excerpt) ? apply_filters( 'woocommerce_short_description', $post->post_excerpt ) : get_the_content(); ?>
 	</div>
-<?php endif ?>
+<?php } ?>
 <?php do_action('tvlgiao_wpdance_after_single_product_desc'); ?>

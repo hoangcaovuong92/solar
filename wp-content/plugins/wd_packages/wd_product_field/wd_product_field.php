@@ -59,8 +59,8 @@ if (!class_exists('WD_Product_Custom_Field')) {
 				);
 			$list_field_unit 	=  array('capacity_unit','weight_unit');
 			if ($data) {
-				$data['capacity'] 	= $data['capacity'].$data['capacity_unit'];
-				$data['weight'] 	= $data['weight'].$data['weight_unit'];
+				$data['capacity'] 	= ($data['capacity']) ? $data['capacity'].$data['capacity_unit'] : '';
+				$data['weight'] 	= ($data['weight']) ? $data['weight'].$data['weight_unit'] : '';
 				echo '<div class="wd-single-product-specifications-wrap">';
 				echo '<table class="wd-single-product-specifications-list">';
 				foreach ($data as $key => $value) {
@@ -91,19 +91,23 @@ if (!class_exists('WD_Product_Custom_Field')) {
 		}
 
 		public function get_specifications_detail_content() { 
-			$data 		=  $this->get_product_field_meta_data('wd_product_field_specifications');
+			$data 		=  $this->get_product_field_meta_data('wd_product_field_specifications_detail');
 
 			$list_field_name 	=  array(
-					'type'				=> esc_html__( 'Loại sản phẩm', 'wd_package' ),
-					'capacity'			=> esc_html__( 'Công suất', 'wd_package' ),
-					'origin'			=> esc_html__( 'Xuất xứ', 'wd_package' ),
-					'weight'			=> esc_html__( 'Trọng Lượng', 'wd_package' ),
-					'size'				=> esc_html__( 'Kích thước (Cao/Ngang/Rộng)', 'wd_package' ),
+					'model'					=> esc_html__( 'Model', 'wd_package' ),
+					'warranty_period'		=> esc_html__( 'Thời hạn bảo hành', 'wd_package' ),
+					'maximum_power_period'	=> esc_html__( 'Công suất tối đa', 'wd_package' ),
+					'panel_efficiency'		=> esc_html__( 'Panel Efficiency', 'wd_package' ),
+					'heat_resistance'		=> esc_html__( 'Độ chịu nhiệt', 'wd_package' ),
+					'panel_size'			=> esc_html__( 'Kích thước panel', 'wd_package' ),
+					'energy_size'			=> esc_html__( 'Kích thước ô sản phẩm', 'wd_package' ),
+					'glass_thickness'		=> esc_html__( 'Độ dày kính', 'wd_package' ),
+					'battery_type'			=> esc_html__( 'Loại pin', 'wd_package' ),
 				);
-			$list_field_unit 	=  array('capacity_unit','weight_unit');
+			$list_field_unit 	=  array('maximum_power_period_unit','heat_resistance_unit');
 			if ($data) {
-				$data['capacity'] 	= $data['capacity'].$data['capacity_unit'];
-				$data['weight'] 	= $data['weight'].$data['weight_unit'];
+				$data['maximum_power_period'] 	= ($data['maximum_power_period']) ? $data['maximum_power_period'].$data['maximum_power_period_unit'] : '';
+				$data['heat_resistance'] 		= ($data['heat_resistance']) ? $data['heat_resistance'].$data['heat_resistance_unit'] : '';
 				echo '<div class="wd-single-product-title">'.esc_html__( 'Thông số kỹ thuật chi tiết', 'wd_package' ).'</div>';
 				echo '<div class="wd-single-product-specifications-detail-wrap">';
 				echo '<table class="wd-single-product-specifications-detail-list">';
@@ -140,6 +144,9 @@ if (!class_exists('WD_Product_Custom_Field')) {
 				$meta_key 				= 'wd_product_field_advantages';
 				$list_meta_name 		= array('advantage');
 				$data['wd_product_field_advantages'] 	= $this->process_meta_data_repeatable_field_after_save($meta_key, $list_meta_name);
+			}
+			if (isset($_POST['wd_product_field_specifications_detail'])) {
+				$data['wd_product_field_specifications_detail'] = $_POST['wd_product_field_specifications_detail'];
 			}
 			update_post_meta($post_id,'wd_product_field_meta_data', serialize($data));
 			
@@ -179,6 +186,7 @@ if (!class_exists('WD_Product_Custom_Field')) {
 					'maximum_power_period_unit'	=> 'W',
 					'panel_efficiency'		=> '',
 					'heat_resistance'		=> '',
+					'heat_resistance_unit'	=> '°C',
 					'panel_size'			=> '10x10x10mm',
 					'energy_size'			=> '',
 					'glass_thickness'		=> '',
@@ -276,7 +284,9 @@ if (!class_exists('WD_Product_Custom_Field')) {
 					</tr>
 					<tr>
 						<th scope="row"><label><?php esc_html_e( 'Độ chịu nhiệt', 'wd_package' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[heat_resistance]" value="<?php echo esc_attr($meta_data['heat_resistance']);?>"/></td> 
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[heat_resistance]" value="<?php echo esc_attr($meta_data['heat_resistance']);?>"/></td>
+						<th scope="row"><label><?php esc_html_e( 'Đơn vị', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[heat_resistance_unit]" value="<?php echo esc_attr($meta_data['heat_resistance_unit']);?>"/></td> 
 					</tr>
 					<tr>
 						<th scope="row"><label><?php esc_html_e( 'Kích thước Panel (Cao/Ngang/Rộng)', 'wd_package' ); ?>:</label></th>
@@ -284,15 +294,15 @@ if (!class_exists('WD_Product_Custom_Field')) {
 					</tr>
 					<tr>
 						<th scope="row"><label><?php esc_html_e( 'Kích thước ô năng lượng', 'wd_package' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[energy_size]" value="<?php echo esc_attr($meta_data['energy_size']);?>"/></td> 
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[energy_size]" value="<?php echo esc_attr($meta_data['energy_size']);?>"/></td> 
 					</tr>
 					<tr>
 						<th scope="row"><label><?php esc_html_e( 'Độ dày kính', 'wd_package' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[glass_thickness]" value="<?php echo esc_attr($meta_data['glass_thickness']);?>"/></td> 
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[glass_thickness]" value="<?php echo esc_attr($meta_data['glass_thickness']);?>"/></td> 
 					</tr>
 					<tr>
 						<th scope="row"><label><?php esc_html_e( 'Loại pin', 'wd_package' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[battery_type]" value="<?php echo esc_attr($meta_data['battery_type']);?>"/></td> 
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[battery_type]" value="<?php echo esc_attr($meta_data['battery_type']);?>"/></td> 
 					</tr>
 				</tbody>
 			</table>

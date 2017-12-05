@@ -127,7 +127,8 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_woo_brand_taxonomy' ) ) {
 		 * @since 1.0.0
 		 */
 		public function add_script($hook) { 
-			if ($hook == 'edit-tags.php') { 
+			$screen = get_current_screen();
+			if ($hook == 'edit-tags.php' && $screen->taxonomy == 'wpdance_product_brand') { 
 				wp_enqueue_script( 'wd-taxonomy-brand-script', 	SC_POST_TYPE_JS.'/taxonomy_brand_script.js', array('jquery'), false, true);
 			}
 		}

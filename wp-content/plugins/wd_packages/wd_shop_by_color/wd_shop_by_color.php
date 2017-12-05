@@ -283,6 +283,8 @@ if (!class_exists('WD_Shopbycolor')) {
 		
 		public function wd_admin_enqueue_color_picker(  ) {
 			wp_enqueue_style( 'wp-color-picker' );
+			wp_enqueue_style( 'thickbox' );
+			wp_enqueue_script( 'thickbox' );
 			wp_enqueue_script( 'wd-product.color.js', PC_JS.'/backend_product_color.js', array( 'wp-color-picker','jquery' ));
 			wp_enqueue_style( 'wd-product.color.css', PC_CSS.'/backend_product_color.css');				
 		}	

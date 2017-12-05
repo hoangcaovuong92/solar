@@ -54,7 +54,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 
 						<?php if ($view_all): ?>
 							<li class="wd-products-categories-list-item">
-								<a href="<?php echo esc_url($shop_page_url); ?>"><?php esc_html_e( 'View All', 'wpdancelaparis' ) ?></a>
+								<a href="<?php echo esc_url($shop_page_url); ?>"><?php esc_html_e( 'View All', 'wd_package' ) ?></a>
 							</li><!-- .heading -->
 						<?php endif ?>
 					</ul>

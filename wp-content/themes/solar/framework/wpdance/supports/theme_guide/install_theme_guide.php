@@ -249,9 +249,9 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 			ob_start(); ?>
 			<div class="guide_card get-started">
 				<span class="dashicons dashicons-welcome-learn-more main-icon"></span>
-				<p><strong><?php esc_html_e("This short guide will help you get started and quickly familiar with the theme. Teach you step by step how to build site like your demo site in few minutes without technical knowledge. Help you elimite too much time to read the complete user guide.", 'laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e("This short guide will help you get started and quickly familiar with the theme. Teach you step by step how to build site like your demo site in few minutes without technical knowledge. Help you elimite too much time to read the complete user guide.", 'solar'); ?></strong></p>
 
-				<p><a href="<?php echo esc_url($this->get_this_url('confirm=get_started')); ?>" class="button button-primary"><?php esc_html_e("Let's get started now", 'laparis'); ?></a></p>
+				<p><a href="<?php echo esc_url($this->get_this_url('confirm=get_started')); ?>" class="button button-primary"><?php esc_html_e("Let's get started now", 'solar'); ?></a></p>
 			</div>
 			<?php 
 			return ob_get_clean();
@@ -263,21 +263,21 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 			    <?php if (count($this->check_status_active_plugin()) == 0): ?>
 			    	<div class="updated notice">
 			    		<p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-					    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All recommended plugins are already activated", 'laparis'); ?></h3>
+					    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All recommended plugins are already activated", 'solar'); ?></h3>
 					</div>
 				<?php else: ?>
 				    <div class="update-nag notice">
-						<h3><?php esc_html_e("Install and activate all recommended plugins", 'laparis'); ?></h3>
+						<h3><?php esc_html_e("Install and activate all recommended plugins", 'solar'); ?></h3>
 						<div class="inside">
-							<p><?php printf(__("Some plugins are still not activated: <strong>%s</strong>", 'laparis'), implode(', ', $this->check_status_active_plugin())); ?></p>
+							<p><?php printf(__("Some plugins are still not activated: <strong>%s</strong>", 'solar'), implode(', ', $this->check_status_active_plugin())); ?></p>
 
-							<p class="main-instruction"><?php printf(__("Please go to <strong><a href=\"%s\">Install Plugins</a></strong> page to start install and activate the missing plugins.", 'laparis'), esc_url($this->get_install_plugins_url())); ?></p>
+							<p class="main-instruction"><?php printf(__("Please go to <strong><a href=\"%s\">Install Plugins</a></strong> page to start install and activate the missing plugins.", 'solar'), esc_url($this->get_install_plugins_url())); ?></p>
 
-							<p><span class="dashicons dashicons-lightbulb"></span> <?php printf(__("If plugin is <strong>commercial</strong> and <strong>not included</strong> in the theme you can ignore it.", 'laparis')); ?></p>
+							<p><span class="dashicons dashicons-lightbulb"></span> <?php printf(__("If plugin is <strong>commercial</strong> and <strong>not included</strong> in the theme you can ignore it.", 'solar')); ?></p>
 							<p>
-								<a class="button button-primary" href="<?php echo esc_url($this->get_install_plugins_url()); ?>"><?php esc_html_e("Go to Install Plugins", 'laparis'); ?></a>
+								<a class="button button-primary" href="<?php echo esc_url($this->get_install_plugins_url()); ?>"><?php esc_html_e("Go to Install Plugins", 'solar'); ?></a>
 								&nbsp;
-								<a href="<?php echo esc_url($this->get_this_url('skip=install_plugins')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'laparis'); ?></a>
+								<a href="<?php echo esc_url($this->get_this_url('skip=install_plugins')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'solar'); ?></a>
 							</p>
 						</div>
 					</div>
@@ -294,17 +294,17 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 					<?php if (count($this->check_status_import_data_slider()) == 0): ?>
 				    	<div class="updated notice">
 				    		<p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-						    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All sample Slider Revolution are already imported", 'laparis'); ?></h3>
+						    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All sample Slider Revolution are already imported", 'solar'); ?></h3>
 						</div>
 					<?php else: ?>
 					    <div class="update-nag notice">
-							<h3><?php esc_html_e("Import sample Slider Revolution come with the theme", 'laparis'); ?></h3>
+							<h3><?php esc_html_e("Import sample Slider Revolution come with the theme", 'solar'); ?></h3>
 							<div class="inside">
-								<p><?php printf(__("Some sample sliders are missing: <code>%s</code>.", 'laparis'), implode(', ', $this->check_status_import_data_slider())); ?></p>
-								<p class="main-instruction"><?php printf(__("Please go to <strong><a href=\"%s\">Slider Revolution</a></strong>, choose <strong>Import Slider</strong> to start importing sample sliders come with the theme.", 'laparis'), esc_url($this->get_revslider_url())); ?></p>
-								<p><?php printf(__("Each sample slider is a zip file in the directory <code>sample-data/revslider/</code> inside the zip file <strong>\"All files and documentation\"</strong>, you should have downloaded it when you purchased the theme.", 'laparis')); ?></p>
+								<p><?php printf(__("Some sample sliders are missing: <code>%s</code>.", 'solar'), implode(', ', $this->check_status_import_data_slider())); ?></p>
+								<p class="main-instruction"><?php printf(__("Please go to <strong><a href=\"%s\">Slider Revolution</a></strong>, choose <strong>Import Slider</strong> to start importing sample sliders come with the theme.", 'solar'), esc_url($this->get_revslider_url())); ?></p>
+								<p><?php printf(__("Each sample slider is a zip file in the directory <code>sample-data/revslider/</code> inside the zip file <strong>\"All files and documentation\"</strong>, you should have downloaded it when you purchased the theme.", 'solar')); ?></p>
 								<p>
-									<a href="<?php echo esc_url($this->get_revslider_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Slider Revolution", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_revslider_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Slider Revolution", 'solar'); ?></a>
 								</p>
 							</div>
 						</div>
@@ -313,17 +313,17 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 					<?php if (count($this->check_status_import_data_slider()) == 0): ?>
 				    	<div class="updated notice">
 				    		<p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-						    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All sample Smart Sliders 3 are already imported", 'laparis'); ?></h3>
+						    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All sample Smart Sliders 3 are already imported", 'solar'); ?></h3>
 						</div>
 					<?php else: ?>
 					    <div class="update-nag notice">
-							<h3><?php esc_html_e("Import sample Smart Sliders 3 come with the theme", 'laparis'); ?></h3>
+							<h3><?php esc_html_e("Import sample Smart Sliders 3 come with the theme", 'solar'); ?></h3>
 							<div class="inside">
-								<p><?php printf(__("Some sample sliders are missing: <code>%s</code>.", 'laparis'), implode(', ', $this->check_status_import_data_slider())); ?></p>
-								<p class="main-instruction"><?php printf(__("Please go to <strong><a href=\"%s\">Smart Slider 3</a></strong>, choose <strong>Import Slider</strong> to start importing sample sliders come with the theme.", 'laparis'), esc_url($this->get_revslider_url())); ?></p>
-								<p><?php printf(__("Each sample slider is a zip file in the directory <code>sample-data/demo-smart-slider/</code> inside the zip file <strong>\"All files and documentation\"</strong>, you should have downloaded it when you purchased the theme.", 'laparis')); ?></p>
+								<p><?php printf(__("Some sample sliders are missing: <code>%s</code>.", 'solar'), implode(', ', $this->check_status_import_data_slider())); ?></p>
+								<p class="main-instruction"><?php printf(__("Please go to <strong><a href=\"%s\">Smart Slider 3</a></strong>, choose <strong>Import Slider</strong> to start importing sample sliders come with the theme.", 'solar'), esc_url($this->get_revslider_url())); ?></p>
+								<p><?php printf(__("Each sample slider is a zip file in the directory <code>sample-data/demo-smart-slider/</code> inside the zip file <strong>\"All files and documentation\"</strong>, you should have downloaded it when you purchased the theme.", 'solar')); ?></p>
 								<p>
-									<a href="<?php echo esc_url($this->get_revslider_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Smart Slider 3", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_revslider_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Smart Slider 3", 'solar'); ?></a>
 								</p>
 							</div>
 						</div>
@@ -340,59 +340,59 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 				<?php if ($import_sample == 1): ?>
 			    	<div class="updated notice">
 					    <p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-				    	<span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("You have completed learning about importing sample data", 'laparis'); ?> </h3>
+				    	<span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("You have completed learning about importing sample data", 'solar'); ?> </h3>
 					</div>
 				<?php elseif ($import_sample == 2): ?>
 					<div class="updated notice accordion" data-id-panel="panel_import_sample_data">
 					    <p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-				    	<span class="dashicons dashicons-warning main-icon"></span> <h3><?php esc_html_e("You have skip learning about importing sample data", 'laparis'); ?> <span class="icon_plus"></span></h3>
+				    	<span class="dashicons dashicons-warning main-icon"></span> <h3><?php esc_html_e("You have skip learning about importing sample data", 'solar'); ?> <span class="icon_plus"></span></h3>
 
 				    	<div class="accordion_panel" id="panel_import_sample_data">
 						  	<div class="inside">
-								<p><?php printf(__("Sample data are provided inside the directory <code>sample-data/</code> of the zip file \"All files and documentation\" which you should have downloaded when purchased the theme. Sample data include:", 'laparis')); ?></p>
+								<p><?php printf(__("Sample data are provided inside the directory <code>sample-data/</code> of the zip file \"All files and documentation\" which you should have downloaded when purchased the theme. Sample data include:", 'solar')); ?></p>
 								<ul>
 									<?php $list_data_file = $this->get_list_sample_data_to_import(); ?>
 									<?php foreach ($list_data_file as $key => $value): ?>
-										<li><?php printf(__("<code>%1s</code> for %2s", 'laparis'), $key, $value); ?></li>
+										<li><?php printf(__("<code>%1s</code> for %2s", 'solar'), $key, $value); ?></li>
 									<?php endforeach ?>
 									
 
 								</ul>
-								<p class="main-instruction"><?php printf(__("1/ Import XML data: go to <strong>Tools</strong> &gt; <strong>Import</strong> &gt; and choose <strong>WordPress</strong> &gt; select the XML file which you want to import.", 'laparis')); ?></p>
-								<p class="main-instruction"><?php printf(__("2/ Import WIE data: go to <strong>Tools</strong> &gt; <strong>Widget Importer & Exporter</strong> &gt; and select the WIE file which you want to import.", 'laparis')); ?></p>
+								<p class="main-instruction"><?php printf(__("1/ Import XML data: go to <strong>Tools</strong> &gt; <strong>Import</strong> &gt; and choose <strong>WordPress</strong> &gt; select the XML file which you want to import.", 'solar')); ?></p>
+								<p class="main-instruction"><?php printf(__("2/ Import WIE data: go to <strong>Tools</strong> &gt; <strong>Widget Importer & Exporter</strong> &gt; and select the WIE file which you want to import.", 'solar')); ?></p>
 								<p>
-									<a href="<?php echo esc_url($this->get_import_url('xml')); ?>" class="button button-primary"><?php esc_html_e("Import XML Tool", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_import_url('xml')); ?>" class="button button-primary"><?php esc_html_e("Import XML Tool", 'solar'); ?></a>
 									&nbsp;
-									<a href="<?php echo esc_url($this->get_import_url('wie')); ?>" class="button button-primary"><?php esc_html_e("Import WIE Tool", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_import_url('wie')); ?>" class="button button-primary"><?php esc_html_e("Import WIE Tool", 'solar'); ?></a>
 									&nbsp;
-									<a href="<?php echo esc_url($this->get_this_url('confirm=import_samples')); ?>" class="button button-primary"><?php esc_html_e("Confirm you got it", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_this_url('confirm=import_samples')); ?>" class="button button-primary"><?php esc_html_e("Confirm you got it", 'solar'); ?></a>
 								</p>
 							</div>
 						</div>
 					</div>
 				<?php else: ?>
 				    <div class="update-nag notice">
-						<h3><?php esc_html_e("Instruction for importing sample data", 'laparis'); ?></h3>
+						<h3><?php esc_html_e("Instruction for importing sample data", 'solar'); ?></h3>
 						<div class="inside">
-							<p><?php printf(__("Sample data are provided inside the directory <code>sample-data/</code> of the zip file \"All files and documentation\" which you should have downloaded when purchased the theme. Sample data include:", 'laparis')); ?></p>
+							<p><?php printf(__("Sample data are provided inside the directory <code>sample-data/</code> of the zip file \"All files and documentation\" which you should have downloaded when purchased the theme. Sample data include:", 'solar')); ?></p>
 							<ul>
 								<?php $list_data_file = $this->get_list_sample_data_to_import(); ?>
 								<?php foreach ($list_data_file as $key => $value): ?>
-									<li><?php printf(__("<code>%1s</code> for %2s", 'laparis'), $key, $value); ?></li>
+									<li><?php printf(__("<code>%1s</code> for %2s", 'solar'), $key, $value); ?></li>
 								<?php endforeach ?>
 								
 
 							</ul>
-							<p class="main-instruction"><?php printf(__("1/ Import XML data: go to <strong>Tools</strong> &gt; <strong>Import</strong> &gt; and choose <strong>WordPress</strong> &gt; select the XML file which you want to import.", 'laparis')); ?></p>
-							<p class="main-instruction"><?php printf(__("2/ Import WIE data: go to <strong>Tools</strong> &gt; <strong>Widget Importer & Exporter</strong> &gt; and select the WIE file which you want to import.", 'laparis')); ?></p>
+							<p class="main-instruction"><?php printf(__("1/ Import XML data: go to <strong>Tools</strong> &gt; <strong>Import</strong> &gt; and choose <strong>WordPress</strong> &gt; select the XML file which you want to import.", 'solar')); ?></p>
+							<p class="main-instruction"><?php printf(__("2/ Import WIE data: go to <strong>Tools</strong> &gt; <strong>Widget Importer & Exporter</strong> &gt; and select the WIE file which you want to import.", 'solar')); ?></p>
 							<p>
-								<a href="<?php echo esc_url($this->get_import_url('xml')); ?>" class="button button-primary"><?php esc_html_e("Import XML Tool", 'laparis'); ?></a>
+								<a href="<?php echo esc_url($this->get_import_url('xml')); ?>" class="button button-primary"><?php esc_html_e("Import XML Tool", 'solar'); ?></a>
 								&nbsp;
-								<a href="<?php echo esc_url($this->get_import_url('wie')); ?>" class="button button-primary"><?php esc_html_e("Import WIE Tool", 'laparis'); ?></a>
+								<a href="<?php echo esc_url($this->get_import_url('wie')); ?>" class="button button-primary"><?php esc_html_e("Import WIE Tool", 'solar'); ?></a>
 								&nbsp;
-								<a href="<?php echo esc_url($this->get_this_url('confirm=import_samples')); ?>" class="button button-primary"><?php esc_html_e("Confirm you got it", 'laparis'); ?></a>
+								<a href="<?php echo esc_url($this->get_this_url('confirm=import_samples')); ?>" class="button button-primary"><?php esc_html_e("Confirm you got it", 'solar'); ?></a>
 								&nbsp;
-								<a href="<?php echo esc_url($this->get_this_url('skip=import_samples')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'laparis'); ?></a>
+								<a href="<?php echo esc_url($this->get_this_url('skip=import_samples')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'solar'); ?></a>
 							</p>
 						</div>
 					</div>
@@ -407,33 +407,33 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 			    <?php if (count($this->check_status_widget_registered()) == 0): ?>
 			    	<div class="updated notice">
 			    		<p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-					    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All recommended widgets are already registered", 'laparis'); ?></h3>
+					    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("All recommended widgets are already registered", 'solar'); ?></h3>
 					</div>
 				<?php else: ?>
 					<?php if ($this->get_current_guide_step() > 4): ?>
 						<div class="updated notice accordion" data-id-panel="panel_register_widgets">
 						    <p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-					    	<span class="dashicons dashicons-warning main-icon"></span> <h3><?php esc_html_e("You have skip learning about register any recommended widgets", 'laparis'); ?> <span class="icon_plus"></span></h3>
+					    	<span class="dashicons dashicons-warning main-icon"></span> <h3><?php esc_html_e("You have skip learning about register any recommended widgets", 'solar'); ?> <span class="icon_plus"></span></h3>
 
 					    	<div class="accordion_panel" id="panel_register_widgets">
 							  	<div class="inside">
-									<p><?php printf(__("Some widgets are still not registered: <strong>%s</strong>", 'laparis'), implode(', ', $this->check_status_widget_registered())); ?></p>
+									<p><?php printf(__("Some widgets are still not registered: <strong>%s</strong>", 'solar'), implode(', ', $this->check_status_widget_registered())); ?></p>
 
-									<p><span class="dashicons dashicons-lightbulb"></span> <?php printf(__("If widget is <strong>commercial</strong> and <strong>not included</strong> in the theme you can ignore it.", 'laparis')); ?></p>
+									<p><span class="dashicons dashicons-lightbulb"></span> <?php printf(__("If widget is <strong>commercial</strong> and <strong>not included</strong> in the theme you can ignore it.", 'solar')); ?></p>
 									<p>
 								</div>
 							</div>
 						</div>
 					<?php else: ?>
 				    <div class="update-nag notice">
-						<h3><?php esc_html_e("Register all recommended widgets", 'laparis'); ?></h3>
+						<h3><?php esc_html_e("Register all recommended widgets", 'solar'); ?></h3>
 						<div class="inside">
-							<p><?php echo sprintf(__("Some widgets are still not registered: <strong>%s</strong>", 'laparis'), implode(', ', $this->check_status_widget_registered())); ?></p>
+							<p><?php echo sprintf(__("Some widgets are still not registered: <strong>%s</strong>", 'solar'), implode(', ', $this->check_status_widget_registered())); ?></p>
 
-							<p><span class="dashicons dashicons-lightbulb"></span> <?php printf(__("If widget is <strong>commercial</strong> and <strong>not included</strong> in the theme you can ignore it.", 'laparis')); ?></p>
+							<p><span class="dashicons dashicons-lightbulb"></span> <?php printf(__("If widget is <strong>commercial</strong> and <strong>not included</strong> in the theme you can ignore it.", 'solar')); ?></p>
 							<p>
 								&nbsp;
-								<a href="<?php echo esc_url($this->get_this_url('skip=widget_registered')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'laparis'); ?></a>
+								<a href="<?php echo esc_url($this->get_this_url('skip=widget_registered')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'solar'); ?></a>
 							</p>
 						</div>
 					</div>
@@ -449,42 +449,42 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 				<?php if ($this->check_set_front_page()): ?>
 			    	<div class="updated notice">
 			    		<p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-					    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("The homepage is a static page already", 'laparis'); ?> </h3>
+					    <span class="dashicons dashicons-yes main-icon"></span> <h3><?php esc_html_e("The homepage is a static page already", 'solar'); ?> </h3>
 					</div>
 				<?php else: ?>
 					<?php if ($this->get_current_guide_step() > 5): ?>
 						<div class="updated notice accordion" data-id-panel="panel_set_front_page">
 						    <p class="install-theme-guide-page-site-name"><?php echo esc_html($this->get_theme_name()); ?></p>
-					    	<span class="dashicons dashicons-warning main-icon"></span> <h3><?php esc_html_e("You have skip learning about set a static page as homepage", 'laparis'); ?> <span class="icon_plus"></span></h3>
+					    	<span class="dashicons dashicons-warning main-icon"></span> <h3><?php esc_html_e("You have skip learning about set a static page as homepage", 'solar'); ?> <span class="icon_plus"></span></h3>
 
 					    	<div class="accordion_panel" id="panel_set_front_page">
 							  	<div class="inside">
-									<p><?php esc_html_e("Below instruction will teach you configure a static page as homepage:", 'laparis'); ?></p>
+									<p><?php esc_html_e("Below instruction will teach you configure a static page as homepage:", 'solar'); ?></p>
 
-									<p class="main-instruction"><?php printf(__("Go to <strong>Settings</strong> &gt; <strong>Reading</strong> &gt; choose <strong>Front page displays</strong> option is <strong>A static page</strong>. Then select a page in the dropdown option <strong>Front page</strong>. Click <strong>Save Changes</strong> button to save.", 'laparis')); ?></p>
+									<p class="main-instruction"><?php printf(__("Go to <strong>Settings</strong> &gt; <strong>Reading</strong> &gt; choose <strong>Front page displays</strong> option is <strong>A static page</strong>. Then select a page in the dropdown option <strong>Front page</strong>. Click <strong>Save Changes</strong> button to save.", 'solar')); ?></p>
 
-									<p><img src="<?php echo TVLGIAO_WPDANCE_THEME_GUIDE_IMAGES.'/set_front_page.jpg'; ?>" alt="<?php echo esc_attr("Set a static page as homepage", 'laparis'); ?>" /></p>
+									<p><img src="<?php echo TVLGIAO_WPDANCE_THEME_GUIDE_IMAGES.'/set_front_page.jpg'; ?>" alt="<?php echo esc_attr("Set a static page as homepage", 'solar'); ?>" /></p>
 
 									<p>
-										<a href="<?php echo esc_url($this->get_reading_option_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Setting Reading Page", 'laparis'); ?></a>
+										<a href="<?php echo esc_url($this->get_reading_option_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Setting Reading Page", 'solar'); ?></a>
 									</p>
 								</div>
 							</div>
 						</div>
 					<?php else: ?>
 					    <div class="update-nag notice">
-							<h3><?php esc_html_e("Set a static page as homepage", 'laparis'); ?></h3>
+							<h3><?php esc_html_e("Set a static page as homepage", 'solar'); ?></h3>
 							<div class="inside">
-								<p><?php esc_html_e("Below instruction will teach you configure a static page as homepage:", 'laparis'); ?></p>
+								<p><?php esc_html_e("Below instruction will teach you configure a static page as homepage:", 'solar'); ?></p>
 
-								<p class="main-instruction"><?php printf(__("Go to <strong>Settings</strong> &gt; <strong>Reading</strong> &gt; choose <strong>Front page displays</strong> option is <strong>A static page</strong>. Then select a page in the dropdown option <strong>Front page</strong>. Click <strong>Save Changes</strong> button to save.", 'laparis')); ?></p>
+								<p class="main-instruction"><?php printf(__("Go to <strong>Settings</strong> &gt; <strong>Reading</strong> &gt; choose <strong>Front page displays</strong> option is <strong>A static page</strong>. Then select a page in the dropdown option <strong>Front page</strong>. Click <strong>Save Changes</strong> button to save.", 'solar')); ?></p>
 
-								<p><img src="<?php echo TVLGIAO_WPDANCE_THEME_GUIDE_IMAGES.'/set_front_page.jpg'; ?>" alt="<?php echo esc_attr("Set a static page as homepage", 'laparis'); ?>" /></p>
+								<p><img src="<?php echo TVLGIAO_WPDANCE_THEME_GUIDE_IMAGES.'/set_front_page.jpg'; ?>" alt="<?php echo esc_attr("Set a static page as homepage", 'solar'); ?>" /></p>
 
 								<p>
-									<a href="<?php echo esc_url($this->get_reading_option_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Setting Reading Page", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_reading_option_url()); ?>" class="button button-primary"><?php esc_html_e("Go to Setting Reading Page", 'solar'); ?></a>
 									&nbsp;
-									<a href="<?php echo esc_url($this->get_this_url('skip=config_home')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'laparis'); ?></a>
+									<a href="<?php echo esc_url($this->get_this_url('skip=config_home')); ?>" class="button button-secondary"><?php esc_html_e("Skip this step", 'solar'); ?></a>
 								</p>
 							</div>
 						</div>
@@ -496,7 +496,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 
 		public function get_content_button_finish_guide(){
 			ob_start(); ?>
-			    <p><a href="<?php echo esc_url($this->get_this_url('confirm=finish_guide')); ?>" class="button button-primary"><?php esc_html_e("Finish guide", 'laparis'); ?></a></p>
+			    <p><a href="<?php echo esc_url($this->get_this_url('confirm=finish_guide')); ?>" class="button button-primary"><?php esc_html_e("Finish guide", 'solar'); ?></a></p>
 			<?php 
 			return ob_get_clean();
 		}
@@ -505,8 +505,8 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 			ob_start(); ?>
 			    <div class="guide_card get-started">
 					<span class="dashicons dashicons-welcome-learn-more main-icon"></span>
-					<p><strong><?php esc_html_e("The tutorial has been completed! If you want to learn again, please press the button below. Thank you for your trust and support WDTEAM. :)", 'laparis'); ?></strong></p>
-					<p><a href="<?php echo esc_url($this->get_this_url('confirm=restart_guide')); ?>" class="button button-primary"><?php esc_html_e("Start guide again now", 'laparis'); ?></a></p>
+					<p><strong><?php esc_html_e("The tutorial has been completed! If you want to learn again, please press the button below. Thank you for your trust and support WDTEAM. :)", 'solar'); ?></strong></p>
+					<p><a href="<?php echo esc_url($this->get_this_url('confirm=restart_guide')); ?>" class="button button-primary"><?php esc_html_e("Start guide again now", 'solar'); ?></a></p>
 				</div>
 			<?php 
 			return ob_get_clean();
@@ -585,13 +585,13 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 		    <?php if ($this->get_current_guide_step() >= 1 && $this->get_current_guide_step() < 6): ?>
 				<div class="notice update-nag is-dismissible notice_guide_page" >
 			    	<div class="inside">
-				        <h3><?php echo esc_html($this->get_theme_name()); ?><?php esc_html_e(" Theme Install - Get Started", 'laparis'); ?></h3>
-				        <p><?php esc_html_e("Theme installation is in progress...", 'laparis'); ?></p>
+				        <h3><?php echo esc_html($this->get_theme_name()); ?><?php esc_html_e(" Theme Install - Get Started", 'solar'); ?></h3>
+				        <p><?php esc_html_e("Theme installation is in progress...", 'solar'); ?></p>
 				        <p>
-				        	<a href="<?php echo $this->get_this_url(); ?>"><button class="button button-primary "><?php esc_html_e("Return Theme installation page", 'laparis'); ?></button></a>
+				        	<a href="<?php echo $this->get_this_url(); ?>"><button class="button button-primary "><?php esc_html_e("Return Theme installation page", 'solar'); ?></button></a>
 				        	<form name="dismiss_guide" action="" method="post">
 								<input type="hidden" name="dismiss_guide_confirm" value="1"></input>
-								<a href="#" onclick="document.forms['dismiss_guide'].submit(); return false;"><?php esc_html_e("Dismiss this forever!", 'laparis'); ?></a>
+								<a href="#" onclick="document.forms['dismiss_guide'].submit(); return false;"><?php esc_html_e("Dismiss this forever!", 'solar'); ?></a>
 							</form>
 						</p>
 			    	</div>
@@ -599,13 +599,13 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 			<?php else: ?>
 				<div class="notice update-nag is-dismissible notice_guide_page" >
 			    	<div class="inside">
-				        <h3><?php echo esc_html($this->get_theme_name()); ?><?php esc_html_e(" Theme - Get Started", 'laparis'); ?></h3>
-				        <p><?php esc_html_e("Many issues need to be installed before using this theme. Come WPDance Guide page on admin panel to check it!", 'laparis'); ?></p>
+				        <h3><?php echo esc_html($this->get_theme_name()); ?><?php esc_html_e(" Theme - Get Started", 'solar'); ?></h3>
+				        <p><?php esc_html_e("Many issues need to be installed before using this theme. Come WPDance Guide page on admin panel to check it!", 'solar'); ?></p>
 				        <p>
-				        	<a href="<?php echo $this->get_this_url(); ?>"><button class="button button-primary "><?php esc_html_e("Click here", 'laparis'); ?></button></a>
+				        	<a href="<?php echo $this->get_this_url(); ?>"><button class="button button-primary "><?php esc_html_e("Click here", 'solar'); ?></button></a>
 				        	<form name="dismiss_guide" action="" method="post">
 								<input type="hidden" name="dismiss_guide_confirm" value="1"></input>
-								<a href="#" onclick="document.forms['dismiss_guide'].submit(); return false;"><?php esc_html_e("Dismiss this forever!", 'laparis'); ?></a>
+								<a href="#" onclick="document.forms['dismiss_guide'].submit(); return false;"><?php esc_html_e("Dismiss this forever!", 'solar'); ?></a>
 							</form>
 				        </p>
 			    	</div>
@@ -631,7 +631,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Theme_Guide')) {
 		public function install_theme_guide_callback(){
 		    global $title; ?>
 		    <div class="wrap wpdancebootstrap_walkthrough_page" id="wpdancebootstrap_walkthrough_page">
-				<h2><?php echo esc_html($this->get_theme_name()); ?><?php esc_html_e(" Theme - Get Started", 'laparis'); ?> <a href="<?php echo esc_url($this->get_this_url()); ?>" class="button button-primary"><?php esc_html_e("Refresh", 'laparis'); ?></a></h2>
+				<h2><?php echo esc_html($this->get_theme_name()); ?><?php esc_html_e(" Theme - Get Started", 'solar'); ?> <a href="<?php echo esc_url($this->get_this_url()); ?>" class="button button-primary"><?php esc_html_e("Refresh", 'solar'); ?></a></h2>
 				<?php settings_errors(); ?>
 				<br class="clear" />
 				

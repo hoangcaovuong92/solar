@@ -6,9 +6,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		    public function __construct() {
 		        /* Widget variable settings. */
 				$this->wpdance_widget_cssclass 		= 'woocommerce widget_layered_nav wd_woocommerce_price_filter';
-				$this->wpdance_widget_description	= __( 'Shows prices filter for product category/shop page.', 'wpdancelaparis' );
+				$this->wpdance_widget_description	= __( 'Shows prices filter for product category/shop page.', 'wd_package' );
 				$this->wpdance_widget_idbase 		= 'wd_widget_product_filter_by_price';
-				$this->wpdance_widget_name 			= __( 'WD - Product Price Filter', 'wpdancelaparis' );
+				$this->wpdance_widget_name 			= __( 'WD - Product Price Filter', 'wd_package' );
 
 				/* Widget settings. */
 				$widget_ops = array( 'classname' => $this->wpdance_widget_cssclass, 'description' => $this->wpdance_widget_description );
@@ -77,7 +77,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		        ?>
 		        <ul class="wd-product-filter-by-price">
 	        		<?php  $active_class = (!$min_price || !$max_price) ? 'chosen' : ''; ?>
-		            <li class="wd-product-filter-by-price-item <?php echo esc_attr($active_class); ?>"><a href="<?php echo esc_url($all_price_link);?>"><?php echo esc_html('All price','wpdancelaparis');?></a></li>
+		            <li class="wd-product-filter-by-price-item <?php echo esc_attr($active_class); ?>"><a href="<?php echo esc_url($all_price_link);?>"><?php echo esc_html('All price','wd_package');?></a></li>
 		            <?php
 		            $diff = $min;
 		            $range = !empty( $range ) ? intval($range) : 10000;
@@ -108,7 +108,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		        echo $args['after_widget'];
 		    }
 		    public function form( $instance ) {
-		        $title 		= ! empty( $instance['title'] ) ? $instance['title'] : esc_html('Filter By Price','wpdancelaparis');
+		        $title 		= ! empty( $instance['title'] ) ? $instance['title'] : esc_html('Filter By Price','wd_package');
 		        $range 		= ! empty( $instance['range'] ) ? $instance['range'] : '10000';
 		        ?>
 		        <p>

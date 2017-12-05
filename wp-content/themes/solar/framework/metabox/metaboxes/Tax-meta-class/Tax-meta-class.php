@@ -376,7 +376,7 @@ class Tax_Meta_Class {
         }else{
           echo 'http://i.imgur.com/g8Duj.png';
         }
-        echo '" alt="'.__('Remove','laparis').'" title="'.__('Remove','laparis').'" id="remove-'.$field['id'].'"></div>';
+        echo '" alt="'.__('Remove','solar').'" title="'.__('Remove','solar').'" id="remove-'.$field['id'].'"></div>';
         $c = $c + 1;
         
         }
@@ -389,7 +389,7 @@ class Tax_Meta_Class {
     }else{
       echo 'http://i.imgur.com/w5Tuc.png';
     }
-    echo '" alt="'.__('Add','laparis').'" title="'.__('Add','laparis').'" id="add-'.$field['id'].'"><br/></div>';
+    echo '" alt="'.__('Add','solar').'" title="'.__('Add','solar').'" id="add-'.$field['id'].'"><br/></div>';
     
     //create all fields once more for js function and catch with object buffer
     ob_start();
@@ -423,7 +423,7 @@ class Tax_Meta_Class {
     }else{
       echo 'http://i.imgur.com/g8Duj.png';
     }
-    echo '" alt="'.__('Remove','laparis').'" title="'.__('Remove','laparis').'" id="remove-'.$field['id'].'"></div>';
+    echo '" alt="'.__('Remove','solar').'" title="'.__('Remove','solar').'" id="remove-'.$field['id'].'"></div>';
     $counter = 'countadd_'.$field['id'];
     $js_code = ob_get_clean ();
     $js_code = str_replace("\n","",$js_code);
@@ -722,9 +722,9 @@ class Tax_Meta_Class {
     echo "<input type='hidden' name='{$name}[id]' value='{$value['id']}'/>";
     echo "<input type='hidden' name='{$name}[url]' value='{$value['url']}'/>";
     if ($has_image)
-    echo "<input class='{$multiple} button  simplePanelimageUploadclear' id='{$id}' value='".esc_attr__('Remove Image', 'laparis')."' type='button'/>";
+    echo "<input class='{$multiple} button  simplePanelimageUploadclear' id='{$id}' value='".esc_attr__('Remove Image', 'solar')."' type='button'/>";
     else
-    echo "<input class='{$multiple} button simplePanelimageUpload' id='{$id}' value='".esc_attr__('Upload Image', 'laparis')."' type='button'/>";
+    echo "<input class='{$multiple} button simplePanelimageUpload' id='{$id}' value='".esc_attr__('Upload Image', 'solar')."' type='button'/>";
     $this->show_field_end( $field, $meta );
   }
   

@@ -20,7 +20,7 @@ if (!function_exists('tvlgiao_wpdance_currency_site')) {
 		?>
 		<div class="widget woocs_selector <?php echo esc_attr($class) ?> <?php echo esc_attr($class_show_icon) ?>">
 			<div class="widget widget-woocommerce-currency-switcher">
-				<a href="#" title="" data-original-title="<?php esc_html_e('Change Currency','wpdancelaparis');?>">
+				<a href="#" title="" data-original-title="<?php esc_html_e('Change Currency','wd_package');?>">
 		    		<span class="wd-title-header"><?php echo $icon_html;?><?php echo esc_attr($title); ?></span>
 	    		</a>
 		    	<?php if(do_shortcode('[woocs]')) {echo do_shortcode('[woocs]');} ?>

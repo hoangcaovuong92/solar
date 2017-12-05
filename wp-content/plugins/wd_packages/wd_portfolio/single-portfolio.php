@@ -54,24 +54,24 @@ if ( ! has_post_thumbnail( get_the_ID() ) ) {
 					</div><!-- .entry-content -->
 					<div class="wd-info-portfolio <?php echo esc_attr( $class_full ); ?>">
 						<div class="wd-por-customer">
-							<span><?php echo esc_html__( 'CUSTOMER', 'wpdance' ); ?></span>
+							<span><?php echo esc_html__( 'CUSTOMER', 'wd_package' ); ?></span>
 							<span><?php the_author_posts_link(); ?></span>
 						</div>
 						<div class="wd-por-date">
-							<span><?php echo esc_html__( 'DATE POST', 'wpdance' ); ?></span>
+							<span><?php echo esc_html__( 'DATE POST', 'wd_package' ); ?></span>
 							<span><?php the_time( 'j F, Y' ); ?></span>
 						</div><!-- .wd-por-date -->
 						<div class="wd-por-category">
-							<span><?php echo esc_html__( 'CATEGORY', 'wpdance' ); ?></span>
-							<span><?php WD_Portfolio::wdp_the_category( esc_html__( ', ', 'wpdance' ) ); ?></span>
+							<span><?php echo esc_html__( 'CATEGORY', 'wd_package' ); ?></span>
+							<span><?php WD_Portfolio::wdp_the_category( esc_html__( ', ', 'wd_package' ) ); ?></span>
 						</div><!-- .wd-por-category -->
 						<div class="wd-share_list">
-							<span><?php echo esc_html__( 'SHARE', 'wpdance' ); ?></span>
+							<span><?php echo esc_html__( 'SHARE', 'wd_package' ); ?></span>
 							<div class="addthis_sharing_toolbox"></div>
 						</div><!-- .wd-share_list -->
 						<div class="wd-project-portfolio">
 							<a href="<?php echo esc_url( $project_por ); ?>" class="wd-project-por">
-								<?php echo esc_html__( 'LAUNCH PROJECT', 'wpdance' ); ?>
+								<?php echo esc_html__( 'LAUNCH PROJECT', 'wd_package' ); ?>
 							</a>
 						</div><!-- .wd-project-portfolio -->
 					</div><!-- .wd-info-portfolio -->

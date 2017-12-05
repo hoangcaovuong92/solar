@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_search_blog' ) ) {
 	class tvlgiao_wpdance_widget_search_blog extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_search_blog', 'description' => esc_html__('Search Blog Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_search_blog', 'description' => esc_html__('Search Blog Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('search_blog', esc_html__('WD - Search Blog','wpdancelaparis'), $widget_ops);
+			parent::__construct('search_blog', esc_html__('WD - Search Blog','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -19,7 +19,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_search_blog' ) ) {
 			);
 	        ?>
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style')); ?>" id="<?php echo esc_attr($this->get_field_id('style')); ?>">
 						<?php foreach( $target_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($style==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -28,7 +28,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_search_blog' ) ) {
 				</p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

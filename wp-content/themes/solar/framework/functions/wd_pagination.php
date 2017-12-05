@@ -108,12 +108,12 @@ if(!function_exists ('tvlgiao_wpdance_pagination')){
 				if($paged > 1){
 					$first_page_link 	= add_query_arg('paged', 1, $current_page_request);
 					$previous_page_link = add_query_arg('paged', ($paged - 1), $current_page_request); ?>
-					<a class="first" href="<?php echo esc_url($first_page_link); ?>"><?php esc_html_e('Đầu','laparis'); ?></a>
-					<a class="previous" href="<?php echo esc_url($previous_page_link); ?>"><?php esc_html_e('Trước','laparis'); ?></a>
+					<a class="first" href="<?php echo esc_url($first_page_link); ?>"><?php esc_html_e('Đầu','solar'); ?></a>
+					<a class="previous" href="<?php echo esc_url($previous_page_link); ?>"><?php esc_html_e('Trước','solar'); ?></a>
 				<?php }
 				if($phrase > 1){
 					$previous_phrase_link 	= add_query_arg('paged', ($max_page*($phrase-2) + 1), $current_page_request); ?>
-					<a class="previous-phrase" href="<?php echo esc_url($previous_phrase_link);?>"><?php esc_html_e('...','laparis'); ?></a>
+					<a class="previous-phrase" href="<?php echo esc_url($previous_phrase_link);?>"><?php esc_html_e('...','solar'); ?></a>
 				<?php } ?>
 				<?php
 				if( $max_num_pages > 1 ) {
@@ -129,13 +129,13 @@ if(!function_exists ('tvlgiao_wpdance_pagination')){
 				}
 				if($phrase < ceil($max_num_pages/$max_page)){
 					$next_phrase_link 	= add_query_arg('paged', ($max_page*$phrase + 1), $current_page_request); ?>
-					<a class="next-phrase" href="<?php echo esc_url($next_phrase_link); ?>"><?php esc_html_e('...','laparis'); ?></a>
+					<a class="next-phrase" href="<?php echo esc_url($next_phrase_link); ?>"><?php esc_html_e('...','solar'); ?></a>
 				<?php } ?>
 				<?php if($paged < $max_num_pages){
 						$next_link 	= add_query_arg('paged', ($paged + 1), $current_page_request);
 						$last_link = add_query_arg('paged', $max_num_pages, $current_page_request); ?>
-						<a class="next" href="<?php echo esc_url($next_link); ?>"><?php esc_html_e('Sau','laparis'); ?></a>
-						<a class="last" href="<?php echo esc_url($last_link); ?>"><?php esc_html_e('Cuối','laparis'); ?></a>
+						<a class="next" href="<?php echo esc_url($next_link); ?>"><?php esc_html_e('Sau','solar'); ?></a>
+						<a class="last" href="<?php echo esc_url($last_link); ?>"><?php esc_html_e('Cuối','solar'); ?></a>
 				<?php }?>
 			</div>
 			<?php

@@ -63,7 +63,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 									$args['orderby']  = 'meta_value_num';
 								}
 
-								$item_name = __( 'Bestselling', 'wpdancelaparis' );
+								$item_name = __( 'Bestselling', 'wd_package' );
 								break;
 							case 'featured':
 								if ( 0 == $key ) {
@@ -74,19 +74,19 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 										'operator' => 'IN',
 									);
 								}
-								$item_name = __( 'Featured', 'wpdancelaparis' );
+								$item_name = __( 'Featured', 'wd_package' );
 								break;
 							case 'new_arrivals':
 								if ( 0 == $key ) {
 								}
-								$item_name = __( 'New Arrivals', 'wpdancelaparis' );
+								$item_name = __( 'New Arrivals', 'wd_package' );
 								break;
 							case 'top_reviewed':
 								if ( 0 == $key ) {
 									$args['meta_key'] = '_wc_average_rating';
 									$args['orderby']  = 'meta_value_num';
 								}
-								$item_name = __( 'Top Reviewed', 'wpdancelaparis' );
+								$item_name = __( 'Top Reviewed', 'wd_package' );
 								break;
 						}
 						/** @var string $item_name */
@@ -134,11 +134,11 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 
 			if ( $type === 'categories' ) {
 				$tab['heading'] = '<span>' . $title . '</span>';
-				$tab['link']    = '<span><a href="' . get_permalink( wc_get_page_id( 'shop' ) ) . '" role="tab">' . __( 'View All Products', 'wpdancelaparis' ) . '</a></span>';
+				$tab['link']    = '<span><a href="' . get_permalink( wc_get_page_id( 'shop' ) ) . '" role="tab">' . __( 'View All Products', 'wd_package' ) . '</a></span>';
 			} else {
 				$term           = get_term_by( 'id', $tab['id'], 'product_cat' );
 				$tab['heading'] = '<a href="' . get_term_link( $term->slug, $term->taxonomy ) . '">' . $term->name . '</a>';
-				$tab['link']    = '<span><a href="' . get_term_link( $term->slug, $term->taxonomy ) . '" role="tab">' . __( 'View All Products', 'wpdancelaparis' ) . '</a></span>';
+				$tab['link']    = '<span><a href="' . get_term_link( $term->slug, $term->taxonomy ) . '" role="tab">' . __( 'View All Products', 'wd_package' ) . '</a></span>';
 			}
 
 			$tab['img'] = wp_get_attachment_image( get_term_meta( $tab['id'], 'thumbnail_id', true ), 'full' );
@@ -274,7 +274,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 												<div class="<?php echo 'wd-columns-'.$columns; ?>">
 													<ul class="text-center">
 														<?php for ( $i = 0; $i < $number_loading_icon; $i ++ ): ?>
-															<li><img alt="<?php __( 'loading', 'wpdancelaparis' ) ?>" src="<?php echo SC_IMAGE.'/loading.gif';?>"></li>
+															<li><img alt="<?php __( 'loading', 'wd_package' ) ?>" src="<?php echo SC_IMAGE.'/loading.gif';?>"></li>
 														<?php endfor; ?>
 													</ul>
 												</div>

@@ -5,9 +5,9 @@ $_actived = apply_filters( 'active_plugins', get_option( 'active_plugins' )  );
 if( !class_exists( 'tvlgiao_wpdance_widget_header_icon_group' ) ) {
 	class tvlgiao_wpdance_widget_header_icon_group extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_header_icon_group', 'description' => esc_html__('Header Icon Group Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_header_icon_group', 'description' => esc_html__('Header Icon Group Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('header_icon_group', esc_html__('WD - Header Icon Group','wpdancelaparis'), $widget_ops);
+			parent::__construct('header_icon_group', esc_html__('WD - Header Icon Group','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -15,7 +15,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_header_icon_group' ) ) {
 	        ?>
 				
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>
@@ -97,17 +97,17 @@ if( !class_exists( 'tvlgiao_wpdance_widget_header_icon_group' ) ) {
 
 								<div class="form_wrapper">				
 									<div class="form_wrapper_body">
-										<h3><?php esc_html_e( 'My Account', 'wpdancelaparis' ); ?></h3>
+										<h3><?php esc_html_e( 'My Account', 'wd_package' ); ?></h3>
 										<form method="post" class="login" id="loginform-custom" >
 
 											<?php do_action( 'woocommerce_login_form_start' ); ?>
 
 											<p class="login-username">
-												<label for="username"><?php esc_html_e( 'User or Email', 'wpdancelaparis' ); ?><span class="required">*</span></label>
+												<label for="username"><?php esc_html_e( 'User or Email', 'wd_package' ); ?><span class="required">*</span></label>
 												<input type="text" size="20" class="input" id="username" name="username" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>">
 											</p>
 											<p class="login-password">
-												<label for="password"><?php esc_html_e( 'Password', 'wpdancelaparis' ); ?> <span class="required">*</span></label>
+												<label for="password"><?php esc_html_e( 'Password', 'wd_package' ); ?> <span class="required">*</span></label>
 												<input type="password" size="20" value="" class="input" id="password" name="password">
 											</p>
 
@@ -117,7 +117,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_header_icon_group' ) ) {
 
 											<p class="login-submit">
 												<?php wp_nonce_field( 'woocommerce-login' ); ?>
-												<input type="submit" class="secondary_button" name="login" value="<?php esc_html_e( 'Login', 'wpdancelaparis' ); ?>" />
+												<input type="submit" class="secondary_button" name="login" value="<?php esc_html_e( 'Login', 'wd_package' ); ?>" />
 											</p>
 
 											<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -125,7 +125,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_header_icon_group' ) ) {
 										</form>
 									</div>
 									<div class="form_wrapper_footer">
-										<span><?php esc_html_e('or New to Goodly? ','wpdancelaparis');?></span><span><a class="link_color_hover" href="<?php echo esc_url($myaccount_page_url); ?>"><?php esc_html_e('Register','wpdancelaparis'); ?></a></span>
+										<span><?php esc_html_e('or New to Goodly? ','wd_package');?></span><span><a class="link_color_hover" href="<?php echo esc_url($myaccount_page_url); ?>"><?php esc_html_e('Register','wd_package'); ?></a></span>
 									</div>
 								</div>	
 

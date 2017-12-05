@@ -104,16 +104,16 @@ if ( !function_exists( 'tvlgiao_wpdance_theme_comment' )){
 							</div>
 
 							<div class="comment-date">
-								<?php printf( esc_html__( '%1$s', 'laparis' ), get_comment_date()); ?>
+								<?php printf( esc_html__( '%1$s', 'solar' ), get_comment_date()); ?>
 							</div>
 
 							<div class="comment-body"><?php comment_text(); ?></div>
 							<?php if ( $comment->comment_approved == '0' ) : ?>
-								<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'laparis' ); ?></em><br/>
+								<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'solar' ); ?></em><br/>
 							<?php endif; ?>
 
 							<div class="comment-info">
-								<span class="reply"><?php comment_reply_link( array_merge( array( 'reply_text' => esc_html__( 'REPLY', 'laparis' ) ) , array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?></span>
+								<span class="reply"><?php comment_reply_link( array_merge( array( 'reply_text' => esc_html__( 'REPLY', 'solar' ) ) , array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?></span>
 								<span class="edit"><?php edit_comment_link('<i class="fa fa-pencil-square-o"></i>', ' ' );?></span>
 							</div><!-- .reply -->
 							
@@ -137,7 +137,7 @@ if ( !function_exists( 'tvlgiao_wpdance_comments_list' )){
 				<h3 class="heading-title" id="comments-title">
 					<?php
 						$comment_number = get_comments_number() < 10 && get_comments_number() > 0 ? '0'.get_comments_number() : get_comments_number() ;
-						printf( _n( '%s Comment on "%s"', '%s Comments on "%s"', $comment_number, 'laparis' ), $comment_number, get_the_title() );
+						printf( _n( '%s Comment on "%s"', '%s Comments on "%s"', $comment_number, 'solar' ), $comment_number, get_the_title() );
 					?>
 				</h3>
 			</div>
@@ -145,8 +145,8 @@ if ( !function_exists( 'tvlgiao_wpdance_comments_list' )){
 			<!-- Are there comments to navigate through ? -->
 			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 				<div class="navigation">
-					<div class="nav-previous"><?php previous_comments_link( wp_kses(__( '<span class="meta-nav">&larr;</span> Older Comments', 'laparis' ),array()) ); ?></div>
-					<div class="nav-next"><?php next_comments_link( wp_kses(__( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'laparis' ),array()) ); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( wp_kses(__( '<span class="meta-nav">&larr;</span> Older Comments', 'solar' ),array()) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( wp_kses(__( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'solar' ),array()) ); ?></div>
 				</div> <!-- .navigation -->
 			<?php endif; // check for comment navigation ?>
 
@@ -178,14 +178,14 @@ if ( !function_exists( 'tvlgiao_wpdance_comments_list' )){
 			<!-- Are there comments to navigate through ? -->
 			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 				<div class="navigation">
-					<div class="nav-previous"><?php previous_comments_link( wp_kses(__( '<span class="meta-nav">&larr;</span> Older Comments', 'laparis' ),array()) ); ?></div>
-					<div class="nav-next"><?php next_comments_link( wp_kses(__( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'laparis' ),array()) ); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( wp_kses(__( '<span class="meta-nav">&larr;</span> Older Comments', 'solar' ),array()) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( wp_kses(__( 'Newer Comments <span class="meta-nav">&rarr;</span>', 'solar' ),array()) ); ?></div>
 				</div> <!-- .navigation -->
 			<?php endif; // check for comment navigation ?>
 
 		<?php else: ?>
 			<?php if (!comments_open()) : ?>
-				<p class="nocomments"><?php esc_html_e( 'Comments are closed.', 'laparis' ); ?></p>
+				<p class="nocomments"><?php esc_html_e( 'Comments are closed.', 'solar' ); ?></p>
 			<?php endif; // end ! comments_open() ?>
 		<?php endif; // end have_comments() ?>
 	<?php
@@ -209,16 +209,16 @@ if(!function_exists ('tvlgiao_wpdance_comment_form')){
 		$name_email_req 		= $req ? $area_req : '';
 		$name_email_html_req 	= $req ? $area_html_req : '';
 		$label 					= array(
-			'comment_author'		=>	esc_html__('Name','laparis'),
-			'comment_author_email'	=>	esc_html__('Email','laparis'),
-			'comment_author_url'	=>	esc_html__('Website','laparis'),	
-			'comment_field'			=>	esc_html__('Comment', 'laparis'),	
+			'comment_author'		=>	esc_html__('Name','solar'),
+			'comment_author_email'	=>	esc_html__('Email','solar'),
+			'comment_author_url'	=>	esc_html__('Website','solar'),	
+			'comment_field'			=>	esc_html__('Comment', 'solar'),	
 		);
 		$placeholder 	= array(
-			'comment_author'		=>	esc_html__('Your name','laparis'),
-			'comment_author_email'	=>	esc_html__('Your email','laparis'),
-			'comment_author_url'	=>	esc_html__('Your website','laparis'),
-			'comment_field'			=>	esc_html__('Your Comment', 'laparis'),
+			'comment_author'		=>	esc_html__('Your name','solar'),
+			'comment_author_email'	=>	esc_html__('Your email','solar'),
+			'comment_author_url'	=>	esc_html__('Your website','solar'),
+			'comment_field'			=>	esc_html__('Your Comment', 'solar'),
 		);
 		extract(array_filter(array(
 			'comment_author'		=>	esc_attr($commenter['comment_author']),
@@ -240,17 +240,17 @@ if(!function_exists ('tvlgiao_wpdance_comment_form')){
 		$defaults = array(
 			'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
 			'comment_field'        => '<span class="label">'.$label['comment_field'].$area_html_req.'</span><p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" ' . $area_req . ' placeholder="' .$placeholder['comment_field']. '" ></textarea></p>',
-			'must_log_in'          => '<p class="must-log-in">' .  sprintf(__( 'You must be <a href="%s">logged in</a> to post a comment.','laparis' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
-			'logged_in_as'         => '<p class="logged-in-as">' . sprintf(__( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>','laparis'), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
+			'must_log_in'          => '<p class="must-log-in">' .  sprintf(__( 'You must be <a href="%s">logged in</a> to post a comment.','solar' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
+			'logged_in_as'         => '<p class="logged-in-as">' . sprintf(__( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>','solar'), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
 			'comment_notes_before' => '',
 			'comment_notes_after'  => '',
 			'id_form'              => 'commentform',
 			'id_submit'            => 'submit',
-			'title_reply'          => esc_html__( 'Leave a comment','laparis' ),
-			'title_reply_to'       => esc_html__( 'Leave a reply to %s','laparis'),
-			'cancel_reply_link'    => esc_html__( 'Cancel reply','laparis' ),
-			'label_submit'         => esc_html__( 'POST COMMENT','laparis' ),
-			'label_infomation'	   => esc_html__( 'Please note: comments may need to be approved before publishing!','laparis' )
+			'title_reply'          => esc_html__( 'Leave a comment','solar' ),
+			'title_reply_to'       => esc_html__( 'Leave a reply to %s','solar'),
+			'cancel_reply_link'    => esc_html__( 'Cancel reply','solar' ),
+			'label_submit'         => esc_html__( 'POST COMMENT','solar' ),
+			'label_infomation'	   => esc_html__( 'Please note: comments may need to be approved before publishing!','solar' )
 		);
 		
 		if( !is_user_logged_in() ){

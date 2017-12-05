@@ -32,7 +32,7 @@ if (!function_exists('wd_team_member_function')) {
 		?>
 		<div class="wd-team-member <?php echo esc_attr($class) ?> <?php echo esc_attr($style) ?>" >
 			<?php if($id_team == '-1' && $slider_or_one == '1'){ ?>
-				<p><?php esc_html_e('Please select team','wpdancelaparis'); ?></p>
+				<p><?php esc_html_e('Please select team','solar'); ?></p>
 			<?php }else{ ?>
 				<?php if($slider_or_one == '1') : ?>
 					<?php while ($teammember->have_posts()) : $teammember->the_post(); global $post; ?>

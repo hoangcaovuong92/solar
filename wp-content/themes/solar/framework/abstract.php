@@ -15,8 +15,8 @@ if (!class_exists('Tvlgiao_Wpdance_GeneralTheme')) {
 		}
 
 		//Variable
-		protected $theme_name		= 'laparis';
-		protected $theme_slug		= 'laparis';
+		protected $theme_name		= 'solar';
+		protected $theme_slug		= 'solar';
 
 		protected $arr_functions 	= array();
 		protected $arr_customize 	= array();
@@ -123,7 +123,7 @@ if (!class_exists('Tvlgiao_Wpdance_GeneralTheme')) {
 		    }
 			//Make theme available for translation
 			//Translations can be filed in the /languages/ directory
-   			load_theme_textdomain('laparis', get_template_directory() . '/languages');
+   			load_theme_textdomain('solar', get_template_directory() . '/languages');
    			//Import Register Menu
    			$this->register_location_menu();
    			//Import Theme Support
@@ -135,9 +135,9 @@ if (!class_exists('Tvlgiao_Wpdance_GeneralTheme')) {
 		//Register Menu
 		public function register_location_menu(){
 			register_nav_menus(array(
-				'primary' 			=> esc_html__('Primary Menu', 'laparis'),
-		        'primary_right' 	=> esc_html__('Secondary Menu', 'laparis'),
-		        'primary_mobile' 	=> esc_html__('Mobile Menu', 'laparis'),
+				'primary' 			=> esc_html__('Primary Menu', 'solar'),
+		        'primary_right' 	=> esc_html__('Secondary Menu', 'solar'),
+		        'primary_mobile' 	=> esc_html__('Mobile Menu', 'solar'),
 		    ));
 		}
 

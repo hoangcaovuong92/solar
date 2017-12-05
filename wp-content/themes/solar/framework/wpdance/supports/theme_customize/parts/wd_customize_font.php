@@ -3,8 +3,8 @@
 /*					 CUSTOM STYLING OPTION						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_panel( 'tvlgiao_wpdance_font_config', array(
-    'title' 			=> esc_html__( 'WD - Font Setting', 'laparis' ),
-    'description' 		=> esc_html__( 'Custom font in website.', 'laparis'),
+    'title' 			=> esc_html__( 'WD - Font Setting', 'solar' ),
+    'description' 		=> esc_html__( 'Custom font in website.', 'solar'),
     'priority' 			=> 530,
 ));
 

@@ -104,7 +104,7 @@ do_action('tvlgiao_wpdance_before_main_content'); ?>
 										<?php if ( !post_password_required() /* || current_user_can('editor') || current_user_can('administrator') */) { ?>
 
 											<?php the_content( sprintf(
-													__( 'Continue reading<span class="wd-screen-reader-text"> "%s"</span>', 'laparis' ),
+													__( 'Continue reading<span class="wd-screen-reader-text"> "%s"</span>', 'solar' ),
 													get_the_title()
 												) );
 												tvlgiao_wpdance_display_post_page_link();

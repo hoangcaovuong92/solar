@@ -63,8 +63,8 @@ if (!class_exists('WD_Post_Like')) {
 			wp_enqueue_script( 'wd-simple-likes-public-js', WDPL_JS.'/simple-likes-public.js', array( 'jquery' ), '0.5', false );
 			wp_localize_script( 'wd-simple-likes-public-js', 'simpleLikes', array(
 				'ajaxurl' => admin_url( 'admin-ajax.php' ),
-				'like' => __( 'Like', 'laparis' ),
-				'unlike' => __( 'Unlike', 'laparis' )
+				'like' => __( 'Like', 'solar' ),
+				'unlike' => __( 'Unlike', 'solar' )
 			) ); 
 		}
 
@@ -76,7 +76,7 @@ if (!class_exists('WD_Post_Like')) {
 			// Security
 			$nonce = isset( $_REQUEST['nonce'] ) ? sanitize_text_field( $_REQUEST['nonce'] ) : 0;
 			if ( !wp_verify_nonce( $nonce, 'simple-likes-nonce' ) ) {
-				exit( __( 'Not permitted', 'laparis' ) );
+				exit( __( 'Not permitted', 'solar' ) );
 			}
 			// Test if javascript is disabled
 			$disabled = ( isset( $_REQUEST['disabled'] ) && $_REQUEST['disabled'] == true ) ? true : false;
@@ -250,11 +250,11 @@ if (!class_exists('WD_Post_Like')) {
 			// Liked/Unliked Variables
 			if ( $this->already_liked( $post_id, $is_comment ) ) {
 				$class = esc_attr( ' liked' );
-				$title = __( 'Unlike', 'laparis' );
+				$title = __( 'Unlike', 'solar' );
 				$icon = $icon_full;
 			} else {
 				$class = '';
-				$title = __( 'Like', 'laparis' );
+				$title = __( 'Like', 'solar' );
 				$icon = $icon_empty;
 			}
 			$output = '<span class="wd-post-like-wrapper"><a href="' . admin_url( 'admin-ajax.php?action=process_simple_like' . '&post_id=' . $post_id . '&nonce=' . $nonce . '&is_comment=' . $is_comment . '&disabled=true' ) . '" class="wd-post-like-button' . $post_id_class . $class . $comment_class . '" data-nonce="' . $nonce . '" data-post-id="' . $post_id . '" data-iscomment="' . $is_comment . '" title="' . $title . '">' . $icon . $count . '</a>' . $loader . '</span>';
@@ -377,7 +377,7 @@ if (!class_exists('WD_Post_Like')) {
 		 * @since    0.5
 		 */
 		public function get_like_count( $like_count ) {
-			$like_text = __( 'Like', 'laparis' );
+			$like_text = __( 'Like', 'solar' );
 			if ( is_numeric( $like_count ) && $like_count > 0 ) { 
 				$number = $this->wd_format_count( $like_count );
 			} else {
@@ -392,7 +392,7 @@ if (!class_exists('WD_Post_Like')) {
 		public function show_user_likes( $user ) { ?>        
 			<table class="form-table">
 				<tr>
-					<th><label for="user_likes"><?php _e( 'You Like:', 'laparis' ); ?></label></th>
+					<th><label for="user_likes"><?php _e( 'You Like:', 'solar' ); ?></label></th>
 					<td>
 					<?php
 					$types = get_post_types( array( 'public' => true ) );
@@ -418,7 +418,7 @@ if (!class_exists('WD_Post_Like')) {
 					?>
 					</p>
 					<?php else : ?>
-					<p><?php _e( 'You do not like anything yet.', 'laparis' ); ?></p>
+					<p><?php _e( 'You do not like anything yet.', 'solar' ); ?></p>
 					<?php 
 					endif; 
 					wp_reset_postdata(); 

@@ -1,7 +1,7 @@
 <?php
 	$post_id  			= tvlgiao_wpdance_get_post_by_global();
-	$html_header 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_header',__('Select Header', 'laparis'),'name');
-	$html_footer 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',__('Select Footer', 'laparis'),'name');
+	$html_header 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_header',__('Select Header', 'solar'),'name');
+	$html_footer 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',__('Select Footer', 'solar'),'name');
 	$_layout_config 	= tvlgiao_wpdance_get_custom_layout($post_id);
 	$selected_header 	= get_post_meta( $post_id, '_tvlgiao_wpdance_custom_header', true );
 	$selected_footer 	= get_post_meta( $post_id, '_tvlgiao_wpdance_custom_footer', true );

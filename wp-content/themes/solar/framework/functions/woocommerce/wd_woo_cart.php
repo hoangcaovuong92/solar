@@ -54,7 +54,7 @@ if ( ! function_exists( 'tvlgiao_wpdance_cart_icon' ) ) {
 		$cart_class		= ($device != 'desktop') ? 'wd-mini-cart-on-mobile' : ''; ?>
 		<div class="wd_tini_cart_control">
 			<span class="cart_size">
-				<a data-content_id="<?php echo esc_attr($id); ?>" class="wd-view-cart-info-btn <?php echo esc_attr($cart_class); ?>" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_html_e('View your cart','laparis');?>">
+				<a data-content_id="<?php echo esc_attr($id); ?>" class="wd-view-cart-info-btn <?php echo esc_attr($cart_class); ?>" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_html_e('View your cart','solar');?>">
 					<!--<span class="cart_division">/</span>-->
 					<span class="cart_size_value_head" id="<?php echo esc_attr($_cart_size_id); ?>">
 						<?php 
@@ -72,7 +72,7 @@ if ( ! function_exists( 'tvlgiao_wpdance_cart_icon' ) ) {
 								</span>
 							<?php elseif ($key == 'cart_text' && $value): ?>
 								<span class="cart_text">
-									<span class="text"><?php esc_html_e('Cart','laparis');?></span>
+									<span class="text"><?php esc_html_e('Cart','solar');?></span>
 								</span>
 							<?php elseif ($key == 'cart_item' && $value): ?>
 								<span class="cart_item">
@@ -105,7 +105,7 @@ if ( ! function_exists( 'tvlgiao_wpdance_cart_content' ) ) {
 		<?php if ( !$_cart_empty ) : ?>
 			<div class="dropdown_body">
 				<h5 class="wd_cart_item_info">
-					<?php printf(_n('<strong>%s</strong> Items On Your Cart', '<strong>%s</strong> Items On Your Cart', $number, 'laparis'), $number); ?>
+					<?php printf(_n('<strong>%s</strong> Items On Your Cart', '<strong>%s</strong> Items On Your Cart', $number, 'solar'), $number); ?>
 				</h5>
 				<ul class="cart_list product_list_widget">
 					<?php
@@ -135,7 +135,7 @@ if ( ! function_exists( 'tvlgiao_wpdance_cart_content' ) ) {
 								</a>
 								<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity link_color">' . sprintf( '%s &times; %s',$product_price, $cart_item['quantity'] ) . '</span>', $cart_item, $cart_item_key ); ?>
 								<?php
-									echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), esc_html__( 'Remove this item', 'laparis' ) ), $cart_item_key );
+									echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), esc_html__( 'Remove this item', 'solar' ) ), $cart_item_key );
 								?>
 							</div>
 						</li>
@@ -145,30 +145,30 @@ if ( ! function_exists( 'tvlgiao_wpdance_cart_content' ) ) {
 			</div>
 			<div class="wd-empty-cart-btn">
 				<?php $url_clear_cart = add_query_arg('empty_cart', 1, tvlgiao_wpdance_get_current_url()); ?>
-				<a href="<?php echo esc_url($url_clear_cart); ?>" class="cart wd-clear-cart-item" title="<?php esc_html_e( 'Empty Cart', 'laparis' ) ?>"><span class="lnr lnr-cross-circle"></span> <?php esc_html_e( 'Empty Cart', 'laparis' ) ?>
+				<a href="<?php echo esc_url($url_clear_cart); ?>" class="cart wd-clear-cart-item" title="<?php esc_html_e( 'Empty Cart', 'solar' ) ?>"><span class="lnr lnr-cross-circle"></span> <?php esc_html_e( 'Empty Cart', 'solar' ) ?>
 				</a>
 				<div class="wd-feature-loading-img hidden">
 					<img src="<?php echo TVLGIAO_WPDANCE_THEME_IMAGES.'/loading.gif'; ?>" alt="Loading Icon">
 				</div>
 			</div>
 			<div class="dropdown_footer">
-				<p class="total"><span class="link_color"><?php esc_html_e( 'Total', 'laparis' ); ?>:</span><span class="link_color_hover"><?php echo wp_kses_post( $woocommerce->cart->get_cart_subtotal()); ?></span></p>
+				<p class="total"><span class="link_color"><?php esc_html_e( 'Total', 'solar' ); ?>:</span><span class="link_color_hover"><?php echo wp_kses_post( $woocommerce->cart->get_cart_subtotal()); ?></span></p>
 
 				<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 		
 				<p class="buttons">
-					<a class="cart" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_html_e( 'View Cart', 'laparis' ) ?>"><span class="lnr lnr-cart"></span> <?php esc_html_e('View cart','laparis');?></a>
-					<a class="checkout secondary_button" href="<?php echo esc_url( wc_get_checkout_url() ); ?>" title="<?php esc_html_e( 'Checkout Page', 'laparis' ) ?>"><?php esc_html_e( 'Checkout', 'laparis' ); ?></a>
+					<a class="cart" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_html_e( 'View Cart', 'solar' ) ?>"><span class="lnr lnr-cart"></span> <?php esc_html_e('View cart','solar');?></a>
+					<a class="checkout secondary_button" href="<?php echo esc_url( wc_get_checkout_url() ); ?>" title="<?php esc_html_e( 'Checkout Page', 'solar' ) ?>"><?php esc_html_e( 'Checkout', 'solar' ); ?></a>
 					
 				</p>
 			</div>
 		<?php else: ?>
 			<div class="dropdown_body wd-cart-empty">
-				<?php esc_html_e('Shopping cart is empty.','laparis');?>
+				<?php esc_html_e('Shopping cart is empty.','solar');?>
 			</div>
 			<div class="dropdown_footer">
 				<p class="buttons">
-					<a class="cart" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>"><?php esc_html_e('Go Shopping','laparis');?></a>
+					<a class="cart" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>"><?php esc_html_e('Go Shopping','solar');?></a>
 				</p>				
 			</div>
 		<?php endif; ?>

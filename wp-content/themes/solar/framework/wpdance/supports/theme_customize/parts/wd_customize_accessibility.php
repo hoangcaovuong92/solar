@@ -3,32 +3,32 @@
 /*					 CUSTOM STYLING OPTION						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_panel( 'tvlgiao_wpdance_theme_option', array(
-    'title' 			=> esc_html__( 'WD - Accessibility', 'laparis' ),
-    'description' 		=> esc_html__( '', 'laparis'),
+    'title' 			=> esc_html__( 'WD - Accessibility', 'solar' ),
+    'description' 		=> esc_html__( '', 'solar'),
     'priority' 			=> 500,
 ));
 	$wp_customize->add_section( 'tvlgiao_wpdance_breadcrumb_section' , array(
-		'title'       		=> esc_html__( 'Breadcrumb Config', 'laparis' ),
-		'description' 		=> esc_html__( '', 'laparis'),
+		'title'       		=> esc_html__( 'Breadcrumb Config', 'solar' ),
+		'description' 		=> esc_html__( '', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_theme_option',
 		'priority'    		=> 5,
 	));
 	
 $wp_customize->add_section( 'tvlgiao_wpdance_scroll_button_section' , array(
-		'title'       		=> esc_html__( 'Back To Top Button', 'laparis' ),
-		'description' 		=> esc_html__( '', 'laparis'),
+		'title'       		=> esc_html__( 'Back To Top Button', 'solar' ),
+		'description' 		=> esc_html__( '', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_theme_option',
 		'priority'    		=> 10,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_effect_section' , array(
-		'title'       		=> esc_html__( 'Visual Effects', 'laparis' ),
-		'description' 		=> esc_html__( '', 'laparis'),
+		'title'       		=> esc_html__( 'Visual Effects', 'solar' ),
+		'description' 		=> esc_html__( '', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_theme_option',
 		'priority'    		=> 10,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_social_share_section' , array(
-		'title'       		=> esc_html__( 'Social Share', 'laparis' ),
-		'description' 		=> esc_html__( '', 'laparis'),
+		'title'       		=> esc_html__( 'Social Share', 'solar' ),
+		'description' 		=> esc_html__( '', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_theme_option',
 		'priority'    		=> 15,
 	));
@@ -42,7 +42,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_breadcrumb', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_breadcrumb',array(
-	'label'          	=> esc_html__( 'Select the layout breadcrumb', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout breadcrumb', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_breadcrumb_section',
 	'settings'       	=> 'tvlgiao_wpdance_breadcrumb',
 	'choices'			=> array(
@@ -58,7 +58,7 @@ $wp_customize->add_setting( 'tvlgiao_wpdance_color_breadcrumb' , array(
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_color_breadcrumb' , array(
-	'label'      		=>  esc_html__( 'Select Color Background', 'laparis' ),
+	'label'      		=>  esc_html__( 'Select Color Background', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_breadcrumb_section',
     'settings' 			=> 'tvlgiao_wpdance_color_breadcrumb',
 )));
@@ -70,7 +70,7 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlg
 	'type' 				=> 'theme_mod'
 ));
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'tvlgiao_wpdance_banner_breadcrumb', array(
-    'label'    			=> esc_html__( 'Banner Breadcrumb', 'laparis' ),
+    'label'    			=> esc_html__( 'Banner Breadcrumb', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_breadcrumb_section',
     'settings' 			=> 'tvlgiao_wpdance_banner_breadcrumb',
 )));
@@ -81,11 +81,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_banner_breadcrumb_height',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_banner_breadcrumb_height_control',array(
-	'label'         	=> esc_html__( 'Height', 'laparis' ),
+	'label'         	=> esc_html__( 'Height', 'solar' ),
 	'section'       	=> 'tvlgiao_wpdance_breadcrumb_section',
 	'settings'      	=> 'tvlgiao_wpdance_banner_breadcrumb_height',
 	'type'          	=> 'text',
-	'description'   	=> esc_html__( 'Unit: pixels', 'laparis' )
+	'description'   	=> esc_html__( 'Unit: pixels', 'solar' )
 ));
 
 
@@ -96,7 +96,7 @@ $wp_customize->add_setting( 'tvlgiao_wpdance_banner_breadcrumb_text_color' , arr
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_banner_breadcrumb_text_color' , array(
-	'label'      		=>  esc_html__( 'Title & Slug Color', 'laparis' ),
+	'label'      		=>  esc_html__( 'Title & Slug Color', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_breadcrumb_section',
     'settings' 			=> 'tvlgiao_wpdance_banner_breadcrumb_text_color',
 )));
@@ -107,8 +107,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_banner_breadcrumb_text_style', array
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_banner_breadcrumb_text_style_control', array(
-	'label'   			=> esc_html__('Title & Slug Style', 'laparis'),
-	'description' 		=> esc_html__('', 'laparis'),
+	'label'   			=> esc_html__('Title & Slug Style', 'solar'),
+	'description' 		=> esc_html__('', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_breadcrumb_section',
 	'settings' 			=> 'tvlgiao_wpdance_banner_breadcrumb_text_style',
 	'type'    			=> 'select',
@@ -124,8 +124,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_banner_breadcrumb_text_align', array
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_banner_breadcrumb_text_align_control', array(
-	'label'   			=> esc_html__('Text Align', 'laparis'),
-	'description' 		=> esc_html__('', 'laparis'),
+	'label'   			=> esc_html__('Text Align', 'solar'),
+	'description' 		=> esc_html__('', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_breadcrumb_section',
 	'settings' 			=> 'tvlgiao_wpdance_banner_breadcrumb_text_align',
 	'type'    			=> 'select',
@@ -145,8 +145,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_back_to_top_button', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_back_to_top_button_control', array(
-	'label'   			=> esc_html__('Back To Top Button', 'laparis'),
-	'description' 		=> esc_html__('Enable/Disable scroll button in website', 'laparis'),
+	'label'   			=> esc_html__('Back To Top Button', 'solar'),
+	'description' 		=> esc_html__('Enable/Disable scroll button in website', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_scroll_button_section',
 	'settings' 			=> 'tvlgiao_wpdance_back_to_top_button',
 	'type'    			=> 'select',
@@ -162,8 +162,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_back_to_top_button_style', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_back_to_top_button_style_control', array(
-	'label'   			=> esc_html__('Select Style', 'laparis'),
-	'description' 		=> esc_html__('Enable/Disable scroll button in website', 'laparis'),
+	'label'   			=> esc_html__('Select Style', 'solar'),
+	'description' 		=> esc_html__('Enable/Disable scroll button in website', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_scroll_button_section',
 	'settings' 			=> 'tvlgiao_wpdance_back_to_top_button_style',
 	'type'    			=> 'select',
@@ -179,8 +179,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_back_to_top_button_icon', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_back_to_top_button_icon_control', array(
-	'label'   			=> esc_html__('Select Icon', 'laparis'),
-	'description' 		=> esc_html__('', 'laparis'),
+	'label'   			=> esc_html__('Select Icon', 'solar'),
+	'description' 		=> esc_html__('', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_scroll_button_section',
 	'settings' 			=> 'tvlgiao_wpdance_back_to_top_button_icon',
 	'type'    			=> 'select',
@@ -197,7 +197,7 @@ $wp_customize->add_setting( 'tvlgiao_wpdance_back_to_top_button_icon_color' , ar
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_back_to_top_button_icon_color_control' , array(
-	'label'      		=>  esc_html__( 'Icon Color', 'laparis' ),
+	'label'      		=>  esc_html__( 'Icon Color', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_scroll_button_section',
     'settings' 			=> 'tvlgiao_wpdance_back_to_top_button_icon_color',
 )));
@@ -208,7 +208,7 @@ $wp_customize->add_setting( 'tvlgiao_wpdance_back_to_top_button_background_color
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_back_to_top_button_background_color_control' , array(
-	'label'      		=>  esc_html__( 'Background Color', 'laparis' ),
+	'label'      		=>  esc_html__( 'Background Color', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_scroll_button_section',
     'settings' 			=> 'tvlgiao_wpdance_back_to_top_button_background_color',
 )));
@@ -219,8 +219,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_back_to_top_button_background_shape'
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_back_to_top_button_background_shape_control', array(
-	'label'   			=> esc_html__('Background Shape', 'laparis'),
-	'description' 		=> esc_html__('', 'laparis'),
+	'label'   			=> esc_html__('Background Shape', 'solar'),
+	'description' 		=> esc_html__('', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_scroll_button_section',
 	'settings' 			=> 'tvlgiao_wpdance_back_to_top_button_background_shape',
 	'type'    			=> 'select',
@@ -237,8 +237,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_loading_effect', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control('tvlgiao_wpdance_loading_effect_control', array(
-	'label'   			=> esc_html__('Loading Effect', 'laparis'),
-	'description' 		=> esc_html__('Enable/Disable loading effect in website.', 'laparis'),
+	'label'   			=> esc_html__('Loading Effect', 'solar'),
+	'description' 		=> esc_html__('Enable/Disable loading effect in website.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_effect_section',
 	'settings' 			=> 'tvlgiao_wpdance_loading_effect',
 	'type'    			=> 'select',
@@ -254,8 +254,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_sidebar_fixed_effect', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control('tvlgiao_wpdance_sidebar_fixed_effect_control', array(
-	'label'   			=> esc_html__('Sidebar Fixed', 'laparis'),
-	'description' 		=> esc_html__('Enable/Disable sidebar fixed effect in website.', 'laparis'),
+	'label'   			=> esc_html__('Sidebar Fixed', 'solar'),
+	'description' 		=> esc_html__('Enable/Disable sidebar fixed effect in website.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_effect_section',
 	'settings' 			=> 'tvlgiao_wpdance_sidebar_fixed_effect',
 	'type'    			=> 'select',
@@ -272,8 +272,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_social_share', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control('tvlgiao_wpdance_social_share_control', array(
-	'label'   			=> esc_html__('Display', 'laparis'),
-	'description' 		=> esc_html__('Enable/Disable all social share button in website.', 'laparis'),
+	'label'   			=> esc_html__('Display', 'solar'),
+	'description' 		=> esc_html__('Enable/Disable all social share button in website.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_social_share_section',
 	'settings' 			=> 'tvlgiao_wpdance_social_share',
 	'type'    			=> 'select',
@@ -289,11 +289,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_social_share_pubid',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_social_share_pubid_control',array(
-	'label'         	=> esc_html__( 'Addthis Profile ID', 'laparis' ),
+	'label'         	=> esc_html__( 'Addthis Profile ID', 'solar' ),
 	'section'       	=> 'tvlgiao_wpdance_social_share_section',
 	'settings'      	=> 'tvlgiao_wpdance_social_share_pubid',
 	'type'          	=> 'text',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 )); 
 
 ?>

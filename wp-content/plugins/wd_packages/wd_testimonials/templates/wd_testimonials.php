@@ -59,7 +59,7 @@ if (!function_exists('tvlgiao_wpdance_testimonials_function')) {
 					$role			= !empty($meta_data['role']) ? $meta_data['role'] : '';
 					$rating			= !empty($meta_data['rating']) ? $meta_data['rating'] : 5;
 					$rating_percent	= ($rating/5) * 100;
-					$rating_html 	= '<div class="star-rating" title="Rated '.$rating.' out of 5"><span style="width:'.$rating_percent.'%"><strong class="rating">'.$rating.'</strong> out of 5</span></div>';
+					$rating_html 	= '<div class="star-rating" title="Rated '.$rating.' out of 5"><span style="width:'.$rating_percent.'%"><strong class="rating hidden">'.$rating.' out of 5</strong></span></div>';
 					$content        = ($number_word_excerpt != '-1') ? wp_trim_words(get_the_content(),$number_word_excerpt, '...') : get_the_content();
 				 	?>
 					<div class="wd-testimonial-content-wrap">

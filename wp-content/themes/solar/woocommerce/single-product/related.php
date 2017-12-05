@@ -42,7 +42,7 @@ if ( $products->have_posts() ) :
 ?>
 	<div class="wd-ralated-product">
 		<div class="wd-title wd-title-section-style-1">
-			<h2 class="wd-title-heading text-center"><?php esc_html_e('RELATED ITEMS','laparis'); ?></h2>
+			<h2 class="wd-title-heading text-center"><?php esc_html_e('RELATED ITEMS','solar'); ?></h2>
 		</div>
 		<div class="wd-ralated-content row">
 			<div class="related products grid">

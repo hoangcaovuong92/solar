@@ -36,7 +36,7 @@ global $product;
 		<?php if ( $product->get_price() ) : ?>
 			<?php echo $product->get_price_html(); ?>
 		<?php else: ?>
-			<span class="wd-woocommerce-price-updating"><?php esc_html_e( 'Updating', 'laparis' ); ?></span>
+			<span class="wd-woocommerce-price-updating"><?php esc_html_e( 'Updating', 'solar' ); ?></span>
 		<?php endif; ?>
 	</span>
 	<?php 

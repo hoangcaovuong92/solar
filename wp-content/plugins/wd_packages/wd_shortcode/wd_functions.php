@@ -36,19 +36,19 @@ if ( ! function_exists( 'tvlgiao_wpdance_get_list_blog_special_layout' ) ) {
 		return  array(
 			array(
 				0 => 'title',
-		      	1 =>  __( 'Title', 'wpdancelaparis' ),
+		      	1 =>  __( 'Title', 'wd_package' ),
 			),
 			array(
 				0 => 'meta',
-		      	1 =>  __( 'Meta', 'wpdancelaparis' ),
+		      	1 =>  __( 'Meta', 'wd_package' ),
 			),
 			array(
 				0 => 'excerpt',
-		      	1 =>  __( 'Excerpt', 'wpdancelaparis' ),
+		      	1 =>  __( 'Excerpt', 'wd_package' ),
 			),
 			array(
 				0 => 'readmore',
-		      	1 =>  __( 'Readmore', 'wpdancelaparis' ),
+		      	1 =>  __( 'Readmore', 'wd_package' ),
 			),
 		);
 	}
@@ -120,14 +120,14 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_data')){
 if(!function_exists ('tvlgiao_wpdance_vc_get_list_tvgiao_columns')){
 	function tvlgiao_wpdance_vc_get_list_tvgiao_columns(){
 		return array(
-			__( '1 Columns', 'wpdancelaparis' )		=> '1',
-			__( '2 Columns', 'wpdancelaparis' )		=> '2',
-			__( '3 Columns', 'wpdancelaparis' )		=> '3',
-			__( '4 Columns', 'wpdancelaparis' )		=> '4',
-			__( '5 Columns', 'wpdancelaparis' )		=> '5',
-			__( '6 Columns', 'wpdancelaparis' )		=> '6',
-			__( '8 Columns', 'wpdancelaparis' )		=> '8',
-			__( '12 Columns', 'wpdancelaparis' )	=> '12',
+			__( '1 Columns', 'wd_package' )		=> '1',
+			__( '2 Columns', 'wd_package' )		=> '2',
+			__( '3 Columns', 'wd_package' )		=> '3',
+			__( '4 Columns', 'wd_package' )		=> '4',
+			__( '5 Columns', 'wd_package' )		=> '5',
+			__( '6 Columns', 'wd_package' )		=> '6',
+			__( '8 Columns', 'wd_package' )		=> '8',
+			__( '12 Columns', 'wd_package' )	=> '12',
 		);
 	}
 }
@@ -137,12 +137,12 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_list_tvgiao_columns')){
 if(!function_exists ('tvlgiao_wpdance_vc_get_list_text_align_bootstrap')){
 	function tvlgiao_wpdance_vc_get_list_text_align_bootstrap(){
 		return array(
-			__( 'Default', 'wpdancelaparis' ) 			=> 'wd-text-align-default',
-			__( 'Text Center', 'wpdancelaparis' ) 		=> 'text-center',
-			__( 'Text Left', 'wpdancelaparis' ) 		=> 'text-left'	,
-			__( 'Text Right', 'wpdancelaparis' ) 		=> 'text-right',
-			__( 'Text Justified', 'wpdancelaparis' ) 	=> 'text-justify',
-			__( 'Text No Wrap', 'wpdancelaparis' ) 		=> 'text-nowrap',
+			__( 'Default', 'wd_package' ) 			=> 'wd-text-align-default',
+			__( 'Text Center', 'wd_package' ) 		=> 'text-center',
+			__( 'Text Left', 'wd_package' ) 		=> 'text-left'	,
+			__( 'Text Right', 'wd_package' ) 		=> 'text-right',
+			__( 'Text Justified', 'wd_package' ) 	=> 'text-justify',
+			__( 'Text No Wrap', 'wd_package' ) 		=> 'text-nowrap',
 		);
 	}
 }
@@ -151,10 +151,10 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_list_text_align_bootstrap')){
 if(!function_exists ('tvlgiao_wpdance_vc_get_list_special_product_name')){
 	function tvlgiao_wpdance_vc_get_list_special_product_name(){
 		return array(
-			__( 'Recent Product', 'wpdancelaparis' )		=> 'recent_product',
-			__( 'Most View Product', 'wpdancelaparis' )		=> 'mostview_product',
-			__( 'On Sale Product', 'wpdancelaparis' )		=> 'onsale_product',
-			__( 'Featured Product', 'wpdancelaparis' )		=> 'featured_product'
+			__( 'Recent Product', 'wd_package' )		=> 'recent_product',
+			__( 'Most View Product', 'wd_package' )		=> 'mostview_product',
+			__( 'On Sale Product', 'wd_package' )		=> 'onsale_product',
+			__( 'Featured Product', 'wd_package' )		=> 'featured_product'
 		);
 	}
 }
@@ -198,26 +198,26 @@ if ( ! function_exists( 'tvlgiao_wpdance_get_order_by_values' ) ) {
 	function tvlgiao_wpdance_get_order_by_values($type = '') {
 		if ($type == 'product') {
 			$order_by = array(
-		        __( 'Date', 'wpdancelaparis' ) 		=> 'date',
-		        __( 'Title', 'wpdancelaparis' ) 	=> 'title',
-		        __( 'Rand', 'wpdancelaparis' ) 		=> 'rand',
-		        __( 'Price', 'wpdancelaparis' ) 	=> 'price',
-		        __( 'Sales', 'wpdancelaparis' ) 	=> 'sales',
+		        __( 'Date', 'wd_package' ) 		=> 'date',
+		        __( 'Title', 'wd_package' ) 	=> 'title',
+		        __( 'Rand', 'wd_package' ) 		=> 'rand',
+		        __( 'Price', 'wd_package' ) 	=> 'price',
+		        __( 'Sales', 'wd_package' ) 	=> 'sales',
 			);
 		}elseif ($type == 'term') {
 			$order_by = array(
-		        __( 'Name', 'wpdancelaparis' ) 			=> 'name',
-				__( 'Count', 'wpdancelaparis' ) 		=> 'count',
-				__( 'Slug', 'wpdancelaparis' ) 			=> 'slug',
-				__( 'Term Group', 'wpdancelaparis' ) 	=> 'term_group',
-				__( 'Term Order', 'wpdancelaparis' ) 	=> 'term_order',
-				__( 'Term ID', 'wpdancelaparis' ) 		=> 'term_id',
+		        __( 'Name', 'wd_package' ) 			=> 'name',
+				__( 'Count', 'wd_package' ) 		=> 'count',
+				__( 'Slug', 'wd_package' ) 			=> 'slug',
+				__( 'Term Group', 'wd_package' ) 	=> 'term_group',
+				__( 'Term Order', 'wd_package' ) 	=> 'term_order',
+				__( 'Term ID', 'wd_package' ) 		=> 'term_id',
 			);
 		}else{
 			$order_by = array(
-		        __( 'Date', 'wpdancelaparis' ) 	=> 'date',
-		        __( 'Title', 'wpdancelaparis' ) => 'title',
-		        __( 'Rand', 'wpdancelaparis' ) 	=> 'rand',
+		        __( 'Date', 'wd_package' ) 	=> 'date',
+		        __( 'Title', 'wd_package' ) => 'title',
+		        __( 'Rand', 'wd_package' ) 	=> 'rand',
 			);
 		}
 		return $order_by;
@@ -227,8 +227,8 @@ if ( ! function_exists( 'tvlgiao_wpdance_get_order_by_values' ) ) {
 if ( ! function_exists( 'tvlgiao_wpdance_get_sort_by_values' ) ) {
 	function tvlgiao_wpdance_get_sort_by_values() {
 		return array(
-            __( 'DESC', 'wpdancelaparis' ) 	=> 'DESC',
-			__( 'ASC', 'wpdancelaparis' ) 	=> 'ASC',
+            __( 'DESC', 'wd_package' ) 	=> 'DESC',
+			__( 'ASC', 'wd_package' ) 	=> 'ASC',
 		);
 	}
 }
@@ -238,16 +238,16 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_list_woocommerce_image_size')){
 	function tvlgiao_wpdance_vc_get_list_woocommerce_image_size($fullsize = true){
 		if ($fullsize == true) {
 			$list_woocommerce_image_size = array(
-				__( 'Fullsize', 'wpdancelaparis' )					=> 'full',
-				__( 'Shop Catalog', 'wpdancelaparis' )				=> 'shop_catalog',
-				__( 'Shop Single (Big)', 'wpdancelaparis' ) 		=> 'shop_single',
-				__( 'Shop Thumbnail (Small)', 'wpdancelaparis' )	=> 'shop_thumbnail',
+				__( 'Fullsize', 'wd_package' )					=> 'full',
+				__( 'Shop Catalog', 'wd_package' )				=> 'shop_catalog',
+				__( 'Shop Single (Big)', 'wd_package' ) 		=> 'shop_single',
+				__( 'Shop Thumbnail (Small)', 'wd_package' )	=> 'shop_thumbnail',
 			);
 		} else {
 			$list_woocommerce_image_size = array(
-				__( 'Shop Catalog', 'wpdancelaparis' )				=> 'shop_catalog',
-				__( 'Shop Single (Big)', 'wpdancelaparis' ) 		=> 'shop_single',
-				__( 'Shop Thumbnail (Small)', 'wpdancelaparis' )	=> 'shop_thumbnail',
+				__( 'Shop Catalog', 'wd_package' )				=> 'shop_catalog',
+				__( 'Shop Single (Big)', 'wd_package' ) 		=> 'shop_single',
+				__( 'Shop Thumbnail (Small)', 'wd_package' )	=> 'shop_thumbnail',
 			);
 		}
 		return $list_woocommerce_image_size;
@@ -258,9 +258,9 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_list_woocommerce_image_size')){
 if(!function_exists ('tvlgiao_wpdance_vc_get_list_link_target')){
 	function tvlgiao_wpdance_vc_get_list_link_target(){
 		return array(
-			__( 'New window', 'wpdancelaparis' ) 		=> '_blank',
- 			__( 'Current window', 'wpdancelaparis' ) 	=> '_self',	
- 			__( 'Parent', 'wpdancelaparis' ) 			=> '_parent',
+			__( 'New window', 'wd_package' ) 		=> '_blank',
+ 			__( 'Current window', 'wd_package' ) 	=> '_self',	
+ 			__( 'Parent', 'wd_package' ) 			=> '_parent',
 		);
 	}
 }
@@ -269,8 +269,8 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_list_link_target')){
 if(!function_exists ('tvlgiao_wpdance_vc_get_list_slider_type')){
 	function tvlgiao_wpdance_vc_get_list_slider_type(){
 		return array(
-			__( 'Owl Carousel', 'wpdancelaparis' ) 	=> 'owl',
-			__( 'Slick', 'wpdancelaparis' )			=> 'slick'
+			__( 'Owl Carousel', 'wd_package' ) 	=> 'owl',
+			__( 'Slick', 'wd_package' )			=> 'slick'
 		);
 	}
 }
@@ -367,9 +367,9 @@ if(!function_exists ('tvlgiao_wpdance_vc_get_list_category')){
 		$list_categories = array();
 		if ($all_category) {
 			if ($type == 'sorted_list') {
-				$list_categories[] = array( -1, esc_html__('All Category','wpdancelaparis') );
+				$list_categories[] = array( -1, esc_html__('All Category','wd_package') );
 			}else{
-				$list_categories[esc_html__('All Category','wpdancelaparis')] = -1;
+				$list_categories[esc_html__('All Category','wd_package')] = -1;
 			}
 		}
 		$args = array('hide_empty' 	=> 0);
@@ -463,13 +463,13 @@ if ( ! function_exists( 'tvlgiao_wpdance_get_product_categories_full' ) ) {
 		if ( $all_category ) {
 			if ($type == 'autocomplete') {
 				$product_categories_dropdown[] = array(
-					'label' => __( 'All Category', 'wpdancelaparis' ),
+					'label' => __( 'All Category', 'wd_package' ),
 					'value' => -1,
 				);
 			}elseif ($type == 'sorted_list') {
-				$product_categories_dropdown[] = array( -1, __( 'All Category', 'wpdancelaparis' ) );
+				$product_categories_dropdown[] = array( -1, __( 'All Category', 'wd_package' ) );
 			}else{
-				$product_categories_dropdown[ __( 'All Category', 'wpdancelaparis' ) ] = - 1;
+				$product_categories_dropdown[ __( 'All Category', 'wd_package' ) ] = - 1;
 			}
 		}
 
@@ -516,10 +516,10 @@ if ( ! function_exists( 'tvlgiao_wpdance_product_result_count' ) ) {
 
 			if ( $total <= $per_page || -1 === $per_page ) {
 				/* translators: %d: total results */
-				printf( _n( 'Showing the single result', 'Showing all %d results', $total, 'woocommerce' ), $total );
+				printf( _n( 'Showing the single result', 'Showing all %d results', $total, 'wd_package' ), $total );
 			} else {
 				/* translators: 1: first result 2: last result 3: total results */
-				printf( _nx( 'Showing the single result', 'Showing %1$d&ndash;%2$d of %3$d results', $total, 'with first and last result', 'woocommerce' ), $first, $last, $total );
+				printf( _nx( 'Showing the single result', 'Showing %1$d&ndash;%2$d of %3$d results', $total, 'with first and last result', 'wd_package' ), $first, $last, $total );
 			}
 			?>
 		</p>
@@ -531,12 +531,12 @@ if ( ! function_exists( 'tvlgiao_wpdance_product_ordering' ) ) {
 	function tvlgiao_wpdance_product_ordering() {  ?>
 		<form action="shop" class="woocommerce-ordering" method="get">
 			<select name="orderby" class="orderby">
-				<option value="menu_order" selected="selected"><?php _e('Default sorting','wpdancelaparis'); ?></option>
-				<option value="popularity"><?php _e('Sort by popularity','wpdancelaparis'); ?></option>
-				<option value="rating"><?php _e('Sort by average rating','wpdancelaparis'); ?></option>
-				<option value="date"><?php _e('Sort by newnes','wpdancelaparis'); ?></option>
-				<option value="price"><?php _e('Sort by price: low to high','wpdancelaparis'); ?></option>
-				<option value="price-desc"><?php _e('Sort by price: high to low','wpdancelaparis'); ?></option>
+				<option value="menu_order" selected="selected"><?php _e('Default sorting','wd_package'); ?></option>
+				<option value="popularity"><?php _e('Sort by popularity','wd_package'); ?></option>
+				<option value="rating"><?php _e('Sort by average rating','wd_package'); ?></option>
+				<option value="date"><?php _e('Sort by newnes','wd_package'); ?></option>
+				<option value="price"><?php _e('Sort by price: low to high','wd_package'); ?></option>
+				<option value="price-desc"><?php _e('Sort by price: high to low','wd_package'); ?></option>
 			</select>
 		</form>
 	<?php
@@ -547,8 +547,8 @@ if ( ! function_exists( 'tvlgiao_wpdance_get_slider_control' ) ) {
 	function tvlgiao_wpdance_get_slider_control() {
 		ob_start(); ?>
 			<div class="slider_control">
-		          <a href="#!" class="prev" title="<?php echo esc_attr__( 'Previous', 'wpdancelaparis' ); ?>" data-toggle="tooltip" data-placement="top"><i class="lnr lnr-chevron-left" aria-hidden="true"></i></a>
-		          <a href="#!" class="next" title="<?php echo esc_attr__( 'Next', 'wpdancelaparis' ); ?>" data-toggle="tooltip" data-placement="top"><i class="lnr lnr-chevron-right" aria-hidden="true"></i></a>
+		          <a href="#!" class="prev" title="<?php echo esc_attr__( 'Previous', 'wd_package' ); ?>" data-toggle="tooltip" data-placement="top"><i class="lnr lnr-chevron-left" aria-hidden="true"></i></a>
+		          <a href="#!" class="next" title="<?php echo esc_attr__( 'Next', 'wd_package' ); ?>" data-toggle="tooltip" data-placement="top"><i class="lnr lnr-chevron-right" aria-hidden="true"></i></a>
 		    </div><!-- .slider-control -->
       	<?php 
       	return ob_get_clean();
@@ -574,26 +574,26 @@ if(!function_exists ('tvlgiao_wpdance_scrape_instagram')){
 
 			$remote = wp_remote_get( 'http://instagram.com/'.trim( $username ) );
 			if ( is_wp_error( $remote ) )
-				return new WP_Error( 'site_down', esc_html__( 'Unable to communicate with Instagram.', 'wpdancelaparis' ) );
+				return new WP_Error( 'site_down', esc_html__( 'Unable to communicate with Instagram.', 'wd_package' ) );
 
 			if ( 200 != wp_remote_retrieve_response_code( $remote ) )
-				return new WP_Error( 'invalid_response', esc_html__( 'Instagram did not return a 200.', 'wpdancelaparis' ) );
+				return new WP_Error( 'invalid_response', esc_html__( 'Instagram did not return a 200.', 'wd_package' ) );
 
 			$shards = explode( 'window._sharedData = ', $remote['body'] );
 			$insta_json = explode( ';</script>', $shards[1] );
 			$insta_array = json_decode( $insta_json[0], TRUE );
 
 			if ( ! $insta_array )
-				return new WP_Error( 'bad_json', esc_html__( 'Instagram has returned invalid data.', 'wpdancelaparis' ) );
+				return new WP_Error( 'bad_json', esc_html__( 'Instagram has returned invalid data.', 'wd_package' ) );
 
 			if ( isset( $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'] ) ) {
 				$images = $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'];
 			} else {
-				return new WP_Error( 'bad_json_2', esc_html__( 'Instagram has returned invalid data.', 'wpdancelaparis' ) );
+				return new WP_Error( 'bad_json_2', esc_html__( 'Instagram has returned invalid data.', 'wd_package' ) );
 			}
 
 			if ( ! is_array( $images ) )
-				return new WP_Error( 'bad_array', esc_html__( 'Instagram has returned invalid data.', 'wpdancelaparis' ) );
+				return new WP_Error( 'bad_array', esc_html__( 'Instagram has returned invalid data.', 'wd_package' ) );
 
 			$instagram = array();
 			foreach ( $images as $image ) {
@@ -622,7 +622,7 @@ if(!function_exists ('tvlgiao_wpdance_scrape_instagram')){
 					$type = 'image';
 				}
 
-				$caption = __( 'Instagram Image', 'wpdancelaparis' );
+				$caption = __( 'Instagram Image', 'wd_package' );
 				if ( ! empty( $image['caption'] ) ) {
 					$caption = $image['caption'];
 				}
@@ -654,7 +654,7 @@ if(!function_exists ('tvlgiao_wpdance_scrape_instagram')){
 
 		} else {
 
-			return new WP_Error( 'no_images', esc_html__( 'Instagram did not return any images.', 'wpdancelaparis' ) );
+			return new WP_Error( 'no_images', esc_html__( 'Instagram did not return any images.', 'wd_package' ) );
 
 		}
 	}

@@ -105,8 +105,8 @@
         //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
         'allow_sub_menu'       => true,
         // Show the sections below the admin menu item or not
-        'menu_title'           => __( 'Theme Options', 'laparis' ),
-        'page_title'           => __( 'Theme Options', 'laparis' ),
+        'menu_title'           => __( 'Theme Options', 'solar' ),
+        'page_title'           => __( 'Theme Options', 'solar' ),
         // You will need to generate a Google API key to use this feature.
         // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
         'google_api_key'       => 'AIzaSyC_w3AXMF4r-htduoR5MbAonS9d_kAocac',
@@ -206,7 +206,7 @@
     Redux::setArgs( $opt_name, $args );
 
     // Set the help sidebar
-    $content = __( '<p>This is the sidebar content, HTML is allowed.</p>', 'laparis' );
+    $content = __( '<p>This is the sidebar content, HTML is allowed.</p>', 'solar' );
     Redux::setHelpSidebar( $opt_name, $content );
     // -> START Basic Fields
 
@@ -225,7 +225,7 @@
     if ( file_exists( dirname( __FILE__ ) . '/../README.md' ) ) {
         $section = array(
             'icon'   => 'el el-list-alt',
-            'title'  => __( 'Documentation', 'laparis' ),
+            'title'  => __( 'Documentation', 'solar' ),
             'fields' => array(
                 array(
                     'id'       => '17',
@@ -340,8 +340,8 @@
         function dynamic_section( $sections ) {
             //$sections = array();
             $sections[] = array(
-                'title'  => __( 'Section via hook', 'laparis' ),
-                'desc'   => __( '<p class="description">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>', 'laparis' ),
+                'title'  => __( 'Section via hook', 'solar' ),
+                'desc'   => __( '<p class="description">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>', 'solar' ),
                 'icon'   => 'el el-paper-clip',
                 // Leave this as a blank section, no options just some intro text set above.
                 'fields' => array()

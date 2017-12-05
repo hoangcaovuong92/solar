@@ -1,24 +1,24 @@
 <?php
 	//Recent Comment
 	vc_map( array(
-		'name' 				=> esc_html__( 'WD - Recent Comment', 'wpdancelaparis' ),
+		'name' 				=> esc_html__( 'WD - Recent Comment', 'wd_package' ),
 		'base' 			=> 'tvlgiao_wpdance_recent_comment',
-		'category' 		=> esc_html__("WPDance Shortcode", 'wpdancelaparis'),
+		'category' 		=> esc_html__("WPDance Shortcode", 'wd_package'),
 		'icon'        		=> 'icon-wpb-call-to-action',
 		'params' => array(
 			array(
 				'type' 			=> 'textfield',
-				'heading' 		=> esc_html__( 'Title', 'wpdancelaparis' ),
+				'heading' 		=> esc_html__( 'Title', 'wd_package' ),
 				'param_name' 	=> 'title',
 				'admin_label' 	=> true,
-				'value' 		=> esc_html__("", 'wpdancelaparis'),
+				'value' 		=> esc_html__("", 'wd_package'),
 				'description' 	=> ''
 			),
 			array(
 				'type' 			=> 'textfield',
 				'class' 		=> '',
-				'heading' 		=> esc_html__("Limit Word", 'wpdancelaparis'),
-				'description' 	=> esc_html__("", 'wpdancelaparis'),
+				'heading' 		=> esc_html__("Limit Word", 'wd_package'),
+				'description' 	=> esc_html__("", 'wd_package'),
 				'admin_label' 	=> true,
 				'param_name' 	=> 'number_limit',
 				'value' 		=> '20',
@@ -27,8 +27,8 @@
 			array(
 				'type' 			=> 'textfield',
 				'class' 		=> '',
-				'heading' 		=> esc_html__("Number Comment", 'wpdancelaparis'),
-				'description' 	=> esc_html__("", 'wpdancelaparis'),
+				'heading' 		=> esc_html__("Number Comment", 'wd_package'),
+				'description' 	=> esc_html__("", 'wd_package'),
 				'admin_label' 	=> true,
 				'param_name' 	=> 'number',
 				'value' 		=> '4',
@@ -37,7 +37,7 @@
 			array(
 				"type" 			=> "dropdown",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Show Avatar", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Show Avatar", 'wd_package'),
 				"admin_label" 	=> true,
 				"param_name" 	=> "show_avatar",
 				"value" => array(
@@ -50,7 +50,7 @@
 			array(
 				"type" 			=> "dropdown",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Show Name Author", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Show Name Author", 'wd_package'),
 				"admin_label" 	=> true,
 				"param_name" 	=> "show_author",
 				"value" => array(
@@ -63,7 +63,7 @@
 			array(
 				"type" 			=> "dropdown",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Is Slider", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Is Slider", 'wd_package'),
 				"admin_label" 	=> true,
 				"param_name" 	=> "is_slider",
 				"value" => array(
@@ -75,7 +75,7 @@
 			array(
 				"type" 			=> "dropdown",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Show Nav", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Show Nav", 'wd_package'),
 				"admin_label" 	=> true,
 				"param_name" 	=> "show_nav",
 				"value" => array(
@@ -89,7 +89,7 @@
 			array(
 				"type" 			=> "dropdown",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Auto Play", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Auto Play", 'wd_package'),
 				"admin_label" 	=> true,
 				"param_name" 	=> "auto_play",
 				"value" => array(
@@ -103,8 +103,8 @@
 			array(
 				'type' 			=> 'textfield',
 				'class' 		=> '',
-				'heading' 		=> esc_html__("Number Rows", 'wpdancelaparis'),
-				'description' 	=> esc_html__("", 'wpdancelaparis'),
+				'heading' 		=> esc_html__("Number Rows", 'wd_package'),
+				'description' 	=> esc_html__("", 'wd_package'),
 				'admin_label' 	=> true,
 				'param_name' 	=> 'per_slide',
 				'value' 		=> '2',
@@ -114,8 +114,8 @@
 			array(
 				'type' 			=> 'textfield',
 				'class' 		=> '',
-				'heading' 		=> esc_html__("Extra class name", 'wpdancelaparis'),
-				'description' 	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wpdancelaparis'),
+				'heading' 		=> esc_html__("Extra class name", 'wd_package'),
+				'description' 	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wd_package'),
 				'admin_label' 	=> true,
 				'param_name' 	=> 'class',
 				'value' 		=> ''

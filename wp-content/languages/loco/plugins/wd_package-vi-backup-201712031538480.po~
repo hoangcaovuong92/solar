@@ -1,0 +1,4169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WD Packages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-03 15:34+0000\n"
+"PO-Revision-Date: 2017-12-03 15:38+0000\n"
+"Last-Translator: admin <vuong.hoang@codespot.vn>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: wd_packages.php:147 wd_packages.php:149 wd_packages.php:150
+#: wd_packages.php:151 wd_packages.php:153
+msgid "Header HTML"
+msgstr "Header HTML"
+
+#: wd_packages.php:148 wd_packages.php:168 wd_project/wd_project.php:103
+#: wd_shortcode/post_type/faq.php:17 wd_shortcode/post_type/faq.php:41
+#: wd_shortcode/post_type/feature.php:19 wd_shortcode/post_type/feature.php:55
+#: wd_shortcode/post_type/taxonomy_brand.php:24
+msgid "Add New"
+msgstr ""
+
+#: wd_packages.php:149 wd_packages.php:169 wd_project/wd_project.php:70
+#: wd_shortcode/post_type/faq.php:18 wd_shortcode/post_type/feature.php:20
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: wd_packages.php:150 wd_packages.php:170 wd_project/wd_project.php:71
+#: wd_shortcode/post_type/faq.php:19 wd_shortcode/post_type/feature.php:21
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: wd_packages.php:151 wd_packages.php:171 wd_project/wd_project.php:74
+#: wd_shortcode/post_type/faq.php:20 wd_shortcode/post_type/feature.php:22
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: wd_packages.php:152 wd_packages.php:172 wd_project/wd_project.php:75
+#: wd_shortcode/post_type/faq.php:21 wd_shortcode/post_type/feature.php:23
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: wd_packages.php:153 wd_packages.php:173 wd_project/wd_project.php:76
+#: wd_shortcode/post_type/faq.php:22 wd_shortcode/post_type/feature.php:24
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: wd_packages.php:154 wd_packages.php:174 wd_project/wd_project.php:77
+#: wd_shortcode/post_type/faq.php:23 wd_shortcode/post_type/feature.php:25
+msgid "Search %a"
+msgstr ""
+
+#: wd_packages.php:155 wd_packages.php:175 wd_project/wd_project.php:78
+#: wd_shortcode/post_type/faq.php:24 wd_shortcode/post_type/feature.php:26
+#, php-format
+msgid "No %s Found"
+msgstr ""
+
+#: wd_packages.php:156 wd_packages.php:176 wd_project/wd_project.php:79
+#: wd_shortcode/post_type/faq.php:25 wd_shortcode/post_type/feature.php:27
+#, php-format
+msgid "No %s Found In Trash"
+msgstr ""
+
+#: wd_packages.php:166 wd_packages.php:172 wd_packages.php:174
+#: wd_packages.php:175
+msgid "Footers HTML"
+msgstr ""
+
+#: wd_packages.php:167 wd_packages.php:169 wd_packages.php:170
+#: wd_packages.php:171 wd_packages.php:173
+msgid "Footer HTML"
+msgstr ""
+
+#: wd_packages.php:176
+msgid "Footers Template"
+msgstr ""
+
+#: admin_page/admin_page.php:75
+msgid "WD Packages Setting"
+msgstr ""
+
+#: admin_page/admin_page.php:76
+msgid "Select the packages you want to use on the theme."
+msgstr ""
+
+#: admin_page/admin_page.php:85
+msgid "Theme Manager Mode:"
+msgstr ""
+
+#: admin_page/admin_page.php:88
+msgid "Theme Option"
+msgstr ""
+
+#: admin_page/admin_page.php:89
+msgid "Customize"
+msgstr ""
+
+#: admin_page/admin_page.php:113
+msgid "SAVE PACKAGES SETTINGS"
+msgstr ""
+
+#: admin_page/admin_page.php:116
+#: wd_shortcode/shortcode/wd_social_profiles.php:31
+#: wd_shortcode/widgets/wd_icon_social.php:158
+msgid "Facebook"
+msgstr ""
+
+#: admin_page/admin_page.php:117
+msgid "YouTube"
+msgstr ""
+
+#: admin_page/admin_page.php:118
+#: wd_shortcode/shortcode/wd_social_profiles.php:79
+#: wd_shortcode/shortcode/wd_social_profiles.php:80
+#: wd_shortcode/widgets/wd_icon_social.php:215
+#: wd_shortcode/widgets/wd_icon_social.php:218
+#: wd_shortcode/widgets/wd_instagram.php:75
+msgid "Instagram"
+msgstr ""
+
+#: wd_portfolio/archive-portfolio.php:62
+#: wd_portfolio/templates/wd_portfolio_grid.php:81
+#: wd_portfolio/templates/wd_portfolio_masonry.php:94
+#: wd_shortcode/shortcode/wd_blog_grid_list.php:102
+#: wd_shortcode/shortcode/wd_blog_masonry.php:50
+#: wd_shortcode/shortcode/wd_product_best_selling.php:114
+#: wd_shortcode/shortcode/wd_product_grid_list.php:153
+#: wd_shortcode/shortcode/wd_product_special_slider.php:204
+#: wd_shortcode/widgets/wd_blog_grid_list.php:260
+#: wd_shortcode/widgets/wd_product_grid_list.php:312
+#: wd_shortcode/widgets/wd_product_slider.php:317
+msgid "LOAD MORE"
+msgstr ""
+
+#: wd_portfolio/single-portfolio.php:57
+msgid "CUSTOMER"
+msgstr ""
+
+#: wd_portfolio/single-portfolio.php:61
+msgid "DATE POST"
+msgstr ""
+
+#: wd_portfolio/single-portfolio.php:65
+msgid "CATEGORY"
+msgstr ""
+
+#: wd_portfolio/single-portfolio.php:66
+msgid ", "
+msgstr ""
+
+#: wd_portfolio/single-portfolio.php:69
+msgid "SHARE"
+msgstr ""
+
+#: wd_portfolio/single-portfolio.php:74
+msgid "LAUNCH PROJECT"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:65 wd_portfolio/wd_portfolio.php:76
+#: wd_portfolio/wd_portfolio.php:169
+msgid "Portfolio Items"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:66
+msgid "Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:67
+msgid "Add Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:68
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:69
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:70
+msgid "New Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:71
+msgid "View Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:72
+msgid "Search Portfolio Item"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:73
+msgid "No Portfolio Items found"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:74
+msgid "No Portfolio Items found in Trash"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:162
+msgid "Options"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:176
+msgid "WD Portfolio"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:386
+msgid "All"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:497
+msgid "Image/Video URL"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:503
+msgid ""
+"Enter URL for the full-size image or video (youtube, vimeo, swf, quicktime) "
+"you want to display in the lightbox gallery. You can also choose Image URL "
+"from your Media gallery"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:506
+msgid "Portfolio URL"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:509
+msgid "Enter URL to the live version of the project."
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:512
+msgid "Single Layout"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:518 wd_shortcode/wd_functions.php:140
+msgid "Default"
+msgstr ""
+
+#: wd_portfolio/wd_portfolio.php:522
+msgid "Full Width"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:144
+msgid "Loại sản phẩm"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:148
+msgid "Công suất"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:150
+#: wd_product_field/wd_product_field.php:160
+#: wd_product_field/wd_product_field.php:193
+msgid "Đơn vị"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:154
+msgid "Xuất xứ"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:158
+msgid "Trọng lượng"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:164
+msgid "Kích thước (Cao/Ngang/Rộng)"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:182
+msgid "Model"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:186
+msgid "Thời hạn bảo hành"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:191
+msgid "Công suất tối đa"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:197
+msgid "Panel Efficiency"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:201
+msgid "Độ chịu nhiệt"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:205
+msgid "Kích thước Panel (Cao/Ngang/Rộng)"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:209
+msgid "Kích thước ô năng lượng"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:213
+msgid "Độ dày kính"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:217
+msgid "Loại pin"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:244
+#: wd_product_field/wd_product_field.php:252
+#: wd_product_field/wd_product_field.php:259
+msgid "Remove"
+msgstr ""
+
+#: wd_product_field/wd_product_field.php:263
+msgid "Add Another"
+msgstr ""
+
+#: wd_project/wd_project.php:67
+msgctxt "post type general name"
+msgid "WD Project"
+msgstr ""
+
+#: wd_project/wd_project.php:68
+msgctxt "post type singular name"
+msgid "WD Project"
+msgstr ""
+
+#: wd_project/wd_project.php:69
+msgctxt "project"
+msgid "Add Project"
+msgstr ""
+
+#: wd_project/wd_project.php:70 wd_project/wd_project.php:71
+#: wd_project/wd_project.php:74 wd_project/wd_project.php:76
+msgid "Project"
+msgstr ""
+
+#: wd_project/wd_project.php:75 wd_project/wd_project.php:77
+#: wd_project/wd_project.php:78
+msgid "Projects"
+msgstr ""
+
+#: wd_project/wd_project.php:79 wd_shortcode/post_type/feature.php:23
+#: wd_shortcode/post_type/feature.php:25 wd_shortcode/post_type/feature.php:26
+#: wd_shortcode/post_type/feature.php:27
+msgid "Features"
+msgstr ""
+
+#: wd_project/wd_project.php:81 wd_project/wd_project.php:83
+msgid "WD Project"
+msgstr ""
+
+#: wd_project/wd_project.php:101 wd_project/wd_project.php:107
+msgid "Categories Project"
+msgstr ""
+
+#: wd_project/wd_project.php:102
+msgid "Category Project"
+msgstr ""
+
+#: wd_project/wd_project.php:104 wd_shortcode/post_type/faq.php:42
+#: wd_shortcode/post_type/feature.php:56
+#: wd_shortcode/post_type/taxonomy_brand.php:25
+msgid "Edit Post"
+msgstr ""
+
+#: wd_project/wd_project.php:105 wd_shortcode/post_type/faq.php:43
+#: wd_shortcode/post_type/feature.php:57
+#: wd_shortcode/post_type/taxonomy_brand.php:26
+msgid "View Post"
+msgstr ""
+
+#: wd_project/wd_project.php:106
+msgid "Add New Category Project"
+msgstr ""
+
+#: wd_project/wd_project.php:196
+msgid "Thời gian thi công"
+msgstr ""
+
+#: wd_project/wd_project.php:200
+msgid "Địa điểm"
+msgstr ""
+
+#: wd_project/wd_project.php:212
+msgid "Enter the project's name here"
+msgstr ""
+
+#: wd_project/wd_project.php:218
+msgid "project Items"
+msgstr ""
+
+#: wd_project/wd_project.php:225
+msgid "WD project"
+msgstr ""
+
+#: wd_quickshop/wd_quickshop.php:39
+#: wd_portfolio/templates/partials/portfolio_grid.php:33
+#: wd_portfolio/templates/partials/portfolio_grid.php:65
+msgid "Quick View"
+msgstr ""
+
+#: wd_quickshop/wd_quickshop.php:42
+msgid "QUICK SHOP"
+msgstr ""
+
+#: wd_quickshop/wd_quickshop.php:94 wd_quickshop/wd_quickshop.php:94
+#: wd_portfolio/templates/template.php:135
+#: wd_portfolio/templates/partials/portfolio_grid.php:43
+#: wd_portfolio/templates/partials/portfolio_grid.php:75
+#: wd_portfolio/templates/partials/portfolio_masonry.php:53
+#: wd_portfolio/templates/partials/portfolio_masonry.php:85
+msgid "View Details"
+msgstr ""
+
+#: wd_shop_by_color/wd_shop_by_color.php:171
+#: wd_shop_by_color/wd_shop_by_color.php:244
+#: wd_shop_by_color/wd_shop_by_color.php:299
+msgid "Color"
+msgstr ""
+
+#: wd_shop_by_color/wd_shop_by_color.php:247
+#: wd_shop_by_color/wd_shop_by_color.php:301
+msgid "Use color picker to pick one color."
+msgstr ""
+
+#: wd_shop_by_color/wd_shop_by_color.php:252
+#: wd_shop_by_color/wd_shop_by_color.php:305
+msgid "Thumbnail Image"
+msgstr ""
+
+#: wd_shop_by_color/wd_shop_by_color.php:257
+#: wd_shop_by_color/wd_shop_by_color.php:309
+#: wd_shortcode/post_type/taxonomy_brand.php:69
+#: wd_shortcode/post_type/taxonomy_brand.php:105
+msgid "Remove Image"
+msgstr ""
+
+#: wd_shop_by_color/wd_shop_by_color.php:259
+#: wd_shop_by_color/wd_shop_by_color.php:311
+msgid "Choose one thumbnail."
+msgstr ""
+
+#: wd_shortcode/wd_ajax_loadmore.php:22
+msgid "Close"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:39 wd_shortcode/wd_functions.php:202
+#: wd_shortcode/wd_functions.php:219
+#: wd_shop_by_color/widgets/filter_by_attrs.php:67
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:49
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:21
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:22
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:13
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:13
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:14
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:64
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:22
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:14
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:15
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:69
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:18
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:11
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:13
+#: wd_shortcode/visualcomposer/wd_vc_title.php:15
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:14
+#: wd_shortcode/widgets/wd_instagram.php:83
+#: wd_shortcode/widgets/wd_special_post.php:36
+msgid "Title"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:43
+msgid "Meta"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:47
+msgid "Excerpt"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:51
+msgid "Readmore"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:123
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:84
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:241
+msgid "1 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:124
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:85
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:242
+msgid "2 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:125
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:86
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:243
+msgid "3 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:126
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:87
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:244
+msgid "4 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:127
+msgid "5 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:128
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:245
+msgid "6 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:129
+msgid "8 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:130
+msgid "12 Columns"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:141
+msgid "Text Center"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:142
+msgid "Text Left"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:143
+msgid "Text Right"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:144
+msgid "Text Justified"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:145
+msgid "Text No Wrap"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:154
+msgid "Recent Product"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:155
+msgid "Most View Product"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:156
+#: wd_shortcode/widgets/wd_product_special.php:31
+msgid "On Sale Product"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:157
+#: wd_shortcode/widgets/wd_product_special.php:33
+msgid "Featured Product"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:201 wd_shortcode/wd_functions.php:218
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:59
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:195
+msgid "Date"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:203 wd_shortcode/wd_functions.php:220
+msgid "Rand"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:204
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:82
+msgid "Price"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:205
+msgid "Sales"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:209
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:60
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:196
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:172
+msgid "Name"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:210
+msgid "Count"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:211
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:61
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:197
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:173
+msgid "Slug"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:212
+msgid "Term Group"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:213
+msgid "Term Order"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:214
+msgid "Term ID"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:230
+msgid "DESC"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:231
+msgid "ASC"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:241
+msgid "Fullsize"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:242 wd_shortcode/wd_functions.php:248
+msgid "Shop Catalog"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:243 wd_shortcode/wd_functions.php:249
+msgid "Shop Single (Big)"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:244 wd_shortcode/wd_functions.php:250
+msgid "Shop Thumbnail (Small)"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:261
+msgid "New window"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:262
+msgid "Current window"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:263
+msgid "Parent"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:272
+msgid "Owl Carousel"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:273
+msgid "Slick"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:370 wd_shortcode/wd_functions.php:372
+#: wd_shortcode/wd_functions.php:466 wd_shortcode/wd_functions.php:470
+#: wd_shortcode/wd_functions.php:472
+#: wd_shortcode/widgets/wd_blog_grid_list.php:25
+#: wd_shortcode/widgets/wd_category_list_child.php:32
+#: wd_shortcode/widgets/wd_feature_category.php:33
+#: wd_shortcode/widgets/wd_product_grid_list.php:26
+#: wd_shortcode/widgets/wd_product_slider.php:28
+msgid "All Category"
+msgstr ""
+
+#. %d: total results
+#: wd_shortcode/wd_functions.php:519
+#, php-format
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: first result 2: last result 3: total results
+#: wd_shortcode/wd_functions.php:522
+#, php-format
+msgctxt "with first and last result"
+msgid "Showing the single result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: wd_shortcode/wd_functions.php:534
+#: wd_shortcode/widgets/wd_product_grid_list.php:256
+msgid "Default sorting"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:535
+#: wd_shortcode/widgets/wd_product_grid_list.php:257
+msgid "Sort by popularity"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:536
+#: wd_shortcode/widgets/wd_product_grid_list.php:258
+msgid "Sort by average rating"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:537
+#: wd_shortcode/widgets/wd_product_grid_list.php:259
+msgid "Sort by newnes"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:538
+#: wd_shortcode/widgets/wd_product_grid_list.php:260
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:539
+#: wd_shortcode/widgets/wd_product_grid_list.php:261
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:550
+msgid "Previous"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:551
+msgid "Next"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:577 wd_shortcode/widgets/wd_instagram.php:127
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:580 wd_shortcode/widgets/wd_instagram.php:130
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:587 wd_shortcode/wd_functions.php:592
+#: wd_shortcode/wd_functions.php:596 wd_shortcode/widgets/wd_instagram.php:137
+#: wd_shortcode/widgets/wd_instagram.php:142
+#: wd_shortcode/widgets/wd_instagram.php:146
+msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:625 wd_shortcode/widgets/wd_instagram.php:176
+msgid "Instagram Image"
+msgstr ""
+
+#: wd_shortcode/wd_functions.php:657 wd_shortcode/widgets/wd_instagram.php:208
+msgid "Instagram did not return any images."
+msgstr ""
+
+#: wd_portfolio/templates/template.php:11
+msgid "ALL"
+msgstr ""
+
+#: wd_portfolio/templates/template.php:27
+msgid "ALL /"
+msgstr ""
+
+#: wd_portfolio/templates/template.php:131
+#: wd_portfolio/templates/partials/portfolio_masonry.php:44
+#: wd_portfolio/templates/partials/portfolio_masonry.php:76
+msgid "View Portfolio"
+msgstr ""
+
+#: wd_portfolio/templates/template.php:203
+msgid "View more"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:9
+msgid "WD - Portfolio Grid"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:11
+msgid "Special Grid portfolio"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:12
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:158
+#: wd_product_field/templates/wd_vc_testimonials.php:11
+#: wd_project/templates/wd_vc_project.php:11
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:7
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:22
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:7
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:7
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:7
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:8
+#: wd_shortcode/visualcomposer/wd_vc_blog_search.php:7
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:8
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:7
+#: wd_shortcode/visualcomposer/wd_vc_button.php:14
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:7
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:7
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:7
+#: wd_shortcode/visualcomposer/wd_vc_dropdowncart.php:8
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:7
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:7
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:7
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:7
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:7
+#: wd_shortcode/visualcomposer/wd_vc_gtranslate.php:7
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:7
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:6
+#: wd_shortcode/visualcomposer/wd_vc_information.php:7
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:7
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:7
+#: wd_shortcode/visualcomposer/wd_vc_instagram_snapppt.php:7
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:8
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:7
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:7
+#: wd_shortcode/visualcomposer/wd_vc_process_bar.php:7
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:7
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:8
+#: wd_shortcode/visualcomposer/wd_vc_product_search.php:7
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:9
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:9
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:9
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:7
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:6
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:7
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:7
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:7
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:10
+#: wd_shortcode/visualcomposer/wd_vc_title.php:6
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:9
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:8
+msgid "WPDance Shortcode"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:17
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:163
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:15
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:15
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:19
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:23
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:19
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:73
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:78
+msgid "Categories"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:18
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:164
+msgid "Select the category. If you want get category by ID"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:25
+msgid "Number Of portfolio"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:32
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:171
+#: wd_product_field/templates/wd_vc_testimonials.php:65
+#: wd_project/templates/wd_vc_project.php:65
+#: wd_shortcode/visualcomposer/wd_vc_blog_search.php:13
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:23
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:33
+#: wd_shortcode/visualcomposer/wd_vc_information.php:13
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:23
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:12
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:31
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:21
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:11
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:35
+msgid "Style"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:36
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:175
+msgid "Style 1"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:37
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:176
+msgid "Style 2"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:43
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:101
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:37
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:44
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:38
+msgid "Image Size"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:55
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:191
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:66
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:50
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:46
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:38
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:53
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:33
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:57
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:137
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:37
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:48
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:104
+msgid "Sort By"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:68
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:203
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:76
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:60
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:56
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:48
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:63
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:43
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:67
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:147
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:47
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:58
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:114
+msgid "Order By"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:80
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:237
+#: wd_product_field/templates/wd_vc_testimonials.php:45
+#: wd_project/templates/wd_vc_project.php:45
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:58
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:86
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:21
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:37
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:53
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:20
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:76
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:23
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:73
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:54
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:116
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:57
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:68
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:156
+msgid "Columns"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:93
+msgid "Gap"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:95
+msgid "Select gap between grid elements"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:114
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:99
+msgid "Number of excerpt words"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:122
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:263
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:35
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:83
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:127
+msgid "Show Pagination Or Load More"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:126
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:268
+msgid "Pagination"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:127
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:267
+msgid "Load More"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:128
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:269
+msgid "No Show"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:135
+msgid "Number blogs Load More"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:145
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:286
+#: wd_product_field/templates/wd_vc_testimonials.php:170
+#: wd_project/templates/wd_vc_project.php:170
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:76
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:325
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:121
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:133
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:60
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:97
+#: wd_shortcode/visualcomposer/wd_vc_blog_search.php:25
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:240
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:104
+#: wd_shortcode/visualcomposer/wd_vc_button.php:79
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:39
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:34
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:21
+#: wd_shortcode/visualcomposer/wd_vc_dropdowncart.php:14
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:66
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:189
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:228
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:61
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:48
+#: wd_shortcode/visualcomposer/wd_vc_gtranslate.php:13
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:89
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:41
+#: wd_shortcode/visualcomposer/wd_vc_information.php:45
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:206
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:106
+#: wd_shortcode/visualcomposer/wd_vc_instagram_snapppt.php:22
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:38
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:57
+#: wd_shortcode/visualcomposer/wd_vc_process_bar.php:33
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:108
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:112
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:88
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:53
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:247
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:76
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:152
+#: wd_shortcode/visualcomposer/wd_vc_product_search.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:91
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:105
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:271
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:37
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:117
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:44
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:42
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:209
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:85
+#: wd_shortcode/visualcomposer/wd_vc_title.php:100
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:41
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:35
+msgid "Extra class name"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:146
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:287
+#: wd_product_field/templates/wd_vc_testimonials.php:171
+#: wd_project/templates/wd_vc_project.php:171
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:77
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:326
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:122
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:134
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:61
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:98
+#: wd_shortcode/visualcomposer/wd_vc_blog_search.php:26
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:241
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:105
+#: wd_shortcode/visualcomposer/wd_vc_button.php:80
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:40
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:35
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:22
+#: wd_shortcode/visualcomposer/wd_vc_dropdowncart.php:15
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:67
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:190
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:229
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:62
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:49
+#: wd_shortcode/visualcomposer/wd_vc_gtranslate.php:14
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:90
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:42
+#: wd_shortcode/visualcomposer/wd_vc_information.php:46
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:207
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:107
+#: wd_shortcode/visualcomposer/wd_vc_instagram_snapppt.php:23
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:39
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:58
+#: wd_shortcode/visualcomposer/wd_vc_process_bar.php:34
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:109
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:113
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:89
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:54
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:248
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:77
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:153
+#: wd_shortcode/visualcomposer/wd_vc_product_search.php:14
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:92
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:106
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:272
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:38
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:118
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:45
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:43
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:210
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:86
+#: wd_shortcode/visualcomposer/wd_vc_title.php:101
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:42
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:36
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:155
+msgid "WD - Portfolio Masonry"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:157
+msgid "Style masonry of portfolio"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:183
+msgid "Number Portfolio"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:184
+msgid "number"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:214
+msgid "Layout Mode"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:218
+msgid "Masonry"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:219
+msgid "Packery"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:225
+msgid "Random Width Image"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:229
+#: wd_shortcode/widgets/wd_header_user_login.php:20
+msgid "Yes"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:230
+#: wd_shortcode/widgets/wd_header_user_login.php:21
+msgid "No"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:256
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:98
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:45
+msgid "Padding"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:259
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:101
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:48
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:138
+msgid ""
+"Padding between images. Only fill in whole numbers or real numbers. Example: "
+"2.5 (Unit: pixels)"
+msgstr ""
+
+#: wd_portfolio/templates/wd_vc_generator_portfolio.php:276
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:49
+msgid "Number Post Load More"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:9
+#: wd_project/templates/wd_vc_project.php:9
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:8
+#: wd_shortcode/widgets/wd_testimonials.php:8
+#: wd_shortcode/widgets/wd_testimonials_plus.php:8
+msgid "WD - Testimonials"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:16
+#: wd_project/templates/wd_vc_project.php:16
+msgid "Single or Slider"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:27
+#: wd_project/templates/wd_vc_project.php:27
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:26
+msgid "Select Testimonials"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:36
+#: wd_project/templates/wd_vc_project.php:36
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:282
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:12
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:13
+#: wd_shortcode/visualcomposer/wd_vc_button.php:43
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:14
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:80
+msgid "Select Category"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:56
+#: wd_project/templates/wd_vc_project.php:56
+msgid "Number Of Testimonials"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:78
+#: wd_project/templates/wd_vc_project.php:78
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:116
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:58
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:30
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:31
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:34
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:33
+#: wd_shortcode/visualcomposer/wd_vc_title.php:58
+msgid "Text Align"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:88
+#: wd_project/templates/wd_vc_project.php:88
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:40
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:51
+msgid "Show Avatar"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:100
+#: wd_project/templates/wd_vc_project.php:100
+msgid "Avatar Size"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:111
+#: wd_project/templates/wd_vc_project.php:111
+msgid "Show Customer Name"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:123
+#: wd_project/templates/wd_vc_project.php:123
+msgid "Show Role"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:135
+#: wd_project/templates/wd_vc_project.php:135
+#: wd_shortcode/widgets/wd_product_special.php:106
+msgid "Show Rating"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:147
+#: wd_project/templates/wd_vc_project.php:147
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:143
+msgid "Show Excerpt"
+msgstr ""
+
+#: wd_product_field/templates/wd_vc_testimonials.php:159
+#: wd_project/templates/wd_vc_project.php:159
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:75
+msgid "Number Of Excerpt Words"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:15
+msgid ""
+"Shows a custom attribute in a widget which lets you narrow down the list of "
+"products when viewing product categories."
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:17
+msgid "WD - Product Attribute Filter"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:66
+msgid "Filter by"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:72
+msgid "Attribute"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:78
+msgid "Display type"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:80
+#: wd_shortcode/widgets/wd_product_special.php:37
+#: wd_shortcode/widgets/wd_special_post.php:33
+msgid "List"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:81
+msgid "Dropdown"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:87
+msgid "Query type"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:89
+#: wd_shop_by_color/widgets/filter_by_brand.php:271
+#: wd_shop_by_color/widgets/filter_by_color.php:285
+msgid "AND"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:90
+#: wd_shop_by_color/widgets/filter_by_brand.php:272
+#: wd_shop_by_color/widgets/filter_by_color.php:286
+msgid "OR"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_attrs.php:215
+#, php-format
+msgid "Any %s"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_brand.php:14
+msgid "Shows brands filter for product category/shop page."
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_brand.php:16
+msgid "WD - Product Brands Filter"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_brand.php:265
+#: wd_shop_by_color/widgets/filter_by_color.php:279
+#: wd_shortcode/widgets/wd_blog_special.php:53
+#: wd_shortcode/widgets/wd_category_list_child.php:82
+#: wd_shortcode/widgets/wd_countdown.php:26
+#: wd_shortcode/widgets/wd_fanpage_likebox.php:17
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:20
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:19
+#: wd_shortcode/widgets/wd_icon_payment.php:26
+#: wd_shortcode/widgets/wd_icon_social.php:45
+#: wd_shortcode/widgets/wd_pricing_table.php:96
+#: wd_shortcode/widgets/wd_product_slider.php:70
+#: wd_shortcode/widgets/wd_product_special.php:55
+msgid "Title:"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_brand.php:269
+#: wd_shop_by_color/widgets/filter_by_color.php:283
+msgid "Query Type:"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_color.php:14
+msgid "Shows colors filter for product category/shop page."
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_color.php:16
+msgid "WD - Product Colors Filter"
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_price.php:9
+msgid "Shows prices filter for product category/shop page."
+msgstr ""
+
+#: wd_shop_by_color/widgets/filter_by_price.php:11
+msgid "WD - Product Price Filter"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:15
+msgid "WD FAQs"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:16
+msgid "WD FAQ"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:18 wd_shortcode/post_type/faq.php:19
+#: wd_shortcode/post_type/faq.php:20 wd_shortcode/post_type/faq.php:22
+msgid "FAQ"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:21 wd_shortcode/post_type/faq.php:23
+#: wd_shortcode/post_type/faq.php:24 wd_shortcode/post_type/faq.php:25
+msgid "FAQs"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:39 wd_shortcode/post_type/faq.php:45
+msgid "Categories FAQ"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:40
+msgid "Category FAQ"
+msgstr ""
+
+#: wd_shortcode/post_type/faq.php:44
+msgid "Add New Category FAQ"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:17 wd_shortcode/post_type/feature.php:29
+msgid "WD Features"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:18
+msgid "WD Feature"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:20 wd_shortcode/post_type/feature.php:21
+#: wd_shortcode/post_type/feature.php:22 wd_shortcode/post_type/feature.php:24
+msgid "Feature"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:53 wd_shortcode/post_type/feature.php:54
+#: wd_shortcode/post_type/feature.php:59
+msgid "Categories Feature"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:58
+msgid "Add New Category Feature"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:107
+msgid "Class Icon Font:"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:113
+msgid "Feature URL:"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:115
+msgid "Enter a URL that applies to this feature"
+msgstr ""
+
+#: wd_shortcode/post_type/feature.php:119
+msgid "Readmore Button Text:"
+msgstr ""
+
+#: wd_shortcode/post_type/taxonomy_brand.php:22
+#: wd_shortcode/post_type/taxonomy_brand.php:28
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:25
+msgid "Brands"
+msgstr ""
+
+#: wd_shortcode/post_type/taxonomy_brand.php:23
+msgid "Brand"
+msgstr ""
+
+#: wd_shortcode/post_type/taxonomy_brand.php:27
+msgid "Add New Brand"
+msgstr ""
+
+#: wd_shortcode/post_type/taxonomy_brand.php:41
+msgid "Logo"
+msgstr ""
+
+#: wd_shortcode/post_type/taxonomy_brand.php:64
+#: wd_shortcode/post_type/taxonomy_brand.php:93
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:19
+msgid "Image"
+msgstr ""
+
+#: wd_shortcode/post_type/taxonomy_brand.php:68
+#: wd_shortcode/post_type/taxonomy_brand.php:104
+msgid "Add Image"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_blog_recent_slider.php:64
+#: wd_shortcode/widgets/wd_special_post.php:169
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_blog_recent_slider.php:69
+#: wd_shortcode/widgets/wd_special_post.php:189
+msgid "Post by"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_blog_recent_slider.php:87
+msgid "read more"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_currency_switcher.php:23
+msgid "Change Currency"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_instagram.php:68
+#: wd_shortcode/shortcode/wd_product_special_slider.php:137
+#: wd_shortcode/shortcode/wd_title.php:31
+msgid " | "
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories.php:63
+#, php-format
+msgid "%d products"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_list.php:57
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:41
+msgid "View All"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:66
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:42
+msgid "Bestselling"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:77
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:43
+msgid "Featured"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:82
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:44
+msgid "New Arrivals"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:89
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:45
+msgid "Top Reviewed"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:137
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:141
+msgid "View All Products"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_categories_tabs.php:277
+msgid "loading"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_category_single.php:24
+msgid "Please select category."
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_category_single.php:44
+msgid " products"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_category_single.php:47
+#: wd_shortcode/widgets/wd_feature.php:253
+#: wd_shortcode/widgets/wd_feature_category.php:357
+msgid "Read more"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_search.php:21
+#: wd_shortcode/widgets/wd_search_product.php:34
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:89
+msgid "All Categories"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_search.php:43
+#: wd_shortcode/widgets/wd_search_product.php:59
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:112
+msgid "Search for products"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_product_search.php:44
+#: wd_shortcode/widgets/wd_search_product.php:60
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:113
+msgid "Search"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_social_profiles.php:32
+msgid "Become our fan on facebook"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_social_profiles.php:39
+#: wd_shortcode/shortcode/wd_social_profiles.php:40
+#: wd_shortcode/widgets/wd_icon_social.php:165
+#: wd_shortcode/widgets/wd_icon_social.php:168
+msgid "Rss"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_social_profiles.php:47
+#: wd_shortcode/shortcode/wd_social_profiles.php:48
+#: wd_shortcode/widgets/wd_icon_social.php:175
+#: wd_shortcode/widgets/wd_icon_social.php:178
+msgid "Twitter"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_social_profiles.php:55
+#: wd_shortcode/shortcode/wd_social_profiles.php:56
+#: wd_shortcode/widgets/wd_icon_social.php:185
+#: wd_shortcode/widgets/wd_icon_social.php:188
+msgid "Google"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_social_profiles.php:63
+#: wd_shortcode/shortcode/wd_social_profiles.php:64
+msgid "Pinterest"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_social_profiles.php:71
+#: wd_shortcode/shortcode/wd_social_profiles.php:72
+#: wd_shortcode/widgets/wd_icon_social.php:205
+#: wd_shortcode/widgets/wd_icon_social.php:208
+msgid "Youtube"
+msgstr ""
+
+#: wd_shortcode/shortcode/wd_wishlist.php:24
+msgid "View Wishlist Page"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:4
+#: wd_shortcode/widgets/wd_banner_image.php:7
+msgid "WD - Banner Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:6
+msgid "Simple banner image..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:13
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:22
+msgid "Background Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:21
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:305
+#: wd_shortcode/visualcomposer/wd_vc_button.php:64
+msgid "Button text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:29
+msgid "Link Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:37
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:316
+#: wd_shortcode/visualcomposer/wd_vc_button.php:72
+msgid "Button class"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:44
+msgid "Top"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:46
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:54
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:62
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:70
+#: wd_shortcode/widgets/wd_banner_image.php:89
+#: wd_shortcode/widgets/wd_banner_image.php:95
+#: wd_shortcode/widgets/wd_banner_image.php:101
+#: wd_shortcode/widgets/wd_banner_image.php:107
+msgid "ex: 5%"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:52
+msgid "Right"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:60
+msgid "Bottom"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image.php:68
+msgid "Left"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:19
+msgid "WD - Banner Image Plus"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:21
+msgid "Banner/Slider/Video youtube..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:27
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:14
+msgid "Type"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:43
+msgid "Banner Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:55
+msgid "Gallery Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:64
+msgid "Gallery Style"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:82
+msgid "Slider Images"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:85
+msgid "Select multi banner for slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:92
+msgid "Slider Columns"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:115
+msgid "Video ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:117
+msgid "Your Youtube Video ID..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:124
+msgid "Video Width (Px)"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:135
+msgid "Video height (Px)"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:144
+msgid "Video Autoplay"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:160
+msgid "Show Content"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:167
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:177
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:188
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:202
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:211
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:221
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:235
+msgid "Content Setting"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:168
+msgid "Display title, description, line, button..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:174
+msgid "Heading Line 1"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:176
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:187
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:210
+msgid "Leave blank to hide..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:185
+msgid "Heading Line 2"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:194
+msgid "Show Line"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:201
+msgid "Line separates heading and desc"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:208
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:23
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:73
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:27
+#: wd_shortcode/visualcomposer/wd_vc_title.php:22
+msgid "Description"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:216
+msgid "Position Content"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:227
+msgid "Border Content"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:244
+msgid "Show Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:252
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:262
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:276
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:287
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:298
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:309
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:319
+msgid "Button Setting"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:257
+#: wd_shortcode/visualcomposer/wd_vc_button.php:23
+msgid "Button Style"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:268
+#: wd_shortcode/visualcomposer/wd_vc_button.php:31
+msgid "Link type"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:294
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:27
+#: wd_shortcode/visualcomposer/wd_vc_button.php:54
+msgid "URL"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:297
+#: wd_shortcode/visualcomposer/wd_vc_button.php:57
+msgid "#"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_image_plus.php:308
+#: wd_shortcode/visualcomposer/wd_vc_button.php:67
+msgid "View Category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:4
+msgid "WD - Banner Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:6
+msgid "Custom Image, Link, Slick slider style..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:28
+msgid "Add link to image slider."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:49
+msgid "Link Target"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:68
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:193
+msgid "Center Mode"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:76
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:201
+msgid "Create highlighter for item at between"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:82
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:71
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:201
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:76
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:198
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:164
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:208
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:208
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:78
+msgid "Show Nav"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:95
+msgid "Show Dot"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_banner_slider.php:108
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:84
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:215
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:90
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:213
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:179
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:222
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:78
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:222
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:92
+msgid "Auto Play"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:4
+#: wd_shortcode/widgets/wd_blog_grid_list.php:7
+msgid "WD - Blog Grid/List"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:6
+msgid "Display blog with Grid/List layout..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:20
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:21
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:68
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:21
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:22
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:88
+msgid "Data Show"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:33
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:42
+msgid "Number of blogs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:41
+#: wd_shortcode/widgets/wd_blog_grid_list.php:99
+msgid "Thumbnail Style"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:53
+msgid "Grid/List Layout"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:108
+msgid "Show Pagination/Load More"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_grid_list.php:122
+msgid "Number Blogs Load More"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:4
+msgid "WD - Blog Masonry"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:6
+msgid "Display Masonry Blog..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_masonry.php:13
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:58
+msgid "Number Post"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:5
+msgid "WD - Blog Recent Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:7
+msgid "Display Recent Blog with slider..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_recent_slider.php:33
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:29
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:34
+msgid "Image size"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_search.php:4
+msgid "WD - Blog Search"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_search.php:6
+msgid "Display blog search form..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:5
+msgid "WD - Blog Special"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:7
+msgid "Custom blog themes do not follow the default setting structure."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:14
+msgid "Layout"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:16
+msgid ""
+"Select and sort blog layout. Leave blank if you want to display all "
+"properties blog"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:84
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:22
+#: wd_shortcode/widgets/wd_special_post.php:59
+msgid "Show Thumbnail"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:97
+msgid "Show Placeholder Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:105
+msgid "Show Placeholder Image if post no thumbnail"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:112
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:93
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:120
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:146
+msgid "Thumbnail Size"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:126
+msgid "Show Date"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:139
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:63
+#: wd_shortcode/widgets/wd_special_post.php:63
+msgid "Show Author"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:152
+msgid "Show Category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:165
+msgid "Show Number Comment"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:178
+msgid "Number Excerpt"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:189
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:64
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:184
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:150
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:38
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:158
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:169
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:66
+msgid "Is Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_blog_special.php:229
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:194
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:236
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:236
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:106
+msgid "Number Rows"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:4
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:7
+msgid "WD - Brand Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:6
+msgid "Brand/Image Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:13
+msgid "Source"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:17
+msgid "Product Brands"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:18
+msgid "Custom Brands Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:27
+msgid ""
+"Select and sort product brands. Leave blank if you want to display all "
+"product brand"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_brand_slider.php:36
+msgid "Brand Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_button.php:11
+msgid "WD - Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_button.php:47
+msgid "Select \"All Category\" to use the link to the shop page."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:4
+#: wd_shortcode/widgets/wd_countdown.php:7
+msgid "WD - Countdown"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:6
+msgid "WD Count Down"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:13
+msgid "Icon Count Down"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_count_down.php:30
+msgid "Select End Date"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:4
+msgid "WD - Woo Currency Switcher"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:6
+msgid "Currency Switcher"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:21
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:13
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:13
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:22
+msgid "Show Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_currency_switcher.php:29
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:21
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:30
+msgid "Display icon in front of text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:4
+msgid "WD - Do Shortcode"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:6
+msgid "Executes shortcode..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:13
+msgid "Shortcode"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_do_shortcode.php:14
+msgid "Paste your shortcode here"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_dropdowncart.php:5
+msgid "WD - Woo DropdownCart"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_dropdowncart.php:7
+msgid "Display icon dropdown cart (mini cart)."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:4
+#: wd_shortcode/widgets/wd_faq.php:7
+msgid "WD - FAQs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:5
+msgid "Show Tabs-style FAQs..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:17
+msgid ""
+"Select and sort FAQs categories. Leave blank if you want to display all FAQs "
+"category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:24
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:128
+msgid "Posts Per Page"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_faq.php:25
+msgid "Set -1 to display all faqs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:4
+msgid "WD - Feature Single"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:6
+msgid "Display detail of single feature..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:12
+msgid "Feature ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:20
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:68
+msgid "Show Thumbnail Or Icon Font"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:33
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:24
+#: wd_shortcode/visualcomposer/wd_vc_information.php:24
+msgid "Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:40
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:31
+#: wd_shortcode/visualcomposer/wd_vc_information.php:31
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:48
+msgid "Select icon from library."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:46
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:82
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:20
+msgid "Icon Size"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:57
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:93
+msgid "Style Font Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:70
+msgid "Image Or Thumbnail"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:84
+msgid "Select Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:103
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:107
+msgid "Style Thumbnail"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:126
+msgid "Show feature title"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:138
+msgid "Show excerpt"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:150
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:155
+msgid "Open Link With"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:163
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:168
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:87
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:51
+msgid "Show Readmore"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature.php:176
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:137
+msgid "Active"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:4
+msgid "WD - Feature Category Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:6
+msgid "Display feature by category and slider..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:12
+msgid "Select Feature Category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:30
+msgid "Number Of Feature"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:76
+msgid "Customize icon font class and thumbnails in the feature edit page."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:131
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:56
+msgid "Show Title"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:193
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:206
+#: wd_shortcode/visualcomposer/wd_vc_feature_category.php:221
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:159
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:172
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:187
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:199
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:211
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:111
+msgid "Slider Setting"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:4
+msgid "WD - Feedburner Subscriptions"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:6
+msgid "Feedburner Subscriptions"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:17
+msgid "Sign up for Our Newsletter"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:22
+msgid "Enter your Intro Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:23
+msgid "Intro text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:26
+msgid "A newsletter is a regularly distributed publication generally"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:32
+msgid "Enter your Placeholder Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:33
+msgid "Placeholder text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:36
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:71
+msgid "Enter your email address"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:41
+msgid "Enter your Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:42
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:128
+#: wd_shortcode/visualcomposer/wd_vc_title.php:80
+msgid "Button Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:45
+msgid "Subscribe"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:51
+msgid "Enter your Feedburner ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_feedburner_subscription.php:55
+msgid "WpComic-Manga"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:4
+msgid "WD - Fullpage JS"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:6
+msgid "Create page content with Fullpage JS..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:19
+#: wd_shortcode/visualcomposer/wd_vc_information.php:37
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:150
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:26
+msgid "Content"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:22
+msgid ""
+"HTML/Shortcode on each section. You can create a shortcode from the new page "
+"creation interface."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:27
+msgid "Background"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_fullpage.php:36
+msgid "Section Class"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_gtranslate.php:4
+msgid "WD - GTranslate"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_gtranslate.php:6
+msgid "Run GTranslate Shortcode"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:4
+msgid "WD - Count Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:6
+msgid "Display Count Icon..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:36
+msgid "Color Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:44
+msgid "Start"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:54
+msgid "Finish"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:64
+msgid "Color Number"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:72
+msgid "Text Infomation"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_count.php:81
+msgid "Color Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:3
+msgid "WD - Payment Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:5
+msgid "Payment Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_icon_payment.php:11
+msgid "Select Payment Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_information.php:4
+msgid "WD - Information"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_information.php:6
+msgid "Display info contact, email, telephone"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_information.php:39
+msgid "I am test text block. Click edit button to change this text."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_information.php:40
+msgid "Enter your content."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:4
+#: wd_shortcode/widgets/wd_instagram.php:7
+msgid "WD - Instagram"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:6
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:6
+msgid "WD Instagram"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:16
+msgid "Title Instagram"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:30
+msgid "Show Follow Me"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:41
+msgid "Follow Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:54
+msgid "Title & Desc Position"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:69
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:16
+#: wd_shortcode/widgets/wd_instagram.php:84
+msgid "Username"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:72
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:82
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:92
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:102
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:118
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:131
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:140
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:19
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:29
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:39
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:49
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:65
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:78
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:87
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:100
+msgid "Instagram Setting"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:88
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:35
+#: wd_shortcode/widgets/wd_instagram.php:85
+msgid "Number of photos"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:91
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:38
+msgid "Max 12 photos"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:108
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:55
+msgid "Photo Size"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:124
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:71
+msgid "Action When Click Item"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:137
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:84
+#: wd_shortcode/widgets/wd_instagram.php:94
+msgid "Open links in"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram.php:158
+msgid ""
+"Set \"Number of photos\" larger than (\"Columns\" * \"Number Rows\") to be "
+"able to activate Slider mode."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:4
+msgid "WD - Instagram Masonry"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram_masonry.php:95
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:184
+msgid "Mansory Image Size"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram_snapppt.php:4
+msgid "WD - Instagram Snapppt"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram_snapppt.php:6
+msgid "WD Instagram Snapppt"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_instagram_snapppt.php:13
+msgid "Instagram Snapppt Script"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:5
+msgid "WD - My Account"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:7
+msgid "Display user's links (login, logout, register...)"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:25
+msgid "Show Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_my_account.php:33
+msgid "Display Title Login/Register or My Account..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:4
+msgid "WD - Pages List"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:5
+msgid "Display pages link with list style..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:17
+msgid "Select and sort pages."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:36
+msgid "Display Copyright?"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pages_list.php:49
+msgid "Copyright Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:4
+msgid "WD - Pricing Table"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:6
+msgid "Pricing Table"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:29
+msgid "Show image or icon font"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:41
+msgid "Icon font"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:54
+msgid "Image Pricing"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:55
+msgid "Image pricing"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:66
+msgid "Basic Plan"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:91
+msgid "Currency"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:100
+msgid "Price Period"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:109
+msgid "Link"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_pricing_table.php:118
+msgid "Target"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_process_bar.php:4
+msgid "WD - Process Bar"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_process_bar.php:6
+msgid "Process Bar"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:5
+msgid "WD - Products Best Selling"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:7
+msgid "WD Best Selling Products"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:45
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:29
+msgid "Number of products"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_best_selling.php:97
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:141
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:260
+msgid "Number Products Load More"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:5
+msgid "WD - Product Categories"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:7
+msgid "Display product categories content..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:15
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:25
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:80
+msgid ""
+"Select and sort product categories. Leave blank if you want to display all "
+"product category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:63
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:39
+msgid "Show title"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:75
+msgid "Show Image Category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories.php:99
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:63
+msgid "Show meta"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:4
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:10
+msgid "WD - Product Categories Accordion"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:5
+msgid "Display product categories list with accordion"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:21
+msgid "Show Product Count"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:33
+msgid "Show Sub Categories"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:45
+msgid "Is Dropdown"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:46
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:101
+msgid ""
+"Enable this option to display the \"View All Products\" tab redirecting to "
+"the shop page."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_accordion.php:78
+msgid "Number Categories"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:5
+msgid "WD - Product Categories Group"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:6
+msgid "Display product categories name with custom image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:13
+msgid "Categories group"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:18
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:29
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:56
+msgid "Category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:19
+msgid "Product category list"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_group.php:27
+msgid "Category Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:5
+msgid "WD - Products Categories Menu"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:6
+msgid "Display product categories name with list style..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:16
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:70
+msgid "Leave blank to hide title"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_list.php:42
+msgid "Show item \"View All\" redirects to shop page."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:5
+msgid "WD - Products by Category Tabs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:6
+msgid "Products by Category Tabs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:13
+msgid "Select Type"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:17
+msgid "Special Products"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:18
+msgid "Single Category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:21
+msgid "Select Type and customize attributes in tab Category Settings"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:39
+msgid "Show Event"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:57
+msgid "Select a category"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:87
+msgid "Style Tabs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:88
+msgid "Style of product categories tabs"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:100
+msgid "View All Products Tab"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:129
+msgid "Number products on one tab..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:170
+msgid "Mansory Layout"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_categories_tabs.php:195
+msgid "Show Category Thumbnail"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:5
+msgid "WD - Product Category (Single)"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_category_single.php:7
+msgid "Display detail of Single Product Category..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:5
+#: wd_shortcode/widgets/wd_product_grid_list.php:7
+msgid "WD - Product Grid/List"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:7
+msgid "Display Products with Grid/List layout..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:67
+msgid "Switch Grid/List Mode?"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:74
+msgid ""
+"If you select \"Allow\", the product layout will be changed by the grid/list "
+"mode in the shop."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:78
+msgid "Grid/List"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:90
+msgid "Show Result Count"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:97
+msgid "Display Number Of Product Result Count"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:102
+msgid "Show Grid/List Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_grid_list.php:115
+msgid "Show Filter Product"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_search.php:4
+msgid "WD - Product Search"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_search.php:6
+msgid "Display product search form..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:6
+msgid "WD - Products Simple Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:8
+msgid "Simple Product Slider with dot style..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_simple_slider.php:30
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:96
+msgid "Number Of Products"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:6
+msgid "WD - Single Product Detail"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:8
+msgid "Display single product with custom content..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:14
+msgid "Product ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:45
+msgid "Layout Style"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:68
+msgid "Show Add To Cart"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:80
+msgid "Show Description"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_single_detail.php:92
+msgid "Show Price"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:6
+msgid "WD - Products Special Slider"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:8
+msgid "Display product with custom thumbnail image size..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:44
+msgid "Display View All Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:58
+msgid "View All Text"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:68
+msgid "View All URL"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:124
+msgid "Product Style"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:137
+msgid "Image Padding"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:181
+msgid "Slider Type"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_product_special_slider.php:246
+msgid "Show Load More"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:4
+msgid "WD - Quote"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_quote.php:6
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:6
+msgid "Display site info (title, tagline, logo...) on the header"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:4
+msgid "WD - Recent Comment"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:20
+msgid "Limit Word"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:30
+msgid "Number Comment"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_recent_comment.php:53
+msgid "Show Name Author"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:4
+msgid "WD - Site Header"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:13
+msgid "Logo Image"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:14
+msgid "If you do not want the default logo, you add another logo here"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_site_header.php:21
+msgid "Hide Site Title"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:4
+msgid "WD - Fanpage Likebox"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:6
+msgid "Display fanpage facebook likebox with custom width, height..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:13
+msgid "Fanpage URL"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:14
+msgid "URL of facebook fanpage"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:22
+msgid "Width"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:23
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:33
+msgid "Unit: pixel"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_fanpage_likebox.php:32
+msgid "Height"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:4
+msgid "WD - Social Icon"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:6
+msgid "Display social icon with many style..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:22
+msgid "Style Show"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:35
+msgid "Show Title Social"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:48
+msgid "Show RSS"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:61
+msgid "RSS ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:71
+msgid "Show Twitter"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:84
+msgid "Twitter ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:94
+msgid "Show Facebook"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:107
+msgid "Facebook ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:117
+msgid "Show Google"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:130
+msgid "Google ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:140
+msgid "Show Pin"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:153
+msgid "Pin ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:163
+msgid "Show Youtube"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:176
+msgid "Youtube ID"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:186
+msgid "Show Instagram"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_social_profiles.php:199
+msgid "RSS Instagram"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_testimonials.php:15
+msgid "Slider Or One Testimonials"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:3
+msgid "WD - Title/Heading"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:5
+msgid "Custom title for everywhere"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:31
+msgid "Heading Type"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:43
+msgid "Heading Element"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:67
+msgid "Display Button"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:68
+msgid "The button with custom link will display after the description"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_title.php:90
+msgid "Button URL"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:6
+msgid "WD - Uber Menu"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:8
+msgid "Display megamenu by special menu or menu id..."
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:24
+msgid "Menu Theme Location"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_uber_menu.php:32
+msgid "Integrate Specific Menu"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:5
+msgid "WD - Wishlist"
+msgstr ""
+
+#: wd_shortcode/visualcomposer/wd_vc_wishlist.php:7
+msgid "Link to wishlist page..."
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:5
+msgid "Banner Ads Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:7
+msgid "WD - Banner Ads"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:18
+msgid "Image Url"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:20
+msgid "Ads Url"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:22
+msgid "Image title"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:24
+msgid "Image Width"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_ads.php:26
+msgid "Image Height"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:5
+msgid "Banner image Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:42
+msgid "Image:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:52
+msgid "Image Size:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:61
+msgid "Effect Style:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:70
+#: wd_shortcode/widgets/wd_pricing_table.php:145
+msgid "Button Text:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:76
+msgid "Button Link:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:82
+msgid "Button Class:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:88
+msgid "Top:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:94
+msgid "Right:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:100
+msgid "Bottom:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:106
+msgid "Left:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_banner_image.php:112
+#: wd_shortcode/widgets/wd_blog_grid_list.php:160
+#: wd_shortcode/widgets/wd_blog_special.php:211
+#: wd_shortcode/widgets/wd_category_list_child.php:96
+#: wd_shortcode/widgets/wd_countdown.php:57
+#: wd_shortcode/widgets/wd_fanpage_likebox.php:29
+#: wd_shortcode/widgets/wd_faq.php:69 wd_shortcode/widgets/wd_feature.php:155
+#: wd_shortcode/widgets/wd_feature_category.php:246
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:44
+#: wd_shortcode/widgets/wd_header_dropdown_cart.php:17
+#: wd_shortcode/widgets/wd_header_icon_group.php:18
+#: wd_shortcode/widgets/wd_header_site_logo.php:32
+#: wd_shortcode/widgets/wd_header_user_login.php:25
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:31
+#: wd_shortcode/widgets/wd_icon_payment.php:48
+#: wd_shortcode/widgets/wd_icon_social.php:123
+#: wd_shortcode/widgets/wd_pricing_table.php:162
+#: wd_shortcode/widgets/wd_product_grid_list.php:167
+#: wd_shortcode/widgets/wd_product_slider.php:178
+#: wd_shortcode/widgets/wd_search_blog.php:31
+#: wd_shortcode/widgets/wd_search_product.php:14
+#: wd_shortcode/widgets/wd_team_members.php:116
+#: wd_shortcode/widgets/wd_testimonials.php:68
+#: wd_shortcode/widgets/wd_testimonials_plus.php:119
+#: wd_shortcode/widgets/wd_title_heading.php:66
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:25
+#: wd_shortcode/widgets/wd_woo_currency_switcher.php:25
+msgid "Extra class name:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:5
+msgid "Blog Grid/List Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:75
+#: wd_shortcode/widgets/wd_product_grid_list.php:75
+#: wd_shortcode/widgets/wd_product_slider.php:76
+msgid "Select Category:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:84
+#: wd_shortcode/widgets/wd_blog_special.php:65
+#: wd_shortcode/widgets/wd_product_grid_list.php:93
+#: wd_shortcode/widgets/wd_product_slider.php:85
+msgid "Data Show:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:93
+msgid "Number of blogs:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:108
+#: wd_shortcode/widgets/wd_feature_category.php:167
+msgid "Show Grid/List:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:118
+#: wd_shortcode/widgets/wd_faq.php:49
+#: wd_shortcode/widgets/wd_feature_category.php:177
+#: wd_shortcode/widgets/wd_product_grid_list.php:109
+#: wd_shortcode/widgets/wd_product_slider.php:100
+msgid "Sort by:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:127
+#: wd_shortcode/widgets/wd_faq.php:58
+#: wd_shortcode/widgets/wd_feature_category.php:186
+#: wd_shortcode/widgets/wd_product_grid_list.php:118
+#: wd_shortcode/widgets/wd_product_slider.php:109
+msgid "Order by:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:136
+#: wd_shortcode/widgets/wd_blog_special.php:74
+#: wd_shortcode/widgets/wd_feature_category.php:201
+#: wd_shortcode/widgets/wd_product_grid_list.php:127
+#: wd_shortcode/widgets/wd_product_slider.php:118
+#: wd_shortcode/widgets/wd_product_special.php:86
+msgid "Columns:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:145
+#: wd_shortcode/widgets/wd_product_grid_list.php:145
+msgid "Show Pagination Or Load More:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_grid_list.php:154
+#: wd_shortcode/widgets/wd_product_grid_list.php:154
+msgid "Number blogs Load More:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:5
+msgid "Special Blog Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:7
+msgid "WD - Special Blog"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:59
+msgid "Number Post:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:80
+#: wd_shortcode/widgets/wd_icon_social.php:52
+#: wd_shortcode/widgets/wd_pricing_table.php:61
+#: wd_shortcode/widgets/wd_product_grid_list.php:84
+#: wd_shortcode/widgets/wd_product_special.php:66
+#: wd_shortcode/widgets/wd_search_blog.php:22
+#: wd_shortcode/widgets/wd_team_members.php:101
+msgid "Style:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:89
+#: wd_shortcode/widgets/wd_header_user_login.php:18
+msgid "Show Title:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:98
+msgid "Show Thumbnail:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:107
+msgid "Show Placeholder image:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:117
+#: wd_shortcode/widgets/wd_testimonials.php:35
+#: wd_shortcode/widgets/wd_testimonials_plus.php:104
+msgid "Show Author:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:127
+msgid "Show Category:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:136
+msgid "Show Date:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:145
+msgid "Show Number Comment:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:154
+#: wd_shortcode/widgets/wd_feature.php:128
+#: wd_shortcode/widgets/wd_feature_category.php:219
+msgid "Show Excerpt:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:163
+msgid "Number Excerpt:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:169
+#: wd_shortcode/widgets/wd_feature.php:137
+#: wd_shortcode/widgets/wd_feature_category.php:228
+msgid "Show Readmore:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:178
+#: wd_shortcode/widgets/wd_product_slider.php:127
+msgid "Is slider:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:187
+#: wd_shortcode/widgets/wd_product_slider.php:136
+msgid "Show nav:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:196
+#: wd_shortcode/widgets/wd_product_slider.php:145
+msgid "Auto Play:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_blog_special.php:205
+#: wd_shortcode/widgets/wd_product_slider.php:154
+msgid "Per Slider:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:5
+msgid "Category List Child Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:7
+msgid "WD - Category List Child"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:47
+msgid "Banner:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:57
+msgid "Banner Size:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:66
+msgid "Category Parent:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:74
+msgid "Number Category:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_category_list_child.php:88
+#: wd_shortcode/widgets/wd_countdown.php:31
+#: wd_shortcode/widgets/wd_pricing_table.php:102
+#: wd_shortcode/widgets/wd_title_heading.php:43
+msgid "Description:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_countdown.php:5
+msgid "Countdown Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_countdown.php:36
+msgid "Date:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_countdown.php:42
+msgid "Time:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_countdown.php:48
+msgid "Format:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_fanpage_likebox.php:5
+msgid "Fanpage Like Box Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_fanpage_likebox.php:7
+msgid "WD - Fanpage Like Box"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_fanpage_likebox.php:23
+msgid "Fanpage URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:5
+msgid "FAQs Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:30
+msgid "List categories ID:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:31
+msgid "List Cat ID, separated by commas (-1 for show all categories)"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:36
+msgid "Number Categories:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:37
+msgid "Limited number of categories displayed. Blank if unlimited..."
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:42
+msgid "Post Per Category:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_faq.php:43
+msgid "-1 for show all post"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:6
+msgid "Display single feature..."
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:8
+msgid "WD - Feature (Single)"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:76
+msgid "Feature ID:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:85
+#: wd_shortcode/widgets/wd_feature_category.php:124
+msgid "Show thumbnail or icon font:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:94
+msgid "Class Icon:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:95
+msgid "Exam: fa-adjust"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:96
+#: wd_shortcode/widgets/wd_feature_category.php:135
+#: wd_shortcode/widgets/wd_icon_payment.php:35
+msgid "Get here"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:101
+#: wd_shortcode/widgets/wd_feature_category.php:140
+msgid "Style Font Icon:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:110
+#: wd_shortcode/widgets/wd_feature_category.php:149
+msgid "Style Thumbnail:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:119
+#: wd_shortcode/widgets/wd_feature_category.php:210
+msgid "Show Feature Title:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature.php:146
+#: wd_shortcode/widgets/wd_feature_category.php:237
+#: wd_shortcode/widgets/wd_pricing_table.php:151
+msgid "Active:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:6
+msgid "Display feature from category..."
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:8
+msgid "WD - Feature (Category)"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:115
+msgid "Feature Category ID:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:133
+msgid "List Class Icon (Separated by commas):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:134
+msgid ""
+"Exam: fa-pencil-square-o, fa-flag, fa-television, fa-picture-o, fa-cart-plus,"
+" fa-diamond"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:158
+msgid "Text Align:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feature_category.php:195
+msgid "Number Feature:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:5
+msgid "Feedburner Subscription Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:7
+msgid "WD - Feedburner Subscription"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:26
+msgid "Enter your Intro Text:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:32
+msgid "Enter your Button:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_feedburner_subscription.php:38
+msgid "Enter your Feedburner ID:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_dropdown_cart.php:8
+msgid "Dropdown Cart Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_dropdown_cart.php:10
+msgid "WD - Dropdown Cart"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:8
+msgid "Header Icon Group Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:10
+msgid "WD - Header Icon Group"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:100
+msgid "My Account"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:106
+msgid "User or Email"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:110
+msgid "Password"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:120
+msgid "Login"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:128
+msgid "or New to Goodly? "
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_icon_group.php:128
+msgid "Register"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_site_logo.php:5
+msgid "Site Header Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_site_logo.php:7
+msgid "WD - Site Logo"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_site_logo.php:21
+msgid "Logo:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_user_login.php:8
+msgid "User Link Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_user_login.php:10
+msgid "WD - User Links"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:8
+msgid "Wishlist Permarlink Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:10
+msgid "WD - Wishlist Permarlink"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:25
+msgid "Icon Class (Font awesome):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:26
+msgid "Ex: fa-heart"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_header_wishlist_button.php:47
+msgid "Wishlist"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_payment.php:5
+msgid "Icon Payment Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_payment.php:7
+msgid "WD - Icon Payment"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_payment.php:32
+msgid "List Icon Payment (Separated by commas):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_payment.php:33
+msgid ""
+"Exam: fa-cc-mastercard, fa-cc-visa, fa-cc-amex, fa-cc-diners-club, fa-cc-"
+"discover, fa-credit-card-alt"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_payment.php:39
+#: wd_shortcode/widgets/wd_icon_social.php:62
+msgid "Icon Size:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:5
+msgid "Icon Social Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:7
+msgid "WD - Icon Social"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:71
+msgid "Show Title Social:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:81
+msgid "RSS URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:87
+msgid "Twitter URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:93
+msgid "Facebook URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:99
+msgid "Google URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:105
+msgid "Pinterest URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:111
+msgid "Youtube URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:117
+msgid "Instagram URL:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:155
+msgid "Become our fan"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_icon_social.php:195
+#: wd_shortcode/widgets/wd_icon_social.php:198
+msgid "Pin"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:5
+msgid "Displays your latest Instagram photos"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:75
+msgid "Follow Me!"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:86
+msgid "Photo size"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:88
+msgid "Thumbnail"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:89
+msgid "Small"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:90
+msgid "Large"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:91
+msgid "Original"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:96
+msgid "Current window (_self)"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:97
+msgid "New window (_blank)"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_instagram.php:100
+msgid "Link text"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:5
+msgid "Pricing table Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:7
+msgid "WD - Pricing table"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:70
+msgid "Show image or icon font:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:79
+msgid "Class Icon (Font Awesome):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:80
+msgid "Exam: fa-diamond"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:86
+msgid "Image Pricing:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:108
+msgid "Price:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:116
+msgid "Currency:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:123
+msgid "Price Period:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:130
+msgid "Link:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:136
+msgid "Target:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_pricing_table.php:157
+msgid "Content:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:8
+msgid "Display Woocommerce Product Categories list with Accordion"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:151
+msgid "Enter your title"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:155
+msgid "Show post count"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:159
+msgid "Show sub categories"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:163
+msgid "Dropdown mode"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:166
+msgid "Number of highest parent categories to show"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:170
+msgid "Order by"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:174
+msgid "Number product"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:175
+msgid "Random"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:176
+msgid "None"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:180
+msgid "Order"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:182
+msgid "Ascending"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_categories_accordion.php:183
+msgid "Descending"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_grid_list.php:5
+msgid "Product Grid/List Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_grid_list.php:102
+msgid "Number of products:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_grid_list.php:136
+msgid "Show Filter Product:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_grid_list.php:160
+msgid "Current Grid Only:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_grid_list.php:252
+#, php-format
+msgid "Showing %s - %s of %s results"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_slider.php:5
+msgid "Product Slider Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_slider.php:7
+msgid "WD - Product Slider"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_slider.php:94
+msgid "Number Products:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_slider.php:160
+msgid "Show Loadmore:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_slider.php:169
+msgid "Number Products Load More:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:6
+msgid "Products Special Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:7
+msgid "WD - Products Special"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:30
+#: wd_shortcode/widgets/wd_special_post.php:28
+msgid "Recent Post"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:32
+#: wd_shortcode/widgets/wd_special_post.php:29
+msgid "Most View"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:36
+#: wd_shortcode/widgets/wd_special_post.php:32
+msgid "Grid"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:41
+msgid "Default (shop_catalog)"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:42
+msgid "shop_thumbnail"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:43
+msgid "shop_single"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:44
+msgid "full"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:58
+msgid "Data:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:73
+msgid "Number of product to show:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:77
+msgid "Thumbnail Size:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:98
+msgid "Show Image"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:102
+msgid "Show Product Info"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:111
+#: wd_shortcode/widgets/wd_special_post.php:76
+msgid "Slider mode"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:115
+#: wd_shortcode/widgets/wd_special_post.php:80
+msgid "Slider - Show navigation button"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:119
+#: wd_shortcode/widgets/wd_special_post.php:84
+msgid "Slider - Auto play"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:122
+#: wd_shortcode/widgets/wd_special_post.php:87
+msgid "Slider - Number of posts per slide"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_product_special.php:128
+msgid "Display Only On Homepage"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_search_blog.php:5
+msgid "Search Blog Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_search_blog.php:7
+msgid "WD - Search Blog"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_search_product.php:5
+msgid "Search Product Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_search_product.php:7
+msgid "WD - Search Product"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:5
+msgid "Display posts with thumbnail and slider, style grid/list"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:7
+msgid "WD - Special Post"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:39
+msgid "Number of posts to show"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:42
+msgid "Data"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:50
+msgid "Show Style"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:67
+msgid "Show Date Post"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:71
+msgid "Show Post Meta"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:90
+msgid "Link read more"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_special_post.php:212
+#: wd_shortcode/widgets/wd_special_post.php:213
+msgid "read more "
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:7
+msgid "Team Members Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:9
+msgid "WD - Team Members"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:24
+msgid "Select Teammember"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:65
+msgid "Slider Or One Teammember:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:74
+msgid "Select Team (Single):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:85
+msgid "Number Teammember (Multi):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:92
+msgid "Columns (Multi):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:110
+msgid "Number word content:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_team_members.php:157
+msgid "Please select team"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials.php:6
+#: wd_shortcode/widgets/wd_testimonials_plus.php:6
+msgid "Testimonials Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials.php:27
+#: wd_shortcode/widgets/wd_testimonials_plus.php:96
+msgid "Show Avatar:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials.php:43
+msgid "Show Rating:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials.php:52
+msgid "Limit Post:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials.php:57
+msgid "Testimonial Per Slide:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials.php:62
+#: wd_shortcode/widgets/wd_testimonials_plus.php:113
+msgid "Number of excerpt words:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials_plus.php:53
+msgid "Slider Or One Testimonials:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials_plus.php:61
+msgid "Select Testimonials (One Testimonials):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials_plus.php:69
+msgid "Style (One Testimonials):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_testimonials_plus.php:78
+#: wd_shortcode/widgets/wd_testimonials_plus.php:87
+msgid "Style Slider (One Testimonials):"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_title_heading.php:5
+msgid "Title Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_title_heading.php:7
+msgid "WD - Title"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_title_heading.php:35
+#: wd_shortcode/widgets/wd_woo_currency_switcher.php:18
+msgid "Widget Title:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_title_heading.php:48
+msgid "Position:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_title_heading.php:57
+msgid "Title Format:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:5
+msgid "Brand Slider Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_woo_brand_slider.php:15
+msgid "Brand Images:"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_woo_currency_switcher.php:7
+msgid "Currency Switcher Woocommerce Widget"
+msgstr ""
+
+#: wd_shortcode/widgets/wd_woo_currency_switcher.php:9
+msgid "WD - Currency Switcher Woocommerce"
+msgstr ""
+
+#: wd_portfolio/templates/partials/portfolio_grid.php:36
+#: wd_portfolio/templates/partials/portfolio_grid.php:68
+#: wd_portfolio/templates/partials/portfolio_masonry.php:46
+#: wd_portfolio/templates/partials/portfolio_masonry.php:78
+msgid "Quick view"
+msgstr ""
+
+#: wd_portfolio/templates/partials/portfolio_grid.php:44
+#: wd_portfolio/templates/partials/portfolio_grid.php:76
+#: wd_portfolio/templates/partials/portfolio_masonry.php:54
+#: wd_portfolio/templates/partials/portfolio_masonry.php:86
+msgid "Read"
+msgstr ""
+
+#. Name of the plugin
+msgid "WD Packages"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Register Post type, taxonomy, style and script library used for WD Team "
+"packages ..."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://www.wpdance.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "WD Team"
+msgstr ""
+
+#: wd_packages.php:146 wd_packages.php:152 wd_packages.php:154
+#: wd_packages.php:155 wd_packages.php:156
+msgid "Headers HTML"
+msgstr "Header"

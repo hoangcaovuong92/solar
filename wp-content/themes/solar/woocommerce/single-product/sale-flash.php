@@ -31,12 +31,12 @@ global $post, $product;
 			echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html($content) . '</span>', $post, $product ); 
 		}
 		?>
-		<?php 
-		/**
-		 * tvlgiao_wpdance_flash_featured hook.
-		 *
-		 * @hooked tvlgiao_wpdance_flash_featured - 5
-		 */
-	endif; 
+	<?php endif; ?>
+	<?php 
+	/**
+	 * tvlgiao_wpdance_flash_featured hook.
+	 *
+	 * @hooked tvlgiao_wpdance_flash_featured - 5
+	 */
 	do_action('tvlgiao_wpdance_flash_featured'); ?>
 </div>

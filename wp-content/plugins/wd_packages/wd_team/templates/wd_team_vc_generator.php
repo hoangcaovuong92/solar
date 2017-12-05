@@ -11,7 +11,7 @@ if (function_exists('visual_composer')) {
 			/****************************************************************************/
 			global $post;
 			$team_member_array = array();
-			$team_member_array[esc_html__('Select Teammember','wpdancelaparis')] = -1;
+			$team_member_array[esc_html__('Select Teammember','solar')] = -1;
 			$args = array(
 					'post_type'			=> 'team',
 					'post_status'		=> 'publish',
@@ -27,15 +27,15 @@ if (function_exists('visual_composer')) {
 			wp_reset_postdata();
 			# Add shortcode Site Header
 			vc_map(array(
-				'name' 				=> esc_html__("WD - Team Memmber", 'wpdancelaparis'),
+				'name' 				=> esc_html__("WD - Team Memmber", 'solar'),
 				'base' 				=> 'wd_team_member',
-				'description' 		=> esc_html__("Display Info Team Member", 'wpdancelaparis'),
-				'category' 			=> esc_html__("WPDance Shortcode", 'wpdancelaparis'),
+				'description' 		=> esc_html__("Display Info Team Member", 'solar'),
+				'category' 			=> esc_html__("WPDance Shortcode", 'solar'),
 				'icon'        		=> 'icon-wpb-ninjaforms',
 				'params' => array(
 					array(
 						'type' 				=> 'dropdown',
-						'heading' 			=> esc_html__( 'Slider Or One Teammember', 'wpdancelaparis' ),
+						'heading' 			=> esc_html__( 'Slider Or One Teammember', 'solar' ),
 						'param_name' 		=> 'slider_or_one',
 						'admin_label' 		=> true,
 						'value' => array(
@@ -47,7 +47,7 @@ if (function_exists('visual_composer')) {
 					),
 					array(
 						'type' 				=> 'dropdown',
-						'heading' 			=> esc_html__('Select Team', 'wpdancelaparis' ),
+						'heading' 			=> esc_html__('Select Team', 'solar' ),
 						'param_name' 		=> 'id_team',
 						'admin_label' 		=> true,
 						'value' 			=> $team_member_array,
@@ -56,7 +56,7 @@ if (function_exists('visual_composer')) {
 					),
 					array(
 						'type' 			=> 'dropdown',
-						'heading' 		=> esc_html__( 'Style', 'wpdancelaparis' ),
+						'heading' 		=> esc_html__( 'Style', 'solar' ),
 						'param_name' 	=> 'style',
 						'admin_label' 	=> true,
 						'value' => array(
@@ -74,8 +74,8 @@ if (function_exists('visual_composer')) {
 					array(
 						'type' 			=> 'textfield',
 						'class' 		=> '',
-						'heading' 		=> esc_html__("Number Teammember", 'wpdancelaparis'),
-						'description'	=> esc_html__("", 'wpdancelaparis'),
+						'heading' 		=> esc_html__("Number Teammember", 'solar'),
+						'description'	=> esc_html__("", 'solar'),
 						'admin_label' 	=> true,
 						'param_name' 	=> 'number_teammember',
 						'value' 		=> '5',
@@ -84,8 +84,8 @@ if (function_exists('visual_composer')) {
 					array(
 						'type' 			=> 'textfield',
 						'class' 		=> '',
-						'heading' 		=> esc_html__("Number word content", 'wpdancelaparis'),
-						'description'	=> esc_html__("", 'wpdancelaparis'),
+						'heading' 		=> esc_html__("Number word content", 'solar'),
+						'description'	=> esc_html__("", 'solar'),
 						'admin_label' 	=> true,
 						'param_name' 	=> 'number',
 						'value' 		=> '100'
@@ -93,8 +93,8 @@ if (function_exists('visual_composer')) {
 					array(
 						'type' 			=> 'textfield',
 						'class' 		=> '',
-						'heading' 		=> esc_html__("Extra class name", 'wpdancelaparis'),
-						'description'	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wpdancelaparis'),
+						'heading' 		=> esc_html__("Extra class name", 'solar'),
+						'description'	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'solar'),
 						'admin_label' 	=> true,
 						'param_name' 	=> 'class',
 						'value' 		=> ''

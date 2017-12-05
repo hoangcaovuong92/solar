@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_fanpage_likebox' ) ) {
 	class tvlgiao_wpdance_widget_fanpage_likebox extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_fanpage_likebox', 'description' => esc_html__('Fanpage Like Box Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_fanpage_likebox', 'description' => esc_html__('Fanpage Like Box Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('fanpage_likebox', esc_html__('WD - Fanpage Like Box','wpdancelaparis'), $widget_ops);
+			parent::__construct('fanpage_likebox', esc_html__('WD - Fanpage Like Box','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -14,19 +14,19 @@ if( !class_exists( 'tvlgiao_wpdance_widget_fanpage_likebox' ) ) {
 	        $class      			= esc_attr( isset( $instance['class'] ) ? $instance['class'] : '' );
 	        ?>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'fanpage_url' ); ?>"><?php esc_html_e( 'Fanpage URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'fanpage_url' ); ?>"><?php esc_html_e( 'Fanpage URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'fanpage_url' ); ?>" name="<?php echo $this->get_field_name( 'fanpage_url' ); ?>" type="text" value="<?php echo $fanpage_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

@@ -12,9 +12,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			 */
 			public function __construct() {
 				$this->widget_cssclass    = 'woocommerce widget_layered_nav wd_widget_product_filter_by_attr';
-				$this->widget_description = __( 'Shows a custom attribute in a widget which lets you narrow down the list of products when viewing product categories.', 'wpdancelaparis' );
+				$this->widget_description = __( 'Shows a custom attribute in a widget which lets you narrow down the list of products when viewing product categories.', 'wd_package' );
 				$this->widget_id          = 'wd_widget_product_filter_by_attr';
-				$this->widget_name        = __( 'WD - Product Attribute Filter', 'wpdancelaparis' );
+				$this->widget_name        = __( 'WD - Product Attribute Filter', 'wd_package' );
 				parent::__construct();
 			}
 
@@ -63,31 +63,31 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				$this->settings = array(
 					'title' => array(
 						'type'  => 'text',
-						'std'   => __( 'Filter by', 'wpdancelaparis' ),
-						'label' => __( 'Title', 'wpdancelaparis' ),
+						'std'   => __( 'Filter by', 'wd_package' ),
+						'label' => __( 'Title', 'wd_package' ),
 					),
 					'attribute' => array(
 						'type'    => 'select',
 						'std'     => '',
-						'label'   => __( 'Attribute', 'wpdancelaparis' ),
+						'label'   => __( 'Attribute', 'wd_package' ),
 						'options' => $attribute_array,
 					),
 					'display_type' => array(
 						'type'    => 'select',
 						'std'     => 'list',
-						'label'   => __( 'Display type', 'wpdancelaparis' ),
+						'label'   => __( 'Display type', 'wd_package' ),
 						'options' => array(
-							'list'     => __( 'List', 'wpdancelaparis' ),
-							'dropdown' => __( 'Dropdown', 'wpdancelaparis' ),
+							'list'     => __( 'List', 'wd_package' ),
+							'dropdown' => __( 'Dropdown', 'wd_package' ),
 						),
 					),
 					'query_type' => array(
 						'type'    => 'select',
 						'std'     => 'and',
-						'label'   => __( 'Query type', 'wpdancelaparis' ),
+						'label'   => __( 'Query type', 'wd_package' ),
 						'options' => array(
-							'and' => __( 'AND', 'wpdancelaparis' ),
-							'or'  => __( 'OR', 'wpdancelaparis' ),
+							'and' => __( 'AND', 'wd_package' ),
+							'or'  => __( 'OR', 'wd_package' ),
 						),
 					),
 				);
@@ -212,7 +212,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					$_chosen_attributes   = WC_Query::get_layered_nav_chosen_attributes();
 					$taxonomy_filter_name = str_replace( 'pa_', '', $taxonomy );
 					$taxonomy_label       = wc_attribute_label( $taxonomy );
-					$any_label            = apply_filters( 'woocommerce_layered_nav_any_label', sprintf( __( 'Any %s', 'wpdancelaparis' ), $taxonomy_label ), $taxonomy_label, $taxonomy );
+					$any_label            = apply_filters( 'woocommerce_layered_nav_any_label', sprintf( __( 'Any %s', 'wd_package' ), $taxonomy_label ), $taxonomy_label, $taxonomy );
 
 					echo '<select class="dropdown_layered_nav_' . esc_attr( $taxonomy_filter_name ) . '">';
 					echo '<option value="">' . esc_html( $any_label ) . '</option>';

@@ -24,7 +24,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 				//Post Blog
 				array(
 					'id' 		=> 'wp_cp_custom_post_layout',
-					'title'		=> esc_html__("POST CONFIGURATION", 'laparis'),
+					'title'		=> esc_html__("POST CONFIGURATION", 'solar'),
 					'callback' 	=> array($this,"layout_configuration"),
 					'page'		=> array('post'),
 					'context'	=> 'side',
@@ -33,7 +33,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 				//Page
 				array(
 					'id' 		=> 'wp_cp_custom_page_atts',
-					'title'		=> esc_html__("PAGE CONFIGURATION", 'laparis'),
+					'title'		=> esc_html__("PAGE CONFIGURATION", 'solar'),
 					'callback' 	=> array($this, 'layout_configuration'),
 					'page'		=> array('page'),
 					'context'	=> 'side',
@@ -42,7 +42,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 				//Product
 				array(
 					'id' 		=> 'wp_cp_custom_product_layout',
-					'title'		=> esc_html__("PRODUCT CONFIGURATION", 'laparis'),
+					'title'		=> esc_html__("PRODUCT CONFIGURATION", 'solar'),
 					'callback' 	=> array($this,"layout_configuration"),
 					'page'		=> array('product'),
 					'context'	=> 'side',
@@ -51,7 +51,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 				//HTML Block
 				array(
 					'id' 		=> 'wp_cp_custom_class_id_layout',
-					'title'		=> esc_html__("CUSTOM CLASS/ID", 'laparis'),
+					'title'		=> esc_html__("CUSTOM CLASS/ID", 'solar'),
 					'callback' 	=> array($this,"class_id_configuration"),
 					'page'		=> array('wpdance_header', 'wpdance_footer'),
 					'context'	=> 'side',
@@ -119,10 +119,10 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 		}
 
 		static function get_header($html_header = '', $selected = 0){
-			$html_header = (is_array($html_header)) ? $html_header : tvlgiao_wpdance_get_html_block_layout_choices('wpdance_header',__('Select Header', 'laparis'),'name'); ?>
+			$html_header = (is_array($html_header)) ? $html_header : tvlgiao_wpdance_get_html_block_layout_choices('wpdance_header',__('Select Header', 'solar'),'name'); ?>
 
 			<div id="wpdance_custom_header_wrap">
-				<p><strong><?php esc_html_e('Custom Header: ', 'laparis') ?></strong></p>
+				<p><strong><?php esc_html_e('Custom Header: ', 'solar') ?></strong></p>
 				<select name="wpdance_custom_header" id="wpdance_custom_header">
 					<?php foreach ($html_header as $id => $title): ?>
 						<?php $selected_html = selected($selected, $id, false); ?>
@@ -134,10 +134,10 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 		}
 
 		static function get_footer($html_footer = '', $selected = 0){
-			$html_footer = (is_array($html_footer)) ? $html_footer : tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',__('Select Footer', 'laparis'),'name'); ?>
+			$html_footer = (is_array($html_footer)) ? $html_footer : tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',__('Select Footer', 'solar'),'name'); ?>
 
 			<div id="wpdance_custom_footer_wrap">
-				<p><strong><?php esc_html_e('Custom Footer: ', 'laparis') ?></strong></p>
+				<p><strong><?php esc_html_e('Custom Footer: ', 'solar') ?></strong></p>
 				<select name="wpdance_custom_footer" id="wpdance_custom_footer">
 					<?php foreach ($html_footer as $id => $title): ?>
 						<?php $selected_html = selected($selected, $id, false); ?>
@@ -150,15 +150,15 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 
 		static function get_layout($selected = 0){
 			$layout = array(
-				'0'			=> esc_html__('Default','laparis'),
-				'0-0-0'		=> esc_html__('Fullwidth','laparis'),
-				'1-0-0'		=> esc_html__('Left Sidebar','laparis'),
-				'0-0-1'		=> esc_html__('Right Sidebar','laparis'),
-				'1-0-1'		=> esc_html__('Left & Right Sidebar','laparis'),
+				'0'			=> esc_html__('Default','solar'),
+				'0-0-0'		=> esc_html__('Fullwidth','solar'),
+				'1-0-0'		=> esc_html__('Left Sidebar','solar'),
+				'0-0-1'		=> esc_html__('Right Sidebar','solar'),
+				'1-0-1'		=> esc_html__('Left & Right Sidebar','solar'),
 			); ?>
 
 			<div id="wpdance_custom_layout_wrap">
-				<p><strong><?php esc_html_e('Layout:','laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e('Layout:','solar'); ?></strong></p>
 				<select name="wpdance_custom_layout" id="wpdance_custom_layout">
 					<?php foreach ($layout as $id => $title): ?>
 						<?php $selected_html = selected($selected, $id, false); ?>
@@ -174,7 +174,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 			
 			<?php if ($position == 'left'): ?>
 				<div id="wpdance_custom_left_sidebar_wrap">
-					<p><strong><?php esc_html_e('Left Sidebar:','laparis'); ?></strong></p>
+					<p><strong><?php esc_html_e('Left Sidebar:','solar'); ?></strong></p>
 					<select name="wpdance_custom_left_sidebar" id="wpdance_custom_left_sidebar">
 						<?php foreach ($sidebar as $id => $title): ?>
 							<?php $selected_html = selected($selected, $id, false); ?>
@@ -184,7 +184,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 				</div>
 			<?php else: ?>
 				<div id="wpdance_custom_right_sidebar_wrap">
-					<p><strong><?php esc_html_e('Right Sidebar:','laparis'); ?></strong></p>
+					<p><strong><?php esc_html_e('Right Sidebar:','solar'); ?></strong></p>
 					<select name="wpdance_custom_right_sidebar" id="wpdance_custom_right_sidebar">
 						<?php foreach ($sidebar as $id => $title): ?>
 							<?php $selected_html = selected($selected, $id, false); ?>
@@ -198,13 +198,13 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 
 		static function get_breadcrumb_style($selected = 'breadcrumb_default'){
 			$breadcrumb_style = array(
-				'breadcrumb_default'	=> esc_html__('Default (Customize)','laparis'),
-				'breadcrumb_banner'		=> esc_html__('Background Image','laparis'),
-				'no_breadcrumb'			=> esc_html__('No Breadcrumb','laparis'),
+				'breadcrumb_default'	=> esc_html__('Default (Customize)','solar'),
+				'breadcrumb_banner'		=> esc_html__('Background Image','solar'),
+				'no_breadcrumb'			=> esc_html__('No Breadcrumb','solar'),
 			); ?>
 			
 			<div id="wpdance_custom_breadcrumb_style_wrap">
-				<p><strong><?php esc_html_e('Breadcrumb Style:','laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e('Breadcrumb Style:','solar'); ?></strong></p>
 				<select name="wpdance_custom_breadcrumb_style" id="wpdance_custom_breadcrumb_style">
 					<?php foreach ($breadcrumb_style as $id => $title): ?>
 						<?php $selected_html = selected($selected, $id, false); ?>
@@ -217,19 +217,19 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 
 		static function get_breadcrumb_image($selected = '', $default = ''){ ?>
 			<div id="wpdance_custom_breadcrumb_image_wrap">
-				<p><strong><?php esc_html_e('Image Breadcrumb:','laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e('Image Breadcrumb:','solar'); ?></strong></p>
 				<p> 
 					<img id="wpdance_custom_breadcrumb_image_view" src="<?php echo ($selected && is_numeric($selected)) ? esc_url(wp_get_attachment_url($selected)) : $default; ?>"  width="100%" />
 					<input type="hidden" name="wpdance_custom_breadcrumb_image" id="wpdance_custom_breadcrumb_image" value="<?php echo ($selected && is_numeric($selected)) ? esc_attr($selected ) : ''; ?>" />
 
 					<a 	class="wd_media_lib_select_btn button button-primary button-large" 
 						data-image_value="wpdance_custom_breadcrumb_image" 
-						data-image_preview="wpdance_custom_breadcrumb_image_view"><?php esc_html_e('Select Image','wpdanceeyn'); ?></a>
+						data-image_preview="wpdance_custom_breadcrumb_image_view"><?php esc_html_e('Select Image','solar'); ?></a>
 
 					<a 	class="wd_media_lib_clear_btn button" 
 						data-image_value="wpdance_custom_breadcrumb_image" 
 						data-image_preview="wpdance_custom_breadcrumb_image_view" 
-						data-image_default="<?php echo esc_url($default); ?>"><?php esc_html_e('Reset','wpdanceeyn'); ?></a>
+						data-image_default="<?php echo esc_url($default); ?>"><?php esc_html_e('Reset','solar'); ?></a>
 				</p>
 			</div>
 			<?php 
@@ -238,7 +238,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 
 		static function get_breadcrumb_color($selected = '', $default = ''){ ?>
 			<div id="wpdance_custom_breadcrumb_color_wrap">
-				<p><strong><?php esc_html_e('Color Breadcrumb:','laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e('Color Breadcrumb:','solar'); ?></strong></p>
 				<p> 
 					<input type="text" class="wd_colorpicker_select" name="wd_breadcrumb_background_color" id="wd_breadcrumb_background_color"  value="<?php echo ($selected) ? $selected : $default; ?>"/>
 				</p>
@@ -248,7 +248,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 
 		static function get_custom_class($selected = '', $custom_class = ''){ ?>
 			<div id="wpdance_custom_class_wrap" class="<?php echo esc_attr( $custom_class ); ?>">
-				<p><strong><?php esc_html_e('Custom Classes:','laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e('Custom Classes:','solar'); ?></strong></p>
 				<p><input type="text" name="wpdance_custom_class" id="wpdance_custom_class" value="<?php echo $selected; ?>" /></p>
 			</div>
 			<?php 
@@ -256,7 +256,7 @@ if (!class_exists('Tvlgiao_Wpdance_Admin_Metaboxes_CustomFields')) {
 
 		static function get_custom_id($selected = '', $custom_class = ''){ ?>
 			<div id="wpdance_custom_id_wrap" class="<?php echo esc_attr( $custom_class ); ?>">
-				<p><strong><?php esc_html_e('Custom ID:','laparis'); ?></strong></p>
+				<p><strong><?php esc_html_e('Custom ID:','solar'); ?></strong></p>
 				<p><input type="text" name="wpdance_custom_id" id="wpdance_custom_id" value="<?php echo $selected; ?>" /></p>
 			</div>
 			<?php 

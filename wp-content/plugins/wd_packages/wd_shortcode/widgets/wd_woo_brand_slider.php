@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_brand_slider' ) ) {
 	class tvlgiao_wpdance_widget_brand_slider extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_brand_slider', 'description' => esc_html__('Brand Slider Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_brand_slider', 'description' => esc_html__('Brand Slider Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('brand_slider', esc_html__('WD - Brand Slider','wpdancelaparis'), $widget_ops);
+			parent::__construct('brand_slider', esc_html__('WD - Brand Slider','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -12,7 +12,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_brand_slider' ) ) {
 	        ?>
 
 	        	<p>
-	                <label><?php esc_html_e( 'Brand Images:', 'wpdancelaparis' ); ?></label>
+	                <label><?php esc_html_e( 'Brand Images:', 'wd_package' ); ?></label>
 	                <div class="wd_banner_image_widget_img">
 	                	<img class="wd_banner_image_view_image" src="<?php echo $image_url; ?>" alt="" width="100px">
 	                </div>
@@ -22,7 +22,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_brand_slider' ) ) {
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>
@@ -86,7 +86,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_brand_slider' ) ) {
 			);
 
 			$product_categories = get_terms( 'product_cat', $args ); 
-			$categories_show = '<option value="">'.esc_html__( 'All Categories', 'wpdancelaparis' ).'</option>';
+			$categories_show = '<option value="">'.esc_html__( 'All Categories', 'wd_package' ).'</option>';
 			$check = '';
 			if(is_search()){
 				if(isset($_GET['term']) && $_GET['term']!=''){
@@ -109,8 +109,8 @@ if( !class_exists( 'tvlgiao_wpdance_widget_brand_slider' ) ) {
 					<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/'  ) ) ?>">
 					 	<select class="wd_search_product" name="term"><?php echo balanceTags($categories_show); ?></select>
 					 	<div class="wd_search_form">
-						 	<input type="text" class="search-field" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php esc_html_e( 'Search for products', 'wpdancelaparis' ); ?> " />
-						 	<input type="submit" title="Search" id="searchsubmit" class="search-submit" value="<?php echo esc_attr__( 'Search', 'wpdancelaparis' ); ?>" />
+						 	<input type="text" class="search-field" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php esc_html_e( 'Search for products', 'wd_package' ); ?> " />
+						 	<input type="submit" title="Search" id="searchsubmit" class="search-submit" value="<?php echo esc_attr__( 'Search', 'wd_package' ); ?>" />
 						 	<input type="hidden" name="post_type" value="product" />
 						 	<input type="hidden" name="taxonomy" value="product_cat" />
 					 	</div>

@@ -11,10 +11,10 @@ if(!function_exists ('tvlgiao_wpdance_grid_list_toggle_button')){
 		<nav id="options" class="gridlist-toggle hidden-xs">
 			<ul class="option-set" data-option-key="layoutMode">
 				<?php do_action('tvlgiao_wpdance_before_grid_list_toggle_button'); ?>
-				<li data-option-value="vertical" id="list" class="goAction wd-tooltip wd-grid-list-toggle" data-toggle="tooltip" title="<?php _e('List view', 'laparis'); ?>">
+				<li data-option-value="vertical" id="list" class="goAction wd-tooltip wd-grid-list-toggle" data-toggle="tooltip" title="<?php _e('List view', 'solar'); ?>">
 					<i class="fa fa-th-list"></i>
 				</li>
-				<li data-option-value="fitRows" id="grid" class="goAction wd-tooltip wd-grid-list-toggle" data-toggle="tooltip" title="<?php _e('Grid view', 'laparis'); ?>">
+				<li data-option-value="fitRows" id="grid" class="goAction wd-tooltip wd-grid-list-toggle" data-toggle="tooltip" title="<?php _e('Grid view', 'solar'); ?>">
 					<i class="fa fa-th-large"></i>
 				</li>
 				<?php do_action('tvlgiao_wpdance_after_grid_list_toggle_button'); ?>
@@ -27,9 +27,9 @@ if(!function_exists ('tvlgiao_wpdance_grid_list_toggle_button')){
 if(!function_exists ('tvlgiao_wpdance_columns_toggle_button')){
 	function tvlgiao_wpdance_columns_toggle_button(){
 		$list_columns = array(
-			'2'	=> esc_html__( '2 Columns', 'laparis' ),
-			'3'	=> esc_html__( '3 Columns', 'laparis' ),
-			'4'	=> esc_html__( '4 Columns', 'laparis' ),
+			'2'	=> esc_html__( '2 Columns', 'solar' ),
+			'3'	=> esc_html__( '3 Columns', 'solar' ),
+			'4'	=> esc_html__( '4 Columns', 'solar' ),
 		);  
 		foreach ($list_columns as $column => $title){ ?>
 			<li data-option-value="<?php echo $column; ?>" id="wd-columns-toggle-<?php echo $column; ?>" class="goAction wd-tooltip wd-columns-toggle" data-toggle="tooltip" title="<?php echo $title; ?>">
@@ -145,7 +145,7 @@ if(!function_exists ('tvlgiao_wpdance_woocommerce_breadcrumbs')){
 		if ( !empty( $front_id ) ) {
 			$home = get_the_title( $front_id );
 		} else {
-			$home = esc_html__( 'Home', 'laparis' );
+			$home = esc_html__( 'Home', 'solar' );
 		}
 	    return array(
 	            'delimiter'   => $delimiter,
@@ -215,67 +215,67 @@ if(!function_exists ('tvlgiao_wpdance_dequeue_woocommerce_cart_fragments')){
 if(!function_exists ('tvlgiao_wpdance_custom_wc_checkout_fields')){
 	function tvlgiao_wpdance_custom_wc_checkout_fields( $fields ) {
 		/* Billing form */
-		$fields['billing']['billing_first_name']['placeholder'] 	= esc_html__( 'First name', 'laparis' );
+		$fields['billing']['billing_first_name']['placeholder'] 	= esc_html__( 'First name', 'solar' );
 		$fields['billing']['billing_first_name']['label'] 			= '';
 
-		$fields['billing']['billing_last_name']['placeholder'] 		= esc_html__( 'Last name', 'laparis' );
+		$fields['billing']['billing_last_name']['placeholder'] 		= esc_html__( 'Last name', 'solar' );
 		$fields['billing']['billing_last_name']['label'] 			= '';
 
-		$fields['billing']['billing_company']['placeholder'] 		= esc_html__( 'Company name', 'laparis' );
+		$fields['billing']['billing_company']['placeholder'] 		= esc_html__( 'Company name', 'solar' );
 		$fields['billing']['billing_company']['label'] 				= '';
 
 		$fields['billing']['billing_country']['label'] 				= '';
 
-		$fields['billing']['billing_address_1']['placeholder'] 		= esc_html__( 'House number and street name', 'laparis' );
+		$fields['billing']['billing_address_1']['placeholder'] 		= esc_html__( 'House number and street name', 'solar' );
 		$fields['billing']['billing_address_1']['label'] 			= '';
 
-		$fields['billing']['billing_address_2']['placeholder'] 		= esc_html__( 'Apartment, suite, unit etc. (optional)', 'laparis' );
+		$fields['billing']['billing_address_2']['placeholder'] 		= esc_html__( 'Apartment, suite, unit etc. (optional)', 'solar' );
 		$fields['billing']['billing_address_2']['label'] 			= '';
 
-		$fields['billing']['billing_city']['placeholder'] 			= esc_html__( 'Town / City', 'laparis' );
+		$fields['billing']['billing_city']['placeholder'] 			= esc_html__( 'Town / City', 'solar' );
 		$fields['billing']['billing_city']['label'] 				= '';
 
-		$fields['billing']['billing_state']['placeholder'] 			= esc_html__( 'State / County', 'laparis' );
+		$fields['billing']['billing_state']['placeholder'] 			= esc_html__( 'State / County', 'solar' );
 		$fields['billing']['billing_state']['label'] 				= '';
 
-		$fields['billing']['billing_postcode']['placeholder'] 		= esc_html__( 'Postcode / ZIP', 'laparis' );
+		$fields['billing']['billing_postcode']['placeholder'] 		= esc_html__( 'Postcode / ZIP', 'solar' );
 		$fields['billing']['billing_postcode']['label'] 			= '';
 
-		$fields['billing']['billing_phone']['placeholder'] 			= esc_html__( 'Phone', 'laparis' );
+		$fields['billing']['billing_phone']['placeholder'] 			= esc_html__( 'Phone', 'solar' );
 		$fields['billing']['billing_phone']['label'] 				= '';
 
-		$fields['billing']['billing_email']['placeholder'] 			= esc_html__( 'Email address', 'laparis' );
+		$fields['billing']['billing_email']['placeholder'] 			= esc_html__( 'Email address', 'solar' );
 		$fields['billing']['billing_email']['label'] 				= '';
 
 		/* Shipping form */
-		$fields['shipping']['shipping_first_name']['placeholder'] 	= esc_html__( 'First name', 'laparis' );
+		$fields['shipping']['shipping_first_name']['placeholder'] 	= esc_html__( 'First name', 'solar' );
 		$fields['shipping']['shipping_first_name']['label'] 		= '';
 
-		$fields['shipping']['shipping_last_name']['placeholder'] 	= esc_html__( 'Last name', 'laparis' );
+		$fields['shipping']['shipping_last_name']['placeholder'] 	= esc_html__( 'Last name', 'solar' );
 		$fields['shipping']['shipping_last_name']['label'] 			= '';
 
-		$fields['shipping']['shipping_company']['placeholder'] 		= esc_html__( 'Company name', 'laparis' );
+		$fields['shipping']['shipping_company']['placeholder'] 		= esc_html__( 'Company name', 'solar' );
 		$fields['shipping']['shipping_company']['label'] 			= '';
 
 		$fields['shipping']['shipping_country']['label'] 			= '';
 
-		$fields['shipping']['shipping_address_1']['placeholder'] 	= esc_html__( 'House number and street name', 'laparis' );
+		$fields['shipping']['shipping_address_1']['placeholder'] 	= esc_html__( 'House number and street name', 'solar' );
 		$fields['shipping']['shipping_address_1']['label'] 			= '';
 
-		$fields['shipping']['shipping_address_2']['placeholder'] 	= esc_html__( 'Apartment, suite, unit etc. (optional)', 'laparis' );
+		$fields['shipping']['shipping_address_2']['placeholder'] 	= esc_html__( 'Apartment, suite, unit etc. (optional)', 'solar' );
 		$fields['shipping']['shipping_address_2']['label'] 			= '';
 
-		$fields['shipping']['shipping_city']['placeholder'] 		= esc_html__( 'Town / City', 'laparis' );
+		$fields['shipping']['shipping_city']['placeholder'] 		= esc_html__( 'Town / City', 'solar' );
 		$fields['shipping']['shipping_city']['label'] 				= '';
 
-		$fields['shipping']['shipping_state']['placeholder'] 		= esc_html__( 'State / County', 'laparis' );
+		$fields['shipping']['shipping_state']['placeholder'] 		= esc_html__( 'State / County', 'solar' );
 		$fields['shipping']['shipping_state']['label'] 				= '';
 
-		$fields['shipping']['shipping_postcode']['placeholder'] 	= esc_html__( 'Postcode / ZIP', 'laparis' );
+		$fields['shipping']['shipping_postcode']['placeholder'] 	= esc_html__( 'Postcode / ZIP', 'solar' );
 		$fields['shipping']['shipping_postcode']['label'] 			= '';
 
 		/* Order comment form */
-		$fields['order']['order_comments']['placeholder'] 			= esc_html__( 'Notes about your order, e.g. special notes for delivery.', 'laparis' );
+		$fields['order']['order_comments']['placeholder'] 			= esc_html__( 'Notes about your order, e.g. special notes for delivery.', 'solar' );
 		$fields['order']['order_comments']['label'] 				= '';
 		return $fields;
 	}
@@ -284,36 +284,36 @@ if(!function_exists ('tvlgiao_wpdance_custom_wc_checkout_fields')){
 if(!function_exists ('tvlgiao_wpdance_custom_wc_billing_fields')){
 	function tvlgiao_wpdance_custom_wc_billing_fields( $fields ) {
 		/* Billing form */
-		$fields['billing_first_name']['placeholder'] 	= esc_html__( 'First name', 'laparis' );
+		$fields['billing_first_name']['placeholder'] 	= esc_html__( 'First name', 'solar' );
 		$fields['billing_first_name']['label'] 			= '';
 
-		$fields['billing_last_name']['placeholder'] 	= esc_html__( 'Last name', 'laparis' );
+		$fields['billing_last_name']['placeholder'] 	= esc_html__( 'Last name', 'solar' );
 		$fields['billing_last_name']['label'] 			= '';
 
-		$fields['billing_company']['placeholder'] 		= esc_html__( 'Company name', 'laparis' );
+		$fields['billing_company']['placeholder'] 		= esc_html__( 'Company name', 'solar' );
 		$fields['billing_company']['label'] 			= '';
 
 		$fields['billing_country']['label'] 			= '';
 
-		$fields['billing_address_1']['placeholder'] 	= esc_html__( 'House number and street name', 'laparis' );
+		$fields['billing_address_1']['placeholder'] 	= esc_html__( 'House number and street name', 'solar' );
 		$fields['billing_address_1']['label'] 			= '';
 
-		$fields['billing_address_2']['placeholder'] 	= esc_html__( 'Apartment, suite, unit etc. (optional)', 'laparis' );
+		$fields['billing_address_2']['placeholder'] 	= esc_html__( 'Apartment, suite, unit etc. (optional)', 'solar' );
 		$fields['billing_address_2']['label'] 			= '';
 
-		$fields['billing_city']['placeholder'] 			= esc_html__( 'Town / City', 'laparis' );
+		$fields['billing_city']['placeholder'] 			= esc_html__( 'Town / City', 'solar' );
 		$fields['billing_city']['label'] 				= '';
 
-		$fields['billing_state']['placeholder'] 		= esc_html__( 'State / County', 'laparis' );
+		$fields['billing_state']['placeholder'] 		= esc_html__( 'State / County', 'solar' );
 		$fields['billing_state']['label'] 				= '';
 
-		$fields['billing_postcode']['placeholder'] 		= esc_html__( 'Postcode / ZIP', 'laparis' );
+		$fields['billing_postcode']['placeholder'] 		= esc_html__( 'Postcode / ZIP', 'solar' );
 		$fields['billing_postcode']['label'] 			= '';
 
-		$fields['billing_phone']['placeholder'] 		= esc_html__( 'Phone', 'laparis' );
+		$fields['billing_phone']['placeholder'] 		= esc_html__( 'Phone', 'solar' );
 		$fields['billing_phone']['label'] 				= '';
 
-		$fields['billing_email']['placeholder'] 		= esc_html__( 'Email address', 'laparis' );
+		$fields['billing_email']['placeholder'] 		= esc_html__( 'Email address', 'solar' );
 		$fields['billing_email']['label'] 				= '';
 		return $fields;
 	}
@@ -321,30 +321,30 @@ if(!function_exists ('tvlgiao_wpdance_custom_wc_billing_fields')){
 
 if(!function_exists ('tvlgiao_wpdance_custom_wc_shipping_fields')){
 	function tvlgiao_wpdance_custom_wc_shipping_fields( $fields ) {
-		$fields['shipping_first_name']['placeholder'] 	= esc_html__( 'First name', 'laparis' );
+		$fields['shipping_first_name']['placeholder'] 	= esc_html__( 'First name', 'solar' );
 		$fields['shipping_first_name']['label'] 		= '';
 
-		$fields['shipping_last_name']['placeholder'] 	= esc_html__( 'Last name', 'laparis' );
+		$fields['shipping_last_name']['placeholder'] 	= esc_html__( 'Last name', 'solar' );
 		$fields['shipping_last_name']['label'] 			= '';
 
-		$fields['shipping_company']['placeholder'] 		= esc_html__( 'Company name', 'laparis' );
+		$fields['shipping_company']['placeholder'] 		= esc_html__( 'Company name', 'solar' );
 		$fields['shipping_company']['label'] 			= '';
 
 		$fields['shipping_country']['label'] 			= '';
 
-		$fields['shipping_address_1']['placeholder'] 	= esc_html__( 'House number and street name', 'laparis' );
+		$fields['shipping_address_1']['placeholder'] 	= esc_html__( 'House number and street name', 'solar' );
 		$fields['shipping_address_1']['label'] 			= '';
 
-		$fields['shipping_address_2']['placeholder'] 	= esc_html__( 'Apartment, suite, unit etc. (optional)', 'laparis' );
+		$fields['shipping_address_2']['placeholder'] 	= esc_html__( 'Apartment, suite, unit etc. (optional)', 'solar' );
 		$fields['shipping_address_2']['label'] 			= '';
 
-		$fields['shipping_city']['placeholder'] 		= esc_html__( 'Town / City', 'laparis' );
+		$fields['shipping_city']['placeholder'] 		= esc_html__( 'Town / City', 'solar' );
 		$fields['shipping_city']['label'] 				= '';
 
-		$fields['shipping_state']['placeholder'] 		= esc_html__( 'State / County', 'laparis' );
+		$fields['shipping_state']['placeholder'] 		= esc_html__( 'State / County', 'solar' );
 		$fields['shipping_state']['label'] 				= '';
 
-		$fields['shipping_postcode']['placeholder'] 	= esc_html__( 'Postcode / ZIP', 'laparis' );
+		$fields['shipping_postcode']['placeholder'] 	= esc_html__( 'Postcode / ZIP', 'solar' );
 		$fields['shipping_postcode']['label'] 			= '';
 		return $fields;
 	}
@@ -373,15 +373,15 @@ if(!function_exists ('tvlgiao_wpdance_get_product_availability')){
 
 					switch ( $format_option ) {
 						case 'no_amount' :
-							$format = esc_html__( 'In stock', 'laparis' );
+							$format = esc_html__( 'In stock', 'solar' );
 						break;
 						case 'low_amount' :
 							$low_amount = get_option( 'woocommerce_notify_low_stock_amount' );
 
-							$format = ( $product->get_stock_quantity() <= $low_amount ) ? esc_html__( 'Only %s left in stock', 'laparis' ) : esc_html__( 'In stock', 'laparis' );
+							$format = ( $product->get_stock_quantity() <= $low_amount ) ? esc_html__( 'Only %s left in stock', 'solar' ) : esc_html__( 'In stock', 'solar' );
 						break;
 						default :
-							$format = esc_html__( '%s in stock', 'laparis' );
+							$format = esc_html__( '%s in stock', 'solar' );
 						break;
 					}
 
@@ -389,36 +389,36 @@ if(!function_exists ('tvlgiao_wpdance_get_product_availability')){
 					$class = 'in-stock';
 
 					if ( $product->backorders_allowed() && $product->backorders_require_notification() )
-						$availability .= ' ' . esc_html__( '(backorders allowed)', 'laparis' );
+						$availability .= ' ' . esc_html__( '(backorders allowed)', 'solar' );
 
 				} else {
 
 					if ( $product->backorders_allowed() ) {
 						if ( $product->backorders_require_notification() ) {
-							$availability = esc_html__( 'Available on backorder', 'laparis' );
+							$availability = esc_html__( 'Available on backorder', 'solar' );
 							$class        = 'available-on-backorder';
 						} else {
-							$availability = esc_html__( 'In stock', 'laparis' );
+							$availability = esc_html__( 'In stock', 'solar' );
 						}
 					} else {
-						$availability = esc_html__( 'Out of stock', 'laparis' );
+						$availability = esc_html__( 'Out of stock', 'solar' );
 						$class        = 'out-of-stock';
 					}
 
 				}
 
 			} elseif ( $product->backorders_allowed() ) {
-				$availability = esc_html__( 'Available on backorder', 'laparis' );
+				$availability = esc_html__( 'Available on backorder', 'solar' );
 				$class        = 'available-on-backorder';
 			} else {
-				$availability = esc_html__( 'Out of stock', 'laparis' );
+				$availability = esc_html__( 'Out of stock', 'solar' );
 				$class        = 'out-of-stock';
 			}
 		} elseif ( ! $product->is_in_stock() ) {
-			$availability = esc_html__( 'Out of stock', 'laparis' );
+			$availability = esc_html__( 'Out of stock', 'solar' );
 			$class        = 'out-of-stock';
 		} elseif ( $product->is_in_stock() ){
-			$availability = esc_html__( 'In stock', 'laparis' );
+			$availability = esc_html__( 'In stock', 'solar' );
 			$class        = 'in-stock';		
 		}
 
@@ -518,10 +518,10 @@ if(!function_exists ('tvlgiao_wpdance_template_single_review')){
 		}
 		if ( $rating_html ) {
 			echo "<div class=\"review_wrapper\">";
-			echo '<span class="add_new_review"><a href="#reviews" class="inline show_review_form woocommerce-review-link" title="Review for '. esc_attr($product->get_title()) .' "><i class="fa fa-pencil-square-o"></i>' . esc_html__( 'Add your review', 'laparis' ) . '</a></span>';
+			echo '<span class="add_new_review"><a href="#reviews" class="inline show_review_form woocommerce-review-link" title="Review for '. esc_attr($product->get_title()) .' "><i class="fa fa-pencil-square-o"></i>' . esc_html__( 'Add your review', 'solar' ) . '</a></span>';
 			echo "</div>";
 		}else{
-			echo '<p><span class="add_new_review"><a href="#reviews" class="inline show_review_form woocommerce-review-link" title="Review for '. esc_attr($product->get_title()) .' "><i class="fa fa-pencil-square-o"></i>' . esc_html__( 'Be the first to review', 'laparis' ) . '</a></span></p>';
+			echo '<p><span class="add_new_review"><a href="#reviews" class="inline show_review_form woocommerce-review-link" title="Review for '. esc_attr($product->get_title()) .' "><i class="fa fa-pencil-square-o"></i>' . esc_html__( 'Be the first to review', 'solar' ) . '</a></span></p>';
 		}		
 	}
 }
@@ -530,7 +530,7 @@ if(!function_exists ('tvlgiao_wpdance_template_single_availability')){
 	function tvlgiao_wpdance_template_single_availability(){
 		global $product;
 		$_product_stock = tvlgiao_wpdance_get_product_availability($product); ?>
-		<p class="availability stock <?php echo esc_attr($_product_stock['class']);?>"><?php esc_html_e('Availability','laparis');?>: <span><?php echo esc_attr($_product_stock['availability']);?></span></p><?php		
+		<p class="availability stock <?php echo esc_attr($_product_stock['class']);?>"><?php esc_html_e('Availability','solar');?>: <span><?php echo esc_attr($_product_stock['availability']);?></span></p><?php		
 	}
 }
 
@@ -538,7 +538,7 @@ if(!function_exists ('tvlgiao_wpdance_template_single_sku')){
 	function tvlgiao_wpdance_template_single_sku(){
 		global $product, $post;
 		if (trim($product->get_sku())) {
-			$sku_label = esc_html__("",'laparis');
+			$sku_label = esc_html__("",'solar');
 			echo "<p class='wd_product_sku product_meta'>" . $sku_label . " <span class=\"product_sku sku\" itemprop=\"mpn\">" . esc_attr($product->get_sku()) . "</span></p>";
 		}
 	}
@@ -574,7 +574,7 @@ if(!function_exists ('tvlgiao_wpdance_single_product_tag')){
 		echo '<div class="wd_product_tags">';
 			global $product, $post;
 			$_terms = wp_get_post_terms( $product->get_id(), 'product_tag');
-			$tags_label = esc_html__("",'laparis');
+			$tags_label = esc_html__("",'solar');
 			echo '<div class="tagcloud">';
 			
 			$_include_tags = '';
@@ -596,7 +596,7 @@ if(!function_exists ('tvlgiao_wpdance_single_product_tag_tab')){
 		global $product;
 		if (count($product->get_tag_ids())){
 			$tabs['wd_tag_tab'] = array(
-				'title' 	=> __( 'Product Tags', 'laparis' ),
+				'title' 	=> __( 'Product Tags', 'solar' ),
 				'priority' 	=> 30,
 				'callback' 	=> 'tvlgiao_wpdance_single_product_tag'
 			);
@@ -624,7 +624,7 @@ if(!function_exists ('tvlgiao_wpdance_product_facebook_comment_form_tab')){
 		$display 	 = $tvlgiao_wpdance_theme_options['tvlgiao_wpdance_comment_facebook_display_on_single_product']; 
 		if ($display){
 			$tabs['wd_facebook_comment_tab'] = array(
-				'title' 	=> __( 'Comments', 'laparis' ),
+				'title' 	=> __( 'Comments', 'solar' ),
 				'priority' 	=> 60,
 				'callback' 	=> 'tvlgiao_wpdance_product_facebook_comment_form'
 			);
@@ -636,7 +636,7 @@ if(!function_exists ('tvlgiao_wpdance_product_facebook_comment_form_tab')){
 if(!function_exists ('tvlgiao_wpdance_get_product_categories')){
 	function tvlgiao_wpdance_get_product_categories(){
 		global $product;
-		$categories_label = esc_html__("Categories: ",'laparis');
+		$categories_label = esc_html__("Categories: ",'solar');
 		$rs = '';
 		$rs .= '<div class="wd_product_categories"><span>'.$categories_label.'</span>';
 		$product_categories = wp_get_post_terms(get_the_ID($product),'product_cat');
@@ -712,7 +712,7 @@ if(!function_exists ('tvlgiao_wpdance_flash_featured')){
 	function tvlgiao_wpdance_flash_featured(){
 		global $product;
 		if ( $product->is_featured() ) { ?>
-			<span class="featured"><?php esc_html_e('Hot','laparis');?></span>
+			<span class="featured"><?php esc_html_e('Hot','solar');?></span>
 		<?php } 
 	}
 }
@@ -742,7 +742,7 @@ if(!function_exists ('tvlgiao_wpdance_get_flash_sale_content')){
 			if ($percent && $percent < 100) {
 				$text .= $percent.'%';
 			}else{
-				$text = __( 'Sale!', 'laparis' );
+				$text = __( 'Sale!', 'solar' );
 			}
 		}
 		return $text;
@@ -764,34 +764,34 @@ if ( ! function_exists( 'tvlgiao_wpdance_offer_shop' ) ) {
 			ob_start();
 			?>
 			<div class="wd-offer-shop text-center">
-				<div class="wd-offer-shop"><?php _e( 'Hurry Up! Offer ends in:', 'laparis' ) ?></div>
+				<div class="wd-offer-shop"><?php _e( 'Hurry Up! Offer ends in:', 'solar' ) ?></div>
 				<!-- .wd-offer-shop -->
 				<div class="wd-offer-shop-date" data-offer="<?php echo date_i18n( 'Y/m/d', $date ) ?>">
 					<ul class="offer-end list-inline countdown">
 						<li class="date <?php echo $offer_end->y == 0 ? 'hidden' : '' ?>">
 							<span class="year"><?php echo $offer_end->y ?></span>
-							<span><?php _e( 'Year', 'laparis' ) ?></span>
+							<span><?php _e( 'Year', 'solar' ) ?></span>
 						</li>
 						<li class="date <?php echo ( $offer_end->y == 0 && $offer_end->m == 0 ) ? 'hidden' : '' ?>">
 							<span class="month"><?php echo $offer_end->m ?></span>
-							<span><?php _e( 'Month', 'laparis' ) ?></span>
+							<span><?php _e( 'Month', 'solar' ) ?></span>
 						</li>
 						<li class="date <?php echo ( $offer_end->y == 0 && $offer_end->m == 0 && $offer_end->h == 0 ) ? 'hidden' : '' ?>">
 							<span class="day"><?php echo $offer_end->d ?></span>
-							<span><?php _e( 'Day', 'laparis' ) ?></span>
+							<span><?php _e( 'Day', 'solar' ) ?></span>
 						</li>
 
 						<li class="date">
 							<span class="hour"><?php echo $offer_end->h ?></span>
-							<span><?php _e( 'Hours', 'laparis' ) ?></span>
+							<span><?php _e( 'Hours', 'solar' ) ?></span>
 						</li>
 						<li class="date">
 							<span class="minute"><?php echo $offer_end->m ?></span>
-							<span><?php _e( 'Mins', 'laparis' ) ?></span>
+							<span><?php _e( 'Mins', 'solar' ) ?></span>
 						</li>
 						<li class="date">
 							<span class="second"><?php echo $offer_end->s ?></span>
-							<span><?php _e( 'Secs', 'laparis' ) ?></span>
+							<span><?php _e( 'Secs', 'solar' ) ?></span>
 						</li>
 					</ul>
 				</div><!-- .wd-offer-shop-date -->

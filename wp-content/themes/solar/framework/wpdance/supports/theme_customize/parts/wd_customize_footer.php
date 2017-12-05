@@ -3,7 +3,7 @@
 /*						 CUSTOM FOOTER	 						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_section( 'tvlgiao_wpdance_footer_config' , array(
-		'title'       		=> esc_html__( 'WD - Footer', 'laparis' ),
+		'title'       		=> esc_html__( 'WD - Footer', 'solar' ),
 		'description' 		=> 'Custom footer site.',
 		'priority'    		=> 510,
 	));
@@ -19,7 +19,7 @@ $wp_customize->add_section( 'tvlgiao_wpdance_footer_config' , array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_footer_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_footer_config',
 	'settings'       	=> 'tvlgiao_wpdance_footer_layout',
 	'choices'			=> tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',TVLGIAO_WPDANCE_THEME_IMAGES.'/footers/wd_footer_default.jpg','url_image')
@@ -28,16 +28,16 @@ $wp_customize->add_section( 'tvlgiao_wpdance_footer_config' , array(
 
 	// Text Copyright 
 $wp_customize->add_setting('tvlgiao_wpdance_footer_copyright_text',array(
-	'default'           => sprintf(__( 'Copyright %s. All rights reserved.', 'laparis' ), esc_html( get_bloginfo('name')) ),
+	'default'           => sprintf(__( 'Copyright %s. All rights reserved.', 'solar' ), esc_html( get_bloginfo('name')) ),
 	'sanitize_callback' => 'tvlgiao_wpdance_sanitize_html'
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_footer_copyright_text_control',array(
-	'label'         	=> esc_html__( 'Footer copyright text', 'laparis' ),
+	'label'         	=> esc_html__( 'Footer copyright text', 'solar' ),
 	'section'       	=> 'tvlgiao_wpdance_footer_config',
 	'settings'      	=> 'tvlgiao_wpdance_footer_copyright_text',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( 'Copyright or other text to be displayed in the site footer. HTML allowed.', 'laparis' )
+	'description'   	=> esc_html__( 'Copyright or other text to be displayed in the site footer. HTML allowed.', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_footer_logo_url', array(
@@ -46,10 +46,10 @@ $wp_customize->add_setting('tvlgiao_wpdance_footer_logo_url', array(
 	'type' 				=> 'theme_mod'
 ));
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'tvlgiao_wpdance_footer_logo_url', array(
-    'label'    			=> esc_html__( 'Logo', 'laparis' ),
+    'label'    			=> esc_html__( 'Logo', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_footer_config',
     'settings' 			=> 'tvlgiao_wpdance_footer_logo_url',
-    'description'   	=> esc_html__( 'Footer logo is only visible to the default footer template.', 'laparis' )
+    'description'   	=> esc_html__( 'Footer logo is only visible to the default footer template.', 'solar' )
 )));
 
 ?>

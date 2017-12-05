@@ -3,19 +3,19 @@
 /*					 CUSTOM STYLING OPTION						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_panel( 'tvlgiao_wpdance_styling_config', array(
-    'title' 			=> esc_html__( 'WD - Color Setting', 'laparis' ),
-    'description' 		=> esc_html__( 'Custom body, color in website.', 'laparis'),
+    'title' 			=> esc_html__( 'WD - Color Setting', 'solar' ),
+    'description' 		=> esc_html__( 'Custom body, color in website.', 'solar'),
     'priority' 			=> 525,
 ));
 	$wp_customize->add_section( 'tvlgiao_wpdance_styling_primary_color_section' , array(
-		'title'       		=> esc_html__( 'Primary Color All Theme', 'laparis' ),
-		'description' 		=> esc_html__( 'Custom primary color all theme', 'laparis'),
+		'title'       		=> esc_html__( 'Primary Color All Theme', 'solar' ),
+		'description' 		=> esc_html__( 'Custom primary color all theme', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_styling_config',
 		'priority'    		=> 1,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_styling_custom_general_section' , array(
-		'title'       		=> esc_html__( 'Custom General Color', 'laparis' ),
-		'description' 		=> esc_html__( 'Custom general color', 'laparis'),
+		'title'       		=> esc_html__( 'Custom General Color', 'solar' ),
+		'description' 		=> esc_html__( 'Custom general color', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_styling_config',
 		'priority'    		=> 1,
 	));
@@ -28,7 +28,7 @@ $wp_customize->add_panel( 'tvlgiao_wpdance_styling_config', array(
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_body_bg_color', array(
-	'label'      		=> esc_html__( 'Select background color body tag', 'laparis' ),
+	'label'      		=> esc_html__( 'Select background color body tag', 'solar' ),
 	'section'     		=> 'tvlgiao_wpdance_styling_config',
 ))); */
 
@@ -38,7 +38,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_styling_primary_color', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_styling_primary_color',array(
-	'label'          	=> esc_html__( 'Select Primary Color', 'laparis' ),
+	'label'          	=> esc_html__( 'Select Primary Color', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_styling_primary_color_section',
 	'settings'       	=> 'tvlgiao_wpdance_styling_primary_color',
 	'choices'			=> array(

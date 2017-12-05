@@ -104,11 +104,11 @@ add_filter('get_the_archive_title', function ($title) {
 if(!function_exists('tvlgiao_wpdance_show_breadcrumbs_title')){
 	function tvlgiao_wpdance_show_breadcrumbs_title(){ 
 		if (is_search()) {
-			echo "<h3>".esc_html__('SEARCH', 'laparis')."</h3>";
+			echo "<h3>".esc_html__('SEARCH', 'solar')."</h3>";
 		}elseif(is_page() || is_single()){
 		 	echo "<h3>".get_the_title()."</h3>";
 		}elseif(class_exists('WooCommerce') && is_shop()){
-		 	echo "<h3>".esc_html__('SHOP', 'laparis')."</h3>";
+		 	echo "<h3>".esc_html__('SHOP', 'solar')."</h3>";
 		}elseif(is_archive()){
 		 	echo "<h3>".single_cat_title()."</h3>";
 		}else{
@@ -134,16 +134,16 @@ if(!function_exists('tvlgiao_wpdance_show_breadcrumbs_slug')){
 		if ( !empty( $front_id ) ) {
 			$home = get_the_title( $front_id );
 		} else {
-			$home = esc_html__( 'Home', 'laparis' );
+			$home = esc_html__( 'Home', 'solar' );
 		}
 
 		$ar_title = array(
-			'search' 		=> esc_html__('Search results for ','laparis'),
-			'404' 			=> esc_html__('Error 404','laparis'),
-			'tagged' 		=> esc_html__('Tagged ','laparis'),
-			'author' 		=> esc_html__('Articles posted by ','laparis'),
-			'page' 			=> esc_html__('Page','laparis'),
-			'portfolio' 	=> esc_html__('Portfolio','laparis'),
+			'search' 		=> esc_html__('Search results for ','solar'),
+			'404' 			=> esc_html__('Error 404','solar'),
+			'tagged' 		=> esc_html__('Tagged ','solar'),
+			'author' 		=> esc_html__('Articles posted by ','solar'),
+			'page' 			=> esc_html__('Page','solar'),
+			'portfolio' 	=> esc_html__('Portfolio','solar'),
 		);
 	  
 		$before = '<span class="current">'; // tag before the current crumb
@@ -181,7 +181,7 @@ if(!function_exists('tvlgiao_wpdance_show_breadcrumbs_slug')){
 				echo wp_kses_post($before . get_the_time('Y') . $after);
 		 
 			} elseif ( is_single() && !is_attachment() ) {
-				$title = (get_the_title() != '') ? esc_html(get_the_title()) : esc_html('(No title)','laparis');
+				$title = (get_the_title() != '') ? esc_html(get_the_title()) : esc_html('(No title)','solar');
 				if ( get_post_type() != 'post' ) {
 					$post_type		= get_post_type_object(get_post_type());
 					$slug 			= $post_type->rewrite;

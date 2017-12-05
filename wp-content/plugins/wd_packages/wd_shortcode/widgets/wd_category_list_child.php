@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 	class tvlgiao_wpdance_widget_category_list_child extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_category_list_child', 'description' => esc_html__('Category List Child Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_category_list_child', 'description' => esc_html__('Category List Child Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('category_list_child', esc_html__('WD - Category List Child','wpdancelaparis'), $widget_ops);
+			parent::__construct('category_list_child', esc_html__('WD - Category List Child','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -29,7 +29,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 			} 
 
 			$category_parent_arr = array();
-			$category_parent_arr[-1] = esc_html__('All Category','wpdancelaparis');
+			$category_parent_arr[-1] = esc_html__('All Category','wd_package');
 			if( class_exists('WooCommerce') ){
 				$categories = 	get_terms( 'product_cat', 
 											array(
@@ -44,7 +44,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 			} 
 	        ?>
 	            <p>
-	                <label><?php esc_html_e( 'Banner:', 'wpdancelaparis' ); ?></label>
+	                <label><?php esc_html_e( 'Banner:', 'wd_package' ); ?></label>
 	                <div class="wd_banner_image_widget_img">
 	                	<img class="wd_banner_image_view_image" src="<?php echo $image_url; ?>" alt="" width="400px">
 	                </div>
@@ -54,7 +54,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 	            </p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('banner_size')); ?>"><?php esc_html_e('Banner Size:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('banner_size')); ?>"><?php esc_html_e('Banner Size:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('banner_size')); ?>" id="<?php echo esc_attr($this->get_field_id('banner_size')); ?>">
 						<?php foreach( $list_banner_size as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($banner_size==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -63,7 +63,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('category_parent')); ?>"><?php esc_html_e('Category Parent:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('category_parent')); ?>"><?php esc_html_e('Category Parent:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('category_parent')); ?>" id="<?php echo esc_attr($this->get_field_id('category_parent')); ?>">
 						<?php foreach( $category_parent_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($category_parent==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -71,7 +71,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 					</select>
 				</p>
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'number_category' ); ?>"><?php esc_html_e( 'Number Category:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'number_category' ); ?>"><?php esc_html_e( 'Number Category:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'number_category' ); ?>" name="<?php echo $this->get_field_name( 'number_category' ); ?>" type="text" value="<?php echo $number_category; ?>" />
 	                </label>
 	            </p>
@@ -79,13 +79,13 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php esc_html_e( 'Description:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php esc_html_e( 'Description:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo $description; ?>" />
 	                </label>
 	            </p>
@@ -93,7 +93,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_category_list_child' ) ) {
 	            
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

@@ -31,7 +31,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<?php do_action( 'woocommerce_before_variations_form' ); ?>
 
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
-		<p class="stock out-of-stock"><?php _e( 'This product is currently out of stock and unavailable.', 'laparis' ); ?></p>
+		<p class="stock out-of-stock"><?php _e( 'This product is currently out of stock and unavailable.', 'solar' ); ?></p>
 	<?php else : ?>
 		<table class="variations" cellspacing="0">
 			<tbody>
@@ -64,7 +64,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                             ?>
                             
                             <select <?php echo wp_kses_post($hide_select);?> id="<?php echo esc_attr( sanitize_title($name) ); ?>" name="attribute_<?php echo sanitize_title($name); ?>" data-attribute_name="attribute_<?php echo sanitize_title( $name ); ?>">
-                            <option value=""><?php echo esc_html__( 'Choose an option', 'laparis' ) ?>&hellip;</option>
+                            <option value=""><?php echo esc_html__( 'Choose an option', 'solar' ) ?>&hellip;</option>
                             <?php
                                 if ( is_array( $options ) ) {
 
@@ -100,14 +100,14 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                         </select> <?php 
 
                             if ( sizeof( $attributes ) === $loop ) {
-                                echo '<p class="wd_reset_variations"><a class="reset_variations" href="#reset">' . esc_html__( 'Clear selection', 'laparis' ) . '</a></p>';
+                                echo '<p class="wd_reset_variations"><a class="reset_variations" href="#reset">' . esc_html__( 'Clear selection', 'solar' ) . '</a></p>';
                             }
                         ?></td>
                     </tr>
                 <?php endforeach;?>
                 <?php do_action( 'woocommerce_before_single_variation' ); ?>    
                     <tr class="single_variation_wrap" style="display:none;">
-                        <td class="label"><label><?php esc_html_e( 'Price', 'laparis' ) ?></label></td>
+                        <td class="label"><label><?php esc_html_e( 'Price', 'solar' ) ?></label></td>
                         <td class="value">
                             <div class="single_variation"></div>                        
                         </td>
@@ -122,7 +122,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                 <?php woocommerce_quantity_input(); ?>
             </div>
             <div class="single_variation_wrap add_to_card_button">
-                <button type="submit" class="single_add_to_cart_button button alt big"><?php echo apply_filters('single_add_to_cart_text', esc_html__( 'Add to cart', 'laparis' ), $product->get_type()); ?></button>
+                <button type="submit" class="single_add_to_cart_button button alt big"><?php echo apply_filters('single_add_to_cart_text', esc_html__( 'Add to cart', 'solar' ), $product->get_type()); ?></button>
             </div>
             
             <div class="value_submit_wd">   

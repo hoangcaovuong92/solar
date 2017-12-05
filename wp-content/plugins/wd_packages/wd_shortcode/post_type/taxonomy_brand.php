@@ -19,13 +19,13 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_woo_brand_taxonomy' ) ) {
 			register_taxonomy( 'wpdance_product_brand', 'product', array(
 				'hierarchical'     		=> true,
 				'labels'            	=> array(
-					'name' 				=> esc_html__('Brands', 'wpdancelaparis'),
-					'singular_name' 	=> esc_html__('Brand', 'wpdancelaparis'),
-		        	'new_item'          => esc_html__('Add New', 'wpdancelaparis' ),
-		        	'edit_item'         => esc_html__('Edit Post', 'wpdancelaparis' ),
-		        	'view_item'   		=> esc_html__('View Post', 'wpdancelaparis' ),
-		        	'add_new_item'      => esc_html__('Add New Brand', 'wpdancelaparis' ),
-		        	'menu_name'         => esc_html__( 'Brands' , 'wpdancelaparis' ),
+					'name' 				=> esc_html__('Brands', 'wd_package'),
+					'singular_name' 	=> esc_html__('Brand', 'wd_package'),
+		        	'new_item'          => esc_html__('Add New', 'wd_package' ),
+		        	'edit_item'         => esc_html__('Edit Post', 'wd_package' ),
+		        	'view_item'   		=> esc_html__('View Post', 'wd_package' ),
+		        	'add_new_item'      => esc_html__('Add New Brand', 'wd_package' ),
+		        	'menu_name'         => esc_html__( 'Brands' , 'wd_package' ),
 				),
 				'show_ui'           	=> true,
 				'show_admin_column' 	=> true,
@@ -38,7 +38,7 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_woo_brand_taxonomy' ) ) {
 		public function add_wpdance_product_brand_columns($columns){
 		    $new_columns = array();
 			$new_columns['cb'] = $columns['cb'];
-			$new_columns['logo'] = __( 'Logo', 'wpdancelaparis' );
+			$new_columns['logo'] = __( 'Logo', 'wd_package' );
 
 			unset( $columns['cb'] );
 
@@ -61,12 +61,12 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_woo_brand_taxonomy' ) ) {
 		 */
 		public function add_category_image ( $taxonomy ) { ?>
 			<div class="form-field term-group">
-			 	<label for="category-image-id"><?php _e('Image', 'hero-theme'); ?></label>
+			 	<label for="category-image-id"><?php _e('Image', 'wd_package'); ?></label>
 			 	<input type="hidden" id="category-image-id" name="category-image-id" class="custom_media_url" value="">
 			 	<div id="category-image-wrapper"></div>
 			 	<p>
-			 		<input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button" name="ct_tax_media_button" value="<?php _e( 'Add Image', 'hero-theme' ); ?>" />
-			 		<input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove" name="ct_tax_media_remove" value="<?php _e( 'Remove Image', 'hero-theme' ); ?>" />
+			 		<input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button" name="ct_tax_media_button" value="<?php _e( 'Add Image', 'wd_package' ); ?>" />
+			 		<input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove" name="ct_tax_media_remove" value="<?php _e( 'Remove Image', 'wd_package' ); ?>" />
 			 	</p>
 			</div>
 			<?php
@@ -90,7 +90,7 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_woo_brand_taxonomy' ) ) {
 		public function update_category_image ( $term, $taxonomy ) { ?>
 		 <tr class="form-field term-group-wrap">
 		 	<th scope="row">
-		 		<label for="category-image-id"><?php _e( 'Image', 'hero-theme' ); ?></label>
+		 		<label for="category-image-id"><?php _e( 'Image', 'wd_package' ); ?></label>
 		 	</th>
 		 	<td>
 		 		<?php $image_id = get_term_meta ( $term -> term_id, 'category-image-id', true ); ?>
@@ -101,8 +101,8 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_woo_brand_taxonomy' ) ) {
 		 			<?php } ?>
 		 		</div>
 		 		<p>
-		 			<input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button" name="ct_tax_media_button" value="<?php _e( 'Add Image', 'hero-theme' ); ?>" />
-		 			<input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove" name="ct_tax_media_remove" value="<?php _e( 'Remove Image', 'hero-theme' ); ?>" />
+		 			<input type="button" class="button button-secondary ct_tax_media_button" id="ct_tax_media_button" name="ct_tax_media_button" value="<?php _e( 'Add Image', 'wd_package' ); ?>" />
+		 			<input type="button" class="button button-secondary ct_tax_media_remove" id="ct_tax_media_remove" name="ct_tax_media_remove" value="<?php _e( 'Remove Image', 'wd_package' ); ?>" />
 		 		</p>
 		 	</td>
 		 </tr>

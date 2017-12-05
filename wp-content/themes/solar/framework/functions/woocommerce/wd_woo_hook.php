@@ -134,13 +134,13 @@ if(!function_exists ('tvlgiao_wpdance_woo_hook_action')){
 		//Reorder the product summary layout
 		$i = 5;
 		$default_layout_summary = array(
-                'woocommerce_template_single_price'             => __( 'Price', 'laparis' ),
-                'tvlgiao_wpdance_template_single_review'        => __( 'Review', 'laparis' ),
-                'tvlgiao_wpdance_template_single_sku'           => __( 'Sku', 'laparis' ),
-                'tvlgiao_wpdance_template_single_availability'  => __( 'Availability', 'laparis' ),
-                'woocommerce_template_single_excerpt'			=> __( 'Excerpt', 'laparis' ),
-                'woocommerce_template_single_add_to_cart'       => __( 'Add To Cart', 'laparis' ),
-                'tvlgiao_wpdance_get_product_categories'        => __( 'Categories', 'laparis' ),
+                'woocommerce_template_single_price'             => __( 'Price', 'solar' ),
+                'tvlgiao_wpdance_template_single_review'        => __( 'Review', 'solar' ),
+                'tvlgiao_wpdance_template_single_sku'           => __( 'Sku', 'solar' ),
+                'tvlgiao_wpdance_template_single_availability'  => __( 'Availability', 'solar' ),
+                'woocommerce_template_single_excerpt'			=> __( 'Excerpt', 'solar' ),
+                'woocommerce_template_single_add_to_cart'       => __( 'Add To Cart', 'solar' ),
+                'tvlgiao_wpdance_get_product_categories'        => __( 'Categories', 'solar' ),
             );
 		$product_summary_layout = is_array($product_summary_layout) ? array_merge($default_layout_summary, $product_summary_layout) : $default_layout_summary;
 		if ($product_summary_layout) {

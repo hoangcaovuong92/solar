@@ -2,15 +2,15 @@
 if( tvlgiao_wpdance_is_woocommerce() ){
 	$product_category       	= tvlgiao_wpdance_get_product_categories_full(false, 'autocomplete');
 	vc_map(array(
-			"name"				=> esc_html__("WD - Product Category (Single)",'wpdancelaparis'),
+			"name"				=> esc_html__("WD - Product Category (Single)",'wd_package'),
 			"base"				=> 'tvlgiao_wpdance_category_by_name',
-			'description' 		=> esc_html__("Display detail of Single Product Category...", 'wpdancelaparis'),
-			"category"			=> esc_html__("WPDance Shortcode",'wpdancelaparis'),
+			'description' 		=> esc_html__("Display detail of Single Product Category...", 'wd_package'),
+			"category"			=> esc_html__("WPDance Shortcode",'wd_package'),
 			'icon'       		=> 'icon-wpb-woocommerce',
 			"params"=>array(	
 				array(
 					'type' 			=> 'dropdown',
-					'heading' 		=> esc_html__( 'Select Category', 'wpdancelaparis' ),
+					'heading' 		=> esc_html__( 'Select Category', 'wd_package' ),
 					'param_name' 	=> 'id_category',
 					'admin_label' 	=> true,
 					'value' 		=> $product_category,
@@ -19,14 +19,14 @@ if( tvlgiao_wpdance_is_woocommerce() ){
 				array(
 					'type' 			=> "attach_image",
 					'class' 		=> "",
-					'heading' 		=> esc_html__("Background Image", 'wpdancelaparis'),
+					'heading' 		=> esc_html__("Background Image", 'wd_package'),
 					'param_name' 	=> "image_url",
 					'value' 		=> "",
 					'description' 	=> '',
 				),
 				array(
 					'type' 			=> 'dropdown',
-					'heading' 		=> esc_html__( 'Image size', 'wpdancelaparis' ),
+					'heading' 		=> esc_html__( 'Image size', 'wd_package' ),
 					'param_name' 	=> 'image_size',
 					'admin_label' 	=> true,
 					'value' 		=> tvlgiao_wpdance_vc_get_list_image_size(),
@@ -36,7 +36,7 @@ if( tvlgiao_wpdance_is_woocommerce() ){
 				),
 				array(
 					'type' 			=> 'dropdown',
-					'heading' 		=> esc_html__( 'Show title', 'wpdancelaparis' ),
+					'heading' 		=> esc_html__( 'Show title', 'wd_package' ),
 					'param_name' 	=> 'title',
 					'admin_label' 	=> true,
 					'value' 		=> array(
@@ -48,7 +48,7 @@ if( tvlgiao_wpdance_is_woocommerce() ){
 				),
 				array(
 					'type' 			=> 'dropdown',
-					'heading' 		=> esc_html__( 'Show Readmore', 'wpdancelaparis' ),
+					'heading' 		=> esc_html__( 'Show Readmore', 'wd_package' ),
 					'param_name' 	=> 'readmore',
 					'admin_label' 	=> true,
 					'value' 		=> array(
@@ -60,7 +60,7 @@ if( tvlgiao_wpdance_is_woocommerce() ){
 				),
 				array(
 					'type' 			=> 'dropdown',
-					'heading' 		=> esc_html__( 'Show meta', 'wpdancelaparis' ),
+					'heading' 		=> esc_html__( 'Show meta', 'wd_package' ),
 					'param_name' 	=> 'meta',
 					'admin_label' 	=> true,
 					'value' 		=> array(
@@ -73,8 +73,8 @@ if( tvlgiao_wpdance_is_woocommerce() ){
 				array(
 					'type' 			=> 'textfield',
 					'class' 		=> '',
-					'heading' 		=> esc_html__("Extra class name", 'wpdancelaparis'),
-					'description'	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wpdancelaparis'),
+					'heading' 		=> esc_html__("Extra class name", 'wd_package'),
+					'description'	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wd_package'),
 					'admin_label' 	=> true,
 					'param_name' 	=> 'class',
 					'value' 		=> ''

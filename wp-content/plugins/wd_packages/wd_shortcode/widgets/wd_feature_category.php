@@ -3,9 +3,9 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 	if( !class_exists( 'tvlgiao_wpdance_widget_feature_category' ) ) {
 		class tvlgiao_wpdance_widget_feature_category extends WP_Widget{
 		    function __construct() {
-				$widget_ops 		= array('classname' => 'widget_feature_category', 'description' => esc_html__('Display feature from category...','wpdancelaparis'));
+				$widget_ops 		= array('classname' => 'widget_feature_category', 'description' => esc_html__('Display feature from category...','wd_package'));
 				$control_ops 		= array('width' => 400, 'height' => 350);
-				parent::__construct('widget_feature_category', esc_html__('WD - Feature (Category)','wpdancelaparis'), $widget_ops);
+				parent::__construct('widget_feature_category', esc_html__('WD - Feature (Category)','wd_package'), $widget_ops);
 			}
 		    function form( $instance )
 		    {
@@ -30,7 +30,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 
 
 	        	$feature_options = array();
-				$feature_options[-1] = esc_html__('All Category','wpdancelaparis');
+				$feature_options[-1] = esc_html__('All Category','wd_package');
 				$categories = 	get_terms( 'feature-category', 
 											array('hide_empty' 	=> 0)
 										 );
@@ -112,7 +112,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 
 		        ?>
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('id_category')); ?>"><?php esc_html_e('Feature Category ID:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('id_category')); ?>"><?php esc_html_e('Feature Category ID:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('id_category')); ?>" id="<?php echo esc_attr($this->get_field_id('id_category')); ?>">
 							<?php foreach( $feature_options as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($id_category==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -121,7 +121,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('show_icon_font_thumbnail')); ?>"><?php esc_html_e('Show thumbnail or icon font:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('show_icon_font_thumbnail')); ?>"><?php esc_html_e('Show thumbnail or icon font:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_icon_font_thumbnail')); ?>" id="<?php echo esc_attr($this->get_field_id('show_icon_font_thumbnail')); ?>">
 							<?php foreach( $show_icon_font_thumbnail_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_icon_font_thumbnail==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -130,14 +130,14 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-		                <label for="<?php echo $this->get_field_id( 'icon_fontawesome' ); ?>"><?php esc_html_e( 'List Class Icon (Separated by commas):', 'wpdancelaparis' ); ?>
-		                <input class="widefat" id="<?php echo $this->get_field_id( 'icon_fontawesome' ); ?>" name="<?php echo $this->get_field_name( 'icon_fontawesome' ); ?>" type="text" value="<?php echo $icon_fontawesome; ?>" placeholder="<?php esc_html_e('Exam: fa-pencil-square-o, fa-flag, fa-television, fa-picture-o, fa-cart-plus, fa-diamond','wpdancelaparis'); ?>" />
-		                <kbd><a href="http://fontawesome.io/icons/"><?php esc_html_e( 'Get here', 'wpdancelaparis' ); ?></a></kbd>
+		                <label for="<?php echo $this->get_field_id( 'icon_fontawesome' ); ?>"><?php esc_html_e( 'List Class Icon (Separated by commas):', 'wd_package' ); ?>
+		                <input class="widefat" id="<?php echo $this->get_field_id( 'icon_fontawesome' ); ?>" name="<?php echo $this->get_field_name( 'icon_fontawesome' ); ?>" type="text" value="<?php echo $icon_fontawesome; ?>" placeholder="<?php esc_html_e('Exam: fa-pencil-square-o, fa-flag, fa-television, fa-picture-o, fa-cart-plus, fa-diamond','wd_package'); ?>" />
+		                <kbd><a href="http://fontawesome.io/icons/"><?php esc_html_e( 'Get here', 'wd_package' ); ?></a></kbd>
 		                </label>
 		            </p>
 					
 					<!-- <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('style_font')); ?>"><?php esc_html_e('Style Font Icon:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('style_font')); ?>"><?php esc_html_e('Style Font Icon:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style_font')); ?>" id="<?php echo esc_attr($this->get_field_id('style_font')); ?>">
 							<?php foreach( $style_font_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($style_font==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -146,7 +146,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 					
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('style_thumbnail')); ?>"><?php esc_html_e('Style Thumbnail:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('style_thumbnail')); ?>"><?php esc_html_e('Style Thumbnail:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style_thumbnail')); ?>" id="<?php echo esc_attr($this->get_field_id('style_thumbnail')); ?>">
 							<?php foreach( $style_thumbnail_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($style_thumbnail==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -155,7 +155,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p> -->
 
 					<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('position')); ?>"><?php esc_html_e('Text Align:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('position')); ?>"><?php esc_html_e('Text Align:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('position')); ?>" id="<?php echo esc_attr($this->get_field_id('position')); ?>">
 						<?php foreach( $position_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($position==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -164,7 +164,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 				</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('show_grid_list')); ?>"><?php esc_html_e('Show Grid/List:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('show_grid_list')); ?>"><?php esc_html_e('Show Grid/List:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_grid_list')); ?>" id="<?php echo esc_attr($this->get_field_id('show_grid_list')); ?>">
 							<?php foreach( $show_grid_list_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_grid_list==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -174,7 +174,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 
 
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('sort')); ?>"><?php esc_html_e('Sort by:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('sort')); ?>"><?php esc_html_e('Sort by:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('sort')); ?>" id="<?php echo esc_attr($this->get_field_id('sort')); ?>">
 							<?php foreach( $sort_by_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($sort==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -183,7 +183,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('order_by')); ?>"><?php esc_html_e('Order by:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('order_by')); ?>"><?php esc_html_e('Order by:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('order_by')); ?>" id="<?php echo esc_attr($this->get_field_id('order_by')); ?>">
 							<?php foreach( $order_by_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($order_by==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -192,13 +192,13 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-		                <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number Feature:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number Feature:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" />
 		                </label>
 		            </p>
 
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('columns')); ?>"><?php esc_html_e('Columns:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('columns')); ?>"><?php esc_html_e('Columns:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('columns')); ?>" id="<?php echo esc_attr($this->get_field_id('columns')); ?>">
 							<?php foreach( $columns_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($columns==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -207,7 +207,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('title')); ?>"><?php esc_html_e('Show Feature Title:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('title')); ?>"><?php esc_html_e('Show Feature Title:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('title')); ?>" id="<?php echo esc_attr($this->get_field_id('title')); ?>">
 							<?php foreach( $yes_no as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($title==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -216,7 +216,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('excerpt')); ?>"><?php esc_html_e('Show Excerpt:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('excerpt')); ?>"><?php esc_html_e('Show Excerpt:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('excerpt')); ?>" id="<?php echo esc_attr($this->get_field_id('excerpt')); ?>">
 							<?php foreach( $yes_no as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($excerpt==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -225,7 +225,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('readmore')); ?>"><?php esc_html_e('Show Readmore:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('readmore')); ?>"><?php esc_html_e('Show Readmore:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('readmore')); ?>" id="<?php echo esc_attr($this->get_field_id('readmore')); ?>">
 							<?php foreach( $no_yes as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($readmore==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -234,7 +234,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('active')); ?>"><?php esc_html_e('Active:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('active')); ?>"><?php esc_html_e('Active:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('active')); ?>" id="<?php echo esc_attr($this->get_field_id('active')); ?>">
 							<?php foreach( $no_yes as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($active==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -243,7 +243,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 					</p>
 					
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 		                </label>
 		            </p>
@@ -354,7 +354,7 @@ if( post_type_exists('feature') || class_exists('Woothemes_Features') ){
 											</div>
 										<?php endif;?>
 										<?php if( $readmore ) :?>
-											<a class='wd-feature-readmore' href="<?php echo esc_url(the_permalink());?>"><?php esc_html_e('Read more','wpdancelaparis'); ?></a>
+											<a class='wd-feature-readmore' href="<?php echo esc_url(the_permalink());?>"><?php esc_html_e('Read more','wd_package'); ?></a>
 										<?php endif;?>
 									</div>		
 								</div>

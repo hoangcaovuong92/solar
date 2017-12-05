@@ -74,18 +74,18 @@ if(!function_exists ('tvlgiao_wpdance_login_with_validate_ajax')){
 				if ( is_wp_error($user_signon) ){
 			        echo json_encode(array(
 			        	'loggedin'	=> false, 
-			        	'message'	=> esc_html__( 'Unknown error!', 'laparis' )
+			        	'message'	=> esc_html__( 'Unknown error!', 'solar' )
 			        ));
 			    } else {
 			        echo json_encode(array(
 			        	'loggedin'	=> true, 
-			        	'message'	=> esc_html__( 'Login successful, redirecting...', 'laparis' )
+			        	'message'	=> esc_html__( 'Login successful, redirecting...', 'solar' )
 		        	));
 			    }
 			}else{
 			   	echo json_encode(array(
 			   		'loggedin'	=> false, 
-			   		'message'	=> esc_html__( 'Wrong username or password!', 'laparis' )
+			   		'message'	=> esc_html__( 'Wrong username or password!', 'solar' )
 		   		));
 			}
 		} 

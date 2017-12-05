@@ -41,17 +41,17 @@ if ( $layout_mode == 'packery' && $random_width ) {
 						   data-toggle="tooltip"
 						   data-fancybox-group="<?php echo $tab_rand; ?>"
 						   data-caption="<?php the_title(); ?>"
-						   title="<?php _e( "View Portfolio", "wpdance" ); ?>"
+						   title="<?php _e( "View Portfolio", 'wd_package' ); ?>"
 						   href="<?php echo esc_url( $light_box_url ); ?>">
-							<?php esc_html_e( 'Quick view', 'wpdance' ); ?>
+							<?php esc_html_e( 'Quick view', 'wd_package' ); ?>
 							<?php if ( esc_attr( $light_box_class ) === 'wd-fancybox-video' ): ?>
 								<?php the_post_thumbnail( $image_size, array( 'class' => 'hidden' ) ); ?>
 							<?php endif; ?>
 						</a>
 						<a class="link-gallery"
 						   data-toggle="tooltip"
-						   title="<?php _e( "View Details", "wpdance" ); ?>"
-						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wpdance' ); ?></a>
+						   title="<?php _e( "View Details", 'wd_package' ); ?>"
+						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wd_package' ); ?></a>
 					</div><!-- .icons -->
 				</div>
 			<?php endif; ?>
@@ -73,17 +73,17 @@ if ( $layout_mode == 'packery' && $random_width ) {
 						   data-toggle="tooltip"
 						   data-fancybox-group="<?php echo $tab_rand; ?>"
 						   data-caption="<?php the_title(); ?>"
-						   title="<?php _e( "View Portfolio", "wpdance" ); ?>"
+						   title="<?php _e( "View Portfolio", 'wd_package' ); ?>"
 						   href="<?php echo esc_url( $light_box_url ); ?>">
-							<?php esc_html_e( 'Quick view', 'wpdance' ); ?>
+							<?php esc_html_e( 'Quick view', 'wd_package' ); ?>
 							<?php if ( esc_attr( $light_box_class ) === 'wd-fancybox-video' ): ?>
 								<?php the_post_thumbnail( $image_size, array( 'class' => 'hidden' ) ); ?>
 							<?php endif; ?>
 						</a>
 						<a class="link-gallery"
 						   data-toggle="tooltip"
-						   title="<?php _e( "View Details", "wpdance" ); ?>"
-						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wpdance' ); ?></a>
+						   title="<?php _e( "View Details", 'wd_package' ); ?>"
+						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wd_package' ); ?></a>
 					</div><!-- .icons -->
 				</div><!-- .hover-default -->
 			</div><!-- .wd-content-portfolio -->

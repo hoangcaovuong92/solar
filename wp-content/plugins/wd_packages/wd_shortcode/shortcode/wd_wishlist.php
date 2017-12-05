@@ -21,7 +21,7 @@ if (!function_exists('tvlgiao_wpdance_wishlist_function')) {
 		$mywishlist_url 	= get_option('yith_wcwl_wishlist_page_id') ? get_permalink( get_option('yith_wcwl_wishlist_page_id') ) : '#';
 		?>
 		<div class="wd-shortcode-wishlist <?php echo esc_attr($class) ?> <?php echo esc_attr($class_show_icon) ?>">
-			<a href="<?php echo esc_url($mywishlist_url); ?>" title="" data-original-title="<?php esc_html_e('View Wishlist Page','wpdancelaparis');?>">
+			<a href="<?php echo esc_url($mywishlist_url); ?>" title="" data-original-title="<?php esc_html_e('View Wishlist Page','wd_package');?>">
 				<span class="wd-title-header"><?php echo $icon_html;?><?php echo esc_attr($title); ?></span>
 			</a>
 		</div>

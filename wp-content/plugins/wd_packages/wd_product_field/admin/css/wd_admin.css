@@ -1,20 +1,20 @@
 .wd-full-width{
   width: 100% !important;
 }
-table.wd-testimonials-custom-meta-box th{
+table.wd-product-field-custom-meta-box th{
   width: initial;
   padding: 20px 0;
   text-align: right;
 }
 
-table.wd-testimonials-custom-meta-box label strong{
+table.wd-product-field-custom-meta-box label strong{
   width: initial;
   padding: 20px 0;
   text-align: right;
   font-weight: 600;
   color: #23282d;
 }
-table.wd-testimonials-custom-meta-box .rating-wrap{
+table.wd-product-field-custom-meta-box .rating-wrap{
   float: left;
   padding-top: 0;
 }

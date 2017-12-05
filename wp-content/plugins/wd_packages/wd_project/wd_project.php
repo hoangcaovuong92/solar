@@ -64,21 +64,23 @@ if (!class_exists('WD_project')) {
 				register_post_type('wd_project', array(
 					'exclude_from_search' 	=> true,
 					'labels' 				=> array(
-		                'name' 				=> _x('WD Project', 'post type general name','wpdancelaparis'),
-		                'singular_name' 	=> _x('WD Project', 'post type singular name','wpdancelaparis'),
-		                'add_new' 			=> _x('Add Project', 'project','wpdancelaparis'),
-		                'add_new_item' 			=> sprintf( __( 'Add New %s', 'wpdancelaparis' ), __( 'Project', 'wpdancelaparis' ) ),
-						'edit_item' 			=> sprintf( __( 'Edit %s', 'wpdancelaparis' ), __( 'Project', 'wpdancelaparis' ) ),
-						'new_item' 				=> sprintf( __( 'New %s', 'wpdancelaparis' ), __( 'Project', 'wpdancelaparis' ) ),
-						'all_items' 			=> sprintf( __( 'All %s', 'wpdancelaparis' ), __( 'Projects', 'wpdancelaparis' ) ),
-						'view_item' 			=> sprintf( __( 'View %s', 'wpdancelaparis' ), __( 'Project', 'wpdancelaparis' ) ),
-						'search_items' 			=> sprintf( __( 'Search %a', 'wpdancelaparis' ), __( 'Projects', 'wpdancelaparis' ) ),
-						'not_found' 			=>  sprintf( __( 'No %s Found', 'wpdancelaparis' ), __( 'Projects', 'wpdancelaparis' ) ),
-						'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wpdancelaparis' ), __( 'Features', 'wpdancelaparis' ) ),
+		                'name' 				=> _x('WD Project', 'post type general name','wd_package'),
+		                'singular_name' 	=> _x('WD Project', 'post type singular name','wd_package'),
+		                'add_new' 			=> _x('Add Project', 'project','wd_package'),
+		                'add_new_item' 			=> sprintf( __( 'Add New %s', 'wd_package' ), __( 'Project', 'wd_package' ) ),
+						'edit_item' 			=> sprintf( __( 'Edit %s', 'wd_package' ), __( 'Project', 'wd_package' ) ),
+						'new_item' 				=> sprintf
+
+						( __( 'New %s', 'wd_package' ), __( 'Project', 'wd_package' ) ),
+						'all_items' 			=> sprintf( __( 'All %s', 'wd_package' ), __( 'Projects', 'wd_package' ) ),
+						'view_item' 			=> sprintf( __( 'View %s', 'wd_package' ), __( 'Project', 'wd_package' ) ),
+						'search_items' 			=> sprintf( __( 'Search %a', 'wd_package' ), __( 'Projects', 'wd_package' ) ),
+						'not_found' 			=>  sprintf( __( 'No %s Found', 'wd_package' ), __( 'Projects', 'wd_package' ) ),
+						'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wd_package' ), __( 'Features', 'wd_package' ) ),
 		                'parent_item_colon' => '',
-		                'menu_name' 		=> __('WD Project','wpdancelaparis'),
+		                'menu_name' 		=> __('WD Project','wd_package'),
 					),
-					'singular_label' 		=> __('WD Project','wpdancelaparis'),
+					'singular_label' 		=> __('WD Project','wd_package'),
 					'taxonomies' 			=> array('wd_project_categories'),
 					'public' 				=> true,
 					'has_archive' 			=> false,
@@ -96,13 +98,13 @@ if (!class_exists('WD_project')) {
 			register_taxonomy( 'wd_project_categories', 'wd_project', array(
 				'hierarchical'     		=> true,
 				'labels'            	=> array(
-					'name' 				=> esc_html__('Categories Project', 'wpdancelaparis'),
-					'singular_name' 	=> esc_html__('Category Project', 'wpdancelaparis'),
-	            	'new_item'          => esc_html__('Add New', 'wpdancelaparis' ),
-	            	'edit_item'         => esc_html__('Edit Post', 'wpdancelaparis' ),
-	            	'view_item'   		=> esc_html__('View Post', 'wpdancelaparis' ),
-	            	'add_new_item'      => esc_html__('Add New Category Project', 'wpdancelaparis' ),
-	            	'menu_name'         => esc_html__( 'Categories Project' , 'wpdancelaparis' ),
+					'name' 				=> esc_html__('Categories Project', 'wd_package'),
+					'singular_name' 	=> esc_html__('Category Project', 'wd_package'),
+	            	'new_item'          => esc_html__('Add New', 'wd_package' ),
+	            	'edit_item'         => esc_html__('Edit Post', 'wd_package' ),
+	            	'view_item'   		=> esc_html__('View Post', 'wd_package' ),
+	            	'add_new_item'      => esc_html__('Add New Category Project', 'wd_package' ),
+	            	'menu_name'         => esc_html__( 'Categories Project' , 'wd_package' ),
 				),
 				'show_ui'           	=> true,
 				'show_admin_column' 	=> true,
@@ -152,9 +154,9 @@ if (!class_exists('WD_project')) {
 		public function get_project_meta_data_default($field = ''){
 			$default = array(
 				'wd_project' 	=> array(
-					'role'				=> '',
-					'url'				=> '#',
-					'rating'			=> '5',
+					'time'				=> '',
+					'place'				=> '',
+					'youtube_url'		=> '',
 				),
 			);
 			return ($field && isset($default[$field])) ? $default[$field] : $default;
@@ -192,22 +194,16 @@ if (!class_exists('WD_project')) {
 			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-project-custom-meta-box wd-custom-meta-box-width">
 				<tbody>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Role', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_project[role]" value="<?php echo esc_attr($meta_data['role']);?>"/></td>
+						<th scope="row"><label><?php esc_html_e( 'Thời gian thi công', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_project[time]" value="<?php echo esc_attr($meta_data['time']);?>"/></td>
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'URL', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_project[url]" value="<?php echo esc_attr($meta_data['url']);?>"/></td> 
+						<th scope="row"><label><?php esc_html_e( 'Địa điểm', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_project[place]" value="<?php echo esc_attr($meta_data['place']);?>"/></td> 
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Rating', 'wpdancelaparis' ); ?>:</label></th>
-						<td class="rating-wrap">
-							<?php for ($i = 5; $i >= 1 ; $i--) { 
-								$checked = $meta_data['rating'] == $i ? 'checked="true"' : '';
-								echo '<input class="star star-'.$i.'" id="star-'.$i.'" value="'.$i.'" type="radio" name="wd_project[rating]" '.$checked.' />';
-								echo '<label class="star star-'.$i.'" for="star-'.$i.'"></label>';
-							} ?>
-						</td>
+						<th scope="row"><label><?php esc_html_e( 'Link Youtube', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_project[youtube_url]" value="<?php echo esc_attr($meta_data['youtube_url']);?>"/></td> 
 					</tr>
 				</tbody>
 			</table>
@@ -218,20 +214,20 @@ if (!class_exists('WD_project')) {
 		    $screen = get_current_screen();
 		  
 		    if  ( 'wd_project' == $screen->post_type ) {
-		        $title = esc_html__("Enter the project's name here", 'wpdancelaparis' );
+		        $title = esc_html__("Enter the project's name here", 'wd_package' );
 		    }
 		    return $title;
 		}
 		
 		public function rename_second_menu_name($safe_text, $text) {
-			if (__('project Items', 'wpdancelaparis') !== $text) {
+			if (__('project Items', 'wd_package') !== $text) {
 				return $safe_text;
 			}
 
 			// We are on the main menu item now. The filter is not needed anymore.
 			remove_filter('attribute_escape', array($this,'rename_second_menu_name') );
 
-			return __('WD project', 'wpdancelaparis');
+			return __('WD project', 'wd_package');
 		}
 			
 		protected function initShortcodes(){

@@ -168,7 +168,7 @@ if (!class_exists('WD_Shopbycolor')) {
 		public function wd_pc_color_color_columns( $columns ) {
 			$new_columns = array();
 			$new_columns['cb'] = $columns['cb'];
-			$new_columns['color'] = __( 'Color', 'wpdancelaparis' );
+			$new_columns['color'] = __( 'Color', 'wd_package' );
 
 			unset( $columns['cb'] );
 
@@ -241,22 +241,22 @@ if (!class_exists('WD_Shopbycolor')) {
 		?>
 
 			<tr class="form-field form-required">
-				<th scope="row" valign="top"><label><?php esc_html_e( 'Color', 'wpdancelaparis' ); ?></label></th>
+				<th scope="row" valign="top"><label><?php esc_html_e( 'Color', 'wd_package' ); ?></label></th>
 				<td>
 					<input name="wd_pc_color_color" id="hex-color" class="wd_pc_colorpicker" data-default-color="<?php echo esc_attr($datas['wd_pc_color_color']);?>" type="text" value="<?php echo esc_attr($datas['wd_pc_color_color']);?>" size="40" aria-required="true">
-					<span class="description"><?php esc_html_e( 'Use color picker to pick one color.', 'wpdancelaparis' ); ?></span>
+					<span class="description"><?php esc_html_e( 'Use color picker to pick one color.', 'wd_package' ); ?></span>
 				</td>
 			</tr>
 
 			<tr class="form-field">
-				<th scope="row" valign="top"><label><?php esc_html_e( 'Thumbnail Image', 'wpdancelaparis' ); ?></label></th>
+				<th scope="row" valign="top"><label><?php esc_html_e( 'Thumbnail Image', 'wd_package' ); ?></label></th>
 				<td>
 					<input name="wd_pc_color_image" type="hidden" class="wd_pc_custom_image" value="<?php echo absint($datas['wd_pc_color_image']);?>" />
 					<img style="padding-bottom:5px;" src="<?php echo esc_url( $_img ) ;?>" class="wd_pc_preview_image" /><br />
 					<input class="wd_pc_upload_image_button button" type="button"  size="40" value="Choose Image" />
-					<small>&nbsp;<a href="#" class="wd_pc_clear_image_button"><?php esc_html_e( 'Remove Image', 'wpdancelaparis' ); ?></a></small>
+					<small>&nbsp;<a href="#" class="wd_pc_clear_image_button"><?php esc_html_e( 'Remove Image', 'wd_package' ); ?></a></small>
 					<br clear="all" />		
-					<span class="description"><?php esc_html_e( 'Choose one thumbnail.', 'wpdancelaparis' ); ?></span>
+					<span class="description"><?php esc_html_e( 'Choose one thumbnail.', 'wd_package' ); ?></span>
 				</td>
 			</tr>
 				
@@ -296,19 +296,19 @@ if (!class_exists('WD_Shopbycolor')) {
 		?>
 		
 		<div class="form-field form-required">
-			<label for="display_type"><?php esc_html_e( 'Color', 'wpdancelaparis' ); ?></label>
+			<label for="display_type"><?php esc_html_e( 'Color', 'wd_package' ); ?></label>
 			<input name="wd_pc_color_color" id="hex-color" class="wd_pc_colorpicker" type="text" value="#aaaaaa" size="40" aria-required="true">
-			<p><?php esc_html_e( 'Use color picker to pick one color.', 'wpdancelaparis' ); ?></p>
+			<p><?php esc_html_e( 'Use color picker to pick one color.', 'wd_package' ); ?></p>
 		</div>
 
 		<div class="form-field">
-			<label for="display_type"><?php esc_html_e( 'Thumbnail Image', 'wpdancelaparis' ); ?></label>
+			<label for="display_type"><?php esc_html_e( 'Thumbnail Image', 'wd_package' ); ?></label>
 			<input name="wd_pc_color_image" type="hidden" class="wd_pc_custom_image" value="" />
 			<img style="padding-bottom:5px;" src="" class="wd_pc_preview_image" /><br />
 			<input class="wd_pc_upload_image_button button" type="button"  size="40" value="Choose Image" />
-			<small>&nbsp;<a href="#" class="wd_pc_clear_image_button"><?php esc_html_e( 'Remove Image', 'wpdancelaparis' ); ?></a></small>
+			<small>&nbsp;<a href="#" class="wd_pc_clear_image_button"><?php esc_html_e( 'Remove Image', 'wd_package' ); ?></a></small>
 			<br clear="all" />		
-			<p><?php esc_html_e( 'Choose one thumbnail.', 'wpdancelaparis' ); ?></p>
+			<p><?php esc_html_e( 'Choose one thumbnail.', 'wd_package' ); ?></p>
 		</div>
 
 

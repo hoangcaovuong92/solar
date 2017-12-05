@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_instagram' ) ) {
 	class tvlgiao_wpdance_widget_instagram extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_instagram', 'description' => esc_html__('Displays your latest Instagram photos','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_instagram', 'description' => esc_html__('Displays your latest Instagram photos','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('widget_instagram', esc_html__('WD - Instagram','wpdancelaparis'), $widget_ops);
+			parent::__construct('widget_instagram', esc_html__('WD - Instagram','wd_package'), $widget_ops);
 		}
 		
 	    function widget( $args, $instance ) {
@@ -72,7 +72,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_instagram' ) ) {
 		}
 
 		function form( $instance ) {
-			$instance = wp_parse_args( (array) $instance, array( 'title' => __( 'Instagram', 'wpdancelaparis' ), 'username' => '', 'size' => 'large', 'link' => __( 'Follow Me!', 'wpdancelaparis' ), 'number' => 9, 'target' => '_self' ) );
+			$instance = wp_parse_args( (array) $instance, array( 'title' => __( 'Instagram', 'wd_package' ), 'username' => '', 'size' => 'large', 'link' => __( 'Follow Me!', 'wd_package' ), 'number' => 9, 'target' => '_self' ) );
 			$title = $instance['title'];
 			$username = $instance['username'];
 			$number = absint( $instance['number'] );
@@ -80,24 +80,24 @@ if( !class_exists( 'tvlgiao_wpdance_widget_instagram' ) ) {
 			$target = $instance['target'];
 			$link = $instance['link'];
 			?>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'wpdancelaparis' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /></label></p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>"><?php esc_html_e( 'Username', 'wpdancelaparis' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'username' ) ); ?>" type="text" value="<?php echo esc_attr( $username ); ?>" /></label></p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php esc_html_e( 'Number of photos', 'wpdancelaparis' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" /></label></p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'size' ) ); ?>"><?php esc_html_e( 'Photo size', 'wpdancelaparis' ); ?>:</label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'wd_package' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /></label></p>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>"><?php esc_html_e( 'Username', 'wd_package' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'username' ) ); ?>" type="text" value="<?php echo esc_attr( $username ); ?>" /></label></p>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php esc_html_e( 'Number of photos', 'wd_package' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" /></label></p>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'size' ) ); ?>"><?php esc_html_e( 'Photo size', 'wd_package' ); ?>:</label>
 				<select id="<?php echo esc_attr( $this->get_field_id( 'size' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'size' ) ); ?>" class="widefat">
-					<option value="thumbnail" <?php selected( 'thumbnail', $size ) ?>><?php esc_html_e( 'Thumbnail', 'wpdancelaparis' ); ?></option>
-					<option value="small" <?php selected( 'small', $size ) ?>><?php esc_html_e( 'Small', 'wpdancelaparis' ); ?></option>
-					<option value="large" <?php selected( 'large', $size ) ?>><?php esc_html_e( 'Large', 'wpdancelaparis' ); ?></option>
-					<option value="original" <?php selected( 'original', $size ) ?>><?php esc_html_e( 'Original', 'wpdancelaparis' ); ?></option>
+					<option value="thumbnail" <?php selected( 'thumbnail', $size ) ?>><?php esc_html_e( 'Thumbnail', 'wd_package' ); ?></option>
+					<option value="small" <?php selected( 'small', $size ) ?>><?php esc_html_e( 'Small', 'wd_package' ); ?></option>
+					<option value="large" <?php selected( 'large', $size ) ?>><?php esc_html_e( 'Large', 'wd_package' ); ?></option>
+					<option value="original" <?php selected( 'original', $size ) ?>><?php esc_html_e( 'Original', 'wd_package' ); ?></option>
 				</select>
 			</p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'target' ) ); ?>"><?php esc_html_e( 'Open links in', 'wpdancelaparis' ); ?>:</label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'target' ) ); ?>"><?php esc_html_e( 'Open links in', 'wd_package' ); ?>:</label>
 				<select id="<?php echo esc_attr( $this->get_field_id( 'target' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'target' ) ); ?>" class="widefat">
-					<option value="_self" <?php selected( '_self', $target ) ?>><?php esc_html_e( 'Current window (_self)', 'wpdancelaparis' ); ?></option>
-					<option value="_blank" <?php selected( '_blank', $target ) ?>><?php esc_html_e( 'New window (_blank)', 'wpdancelaparis' ); ?></option>
+					<option value="_self" <?php selected( '_self', $target ) ?>><?php esc_html_e( 'Current window (_self)', 'wd_package' ); ?></option>
+					<option value="_blank" <?php selected( '_blank', $target ) ?>><?php esc_html_e( 'New window (_blank)', 'wd_package' ); ?></option>
 				</select>
 			</p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Link text', 'wpdancelaparis' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text" value="<?php echo esc_attr( $link ); ?>" /></label></p>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Link text', 'wd_package' ); ?>: <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text" value="<?php echo esc_attr( $link ); ?>" /></label></p>
 			<?php
 
 		}
@@ -124,26 +124,26 @@ if( !class_exists( 'tvlgiao_wpdance_widget_instagram' ) ) {
 				$remote = wp_remote_get( 'http://instagram.com/'.trim( $username ) );
 
 				if ( is_wp_error( $remote ) )
-					return new WP_Error( 'site_down', esc_html__( 'Unable to communicate with Instagram.', 'wpdancelaparis' ) );
+					return new WP_Error( 'site_down', esc_html__( 'Unable to communicate with Instagram.', 'wd_package' ) );
 
 				if ( 200 != wp_remote_retrieve_response_code( $remote ) )
-					return new WP_Error( 'invalid_response', esc_html__( 'Instagram did not return a 200.', 'wpdancelaparis' ) );
+					return new WP_Error( 'invalid_response', esc_html__( 'Instagram did not return a 200.', 'wd_package' ) );
 
 				$shards = explode( 'window._sharedData = ', $remote['body'] );
 				$insta_json = explode( ';</script>', $shards[1] );
 				$insta_array = json_decode( $insta_json[0], TRUE );
 
 				if ( ! $insta_array )
-					return new WP_Error( 'bad_json', esc_html__( 'Instagram has returned invalid data.', 'wpdancelaparis' ) );
+					return new WP_Error( 'bad_json', esc_html__( 'Instagram has returned invalid data.', 'wd_package' ) );
 
 				if ( isset( $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'] ) ) {
 					$images = $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'];
 				} else {
-					return new WP_Error( 'bad_json_2', esc_html__( 'Instagram has returned invalid data.', 'wpdancelaparis' ) );
+					return new WP_Error( 'bad_json_2', esc_html__( 'Instagram has returned invalid data.', 'wd_package' ) );
 				}
 
 				if ( ! is_array( $images ) )
-					return new WP_Error( 'bad_array', esc_html__( 'Instagram has returned invalid data.', 'wpdancelaparis' ) );
+					return new WP_Error( 'bad_array', esc_html__( 'Instagram has returned invalid data.', 'wd_package' ) );
 
 				$instagram = array();
 
@@ -173,7 +173,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_instagram' ) ) {
 						$type = 'image';
 					}
 
-					$caption = __( 'Instagram Image', 'wpdancelaparis' );
+					$caption = __( 'Instagram Image', 'wd_package' );
 					if ( ! empty( $image['caption'] ) ) {
 						$caption = $image['caption'];
 					}
@@ -205,7 +205,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_instagram' ) ) {
 
 			} else {
 
-				return new WP_Error( 'no_images', esc_html__( 'Instagram did not return any images.', 'wpdancelaparis' ) );
+				return new WP_Error( 'no_images', esc_html__( 'Instagram did not return any images.', 'wd_package' ) );
 
 			}
 		}

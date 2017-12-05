@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 	class tvlgiao_wpdance_widget_special_post extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_special_post', 'description' => esc_html__('Display posts with thumbnail and slider, style grid/list','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_special_post', 'description' => esc_html__('Display posts with thumbnail and slider, style grid/list','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('widget_special_post', esc_html__('WD - Special Post','wpdancelaparis'), $widget_ops);
+			parent::__construct('widget_special_post', esc_html__('WD - Special Post','wd_package'), $widget_ops);
 		}
 	    function form( $instance ) {
 			$instance_default = array(
@@ -25,21 +25,21 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 			$instance = wp_parse_args( (array) $instance, $instance_default );
 			$instance['title'] = esc_attr($instance['title']); 
 			$data_show 	= array(
-					'recent-post'  	=> esc_html__('Recent Post','wpdancelaparis'),
-					'most-view' 	=> esc_html__('Most View','wpdancelaparis')
+					'recent-post'  	=> esc_html__('Recent Post','wd_package'),
+					'most-view' 	=> esc_html__('Most View','wd_package')
 			); 
 			$style_show = array(
-					'style-1'  		=> esc_html__('Grid','wpdancelaparis'),
-					'style-2'		=> esc_html__('List','wpdancelaparis')
+					'style-1'  		=> esc_html__('Grid','wd_package'),
+					'style-2'		=> esc_html__('List','wd_package')
 			); ?>
 			
-			<p><label for="<?php echo esc_attr( $this->get_field_id('title')); ?>"><?php esc_html_e('Title','wpdancelaparis'); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('title')); ?>"><?php esc_html_e('Title','wd_package'); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('title')); ?>" name="<?php echo esc_attr( $this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $instance['title']); ?>" /></p>
 
-			<p><label for="<?php echo esc_attr( $this->get_field_id('number')); ?>"><?php esc_html_e('Number of posts to show','wpdancelaparis'); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('number')); ?>"><?php esc_html_e('Number of posts to show','wd_package'); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('number')); ?>" name="<?php echo esc_attr( $this->get_field_name('number')); ?>" type="number" min="1" max="999" value="<?php echo esc_attr( $instance['number']); ?>" /></p>
 			<p>
-				<label for="<?php echo esc_attr( $this->get_field_id('data_post')); ?>"><?php esc_html_e('Data','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('data_post')); ?>"><?php esc_html_e('Data','wd_package'); ?></label>
 				<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('data_post')); ?>" id="<?php echo esc_attr($this->get_field_id('data_post')); ?>">
 					<?php foreach( $data_show as $key => $value ){ ?>
 					<option value="<?php echo esc_attr($key); ?>" <?php echo ($instance['data_post']==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -47,7 +47,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 				</select>
 			</p>
 			<p>
-				<label for="<?php echo esc_attr( $this->get_field_id('style_show')); ?>"><?php esc_html_e('Show Style','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('style_show')); ?>"><?php esc_html_e('Show Style','wd_package'); ?></label>
 				<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style_show')); ?>" id="<?php echo esc_attr($this->get_field_id('style_show')); ?>">
 					<?php foreach( $style_show as $key => $value ){ ?>
 					<option value="<?php echo esc_attr($key); ?>" <?php echo ($instance['style_show']==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -56,38 +56,38 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 			</p>
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('show_thumbnail')); ?>" name="<?php echo esc_attr( $this->get_field_name('show_thumbnail')); ?>" type="checkbox" <?php echo ($instance['show_thumbnail'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('show_thumbnail')); ?>"><?php esc_html_e('Show Thumbnail','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('show_thumbnail')); ?>"><?php esc_html_e('Show Thumbnail','wd_package'); ?></label>
 			</p>
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('show_author')); ?>" name="<?php echo esc_attr( $this->get_field_name('show_author')); ?>" type="checkbox" <?php echo ($instance['show_author'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('show_author')); ?>"><?php esc_html_e('Show Author','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('show_author')); ?>"><?php esc_html_e('Show Author','wd_package'); ?></label>
 			</p>
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('show_date')); ?>" name="<?php echo esc_attr( $this->get_field_name('show_date')); ?>" type="checkbox" <?php echo ($instance['show_date'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('show_date')); ?>"><?php esc_html_e('Show Date Post','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('show_date')); ?>"><?php esc_html_e('Show Date Post','wd_package'); ?></label>
 			</p>
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('show_detail')); ?>" name="<?php echo esc_attr( $this->get_field_name('show_detail')); ?>" type="checkbox" <?php echo ($instance['show_detail'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('show_detail')); ?>"><?php esc_html_e('Show Post Meta','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('show_detail')); ?>"><?php esc_html_e('Show Post Meta','wd_package'); ?></label>
 			</p>
 			<hr />
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('is_slider')); ?>" name="<?php echo esc_attr( $this->get_field_name('is_slider')); ?>" type="checkbox" <?php echo ($instance['is_slider'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('is_slider')); ?>"><?php esc_html_e('Slider mode','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('is_slider')); ?>"><?php esc_html_e('Slider mode','wd_package'); ?></label>
 			</p>
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('show_nav')); ?>" name="<?php echo esc_attr( $this->get_field_name('show_nav')); ?>" type="checkbox" <?php echo ($instance['show_nav'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('show_nav')); ?>"><?php esc_html_e('Slider - Show navigation button','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('show_nav')); ?>"><?php esc_html_e('Slider - Show navigation button','wd_package'); ?></label>
 			</p>
 			<p>
 				<input id="<?php echo esc_attr( $this->get_field_id('auto_play')); ?>" name="<?php echo esc_attr( $this->get_field_name('auto_play')); ?>" type="checkbox" <?php echo ($instance['auto_play'])?'checked':'' ?> />
-				<label for="<?php echo esc_attr( $this->get_field_id('auto_play')); ?>"><?php esc_html_e('Slider - Auto play','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('auto_play')); ?>"><?php esc_html_e('Slider - Auto play','wd_package'); ?></label>
 			</p>
 			<p>
-				<label for="<?php echo esc_attr( $this->get_field_id('per_slide')); ?>"><?php esc_html_e('Slider - Number of posts per slide','wpdancelaparis'); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id('per_slide')); ?>"><?php esc_html_e('Slider - Number of posts per slide','wd_package'); ?></label>
 				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('per_slide')); ?>" name="<?php echo esc_attr( $this->get_field_name('per_slide')); ?>" type="number" min="1" max="100" value="<?php echo esc_attr( $instance['per_slide']); ?>" />
 			</p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id('read_more')); ?>"><?php esc_html_e('Link read more','wpdancelaparis'); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('read_more')); ?>"><?php esc_html_e('Link read more','wd_package'); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('read_more')); ?>" name="<?php echo esc_attr( $this->get_field_name('read_more')); ?>" type="text" value="<?php echo esc_attr( $instance['read_more']); ?>" /></p>
 		<?php }
 		
@@ -99,7 +99,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 
 			extract($args);
 			$output = '';
-			$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? esc_html__( '','wpdancelaparis' ) : $instance['title'], $instance, $this->id_base );
+			$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? esc_html__( '','wd_package' ) : $instance['title'], $instance, $this->id_base );
 
 			if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
 				$number = 5;
@@ -166,7 +166,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 								<div class="wd-infomation-post">
 									
 									<div class="wd-entry-title">
-										<a href="<?php the_permalink(); ?>" title="<?php printf( esc_html__( 'Permalink to %s', 'wpdancelaparis' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+										<a href="<?php the_permalink(); ?>" title="<?php printf( esc_html__( 'Permalink to %s', 'wd_package' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 											<?php echo esc_attr(get_the_title()); ?>
 										</a>
 									</div>
@@ -186,7 +186,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 
 									<?php if($show_author) : ?>
 										<div class="author_post">	
-											<i><?php esc_html_e('Post by','wpdancelaparis'); ?></i><a href="#"> </a><?php the_author_posts_link(); ?> 
+											<i><?php esc_html_e('Post by','wd_package'); ?></i><a href="#"> </a><?php the_author_posts_link(); ?> 
 										</div>
 									<?php endif; ?>	
 
@@ -209,8 +209,8 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_post' ) ) {
 				</div>
 				<?php if($read_more != "") : ?>
 					<div class="wd-read-more">
-						<a href="<?php echo esc_url($read_more); ?>" title="<?php esc_html_e('read more ','wpdancelaparis'); ?>">
-							<?php esc_html_e('read more ','wpdancelaparis'); ?>
+						<a href="<?php echo esc_url($read_more); ?>" title="<?php esc_html_e('read more ','wd_package'); ?>">
+							<?php esc_html_e('read more ','wd_package'); ?>
 						</a>
 					</div>
 				<?php endif; ?>

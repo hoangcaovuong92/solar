@@ -5,14 +5,14 @@
 	if( post_type_exists('testimonial') || class_exists('Woothemes_Testimonials') ){
 		$testimonials_options = tvlgiao_wpdance_vc_get_data_by_post_type('testimonial');		
 		vc_map( array(
-			'name' 			=> esc_html__( 'WD - Testimonials', 'wpdancelaparis' ),
+			'name' 			=> esc_html__( 'WD - Testimonials', 'wd_package' ),
 			'base' 		=> 'tvlgiao_wpdance_testimonials',
-			'category' 	=> esc_html__("WPDance Shortcode", 'wpdancelaparis'),
+			'category' 	=> esc_html__("WPDance Shortcode", 'wd_package'),
 			'icon'        		=> 'icon-wpb-call-to-action',
 			'params' 	=> array(
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Slider Or One Testimonials', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Slider Or One Testimonials', 'wd_package' ),
 					'param_name' 		=> 'slider_or_one',
 					'admin_label' 		=> true,
 					'value' => array(
@@ -23,7 +23,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Select Testimonials', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Select Testimonials', 'wd_package' ),
 					'param_name' 		=> 'id_testimonial',
 					'admin_label' 		=> true,
 					'value' 			=> $testimonials_options,
@@ -32,7 +32,7 @@
 				 ),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Style', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Style', 'wd_package' ),
 					'param_name' 		=> 'style_testimonial',
 					'admin_label' 		=> true,
 					'value' => array(
@@ -48,7 +48,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Avatar', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Avatar', 'wd_package' ),
 					'param_name' 		=> 'show_avatar',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -60,7 +60,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Author', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Author', 'wd_package' ),
 					'param_name' 		=> 'show_author',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -72,7 +72,7 @@
 				),
 				array(
 					'type' 				=> 'textfield',
-					'heading' 			=> esc_html__( 'Number Of Excerpt Words', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Number Of Excerpt Words', 'wd_package' ),
 					'param_name' 		=> 'number_testimonial',
 					'admin_label' 		=> true,
 					'value' 			=> '20',
@@ -82,8 +82,8 @@
 				array(
 					'type' 				=> 'textfield',
 					'class' 			=> '',
-					'heading' 			=> esc_html__("Extra class name", 'wpdancelaparis'),
-					'description'		=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wpdancelaparis'),
+					'heading' 			=> esc_html__("Extra class name", 'wd_package'),
+					'description'		=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wd_package'),
 					'admin_label' 		=> true,
 					'param_name' 		=> 'class',
 					'value' 			=> ''

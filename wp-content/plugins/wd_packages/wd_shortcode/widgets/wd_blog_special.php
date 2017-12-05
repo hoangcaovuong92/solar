@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 	class tvlgiao_wpdance_widget_special_blog extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_special_blog', 'description' => esc_html__('Special Blog Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_special_blog', 'description' => esc_html__('Special Blog Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('special_blog', esc_html__('WD - Special Blog','wpdancelaparis'), $widget_ops);
+			parent::__construct('special_blog', esc_html__('WD - Special Blog','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -50,19 +50,19 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 			);
 	        ?>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number Post:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number Post:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" />
 	                </label>
 	            </p>
 			
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('data_post')); ?>"><?php esc_html_e('Data Show:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('data_post')); ?>"><?php esc_html_e('Data Show:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('data_post')); ?>" id="<?php echo esc_attr($this->get_field_id('data_post')); ?>">
 						<?php foreach( $data_post_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($data_post==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -71,13 +71,13 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'columns' ); ?>"><?php esc_html_e( 'Columns:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'columns' ); ?>"><?php esc_html_e( 'Columns:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'columns' ); ?>" name="<?php echo $this->get_field_name( 'columns' ); ?>" type="text" value="<?php echo $columns; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style')); ?>" id="<?php echo esc_attr($this->get_field_id('style')); ?>">
 						<?php foreach( $style_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($style==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -86,7 +86,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 				
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_title')); ?>"><?php esc_html_e('Show Title:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_title')); ?>"><?php esc_html_e('Show Title:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_title')); ?>" id="<?php echo esc_attr($this->get_field_id('show_title')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_title==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -95,7 +95,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_thumbnail')); ?>"><?php esc_html_e('Show Thumbnail:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_thumbnail')); ?>"><?php esc_html_e('Show Thumbnail:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_thumbnail')); ?>" id="<?php echo esc_attr($this->get_field_id('show_thumbnail')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_thumbnail==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -104,7 +104,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_placeholder_image')); ?>"><?php esc_html_e('Show Placeholder image:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_placeholder_image')); ?>"><?php esc_html_e('Show Placeholder image:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_placeholder_image')); ?>" id="<?php echo esc_attr($this->get_field_id('show_placeholder_image')); ?>">
 						<?php foreach( $no_yes as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_placeholder_image==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -114,7 +114,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_author')); ?>"><?php esc_html_e('Show Author:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_author')); ?>"><?php esc_html_e('Show Author:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_author')); ?>" id="<?php echo esc_attr($this->get_field_id('show_author')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_author==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -124,7 +124,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_category')); ?>"><?php esc_html_e('Show Category:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_category')); ?>"><?php esc_html_e('Show Category:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_category')); ?>" id="<?php echo esc_attr($this->get_field_id('show_category')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_category==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -133,7 +133,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_date')); ?>"><?php esc_html_e('Show Date:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_date')); ?>"><?php esc_html_e('Show Date:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_date')); ?>" id="<?php echo esc_attr($this->get_field_id('show_date')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_date==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -142,7 +142,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_number_comments')); ?>"><?php esc_html_e('Show Number Comment:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_number_comments')); ?>"><?php esc_html_e('Show Number Comment:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_number_comments')); ?>" id="<?php echo esc_attr($this->get_field_id('show_number_comments')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_number_comments==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -151,7 +151,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_excerpt')); ?>"><?php esc_html_e('Show Excerpt:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_excerpt')); ?>"><?php esc_html_e('Show Excerpt:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_excerpt')); ?>" id="<?php echo esc_attr($this->get_field_id('show_excerpt')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_excerpt==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -160,13 +160,13 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'number_excerpt' ); ?>"><?php esc_html_e( 'Number Excerpt:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'number_excerpt' ); ?>"><?php esc_html_e( 'Number Excerpt:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'number_excerpt' ); ?>" name="<?php echo $this->get_field_name( 'number_excerpt' ); ?>" type="text" value="<?php echo $number_excerpt; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_readmore')); ?>"><?php esc_html_e('Show Readmore:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_readmore')); ?>"><?php esc_html_e('Show Readmore:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_readmore')); ?>" id="<?php echo esc_attr($this->get_field_id('show_readmore')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_readmore==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -175,7 +175,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 				
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('is_slider')); ?>"><?php esc_html_e('Is slider:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('is_slider')); ?>"><?php esc_html_e('Is slider:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('is_slider')); ?>" id="<?php echo esc_attr($this->get_field_id('is_slider')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($is_slider==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -184,7 +184,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_nav')); ?>"><?php esc_html_e('Show nav:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_nav')); ?>"><?php esc_html_e('Show nav:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_nav')); ?>" id="<?php echo esc_attr($this->get_field_id('show_nav')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_nav==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -193,7 +193,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('auto_play')); ?>"><?php esc_html_e('Auto Play:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('auto_play')); ?>"><?php esc_html_e('Auto Play:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('auto_play')); ?>" id="<?php echo esc_attr($this->get_field_id('auto_play')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($auto_play==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -202,13 +202,13 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 				</p>
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'per_slide' ); ?>"><?php esc_html_e( 'Per Slider:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'per_slide' ); ?>"><?php esc_html_e( 'Per Slider:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'per_slide' ); ?>" name="<?php echo $this->get_field_name( 'per_slide' ); ?>" type="text" value="<?php echo $per_slide; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>
@@ -289,6 +289,10 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 											<div class="wd-info-post">
 												<!-- Show Post Title -->
 												<?php tvlgiao_wpdance_display_post_title($show_title); ?>
+												<?php if ($show_excerpt): ?>
+													<!-- Show Post Excerpt -->
+													<?php tvlgiao_wpdance_display_post_excerpt($show_excerpt, $number_excerpt); ?>
+												<?php endif ?>
 												<div class="wd-meta-post">
 													<!-- Sticky Post -->
 													<?php tvlgiao_wpdance_display_post_sticky(); ?>
@@ -304,10 +308,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_special_blog' ) ) {
 														<?php tvlgiao_wpdance_display_post_number_comment($show_number_comments); ?>
 													</div>
 												</div>
-												<?php if ($show_excerpt): ?>
-													<!-- Show Post Excerpt -->
-													<?php tvlgiao_wpdance_display_post_excerpt($show_excerpt, $number_excerpt); ?>
-												<?php endif ?>
+												
 												<!-- Show Readmore Button -->
 												<?php tvlgiao_wpdance_display_post_readmore($show_readmore); ?>
 											</div>

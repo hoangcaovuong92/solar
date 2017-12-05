@@ -60,10 +60,10 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 									</a>
 								<?php endif; ?>
 								<?php if($meta ) : ?>
-									<span class='wd-product-category-meta'>(<?php printf(__('%d products','wpdancelaparis'), $cat->count); ?>)</span>
+									<span class='wd-product-category-meta'>(<?php printf(__('%d products','wd_package'), $cat->count); ?>)</span>
 								<?php endif; ?>
 								<?php if($readmore ) : ?>
-									<a class='wd-product-category-readmore' href="<?php echo get_category_link($id_category); ?>"><?php echo esc_html('Read more','wpdancelaparis'); ?></a>
+									<a class='wd-product-category-readmore' href="<?php echo get_category_link($id_category); ?>"><?php echo esc_html('Read more','wd_package'); ?></a>
 								<?php endif; ?>
 					
 							</div>

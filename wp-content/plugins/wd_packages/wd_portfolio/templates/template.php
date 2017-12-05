@@ -8,7 +8,7 @@ if(!function_exists('show_wd_portfolio')){
 						<div class="title_portfolio_wp">
 							<?php
 							$category_portfolio_id = - 1;
-							$category_name         = __( 'ALL', 'wpdance' );
+							$category_name         = __( 'ALL', 'wd_package' );
 							if ( isset( $_GET['category_portfolio_id'] ) ) {
 								$category_portfolio_id = $_GET['category_portfolio_id'];
 							}
@@ -24,7 +24,7 @@ if(!function_exists('show_wd_portfolio')){
 
 							<a class="<?php if ( $category_portfolio_id == - 1 ) {
 								echo 'active';
-							} ?>" href="?category_name=ALL&category_portfolio_id=-1"><?php _e( 'ALL /', 'wpdance' ); ?></a>
+							} ?>" href="?category_name=ALL&category_portfolio_id=-1"><?php _e( 'ALL /', 'wd_package' ); ?></a>
 							<?php $i = 1;
 							foreach ( $category_portfolio as $term ) { ?>
 								<a class="<?php if ( $term->name == $category_name ) {
@@ -128,11 +128,11 @@ if(!function_exists('show_wd_portfolio')){
 													<div class="background opacity_6"></div>
 													<div class="icons">
 														<a class="zoom-gallery wd_pretty_photo thumb-image <?php echo esc_attr( $light_box_class ); ?>"
-														   title="<?php _e( "View Portfolio", "wpdance" ); ?>"
+														   title="<?php _e( "View Portfolio", 'wd_package' ); ?>"
 														   rel="wd_pretty_photo['<?php echo $light_box_class; ?>']"
 														   href="<?php echo esc_url( $light_box_url ); ?>">a</a>
 														<a class="link-gallery "
-														   title="<?php _e( "View Details", "wpdance" ); ?>"
+														   title="<?php _e( "View Details", 'wd_package' ); ?>"
 														   href="<?php echo esc_url( $post_url ); ?>">b</a>
 													</div>
 												</div>
@@ -200,7 +200,7 @@ if(!function_exists('show_wd_portfolio')){
 												<div class="pf-readmore">
 													<a class="button big font-third"
 													   href="<?php echo esc_url( $post_url ); ?>">
-														<?php _e( 'View more', 'wpdance' ); ?>
+														<?php _e( 'View more', 'wd_package' ); ?>
 													</a>
 												</div>
 											</div>

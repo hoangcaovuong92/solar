@@ -21,7 +21,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 			$product_categorie = get_term( $id_category, 'product_cat' );	
 			ob_start(); ?>
 				<?php if($id_category == '-1') : ?>
-					<?php esc_html_e('Please select category.','wpdancelaparis'); ?>
+					<?php esc_html_e('Please select category.','wd_package'); ?>
 				<?php else: ?>
 					<div class="wd-cate-pro-by-name">
 						<?php if ($image_url): ?>
@@ -41,10 +41,10 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 								</a>
 							<?php endif; ?>
 							<?php if($meta ) : ?>
-								<span>(<?php echo $product_categorie->count; _e(' products','wpdancelaparis'); ?>)</span>
+								<span>(<?php echo $product_categorie->count; _e(' products','wd_package'); ?>)</span>
 							<?php endif; ?>
 							<?php if($readmore ) : ?>
-								<a class='wd-cate-readmore' href="<?php echo get_category_link($id_category); ?>"><?php esc_html_e('Read more','wpdancelaparis'); ?></a>
+								<a class='wd-cate-readmore' href="<?php echo get_category_link($id_category); ?>"><?php esc_html_e('Read more','wd_package'); ?></a>
 							<?php endif; ?>
 						</div>
 					</div>

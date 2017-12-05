@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<tfoot>
 
 		<tr class="cart-subtotal">
-			<th><?php _e( 'Subtotal', 'laparis' ); ?></th>
+			<th><?php _e( 'Subtotal', 'solar' ); ?></th>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
@@ -109,7 +109,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th><?php _e( 'Total', 'laparis' ); ?></th>
+			<th><?php _e( 'Total', 'solar' ); ?></th>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 

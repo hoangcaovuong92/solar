@@ -44,13 +44,13 @@ function tvlgiao_wpdance_register_customizer_control_font( $wp_customize ){
 			</span>
 			<div id="input_<?php echo esc_attr($this->id); ?>">
 				<select <?php $this->link(); ?>>
-					<optgroup label="<?php esc_html_e("Web Fonts", 'laparis'); ?>">
+					<optgroup label="<?php esc_html_e("Web Fonts", 'solar'); ?>">
 						<?php global $tvlgiao_wpdance_font_web; ?>
 						<?php foreach ( $tvlgiao_wpdance_font_web as $value_font_size => $label_font_size ) : ?>
 							<option <?php selected( $value_font_size, get_the_ID() ) ?> value="<?php echo esc_attr( $value_font_size ); ?>"><?php echo esc_html( $label_font_size ); ?></option>
 						<?php endforeach; ?>						
 					</optgroup>
-					<optgroup label="<?php esc_html_e("Google Fonts", 'laparis'); ?>">
+					<optgroup label="<?php esc_html_e("Google Fonts", 'solar'); ?>">
 						<?php foreach ( $this->choices as $key => $value ) : ?>
 							<option <?php selected( $value->font_family, get_the_ID() ) ?> value="<?php echo esc_attr( $value->font_family ); ?>"><?php echo esc_html( $value->font_family ); ?></option>
 						<?php endforeach; ?>

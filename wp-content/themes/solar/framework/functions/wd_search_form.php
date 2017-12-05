@@ -22,7 +22,7 @@ if(!function_exists ('tvlgiao_wpdance_search_form')){
 		$random_id   		= 'wd-search-form-'.mt_rand();
 		$custom_class   	= ($autocomplete) ? 'wd-search-with-autocomplete' : 'wd-search-without-autocomplete';
 		$custom_class   	.= ($ajax) ? ' wd-search-with-ajax' : ' wd-search-without-ajax';
-		$button_title		= ($type == 'post') ? esc_html__( 'Search blog' , 'laparis') : esc_html__( 'Search product' , 'laparis');
+		$button_title		= ($type == 'post') ? esc_html__( 'Search blog' , 'solar') : esc_html__( 'Search product' , 'solar');
 	    ob_start(); ?>
 		    <form role="search" method="get" id="<?php echo esc_attr($random_id); ?>" class="wd-search-form-default" action="<?php echo esc_url(home_url( '/' )); ?>" >
 		    	<div class="wd-search-form-wrapper">
@@ -37,9 +37,9 @@ if(!function_exists ('tvlgiao_wpdance_search_form')){
 		    				class="wd-search-form-text <?php echo esc_attr($custom_class); ?>" 
 		    				data-post_type="<?php echo esc_attr($type); ?>" 
 		    				data-autocomplete="<?php echo esc_attr($data_autocomplete); ?>" 
-		    				placeholder="<?php echo esc_html__( 'Search item here' , 'laparis'); ?>" 
+		    				placeholder="<?php echo esc_html__( 'Search item here' , 'solar'); ?>" 
 		    				value="<?php echo esc_attr(get_search_query()); ?>" />
-		    		<button type="submit" title="<?php echo $button_title; ?>"><i class="lnr lnr-magnifier"></i><?php esc_html_e( 'Search' , 'laparis'); ?></button>
+		    		<button type="submit" title="<?php echo $button_title; ?>"><i class="lnr lnr-magnifier"></i><?php esc_html_e( 'Search' , 'solar'); ?></button>
 		    	</div>
 		    </form>
 		<?php

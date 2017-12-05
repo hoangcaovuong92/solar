@@ -55,21 +55,21 @@ if (!class_exists('WD_Team')) {
 				register_post_type('team', array(
 					'exclude_from_search' 	=> true,
 					'labels' 				=> array(
-		                'name' 				=> _x('WD Team', 'post type general name','wpdancelaparis'),
-		                'singular_name' 	=> _x('WD Team', 'post type singular name','wpdancelaparis'),
-		                'add_new' 			=> _x('Add Member', 'Team','wpdancelaparis'),
-		                'add_new_item' 			=> sprintf( __( 'Add New %s', 'wpdancelaparis' ), __( 'Member', 'wpdancelaparis' ) ),
-						'edit_item' 			=> sprintf( __( 'Edit %s', 'wpdancelaparis' ), __( 'Member', 'wpdancelaparis' ) ),
-						'new_item' 				=> sprintf( __( 'New %s', 'wpdancelaparis' ), __( 'Member', 'wpdancelaparis' ) ),
-						'all_items' 			=> sprintf( __( 'All %s', 'wpdancelaparis' ), __( 'Members', 'wpdancelaparis' ) ),
-						'view_item' 			=> sprintf( __( 'View %s', 'wpdancelaparis' ), __( 'Member', 'wpdancelaparis' ) ),
-						'search_items' 			=> sprintf( __( 'Search %a', 'wpdancelaparis' ), __( 'Members', 'wpdancelaparis' ) ),
-						'not_found' 			=>  sprintf( __( 'No %s Found', 'wpdancelaparis' ), __( 'Members', 'wpdancelaparis' ) ),
-						'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wpdancelaparis' ), __( 'Features', 'wpdancelaparis' ) ),
+		                'name' 				=> _x('WD Team', 'post type general name','solar'),
+		                'singular_name' 	=> _x('WD Team', 'post type singular name','solar'),
+		                'add_new' 			=> _x('Add Member', 'Team','solar'),
+		                'add_new_item' 			=> sprintf( __( 'Add New %s', 'solar' ), __( 'Member', 'solar' ) ),
+						'edit_item' 			=> sprintf( __( 'Edit %s', 'solar' ), __( 'Member', 'solar' ) ),
+						'new_item' 				=> sprintf( __( 'New %s', 'solar' ), __( 'Member', 'solar' ) ),
+						'all_items' 			=> sprintf( __( 'All %s', 'solar' ), __( 'Members', 'solar' ) ),
+						'view_item' 			=> sprintf( __( 'View %s', 'solar' ), __( 'Member', 'solar' ) ),
+						'search_items' 			=> sprintf( __( 'Search %a', 'solar' ), __( 'Members', 'solar' ) ),
+						'not_found' 			=>  sprintf( __( 'No %s Found', 'solar' ), __( 'Members', 'solar' ) ),
+						'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'solar' ), __( 'Features', 'solar' ) ),
 		                'parent_item_colon' => '',
-		                'menu_name' 		=> __('WD Team','wpdancelaparis'),
+		                'menu_name' 		=> __('WD Team','solar'),
 					),
-					'singular_label' 		=> __('WD Team','wpdancelaparis'),
+					'singular_label' 		=> __('WD Team','solar'),
 					'public' 				=> false,
 					'publicly_queryable' 	=> true,
 					'exclude_from_search' 	=> true,
@@ -207,14 +207,14 @@ if (!class_exists('WD_Team')) {
 			
 		
 		public function rename_second_menu_name($safe_text, $text) {
-			if (__('Team Items', 'wpdancelaparis') !== $text) {
+			if (__('Team Items', 'solar') !== $text) {
 				return $safe_text;
 			}
 
 			// We are on the main menu item now. The filter is not needed anymore.
 			remove_filter('attribute_escape', array($this,'rename_second_menu_name') );
 
-			return __('WD Team', 'wpdancelaparis');
+			return __('WD Team', 'solar');
 		}
 			
 		protected function init_trigger(){

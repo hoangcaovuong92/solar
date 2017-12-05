@@ -82,11 +82,13 @@ if (typeof wd_top_menu_mobile_fixed != 'function') {
 	    var position 	= 'fixed';
 
 		var content_start_wrap = jQuery("#wd-header-main-breadcrumb");
-		if (!logged_in) {
-       		content_start_wrap.css('padding-top','64px');
-       	}else{
-       		content_start_wrap.css('padding-top','4px');
-       	}
+		if (win_width <= 600) {
+			if (!logged_in) {
+	       		content_start_wrap.css('padding-top','64px');
+	       	}else{
+	       		content_start_wrap.css('padding-top','4px');
+	       	}
+	    }
        	
 		var timer;
 		jQuery(window).scroll(function () {

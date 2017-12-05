@@ -61,12 +61,12 @@ if(!function_exists('tvlgiao_wpdance_special_recent_post_slider_function')){
 						<div class="wd-content-post">
 							<div class="wd-blog-info-top">
 								<div class="wd-entry-title">
-									<a href="<?php the_permalink(); ?>" title="<?php printf( esc_html__( 'Permalink to %s', 'wpdancelaparis' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+									<a href="<?php the_permalink(); ?>" title="<?php printf( esc_html__( 'Permalink to %s', 'wd_package' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 										<?php echo esc_attr(get_the_title()); ?>
 									</a>
 								</div>							
 								<div class="author_post">	
-									<i><?php esc_html_e('Post by','wpdancelaparis'); ?></i><?php the_author_posts_link(); ?> 
+									<i><?php esc_html_e('Post by','wd_package'); ?></i><?php the_author_posts_link(); ?> 
 								</div>
 							</div>
 							<div class="wd-thumbnail-post">
@@ -84,7 +84,7 @@ if(!function_exists('tvlgiao_wpdance_special_recent_post_slider_function')){
 								<?php endif; ?>
 								<?php if($show_readmore) : ?>
 									<div class="readmore">
-										<a class="readmore_link" href="<?php the_permalink(); ?>"><?php esc_html_e('read more','wpdancelaparis') ?></a>
+										<a class="readmore_link" href="<?php the_permalink(); ?>"><?php esc_html_e('read more','wd_package') ?></a>
 									</div>
 								<?php endif; ?>
 							</div>

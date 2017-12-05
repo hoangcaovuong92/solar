@@ -62,18 +62,18 @@ if (!class_exists('WD_Portfolio')) {
 
 		public function wd_portfolio_register() {
 			$labels = array(
-				'name'               => __( 'Portfolio Items', 'wpdancelaparis' ),
-				'singular_name'      => __( 'Portfolio Item', 'wpdancelaparis' ),
-				'add_new'            => __( 'Add Portfolio Item', 'wpdancelaparis' ),
-				'add_new_item'       => __( 'Add New Portfolio Item', 'wpdancelaparis' ),
-				'edit_item'          => __( 'Edit Portfolio Item', 'wpdancelaparis' ),
-				'new_item'           => __( 'New Portfolio Item', 'wpdancelaparis' ),
-				'view_item'          => __( 'View Portfolio Item', 'wpdancelaparis' ),
-				'search_items'       => __( 'Search Portfolio Item', 'wpdancelaparis' ),
-				'not_found'          => __( 'No Portfolio Items found', 'wpdancelaparis' ),
-				'not_found_in_trash' => __( 'No Portfolio Items found in Trash', 'wpdancelaparis' ),
+				'name'               => __( 'Portfolio Items', 'wd_package' ),
+				'singular_name'      => __( 'Portfolio Item', 'wd_package' ),
+				'add_new'            => __( 'Add Portfolio Item', 'wd_package' ),
+				'add_new_item'       => __( 'Add New Portfolio Item', 'wd_package' ),
+				'edit_item'          => __( 'Edit Portfolio Item', 'wd_package' ),
+				'new_item'           => __( 'New Portfolio Item', 'wd_package' ),
+				'view_item'          => __( 'View Portfolio Item', 'wd_package' ),
+				'search_items'       => __( 'Search Portfolio Item', 'wd_package' ),
+				'not_found'          => __( 'No Portfolio Items found', 'wd_package' ),
+				'not_found_in_trash' => __( 'No Portfolio Items found in Trash', 'wd_package' ),
 				'parent_item_colon'  => '',
-				'menu_name'          => __( 'Portfolio Items', 'wpdancelaparis' ),
+				'menu_name'          => __( 'Portfolio Items', 'wd_package' ),
 			);
 			$args   = array(
 				'labels'          => $labels,
@@ -159,21 +159,21 @@ if (!class_exists('WD_Portfolio')) {
 		}
 
 		public function wd_portfolio_create_section() {
-			add_meta_box( 'wd-portfolio-section-options', __( 'Options', 'wpdancelaparis' ), array(
+			add_meta_box( 'wd-portfolio-section-options', __( 'Options', 'wd_package' ), array(
 				$this,
 				'wd_portfolio_section_options',
 			), 'portfolio', 'normal', 'high' );
 		}
 
 		public function rename_second_menu_name( $safe_text, $text ) {
-			if ( __( 'Portfolio Items', 'wpdancelaparis' ) !== $text ) {
+			if ( __( 'Portfolio Items', 'wd_package' ) !== $text ) {
 				return $safe_text;
 			}
 
 			// We are on the main menu item now. The filter is not needed anymore.
 			remove_filter( 'attribute_escape', array( $this, 'rename_second_menu_name' ) );
 
-			return __( 'WD Portfolio', 'wpdancelaparis' );
+			return __( 'WD Portfolio', 'wd_package' );
 		}
 
 		public function load_more_portfolio_gird() {
@@ -383,7 +383,7 @@ if (!class_exists('WD_Portfolio')) {
 
 		public static function wd_portfolio_list_categories() {
 			$categories = get_terms( 'wd-portfolio-category' );
-			$output     = array( '-1' => __( 'All', 'wpdanceelectronics' ) );
+			$output     = array( '-1' => __( 'All', 'wd_package' ) );
 			foreach ( $categories as $category ) {
 				$output[ $category->name ] = $category->term_id;
 			}
@@ -494,32 +494,32 @@ if (!class_exists('WD_Portfolio')) {
 			<div class="wd-portfolio-meta-section">
 				<div class="form-wrap">
 					<div class="form-field">
-						<label for="wd_portfolio"><?php _e( 'Image/Video URL', 'wpdancelaparis' ) ?></label>
+						<label for="wd_portfolio"><?php _e( 'Image/Video URL', 'wd_package' ) ?></label>
 						<input type="text" id="wd_portfolio" name="wd_portfolio"
 						       value="<?php echo htmlspecialchars( self::wd_portfolio_get_meta( 'wd-portfolio' ) ); ?>"
 						       style="width:70%;" />
 						<a id="wd_portfolio_media_lib" href="javascript:void(0);" class="button" rel="wd_portfolio">URL from
 							Media Library</a>
-						<p><?php _e( 'Enter URL for the full-size image or video (youtube, vimeo, swf, quicktime) you want to display in the lightbox gallery. You can also choose Image URL from your Media gallery', 'wpdancelaparis' ) ?></p>
+						<p><?php _e( 'Enter URL for the full-size image or video (youtube, vimeo, swf, quicktime) you want to display in the lightbox gallery. You can also choose Image URL from your Media gallery', 'wd_package' ) ?></p>
 					</div>
 					<div class="form-field">
-						<label for="wd_portfolio_url"><?php _e( 'Portfolio URL', 'wpdancelaparis' ) ?></label>
+						<label for="wd_portfolio_url"><?php _e( 'Portfolio URL', 'wd_package' ) ?></label>
 						<input type="text" name="wd_portfolio_url"
 						       value="<?php echo htmlspecialchars( self::wd_portfolio_get_meta( 'wd-portfolio-url' ) ); ?>" />
-						<p><?php _e( 'Enter URL to the live version of the project.', 'wpdancelaparis' ) ?></p>
+						<p><?php _e( 'Enter URL to the live version of the project.', 'wd_package' ) ?></p>
 					</div>
 					<div class="wd-single-portfolio-layout">
-						<label><?php esc_html_e( 'Single Layout', 'wpdancelaparis' ); ?></label>
+						<label><?php esc_html_e( 'Single Layout', 'wd_package' ); ?></label>
 						<div class="bg-input select-box ">
 							<div class="bg-input-inner config-product">
 								<select name="single_portfolio_layout" id="_single_portfolio_layout">
 									<option
 										value="default" <?php selected( htmlspecialchars( self::wd_portfolio_get_meta( 'single_portfolio_layout' ) ), 'default' ) ?>>
-										<?php esc_html_e( 'Default', 'wpdancelaparis' ); ?>
+										<?php esc_html_e( 'Default', 'wd_package' ); ?>
 									</option>
 									<option
 										value="fullwidth" <?php selected( htmlspecialchars( self::wd_portfolio_get_meta( 'single_portfolio_layout' ) ), 'fullwidth' ) ?>>
-										<?php esc_html_e( 'Full Width', 'wpdancelaparis' ); ?>
+										<?php esc_html_e( 'Full Width', 'wd_package' ); ?>
 									</option>
 								</select>
 							</div>

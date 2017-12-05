@@ -78,7 +78,7 @@ if ( ! function_exists( 'tvlgiao_wpdance_portfolio_gird' ) ) {
 							   data-columns="<?php esc_html_e( $attr['columns'] ); ?>"
 							   data-tab-rand="<?php echo $tab_rand ?>"
 							   data-style="<?php esc_html_e( $attr['style'] ); ?>">
-								<?php _e( 'LOAD MORE', 'wpdance' ) ?></a>
+								<?php _e( 'LOAD MORE', 'wd_package' ) ?></a>
 						</div><!-- #loadmore -->
 					</div><!-- .wd-loadmore -->
 				<?php endif; ?>

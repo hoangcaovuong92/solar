@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_countdown' ) ) {
 	class tvlgiao_wpdance_widget_countdown extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_countdown', 'description' => esc_html__('Countdown Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_countdown', 'description' => esc_html__('Countdown Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('countdown', esc_html__('WD - Countdown','wpdancelaparis'), $widget_ops);
+			parent::__construct('countdown', esc_html__('WD - Countdown','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -23,29 +23,29 @@ if( !class_exists( 'tvlgiao_wpdance_widget_countdown' ) ) {
 			);
 	        ?>
 	        	<p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php esc_html_e( 'Description:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php esc_html_e( 'Description:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo $description; ?>" />
 	                </label>
 	            </p>
 	        	<p>
-	                <label for="<?php echo $this->get_field_id( 'date' ); ?>"><?php esc_html_e( 'Date:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'date' ); ?>"><?php esc_html_e( 'Date:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'date' ); ?>" name="<?php echo $this->get_field_name( 'date' ); ?>" type="date" value="<?php echo $date; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'time' ); ?>"><?php esc_html_e( 'Time:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'time' ); ?>"><?php esc_html_e( 'Time:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'time' ); ?>" name="<?php echo $this->get_field_name( 'time' ); ?>" type="time" value="<?php echo $time; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('format')); ?>"><?php esc_html_e('Format:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('format')); ?>"><?php esc_html_e('Format:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('format')); ?>" id="<?php echo esc_attr($this->get_field_id('format')); ?>">
 						<?php foreach( $format_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($format==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -54,7 +54,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_countdown' ) ) {
 				</p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

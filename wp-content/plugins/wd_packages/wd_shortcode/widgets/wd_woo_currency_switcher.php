@@ -4,9 +4,9 @@ if(in_array('woocommerce-currency-switcher/index.php',$_active_vc)){
 	if( !class_exists( 'tvlgiao_wpdance_widget_woo_currency_switcher' ) ) {
 		class tvlgiao_wpdance_widget_woo_currency_switcher extends WP_Widget{
 		    function __construct() {
-				$widget_ops 		= array('classname' => 'widget_woo_currency_switcher', 'description' => esc_html__('Currency Switcher Woocommerce Widget','wpdancelaparis'));
+				$widget_ops 		= array('classname' => 'widget_woo_currency_switcher', 'description' => esc_html__('Currency Switcher Woocommerce Widget','wd_package'));
 				$control_ops 		= array('width' => 400, 'height' => 350);
-				parent::__construct('woo_currency_switcher', esc_html__('WD - Currency Switcher Woocommerce','wpdancelaparis'), $widget_ops);
+				parent::__construct('woo_currency_switcher', esc_html__('WD - Currency Switcher Woocommerce','wd_package'), $widget_ops);
 			}
 		    function form( $instance )
 		    {
@@ -15,14 +15,14 @@ if(in_array('woocommerce-currency-switcher/index.php',$_active_vc)){
 		        $class      	= esc_attr( isset( $instance['class'] ) ? $instance['class'] : '' );
 		        ?>
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Widget Title:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Widget Title:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 		                </label>
 		            </p>
 					
 
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 		                </label>
 		            </p>

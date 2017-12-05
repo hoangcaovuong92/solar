@@ -1,25 +1,25 @@
 <?php 
 Redux::setSection( $opt_name, array(
-    'title'            => __( 'Color Settings', 'laparis' ),
+    'title'            => __( 'Color Settings', 'solar' ),
     'id'               => 'tvlgiao_wpdance_color_setting',
-    'desc'             => __( '', 'laparis' ),
+    'desc'             => __( '', 'solar' ),
     'customizer_width' => '400px',
     'icon'             => 'el el-magic'
 ) );
 
 /*Redux::setSection( $opt_name, array(
-    'title'            => __( 'Primary Color', 'laparis' ),
+    'title'            => __( 'Primary Color', 'solar' ),
     'id'               => 'tvlgiao_wpdance_color_setting_primary_color',
     'subsection'       => true,
     'customizer_width' => '450px',
-    'desc'             => __( '', 'laparis' ),
+    'desc'             => __( '', 'solar' ),
     'fields'           => array(
         array(
             'id'       => 'tvlgiao_wpdance_color_setting_primary_color_select',
             'type'     => 'image_select',
-            'title'    => __( 'Select Primary Color', 'laparis' ),
-            'subtitle' => __( 'If change it, you need to SAVE before customizing the items below', 'laparis' ),
-            'desc'     => __( '', 'laparis' ),
+            'title'    => __( 'Select Primary Color', 'solar' ),
+            'subtitle' => __( 'If change it, you need to SAVE before customizing the items below', 'solar' ),
+            'desc'     => __( '', 'solar' ),
             'options'  => array(
                 'color_default' => array(
                     'alt' => 'Color Default',
@@ -51,7 +51,7 @@ foreach ($objXML_color->children() as $child) {                 //items_setting 
             'type'          => 'color',
             'transparent'   => false,
             'title'         => $name,
-            'subtitle'      => __( '', 'laparis' ),
+            'subtitle'      => __( '', 'solar' ),
             'default'       => $std,
         );
     }

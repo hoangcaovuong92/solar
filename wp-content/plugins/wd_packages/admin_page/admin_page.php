@@ -72,8 +72,8 @@ if (!class_exists('WD_Packages_Admin_Page')) {
 				<?php settings_errors(); ?>	
 				<div class="tab-content card">
 					<div id="setting" class="tab-pane fade in active">
-						<h4><?php esc_html_e("WD Packages Setting", 'wpdancelaparis'); ?></h4>
-						<p><?php esc_html_e("Select the packages you want to use on the theme.", 'wpdancelaparis'); ?></p>
+						<h4><?php esc_html_e("WD Packages Setting", 'wd_package'); ?></h4>
+						<p><?php esc_html_e("Select the packages you want to use on the theme.", 'wd_package'); ?></p>
 						<form method="post" action="options.php">
 						    <?php 
 						    settings_fields('wd-package-admin-page-setting');
@@ -82,11 +82,11 @@ if (!class_exists('WD_Packages_Admin_Page')) {
 						    ?>
 						    <table class="table wd-package-admin-page-form">
 					    		<tr valign="top">
-					    			<th scope="row"><?php echo esc_html_e("Theme Manager Mode:", 'wpdancelaparis'); ?></th>
+					    			<th scope="row"><?php echo esc_html_e("Theme Manager Mode:", 'wd_package'); ?></th>
 					    			<td colspan="3">
 					    				<select class="form-control" name="wd_packages[wd_theme_manager_mode]">
-											  <option <?php echo ( !empty($options['wd_theme_manager_mode']) && $options['wd_theme_manager_mode'] == 'theme_option') ? 'selected="selected"' : ''; ?> value="theme_option"><?php echo esc_html_e("Theme Option", 'wpdancelaparis'); ?></option>
-											  <option <?php echo ( !empty($options['wd_theme_manager_mode']) && $options['wd_theme_manager_mode'] == 'customize') ? 'selected="selected"' : ''; ?> value="customize"><?php echo esc_html_e("Customize", 'wpdancelaparis'); ?></option>
+											  <option <?php echo ( !empty($options['wd_theme_manager_mode']) && $options['wd_theme_manager_mode'] == 'theme_option') ? 'selected="selected"' : ''; ?> value="theme_option"><?php echo esc_html_e("Theme Option", 'wd_package'); ?></option>
+											  <option <?php echo ( !empty($options['wd_theme_manager_mode']) && $options['wd_theme_manager_mode'] == 'customize') ? 'selected="selected"' : ''; ?> value="customize"><?php echo esc_html_e("Customize", 'wd_package'); ?></option>
 										</select>
 									</td>
 								</tr>
@@ -110,12 +110,12 @@ if (!class_exists('WD_Packages_Admin_Page')) {
 						    	<tr>
 						    		<td colspan="4">
 						    			<p class="submit-button">
-									    	<input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" value="<?php esc_html_e("SAVE PACKAGES SETTINGS", 'wpdancelaparis'); ?>">
+									    	<input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" value="<?php esc_html_e("SAVE PACKAGES SETTINGS", 'wd_package'); ?>">
 								    	</p>
 								    	<div class="social-button">
-								    		<a href="https://www.facebook.com/hoangcaovuong" target="_blank"><button type="button" class="btn btn-facebook icon" style="margin-bottom: 4px"><span><?php esc_html_e("Facebook", 'wpdancelaparis'); ?></span></button></a>
-			                                <a href="http://www.youtube.com/c/WeLoveSonTungMTPChannel" target="_blank"><button type="button" class="btn btn-youtube icon" style="margin-bottom: 4px"><span><span><?php esc_html_e("YouTube", 'wpdancelaparis'); ?></span></span></button></a>
-			                                <a href="https://www.instagram.com/hoangcaovuong92/" target="_blank"><button type="button" class="btn btn-instagram icon" style="margin-bottom: 4px"><span><span><?php esc_html_e("Instagram", 'wpdancelaparis'); ?></span></span></button></a>
+								    		<a href="https://www.facebook.com/hoangcaovuong" target="_blank"><button type="button" class="btn btn-facebook icon" style="margin-bottom: 4px"><span><?php esc_html_e("Facebook", 'wd_package'); ?></span></button></a>
+			                                <a href="http://www.youtube.com/c/WeLoveSonTungMTPChannel" target="_blank"><button type="button" class="btn btn-youtube icon" style="margin-bottom: 4px"><span><span><?php esc_html_e("YouTube", 'wd_package'); ?></span></span></button></a>
+			                                <a href="https://www.instagram.com/hoangcaovuong92/" target="_blank"><button type="button" class="btn btn-instagram icon" style="margin-bottom: 4px"><span><span><?php esc_html_e("Instagram", 'wd_package'); ?></span></span></button></a>
 			                            </div>
 						    		</td>
 						    	</tr>

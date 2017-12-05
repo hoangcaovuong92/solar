@@ -48,7 +48,7 @@ if ( ! $product->is_purchasable() ) {
 		 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 		 	
 		 	<div class="variations_button <?php if(!$catalog_mod) echo esc_attr("hidden"); ?>">
-		 		<div class="label_quantity"><span><?php esc_html_e("QUANTITY: ",'laparis'); ?></span></div>
+		 		<div class="label_quantity"><span><?php esc_html_e("QUANTITY: ",'solar'); ?></span></div>
 			 	<?php
 			 		if ( ! $product->is_sold_individually() ) {
 			 			woocommerce_quantity_input( array(

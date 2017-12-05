@@ -19,7 +19,7 @@ if(!function_exists ('tvlgiao_wpdance_load_feature_content_modal')){
 		                </div>
 		                <div class="modal-body"><?php echo apply_filters('the_content', get_post_field('post_content', $feature_id)); ?></div>
 		                <div class="modal-footer">
-		                    <button type="button" class="btn btn-default" data-dismiss="modal"><?php esc_html_e( 'Close', 'wpdancelaparis' ) ?></button>
+		                    <button type="button" class="btn btn-default" data-dismiss="modal"><?php esc_html_e( 'Close', 'wd_package' ) ?></button>
 		                </div>
 		            </div>
 		        </div>

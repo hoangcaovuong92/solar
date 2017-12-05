@@ -1,8 +1,8 @@
 <?php 
 Redux::setSection( $opt_name, array(
-    'title'            => __( 'Font Settings', 'laparis' ),
+    'title'            => __( 'Font Settings', 'solar' ),
     'id'               => 'tvlgiao_wpdance_font_setting',
-    'desc'             => __( '', 'laparis' ),
+    'desc'             => __( '', 'solar' ),
     'customizer_width' => '400px',
     'icon'             => 'el el-font'
 ) );

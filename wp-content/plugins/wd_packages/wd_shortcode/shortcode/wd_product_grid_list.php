@@ -150,7 +150,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 								data-data_show="<?php echo esc_html($data_show); ?>" 
 								data-sort="<?php echo esc_html($sort); ?>" 
 								data-order_by="<?php echo esc_html($order_by); ?>" 
-								href="#" class="button btn_loadmore_product"><?php _e('LOAD MORE','wpdancelaparis') ?></a>
+								href="#" class="button btn_loadmore_product"><?php _e('LOAD MORE','wd_package') ?></a>
 						</div>
 					</div>
 				<?php endif; ?>

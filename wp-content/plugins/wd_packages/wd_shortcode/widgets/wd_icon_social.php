@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_icon_social' ) ) {
 	class tvlgiao_wpdance_widget_icon_social extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_icon_social', 'description' => esc_html__('Icon Social Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_icon_social', 'description' => esc_html__('Icon Social Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('icon_social', esc_html__('WD - Icon Social','wpdancelaparis'), $widget_ops);
+			parent::__construct('icon_social', esc_html__('WD - Icon Social','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -42,14 +42,14 @@ if( !class_exists( 'tvlgiao_wpdance_widget_icon_social' ) ) {
 			);
 	        ?>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
 
 
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style')); ?>" id="<?php echo esc_attr($this->get_field_id('style')); ?>">
 						<?php foreach( $style_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($style==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -59,7 +59,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_icon_social' ) ) {
 
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('size')); ?>"><?php esc_html_e('Icon Size:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('size')); ?>"><?php esc_html_e('Icon Size:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('size')); ?>" id="<?php echo esc_attr($this->get_field_id('size')); ?>">
 						<?php foreach( $size_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($size==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -68,7 +68,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_icon_social' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('show_title')); ?>"><?php esc_html_e('Show Title Social:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('show_title')); ?>"><?php esc_html_e('Show Title Social:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_title')); ?>" id="<?php echo esc_attr($this->get_field_id('show_title')); ?>">
 						<?php foreach( $yes_no as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_title==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -78,49 +78,49 @@ if( !class_exists( 'tvlgiao_wpdance_widget_icon_social' ) ) {
 
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'rss_url' ); ?>"><?php esc_html_e( 'RSS URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'rss_url' ); ?>"><?php esc_html_e( 'RSS URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'rss_url' ); ?>" name="<?php echo $this->get_field_name( 'rss_url' ); ?>" type="text" value="<?php echo $rss_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'twitter_url' ); ?>"><?php esc_html_e( 'Twitter URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'twitter_url' ); ?>"><?php esc_html_e( 'Twitter URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'twitter_url' ); ?>" name="<?php echo $this->get_field_name( 'twitter_url' ); ?>" type="text" value="<?php echo $twitter_url; ?>" />
 	                </label>
 	            </p>
 	            
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'facebook_url' ); ?>"><?php esc_html_e( 'Facebook URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'facebook_url' ); ?>"><?php esc_html_e( 'Facebook URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'facebook_url' ); ?>" name="<?php echo $this->get_field_name( 'facebook_url' ); ?>" type="text" value="<?php echo $facebook_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'google_url' ); ?>"><?php esc_html_e( 'Google URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'google_url' ); ?>"><?php esc_html_e( 'Google URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'google_url' ); ?>" name="<?php echo $this->get_field_name( 'google_url' ); ?>" type="text" value="<?php echo $google_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'pin_url' ); ?>"><?php esc_html_e( 'Pinterest URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'pin_url' ); ?>"><?php esc_html_e( 'Pinterest URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'pin_url' ); ?>" name="<?php echo $this->get_field_name( 'pin_url' ); ?>" type="text" value="<?php echo $pin_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'youtube_url' ); ?>"><?php esc_html_e( 'Youtube URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'youtube_url' ); ?>"><?php esc_html_e( 'Youtube URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'youtube_url' ); ?>" name="<?php echo $this->get_field_name( 'youtube_url' ); ?>" type="text" value="<?php echo $youtube_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'instagram_url' ); ?>"><?php esc_html_e( 'Instagram URL:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'instagram_url' ); ?>"><?php esc_html_e( 'Instagram URL:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'instagram_url' ); ?>" name="<?php echo $this->get_field_name( 'instagram_url' ); ?>" type="text" value="<?php echo $instagram_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>
@@ -152,70 +152,70 @@ if( !class_exists( 'tvlgiao_wpdance_widget_icon_social' ) ) {
 					<ul>
 						<?php if($facebook_url != ''){?>
 							<li class="icon-facebook">
-								<a href="<?php echo esc_attr($facebook_url); ?>" target="_blank" title="<?php esc_html_e('Become our fan', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($facebook_url); ?>" target="_blank" title="<?php esc_html_e('Become our fan', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-facebook"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Facebook', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Facebook', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>				
 						<?php } ?>
 						<?php if($rss_url != ''){?>
 							<li class="icon-rss">
-								<a href="<?php echo esc_attr($rss_url); ?>" target="_blank" title="<?php esc_html_e('Rss', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($rss_url); ?>" target="_blank" title="<?php esc_html_e('Rss', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-rss"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Rss', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Rss', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>				
 						<?php } ?>
 						<?php if($twitter_url != ''){?>
 							<li class="icon-twitter">
-								<a href="<?php echo esc_attr($twitter_url); ?>" target="_blank" title="<?php esc_html_e('Twitter', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($twitter_url); ?>" target="_blank" title="<?php esc_html_e('Twitter', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-twitter"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Twitter', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Twitter', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>				
 						<?php } ?>
 						<?php if($google_url != ''){?>
 							<li class="icon-google">
-								<a href="<?php echo esc_attr($google_url); ?>" target="_blank" title="<?php esc_html_e('Google', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($google_url); ?>" target="_blank" title="<?php esc_html_e('Google', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-google-plus"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Google', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Google', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>				
 						<?php } ?>
 						<?php if($pin_url != ''){?>
 							<li class="icon-pin">
-								<a href="<?php echo esc_attr($pin_url); ?>" target="_blank" title="<?php esc_html_e('Pin', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($pin_url); ?>" target="_blank" title="<?php esc_html_e('Pin', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-pinterest"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Pin', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Pin', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>			
 						<?php } ?>
 						<?php if($youtube_url != ''){?>
 							<li class="icon-youtube">
-								<a href="<?php echo esc_attr($youtube_url); ?>" target="_blank" title="<?php esc_html_e('Youtube', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($youtube_url); ?>" target="_blank" title="<?php esc_html_e('Youtube', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-youtube"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Youtube', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Youtube', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>			
 						<?php } ?>
 						<?php if($instagram_url != ''){?>
 							<li class="icon-instagram">
-								<a href="<?php echo esc_attr($instagram_url); ?>" target="_blank" title="<?php esc_html_e('Instagram', 'wpdancelaparis'); ?>" >
+								<a href="<?php echo esc_attr($instagram_url); ?>" target="_blank" title="<?php esc_html_e('Instagram', 'wd_package'); ?>" >
 									<i class="fa <?php echo esc_attr($size); ?> fa-instagram"></i>
 									<?php if($show_title): ?>
-										<span><?php esc_html_e('Instagram', 'wpdancelaparis'); ?></span>
+										<span><?php esc_html_e('Instagram', 'wd_package'); ?></span>
 									<?php endif; ?>
 								</a>
 							</li>				

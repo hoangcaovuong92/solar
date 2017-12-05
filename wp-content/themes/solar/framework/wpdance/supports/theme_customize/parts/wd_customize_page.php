@@ -3,29 +3,29 @@
 /*						 CUSTOM BLOG 	 						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_panel( 'tvlgiao_wpdance_page_config', array(
-    'title' 			=> esc_html__( 'WD - Page Setting', 'laparis' ),
-    'description' 		=> esc_html__( '', 'laparis'),
+    'title' 			=> esc_html__( 'WD - Page Setting', 'solar' ),
+    'description' 		=> esc_html__( '', 'solar'),
     'priority' 			=> 515,
 ));
 	
 	$wp_customize->add_section( 'tvlgiao_wpdance_default_page' , array(
-		'title'       		=> esc_html__( 'Page Default', 'laparis' ),
-		'description' 		=> esc_html__('Set properties for the default page template...', 'laparis'),
+		'title'       		=> esc_html__( 'Page Default', 'solar' ),
+		'description' 		=> esc_html__('Set properties for the default page template...', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_page_config',
 		'priority'    		=> 30,
 	));
 
 
 	$wp_customize->add_section( 'tvlgiao_wpdance_page_404' , array(
-		'title'       		=> esc_html__( 'Page 404 Config', 'laparis' ),
-		'description' 		=> esc_html__( '', 'laparis'),
+		'title'       		=> esc_html__( 'Page 404 Config', 'solar' ),
+		'description' 		=> esc_html__( '', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_page_config',
 		'priority'    		=> 40,
 	));
 
 	$wp_customize->add_section( 'tvlgiao_wpdance_page_search' , array(
-		'title'       		=> esc_html__( 'Page Search Config', 'laparis' ),
-		'description' 		=> esc_html__( '', 'laparis'),
+		'title'       		=> esc_html__( 'Page Search Config', 'solar' ),
+		'description' 		=> esc_html__( '', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_page_config',
 		'priority'    		=> 45,
 	));
@@ -39,7 +39,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_default_page_layout', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_default_page_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_default_page',
 	'settings'       	=> 'tvlgiao_wpdance_default_page_layout',
 	'choices'			=> array(
@@ -82,13 +82,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_404_select_style', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_404_select_style_control', array(
-	'label'   			=> esc_html__( 'Background Image Or Color', 'laparis' ),
+	'label'   			=> esc_html__( 'Background Image Or Color', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_404',
 	'settings' 			=> 'tvlgiao_wpdance_page_404_select_style',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-		'bg_image'			=> esc_html__( 'Background Image', 'laparis' ),
-		'bg_color'			=> esc_html__( 'Background Color', 'laparis' ),
+		'bg_image'			=> esc_html__( 'Background Image', 'solar' ),
+		'bg_color'			=> esc_html__( 'Background Color', 'solar' ),
 	)
 ));
 $wp_customize->add_setting( 'tvlgiao_wpdance_page_404_bg_color' , array(
@@ -97,7 +97,7 @@ $wp_customize->add_setting( 'tvlgiao_wpdance_page_404_bg_color' , array(
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_page_404_bg_color' , array(
-	'label'      		=>  esc_html__( 'Select Color Background', 'laparis' ),
+	'label'      		=>  esc_html__( 'Select Color Background', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_page_404',
     'settings' 			=> 'tvlgiao_wpdance_page_404_bg_color',
 )));
@@ -107,7 +107,7 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlg
 	'type' 				=> 'theme_mod'
 ));
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'tvlgiao_wpdance_page_404_bg_image', array(
-    'label'    			=> esc_html__('Select Background Image', 'laparis' ),
+    'label'    			=> esc_html__('Select Background Image', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_page_404',
     'settings' 			=> 'tvlgiao_wpdance_page_404_bg_image',
 )));
@@ -118,13 +118,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_404_show_header_footer', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_404_show_header_footer_control', array(
-	'label'   			=> esc_html__( 'Header & Footer', 'laparis' ),
+	'label'   			=> esc_html__( 'Header & Footer', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_404',
 	'settings' 			=> 'tvlgiao_wpdance_page_404_show_header_footer',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-		'1'			=> esc_html__( 'Show', 'laparis' ),
-		'0'			=> esc_html__( 'Hide', 'laparis' ),
+		'1'			=> esc_html__( 'Show', 'solar' ),
+		'0'			=> esc_html__( 'Hide', 'solar' ),
 	)
 ));
 
@@ -134,8 +134,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_404_show_search_form', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_404_show_search_form_control', array(
-	'label'   			=> esc_html__( 'Search Form', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Search Form', 'laparis'),
+	'label'   			=> esc_html__( 'Search Form', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Search Form', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_page_404',
 	'settings' 			=> 'tvlgiao_wpdance_page_404_show_search_form',
 	'type'    			=> 'select',
@@ -152,8 +152,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_404_show_back_to_home_button', 
 ));
 
 $wp_customize->add_control( 'tvlgiao_wpdance_page_404_show_back_to_home_button_control', array(
-	'label'   			=> esc_html__( 'Back To Home Button', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Back To Home Button', 'laparis'),
+	'label'   			=> esc_html__( 'Back To Home Button', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Back To Home Button', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_page_404',
 	'settings' 			=> 'tvlgiao_wpdance_page_404_show_back_to_home_button',
 	'type'    			=> 'select',
@@ -164,29 +164,29 @@ $wp_customize->add_control( 'tvlgiao_wpdance_page_404_show_back_to_home_button_c
 )); 
 
 $wp_customize->add_setting('tvlgiao_wpdance_page_404_back_to_home_button_text',array(
-	'default'           =>  esc_html__( 'Back To Homepage', 'laparis' ),
+	'default'           =>  esc_html__( 'Back To Homepage', 'solar' ),
 	'sanitize_callback' => 'tvlgiao_wpdance_sanitize_html'
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_page_404_back_to_home_button_text_control',array(
-	'label'         	=> esc_html__( 'Text Button', 'laparis' ),
+	'label'         	=> esc_html__( 'Text Button', 'solar' ),
 	'section'       	=> 'tvlgiao_wpdance_page_404',
 	'settings'      	=> 'tvlgiao_wpdance_page_404_back_to_home_button_text',
 	'type'          	=> 'text',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_page_404_back_to_home_button_class',array(
-	'default'           =>  esc_html__( '', 'laparis' ),
+	'default'           =>  esc_html__( '', 'solar' ),
 	'sanitize_callback' => 'tvlgiao_wpdance_sanitize_html'
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_page_404_back_to_home_button_class_control',array(
-	'label'         	=> esc_html__( 'Class Button', 'laparis' ),
+	'label'         	=> esc_html__( 'Class Button', 'solar' ),
 	'section'       	=> 'tvlgiao_wpdance_page_404',
 	'settings'      	=> 'tvlgiao_wpdance_page_404_back_to_home_button_class',
 	'type'          	=> 'text',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_page_404_shortcode',array(
@@ -195,11 +195,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_404_shortcode',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_page_404_shortcode_control',array(
-	'label'         	=> esc_html__( 'Shortcode Cart', 'laparis' ),
+	'label'         	=> esc_html__( 'Shortcode Cart', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_page_404_shortcode',
 	'section'       	=> 'tvlgiao_wpdance_page_404',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));	
 
 /*Page Search*/
@@ -209,7 +209,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_search_layout', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_page_search_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_page_search',
 	'settings'       	=> 'tvlgiao_wpdance_page_search_layout',
 	'choices'			=> array(
@@ -249,13 +249,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_search_select_style', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_search_select_style_control', array(
-	'label'   			=> esc_html__( 'Background Image Or Color', 'laparis' ),
+	'label'   			=> esc_html__( 'Background Image Or Color', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_search',
 	'settings' 			=> 'tvlgiao_wpdance_page_search_select_style',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-		'bg_image'			=> esc_html__( 'Background Image', 'laparis' ),
-		'bg_color'			=> esc_html__( 'Background Color', 'laparis' ),
+		'bg_image'			=> esc_html__( 'Background Image', 'solar' ),
+		'bg_color'			=> esc_html__( 'Background Color', 'solar' ),
 	)
 ));
 $wp_customize->add_setting( 'tvlgiao_wpdance_page_search_bg_color' , array(
@@ -264,7 +264,7 @@ $wp_customize->add_setting( 'tvlgiao_wpdance_page_search_bg_color' , array(
 	'transport'         => 'postMessage',
 ));
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlgiao_wpdance_page_search_bg_color' , array(
-	'label'      		=>  esc_html__( 'Select Color Background', 'laparis' ),
+	'label'      		=>  esc_html__( 'Select Color Background', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_page_search',
     'settings' 			=> 'tvlgiao_wpdance_page_search_bg_color',
 )));
@@ -274,7 +274,7 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'tvlg
 	'type' 				=> 'theme_mod'
 ));
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'tvlgiao_wpdance_page_search_bg_image', array(
-    'label'    			=> esc_html__('Select Background Image', 'laparis' ),
+    'label'    			=> esc_html__('Select Background Image', 'solar' ),
     'section'  			=> 'tvlgiao_wpdance_page_search',
     'settings' 			=> 'tvlgiao_wpdance_page_search_bg_image',
 )));
@@ -285,13 +285,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_search_select_type', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_search_select_type_control', array(
-	'label'   			=> esc_html__( 'Type', 'laparis' ),
+	'label'   			=> esc_html__( 'Type', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_search',
 	'settings' 			=> 'tvlgiao_wpdance_page_search_select_type',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-        'post'          	=> esc_html__( 'Search Blog', 'laparis' ),
-        'product'          	=> esc_html__( 'Search Product', 'laparis' ),
+        'post'          	=> esc_html__( 'Search Blog', 'solar' ),
+        'product'          	=> esc_html__( 'Search Product', 'solar' ),
     )
 ));
 
@@ -301,17 +301,17 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_search_select_columns', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_search_select_columns_control', array(
-	'label'   			=> esc_html__( 'Result Columns', 'laparis' ),
+	'label'   			=> esc_html__( 'Result Columns', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_search',
 	'settings' 			=> 'tvlgiao_wpdance_page_search_select_columns',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-        '1'          	=> esc_html__( '1 Column', 'laparis' ),
-        '2'          	=> esc_html__( '2 Columns', 'laparis' ),
-        '3'          	=> esc_html__( '3 Columns', 'laparis' ),
-        '4'          	=> esc_html__( '4 Columns', 'laparis' ),
+        '1'          	=> esc_html__( '1 Column', 'solar' ),
+        '2'          	=> esc_html__( '2 Columns', 'solar' ),
+        '3'          	=> esc_html__( '3 Columns', 'solar' ),
+        '4'          	=> esc_html__( '4 Columns', 'solar' ),
     ),
-    'description'   	=> esc_html__( 'Set columns for blog search page.', 'laparis' )
+    'description'   	=> esc_html__( 'Set columns for blog search page.', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_page_search_autocomplete', array(
@@ -320,13 +320,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_search_autocomplete', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_search_autocomplete_control', array(
-	'label'   			=> esc_html__( 'Autocomplete', 'laparis' ),
+	'label'   			=> esc_html__( 'Autocomplete', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_search',
 	'settings' 			=> 'tvlgiao_wpdance_page_search_autocomplete',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-        '1'          	=> esc_html__( 'Enable', 'laparis' ),
-        '0'          	=> esc_html__( 'Disabled', 'laparis' ),
+        '1'          	=> esc_html__( 'Enable', 'solar' ),
+        '0'          	=> esc_html__( 'Disabled', 'solar' ),
     )
 ));
 $wp_customize->add_setting('tvlgiao_wpdance_page_search_ajax', array(
@@ -335,13 +335,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_search_ajax', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_page_search_ajax_control', array(
-	'label'   			=> esc_html__( 'Ajax', 'laparis' ),
+	'label'   			=> esc_html__( 'Ajax', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_page_search',
 	'settings' 			=> 'tvlgiao_wpdance_page_search_ajax',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-        '1'          	=> esc_html__( 'Enable', 'laparis' ),
-        '0'          	=> esc_html__( 'Disabled', 'laparis' ),
+        '1'          	=> esc_html__( 'Enable', 'solar' ),
+        '0'          	=> esc_html__( 'Disabled', 'solar' ),
     )
 ));
 ?>

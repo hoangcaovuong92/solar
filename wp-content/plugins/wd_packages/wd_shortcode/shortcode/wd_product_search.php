@@ -18,7 +18,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 			);
 
 			$product_categories = get_terms( 'product_cat', $args ); 
-			$categories_show = '<option value="">'.esc_html__( 'All Categories', 'wpdancelaparis' ).'</option>';
+			$categories_show = '<option value="">'.esc_html__( 'All Categories', 'wd_package' ).'</option>';
 			$check = '';
 			if(is_search()){
 				if(isset($_GET['term']) && $_GET['term']!=''){
@@ -40,8 +40,8 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 				<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/'  ) ) ?>">
 				 	<select class="wd_search_product" name="term"><?php echo balanceTags($categories_show); ?></select>
 				 	<div class="wd_search_form">
-					 	<input type="text" class="search-field" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php esc_html_e( 'Search for products', 'wpdancelaparis' ); ?> " />
-					 	<input type="submit" title="Search" id="searchsubmit" class="search-submit" value="<?php echo esc_attr__( 'Search', 'wpdancelaparis' ); ?>" />
+					 	<input type="text" class="search-field" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php esc_html_e( 'Search for products', 'wd_package' ); ?> " />
+					 	<input type="submit" title="Search" id="searchsubmit" class="search-submit" value="<?php echo esc_attr__( 'Search', 'wd_package' ); ?>" />
 					 	<input type="hidden" name="post_type" value="product" />
 					 	<input type="hidden" name="taxonomy" value="product_cat" />
 				 	</div>

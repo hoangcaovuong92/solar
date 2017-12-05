@@ -95,7 +95,7 @@ if(!function_exists('tvlgiao_wpdance_feature_category_function')){
 
 						$url 			= (get_post_meta($post_id, 'wd_feature_url', true) && $open_link_with == 'link') ? get_post_meta($post_id, 'wd_feature_url', true) : '#'; 
 						$link_class		= ($open_link_with == 'modal') ? 'wd-modal-bootstrap-ajax' : '';
-						$readmore_text 	= (get_post_meta($post->ID,'wd_readmore_text',true)) ? get_post_meta($post->ID,'wd_readmore_text',true) : esc_html('Read More','wpdancelaparis');
+						$readmore_text 	= (get_post_meta($post->ID,'wd_readmore_text',true)) ? get_post_meta($post->ID,'wd_readmore_text',true) : esc_html('Read More','wd_package');
 						?>
 						<div id="wd-feature-<?php the_ID(); ?>" <?php post_class($classes); ?> >	
 							<li class="wd-feature-content-list-item <?php echo esc_attr($text_align); ?>">

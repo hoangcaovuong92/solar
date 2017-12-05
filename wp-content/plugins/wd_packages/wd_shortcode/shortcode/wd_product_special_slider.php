@@ -134,7 +134,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 									<?php echo esc_html($description); ?>
 								<?php endif; ?>
 								<?php if($description != "" && $view_all_link_display) : ?>
-									<?php _e(' | ','wpdancelaparis') ?>
+									<?php _e(' | ','wd_package') ?>
 								<?php endif; ?>
 								<?php if($view_all_link_display) : ?>
 									<a target="_blank" href="<?php echo esc_url($view_all_url);?>"><?php echo esc_html($view_all_text); ?></a>
@@ -201,7 +201,7 @@ if ( tvlgiao_wpdance_is_woocommerce() ) {
 										data-data_show="<?php echo esc_html($data_show); ?>" 
 										data-sort="<?php echo esc_html($sort); ?>" 
 										data-order_by="<?php echo esc_html($order_by); ?>" 
-										href="#" class="button btn_loadmore_product"><?php _e('LOAD MORE','wpdancelaparis') ?></a>
+										href="#" class="button btn_loadmore_product"><?php _e('LOAD MORE','wd_package') ?></a>
 								</div>
 							</div>
 						<?php endif; ?>

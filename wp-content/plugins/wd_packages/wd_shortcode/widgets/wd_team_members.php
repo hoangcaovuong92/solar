@@ -4,9 +4,9 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 	if( !class_exists( 'tvlgiao_wpdance_widget_team_members' ) ) {
 		class tvlgiao_wpdance_widget_team_members extends WP_Widget{
 		    function __construct() {
-				$widget_ops 		= array('classname' => 'widget_team_members', 'description' => esc_html__('Team Members Widget','wpdancelaparis'));
+				$widget_ops 		= array('classname' => 'widget_team_members', 'description' => esc_html__('Team Members Widget','wd_package'));
 				$control_ops 		= array('width' => 400, 'height' => 350);
-				parent::__construct('team_members', esc_html__('WD - Team Members','wpdancelaparis'), $widget_ops);
+				parent::__construct('team_members', esc_html__('WD - Team Members','wd_package'), $widget_ops);
 			}
 		    function form( $instance )
 		    {
@@ -21,7 +21,7 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 
 
 				$team_member_array = array();
-				$team_member_array[-1] = esc_html__('Select Teammember','wpdancelaparis');
+				$team_member_array[-1] = esc_html__('Select Teammember','wd_package');
 				$args = array(
 						'post_type'			=> 'team',
 						'post_status'		=> 'publish',
@@ -62,7 +62,7 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 				);
 		        ?>
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('slider_or_one')); ?>"><?php esc_html_e('Slider Or One Teammember:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('slider_or_one')); ?>"><?php esc_html_e('Slider Or One Teammember:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('slider_or_one')); ?>" id="<?php echo esc_attr($this->get_field_id('slider_or_one')); ?>">
 							<?php foreach( $slider_or_one_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($slider_or_one==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -71,7 +71,7 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 					</p>
 
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('id_team')); ?>"><?php esc_html_e('Select Team (Single):','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('id_team')); ?>"><?php esc_html_e('Select Team (Single):','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('id_team')); ?>" id="<?php echo esc_attr($this->get_field_id('id_team')); ?>">
 							<?php foreach( $team_member_array as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($id_team==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -82,14 +82,14 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 					
 					
 					<p>
-		                <label for="<?php echo $this->get_field_id( 'number_teammember' ); ?>"><?php esc_html_e( 'Number Teammember (Multi):', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'number_teammember' ); ?>"><?php esc_html_e( 'Number Teammember (Multi):', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'number_teammember' ); ?>" name="<?php echo $this->get_field_name( 'number_teammember' ); ?>" type="text" value="<?php echo $number_teammember; ?>" />
 		                </label>
 		            </p>
 
 
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('columns')); ?>"><?php esc_html_e('Columns (Multi):','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('columns')); ?>"><?php esc_html_e('Columns (Multi):','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('columns')); ?>" id="<?php echo esc_attr($this->get_field_id('columns')); ?>">
 							<?php foreach( $columns_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($columns==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -98,7 +98,7 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 					</p>
 
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('style')); ?>"><?php esc_html_e('Style:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('style')); ?>" id="<?php echo esc_attr($this->get_field_id('style')); ?>">
 							<?php foreach( $style_arr as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($style==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -107,13 +107,13 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 					</p>
 
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number word content:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number word content:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" />
 		                </label>
 		            </p>
 
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 		                </label>
 		            </p>
@@ -154,7 +154,7 @@ if(in_array('wd_team/wd_team.php',$_active_vc)){
 		        ?>
 					<div class="wd-team-member <?php echo esc_attr($class) ?> <?php echo esc_attr($style) ?>" >
 						<?php if($id_team == '-1' && $slider_or_one == '1'){ ?>
-							<p><?php esc_html_e('Please select team','wpdancelaparis'); ?></p>
+							<p><?php esc_html_e('Please select team','wd_package'); ?></p>
 						<?php }else{ ?>
 							<?php if($slider_or_one == '1' || $slider_or_one == '2'): ?>
 								<?php $i = 1; ?>

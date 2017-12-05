@@ -50,7 +50,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 							
 
-							<td class="product-detail" data-title="<?php esc_attr_e( 'Product', 'laparis' ); ?>">
+							<td class="product-detail" data-title="<?php esc_attr_e( 'Product', 'solar' ); ?>">
 								<div class="product-thumbnail">
 									<?php
 										$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
@@ -76,12 +76,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 									
 										// Backorder notification
 										if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
-											echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'laparis' ) . '</p>';
+											echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'solar' ) . '</p>';
 										}
 									?>
 								</div>
 
-								<div class="product-price" data-title="<?php _e( 'Price', 'laparis' ); ?>">
+								<div class="product-price" data-title="<?php _e( 'Price', 'solar' ); ?>">
 									<?php
 										echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 									?>
@@ -89,9 +89,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 							</td>
 
 
-							<td class="product-quantity" data-title="<?php _e( 'Quantity', 'laparis' ); ?>">
+							<td class="product-quantity" data-title="<?php _e( 'Quantity', 'solar' ); ?>">
 								<div class="product-quantity">
-									<span><?php _e( 'Quantity', 'laparis' ); ?></span>
+									<span><?php _e( 'Quantity', 'solar' ); ?></span>
 									<?php
 										if ( $_product->is_sold_individually() ) {
 											$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -108,7 +108,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									?>
 								</div>
 
-								<div class="product-subtotal" data-title="<?php _e( 'Total', 'laparis' ); ?>">
+								<div class="product-subtotal" data-title="<?php _e( 'Total', 'solar' ); ?>">
 									<?php
 										echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 									?>
@@ -119,7 +119,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 										echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 											'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 											esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-											__( 'Remove this item', 'laparis' ),
+											__( 'Remove this item', 'solar' ),
 											esc_attr( $product_id ),
 											esc_attr( $_product->get_sku() )
 										), $cart_item_key );
@@ -138,14 +138,14 @@ do_action( 'woocommerce_before_cart' ); ?>
 			</tbody>
 		</table>
 		<div class="wd-cart-update-button">
-			<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'laparis' ); ?>" />
+			<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'solar' ); ?>" />
 			<?php do_action( 'woocommerce_cart_actions' ); ?>
 		</div>
 		<?php if ( wc_coupons_enabled() ) { ?>
 			<div class="wd-cart-coupon-form coupon">
-				<label for="coupon_code"><?php _e( 'Discount Coupon:', 'laparis' ); ?></label> 
-				<p class="wd-desc"><?php _e( 'Enter coupon code bellow if you have one.', 'laparis' ); ?></p>
-				<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'laparis' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'laparis' ); ?>" />
+				<label for="coupon_code"><?php _e( 'Discount Coupon:', 'solar' ); ?></label> 
+				<p class="wd-desc"><?php _e( 'Enter coupon code bellow if you have one.', 'solar' ); ?></p>
+				<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'solar' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'solar' ); ?>" />
 
 				<?php do_action( 'woocommerce_cart_coupon' ); ?>
 			</div>
@@ -161,8 +161,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 <div class="cart-collaterals ">
 	<div class="wd-cart-payment-method">
 		<?php if ( shortcode_exists( 'tvlgiao_wpdance_payment_icon' ) && tvlgiao_wpdance_is_visual_composer() ) { ?>
-			<label><?php _e( 'Payment method:', 'laparis' ); ?></label> 
-			<p class="wd-desc"><?php _e( 'Laparis continuously strives to give customers the best service.', 'laparis' ); ?></p>
+			<label><?php _e( 'Payment method:', 'solar' ); ?></label> 
+			<p class="wd-desc"><?php _e( 'Laparis continuously strives to give customers the best service.', 'solar' ); ?></p>
 			<?php if($payment_method != '' ): ?> 
 				<?php $payment_method = stripslashes($payment_method); ?>
 				<?php echo do_shortcode( "{$payment_method}" ); 	?>

@@ -36,10 +36,10 @@ if (!class_exists('WD_Quickshop')) {
 			$custom_class 	= !is_product() ? 'qs-enabled-variation' : 'qs-disabled-variation' ;
 			$prod_url 		= get_admin_url()	. "admin-ajax.php?ajax=true&action=qs_load_product_content&product_id=".$product->get_id()."&custom_class=".$custom_class;
 			?>
-			<a class="wd_quickshop_handler" title="<?php esc_html_e('Quick View','wpdancelaparis');?>" href="<?php echo esc_url($prod_url); ?>">
+			<a class="wd_quickshop_handler" title="<?php esc_html_e('Quick View','wd_package');?>" href="<?php echo esc_url($prod_url); ?>">
 				<span class="qs_inner1">
 					<span class="qs_inner2">  
-						<?php esc_html_e("QUICK SHOP",'wpdancelaparis'); ?>
+						<?php esc_html_e("QUICK SHOP",'wd_package'); ?>
 					</span>
 				</span>
 			</a>
@@ -91,7 +91,7 @@ if (!class_exists('WD_Quickshop')) {
 					<div class="qs-left-content <?php echo esc_attr( $custom_class ); ?>">
 						<?php do_action( 'woocommerce_before_single_product_summary' ); ?>
 						<div class="details_view">
-							<a href="<?php echo the_permalink();?>" title="<?php esc_html_e('View Details','wpdancelaparis');?>" ><?php esc_html_e('View Details','wpdancelaparis');?></a>
+							<a href="<?php echo the_permalink();?>" title="<?php esc_html_e('View Details','wd_package');?>" ><?php esc_html_e('View Details','wd_package');?></a>
 						</div>
 					</div>
 			

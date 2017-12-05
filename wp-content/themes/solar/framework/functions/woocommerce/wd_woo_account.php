@@ -41,13 +41,13 @@ if (! function_exists( 'tvlgiao_wpdance_tini_account' ) ) {
 		<div class="wd_tini_account_wrapper <?php echo esc_attr($class) ?> <?php echo esc_attr($class_show_icon) ?>">
 			<div class="wd_tini_account_control">
 				<?php if(is_user_logged_in()): ?>	
-					<?php $title = ($show_text) ? esc_html('My Account','laparis') : '' ; ?>
-					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('View Account Page','laparis'); ?>">
+					<?php $title = ($show_text) ? esc_html('My Account','solar') : '' ; ?>
+					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('View Account Page','solar'); ?>">
 						<span class="wd-title-header"><?php echo $icon_html;?><?php echo $title; ?></span>
 					</a>
 				<?php else:?>
-					<?php $title = ($show_text) ? esc_html('Login / Register','laparis') : '' ; ?>
-					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('View login page','laparis'); ?>">
+					<?php $title = ($show_text) ? esc_html('Login / Register','solar') : '' ; ?>
+					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('View login page','solar'); ?>">
 						<span class="wd-title-header"><?php echo $icon_html;?><?php echo $title; ?></span>
 					</a>
 				<?php endif;?>		
@@ -61,13 +61,13 @@ if (! function_exists( 'tvlgiao_wpdance_tini_account' ) ) {
 								<?php do_action( 'woocommerce_login_form_start' ); ?>
 								
 								<p class="login-username">
-									<input type="text" size="20" class="input wd-login-username" id="username" name="username" value="<?php echo  ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" placeholder="<?php esc_html_e( 'Email Address / Username', 'laparis' ); ?>">
+									<input type="text" size="20" class="input wd-login-username" id="username" name="username" value="<?php echo  ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" placeholder="<?php esc_html_e( 'Email Address / Username', 'solar' ); ?>">
 								</p>
 								<p class="login-password">
-									<input type="password" size="20" value="" class="input wd-login-password" id="password" name="password" autocomplete="off" placeholder="<?php esc_html_e( 'Password', 'laparis' ); ?>">
+									<input type="password" size="20" value="" class="input wd-login-password" id="password" name="password" autocomplete="off" placeholder="<?php esc_html_e( 'Password', 'solar' ); ?>">
 								</p>
 								<p class="login-remember">
-									<label><input name="rememberme" class="wd-login-rememberme" type="checkbox" value="forever"> <?php esc_html_e( 'Keep me signed in', 'laparis' ); ?></label> 
+									<label><input name="rememberme" class="wd-login-rememberme" type="checkbox" value="forever"> <?php esc_html_e( 'Keep me signed in', 'solar' ); ?></label> 
 								</p>
 
 								<p class="wd-login-form-image-loading hidden">
@@ -81,15 +81,15 @@ if (! function_exists( 'tvlgiao_wpdance_tini_account' ) ) {
 								
 								<p class="login-submit">
 									<?php wp_nonce_field( 'woocommerce-login' ); ?>
-									<input type="submit" class="secondary_button wd-login-btn" name="login" value="<?php esc_html_e( 'SIGN IN', 'laparis' ); ?>" />
+									<input type="submit" class="secondary_button wd-login-btn" name="login" value="<?php esc_html_e( 'SIGN IN', 'solar' ); ?>" />
 								</p>
 								
 								<?php do_action( 'woocommerce_login_form_end' ); ?>
 							</form>
 						</div>
 						<div class="form_wrapper_footer">
-							<p><a class="wd-my-account-action" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" data-toggle="tooltip" title="<?php esc_html_e('Reset your password','laparis'); ?>"><?php esc_html_e('Forgetten your password?','laparis'); ?></a></p>
-							<p><a class="wd-my-account-action" href="<?php echo esc_url($myaccount_page_url); ?>" data-toggle="tooltip" title="<?php esc_html_e('Create new acccount','laparis'); ?>" ><?php esc_html_e('Register new account','laparis'); ?></a></p>
+							<p><a class="wd-my-account-action" href="<?php echo wp_lostpassword_url( get_permalink() ); ?>" data-toggle="tooltip" title="<?php esc_html_e('Reset your password','solar'); ?>"><?php esc_html_e('Forgetten your password?','solar'); ?></a></p>
+							<p><a class="wd-my-account-action" href="<?php echo esc_url($myaccount_page_url); ?>" data-toggle="tooltip" title="<?php esc_html_e('Create new acccount','solar'); ?>" ><?php esc_html_e('Register new account','solar'); ?></a></p>
 						</div>
 					</div>	
 				<?php else: ?>
@@ -102,11 +102,11 @@ if (! function_exists( 'tvlgiao_wpdance_tini_account' ) ) {
 									$mydownload_url = $myacount_url ? $myacount_url.'downloads' : '#';
 									$logout_url 	= wp_logout_url( get_permalink() ) ? wp_logout_url( get_permalink()) : '#';
 								?>
-								<li><a href="<?php echo esc_url($myorder_url); ?>" title="<?php esc_html_e('My Orders','laparis');?>"><?php esc_html_e('My Order','laparis');?></a></li>
+								<li><a href="<?php echo esc_url($myorder_url); ?>" title="<?php esc_html_e('My Orders','solar');?>"><?php esc_html_e('My Order','solar');?></a></li>
 
-								<li><a href="<?php echo esc_url($mydownload_url); ?>" title="<?php esc_html_e('My Downloads','laparis');?>"><?php esc_html_e('My Download','laparis');?></a></li>
+								<li><a href="<?php echo esc_url($mydownload_url); ?>" title="<?php esc_html_e('My Downloads','solar');?>"><?php esc_html_e('My Download','solar');?></a></li>
 
-								<li><a href="<?php echo esc_url($logout_url); ?>" title="<?php esc_html_e('Logout','laparis');?>"><?php esc_html_e('Logout','laparis');?></a></li>
+								<li><a href="<?php echo esc_url($logout_url); ?>" title="<?php esc_html_e('Logout','solar');?>"><?php esc_html_e('Logout','solar');?></a></li>
 							</ul>
 						</div>
 					</div>		
@@ -144,15 +144,15 @@ if( !function_exists('tvlgiao_wpdance_get_form_user_mobile') ){
 					$logout_url 		= wp_logout_url( get_permalink() ) ? wp_logout_url( get_permalink()) : '#';
 				?>
 				<?php if(is_user_logged_in()): ?>	
-					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('My Account','laparis');?>">
-						<span><?php esc_html_e('My Account','laparis');?></span> 
+					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('My Account','solar');?>">
+						<span><?php esc_html_e('My Account','solar');?></span> 
 					</a>
-					<a href="<?php echo esc_url($logout_url);?>" title="<?php esc_html_e('Logout','laparis');?>">
-						<span><?php esc_html_e('Logout','laparis');?></span> 
+					<a href="<?php echo esc_url($logout_url);?>" title="<?php esc_html_e('Logout','solar');?>">
+						<span><?php esc_html_e('Logout','solar');?></span> 
 					</a>
 				<?php else:?>
-					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('Login or Register','laparis');?>">
-						<span><?php esc_html_e('Login / Register','laparis');?></span>
+					<a href="<?php echo esc_url($myaccount_page_url);?>" title="<?php esc_html_e('Login or Register','solar');?>">
+						<span><?php esc_html_e('Login / Register','solar');?></span>
 					</a>
 				<?php endif;?>		
 			</div>
@@ -169,7 +169,7 @@ function tvlgiao_wpdance_login_fail( $username ) {
 		return;
 	}
 	if ( !tvlgiao_wpdance_is_woocommerce() ) {
-		return esc_html__('Woocommerce Plugin do not active','laparis');
+		return esc_html__('Woocommerce Plugin do not active','solar');
 	}
 	global $woocommerce;
 	$myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );

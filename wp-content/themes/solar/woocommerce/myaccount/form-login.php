@@ -34,18 +34,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php endif; ?>
 
-		<div class="title-account"><h2><?php _e( 'Login', 'laparis' ); ?></h2></div>
+		<div class="title-account"><h2><?php _e( 'Login', 'solar' ); ?></h2></div>
 
 		<form class="woocomerce-form woocommerce-form-login login" method="post">
 
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
 
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="username"><?php _e( 'Username or email address', 'laparis' ); ?> <span class="required">*</span></label>
+				<label for="username"><?php _e( 'Username or email address', 'solar' ); ?> <span class="required">*</span></label>
 				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" placeholder="Username or Email Address*" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" />
 			</p>
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="password"><?php _e( 'Password', 'laparis' ); ?> <span class="required">*</span></label>
+				<label for="password"><?php _e( 'Password', 'solar' ); ?> <span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" placeholder="Password*" name="password" id="password" />
 			</p>
 
@@ -53,13 +53,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-				<input type="submit" class="woocommerce-Button button" name="login" value="<?php esc_attr_e( 'Login', 'laparis' ); ?>" />
+				<input type="submit" class="woocommerce-Button button" name="login" value="<?php esc_attr_e( 'Login', 'solar' ); ?>" />
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
-					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php _e( 'Remember me', 'laparis' ); ?></span>
+					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php _e( 'Remember me', 'solar' ); ?></span>
 				</label>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
-				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'laparis' ); ?></a>
+				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'solar' ); ?></a>
 			</p>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="u-column2 col-2">
 
-		<div class="title-account"><h2><?php _e( 'Register', 'laparis' ); ?></h2></div>
+		<div class="title-account"><h2><?php _e( 'Register', 'solar' ); ?></h2></div>
 
 		<form method="post" class="register">
 
@@ -81,34 +81,34 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) : ?>
 
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-					<label for="reg_username"><?php _e( 'Username', 'laparis' ); ?> <span class="required">*</span></label>
+					<label for="reg_username"><?php _e( 'Username', 'solar' ); ?> <span class="required">*</span></label>
 					<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="reg_username" placeholder="Your Name*" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" />
 				</p>
 
 			<?php endif; ?>
 
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="reg_email"><?php _e( 'Email address', 'laparis' ); ?> <span class="required">*</span></label>
+				<label for="reg_email"><?php _e( 'Email address', 'solar' ); ?> <span class="required">*</span></label>
 				<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" placeholder="Email Address*" id="reg_email" value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( $_POST['email'] ) : ''; ?>" />
 			</p>
 
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-					<label for="reg_password"><?php _e( 'Password', 'laparis' ); ?> <span class="required">*</span></label>
+					<label for="reg_password"><?php _e( 'Password', 'solar' ); ?> <span class="required">*</span></label>
 					<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" placeholder="Password*" />
 				</p>
 
 			<?php endif; ?>
 
 			<!-- Spam Trap -->
-			<div style="<?php echo ( ( is_rtl() ) ? 'right' : 'left' ); ?>: -999em; position: absolute;"><label for="trap"><?php _e( 'Anti-spam', 'laparis' ); ?></label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off" /></div>
+			<div style="<?php echo ( ( is_rtl() ) ? 'right' : 'left' ); ?>: -999em; position: absolute;"><label for="trap"><?php _e( 'Anti-spam', 'solar' ); ?></label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off" /></div>
 
 			<?php do_action( 'woocommerce_register_form' ); ?>
 
 			<p class="woocomerce-FormRow form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
-				<input type="submit" class="woocommerce-Button button" name="register" value="<?php esc_attr_e( 'Register', 'laparis' ); ?>" />
+				<input type="submit" class="woocommerce-Button button" name="register" value="<?php esc_attr_e( 'Register', 'solar' ); ?>" />
 			</p>
 
 			<?php do_action( 'woocommerce_register_form_end' ); ?>

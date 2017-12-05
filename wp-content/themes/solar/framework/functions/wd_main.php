@@ -47,8 +47,8 @@ if(!function_exists ('tvlgiao_wpdance_related_slider_control')){
 	function tvlgiao_wpdance_related_slider_control() {
 		ob_start(); ?>
 		<div class="related_control">
-			<a id="product_related_prev" data-toggle="tooltip" title="<?php esc_html_e('Previous','laparis');?>" class="prev" href="#"><span class="lnr lnr-chevron-left"></span></a>
-			<a id="product_related_next" data-toggle="tooltip" title="<?php esc_html_e('Next','laparis');?>" class="next" href="#"><span class="lnr lnr-chevron-right"></span></a>
+			<a id="product_related_prev" data-toggle="tooltip" title="<?php esc_html_e('Previous','solar');?>" class="prev" href="#"><span class="lnr lnr-chevron-left"></span></a>
+			<a id="product_related_next" data-toggle="tooltip" title="<?php esc_html_e('Next','solar');?>" class="next" href="#"><span class="lnr lnr-chevron-right"></span></a>
     	</div> 
     	<?php
     	return ob_get_clean();

@@ -3,9 +3,9 @@ if( post_type_exists('testimonial') || class_exists('Woothemes_Testimonials') ){
 	if( !class_exists( 'tvlgiao_wpdance_widget_testimonials' ) ) {
 		class tvlgiao_wpdance_widget_testimonials extends WP_Widget{
 		    function __construct() {
-				$widget_ops 		= array('classname' => 'widget_testimonials', 'description' => esc_html__('Testimonials Widget','wpdancelaparis'));
+				$widget_ops 		= array('classname' => 'widget_testimonials', 'description' => esc_html__('Testimonials Widget','wd_package'));
 				$control_ops 		= array('width' => 400, 'height' => 350);
-				parent::__construct('testimonials', esc_html__('WD - Testimonials','wpdancelaparis'), $widget_ops);
+				parent::__construct('testimonials', esc_html__('WD - Testimonials','wd_package'), $widget_ops);
 			}
 		    function form( $instance )
 		    {
@@ -24,7 +24,7 @@ if( post_type_exists('testimonial') || class_exists('Woothemes_Testimonials') ){
 				)
 		        ?>
 		            <p>
-						<label for="<?php echo esc_attr( $this->get_field_id('show_avatar')); ?>"><?php esc_html_e('Show Avatar:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('show_avatar')); ?>"><?php esc_html_e('Show Avatar:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_avatar')); ?>" id="<?php echo esc_attr($this->get_field_id('show_avatar')); ?>">
 							<?php foreach( $yes_no as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_avatar==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -32,7 +32,7 @@ if( post_type_exists('testimonial') || class_exists('Woothemes_Testimonials') ){
 						</select>
 					</p>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('show_author')); ?>"><?php esc_html_e('Show Author:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('show_author')); ?>"><?php esc_html_e('Show Author:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_author')); ?>" id="<?php echo esc_attr($this->get_field_id('show_author')); ?>">
 							<?php foreach( $yes_no as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_author==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -40,7 +40,7 @@ if( post_type_exists('testimonial') || class_exists('Woothemes_Testimonials') ){
 						</select>
 					</p>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id('show_rating')); ?>"><?php esc_html_e('Show Rating:','wpdancelaparis'); ?></label>
+						<label for="<?php echo esc_attr( $this->get_field_id('show_rating')); ?>"><?php esc_html_e('Show Rating:','wd_package'); ?></label>
 						<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('show_rating')); ?>" id="<?php echo esc_attr($this->get_field_id('show_rating')); ?>">
 							<?php foreach( $yes_no as $key => $value ){ ?>
 							<option value="<?php echo esc_attr($key); ?>" <?php echo ($show_rating==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -49,23 +49,23 @@ if( post_type_exists('testimonial') || class_exists('Woothemes_Testimonials') ){
 					</p>
 
 					<p>
-				       <label for="<?php echo $this->get_field_id( 'limit_post' ); ?>"><?php _e( 'Limit Post:', 'wpdancelaparis' ); ?></label>
+				       <label for="<?php echo $this->get_field_id( 'limit_post' ); ?>"><?php _e( 'Limit Post:', 'wd_package' ); ?></label>
 				        <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('limit_post'); ?>" name="<?php echo $this->get_field_name('limit_post'); ?>"><?php echo $limit_post; ?></textarea>
 				    </p>
 
 				    <p>
-				       <label for="<?php echo $this->get_field_id( 'per_slide' ); ?>"><?php _e( 'Testimonial Per Slide:', 'wpdancelaparis' ); ?></label>
+				       <label for="<?php echo $this->get_field_id( 'per_slide' ); ?>"><?php _e( 'Testimonial Per Slide:', 'wd_package' ); ?></label>
 				        <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('per_slide'); ?>" name="<?php echo $this->get_field_name('per_slide'); ?>"><?php echo $per_slide; ?></textarea>
 				    </p>
 
 				    <p>
-		                <label for="<?php echo $this->get_field_id( 'number_excerpt' ); ?>"><?php esc_html_e( 'Number of excerpt words:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'number_excerpt' ); ?>"><?php esc_html_e( 'Number of excerpt words:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'number_excerpt' ); ?>" name="<?php echo $this->get_field_name( 'number_excerpt' ); ?>" type="text" value="<?php echo $number_excerpt; ?>" />
 		                </label>
 		            </p>
 
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 		                </label>
 		            </p>

@@ -14,19 +14,19 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_post_type_feature' ) ) {
 		public function register_feature_post_type(){
 			if (!post_type_exists('wpdance_feature')) {
 				$labels = array(
-					'name' 					=> esc_html__( 'WD Features', 'wpdancelaparis' ),
-					'singular_name' 		=> esc_html__( 'WD Feature', 'wpdancelaparis' ),
-					'add_new' 				=> esc_html__( 'Add New', 'wpdancelaparis' ),
-					'add_new_item' 			=> sprintf( __( 'Add New %s', 'wpdancelaparis' ), __( 'Feature', 'wpdancelaparis' ) ),
-					'edit_item' 			=> sprintf( __( 'Edit %s', 'wpdancelaparis' ), __( 'Feature', 'wpdancelaparis' ) ),
-					'new_item' 				=> sprintf( __( 'New %s', 'wpdancelaparis' ), __( 'Feature', 'wpdancelaparis' ) ),
-					'all_items' 			=> sprintf( __( 'All %s', 'wpdancelaparis' ), __( 'Features', 'wpdancelaparis' ) ),
-					'view_item' 			=> sprintf( __( 'View %s', 'wpdancelaparis' ), __( 'Feature', 'wpdancelaparis' ) ),
-					'search_items' 			=> sprintf( __( 'Search %a', 'wpdancelaparis' ), __( 'Features', 'wpdancelaparis' ) ),
-					'not_found' 			=>  sprintf( __( 'No %s Found', 'wpdancelaparis' ), __( 'Features', 'wpdancelaparis' ) ),
-					'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wpdancelaparis' ), __( 'Features', 'wpdancelaparis' ) ),
+					'name' 					=> esc_html__( 'WD Features', 'wd_package' ),
+					'singular_name' 		=> esc_html__( 'WD Feature', 'wd_package' ),
+					'add_new' 				=> esc_html__( 'Add New', 'wd_package' ),
+					'add_new_item' 			=> sprintf( __( 'Add New %s', 'wd_package' ), __( 'Feature', 'wd_package' ) ),
+					'edit_item' 			=> sprintf( __( 'Edit %s', 'wd_package' ), __( 'Feature', 'wd_package' ) ),
+					'new_item' 				=> sprintf( __( 'New %s', 'wd_package' ), __( 'Feature', 'wd_package' ) ),
+					'all_items' 			=> sprintf( __( 'All %s', 'wd_package' ), __( 'Features', 'wd_package' ) ),
+					'view_item' 			=> sprintf( __( 'View %s', 'wd_package' ), __( 'Feature', 'wd_package' ) ),
+					'search_items' 			=> sprintf( __( 'Search %a', 'wd_package' ), __( 'Features', 'wd_package' ) ),
+					'not_found' 			=>  sprintf( __( 'No %s Found', 'wd_package' ), __( 'Features', 'wd_package' ) ),
+					'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wd_package' ), __( 'Features', 'wd_package' ) ),
 					'parent_item_colon' 	=> '',
-					'menu_name' 			=> __( 'WD Features', 'wpdancelaparis' )
+					'menu_name' 			=> __( 'WD Features', 'wd_package' )
 				);
 				$args = array(
 					'exclude_from_search' 	=> true,
@@ -50,13 +50,13 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_post_type_feature' ) ) {
 			register_taxonomy( 'wpdance_feature_categories', 'wpdance_feature', array(
 				'hierarchical'     		=> true,
 				'labels'            	=> array(
-					'name' 				=> esc_html__('Categories Feature', 'wpdancelaparis'),
-					'singular_name' 	=> esc_html__('Categories Feature', 'wpdancelaparis'),
-	            	'new_item'          => esc_html__('Add New', 'wpdancelaparis' ),
-	            	'edit_item'         => esc_html__('Edit Post', 'wpdancelaparis' ),
-	            	'view_item'   		=> esc_html__('View Post', 'wpdancelaparis' ),
-	            	'add_new_item'      => esc_html__('Add New Category Feature', 'wpdancelaparis' ),
-	            	'menu_name'         => esc_html__( 'Categories Feature' , 'wpdancelaparis' ),
+					'name' 				=> esc_html__('Categories Feature', 'wd_package'),
+					'singular_name' 	=> esc_html__('Categories Feature', 'wd_package'),
+	            	'new_item'          => esc_html__('Add New', 'wd_package' ),
+	            	'edit_item'         => esc_html__('Edit Post', 'wd_package' ),
+	            	'view_item'   		=> esc_html__('View Post', 'wd_package' ),
+	            	'add_new_item'      => esc_html__('Add New Category Feature', 'wd_package' ),
+	            	'menu_name'         => esc_html__( 'Categories Feature' , 'wd_package' ),
 				),
 				'show_ui'           	=> true,
 				'show_admin_column' 	=> true,
@@ -104,19 +104,19 @@ if ( ! class_exists( 'tvlgiao_wpdance_register_post_type_feature' ) ) {
 			<table class="form-table wd-feature-custom-meta-box wd-custom-meta-box-width">
 				<tbody>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Class Icon Font:' , 'wpdancelaparis' ) ?></label></th>
+						<th scope="row"><label><?php esc_html_e( 'Class Icon Font:' , 'wd_package' ) ?></label></th>
 						<td><input type="text" name="feature_icon" value="<?php echo get_post_meta($post->ID,'wd_feature_icon',true);?>"/>
-							<p class="description"><?php echo sprintf(esc_html( 'Enter the class font. Exam: fa fa-heartbeat. view all at %s or %s' , 'wpdancelaparis' ), '<a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a>', '<a href="https://linearicons.com/free" target="_blank">https://linearicons.com/free</a>') ; ?></p>
+							<p class="description"><?php echo sprintf(esc_html( 'Enter the class font. Exam: fa fa-heartbeat. view all at %s or %s' , 'wd_package' ), '<a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a>', '<a href="https://linearicons.com/free" target="_blank">https://linearicons.com/free</a>') ; ?></p>
 						</td> 
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Feature URL:' , 'wpdancelaparis' ) ?></label></th>
+						<th scope="row"><label><?php esc_html_e( 'Feature URL:' , 'wd_package' ) ?></label></th>
 						<td><input type="text" name="feature_url" value="<?php echo (get_post_meta($post->ID,'wd_feature_url',true)) ? get_post_meta($post->ID,'wd_feature_url',true) : '#';?>"/>
-							<p class="description"><?php esc_html_e( 'Enter a URL that applies to this feature' , 'wpdancelaparis' ) ?></p>
+							<p class="description"><?php esc_html_e( 'Enter a URL that applies to this feature' , 'wd_package' ) ?></p>
 						</td> 
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Readmore Button Text:' , 'wpdancelaparis' ) ?></label></th>
+						<th scope="row"><label><?php esc_html_e( 'Readmore Button Text:' , 'wd_package' ) ?></label></th>
 						<td><input type="text" name="readmore_text" value="<?php echo (get_post_meta($post->ID,'wd_readmore_text',true)) ? get_post_meta($post->ID,'wd_readmore_text',true) : 'Read More'; ?>"/>
 						</td> 
 					</tr>

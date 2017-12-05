@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_banner_image' ) ) {
 	class tvlgiao_wpdance_widget_banner_image extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_banner_image', 'description' => esc_html__('Banner image Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_banner_image', 'description' => esc_html__('Banner image Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('banner_image', esc_html__('WD - Banner Image','wpdancelaparis'), $widget_ops);
+			parent::__construct('banner_image', esc_html__('WD - Banner Image','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -39,7 +39,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_banner_image' ) ) {
 			);
 	        ?>
 	            <p>
-	                <label><?php esc_html_e( 'Image:', 'wpdancelaparis' ); ?></label>
+	                <label><?php esc_html_e( 'Image:', 'wd_package' ); ?></label>
 	                <div class="wd_banner_image_widget_img">
 	                	<img class="wd_banner_image_view_image" src="<?php echo $image_url; ?>" alt="" width="400px">
 	                </div>
@@ -49,7 +49,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_banner_image' ) ) {
 	            </p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('image_size')); ?>"><?php esc_html_e('Image Size:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('image_size')); ?>"><?php esc_html_e('Image Size:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('image_size')); ?>" id="<?php echo esc_attr($this->get_field_id('image_size')); ?>">
 						<?php foreach( $list_image_size as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($image_size==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -58,7 +58,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_banner_image' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('effect_style')); ?>"><?php esc_html_e('Effect Style:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('effect_style')); ?>"><?php esc_html_e('Effect Style:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('effect_style')); ?>" id="<?php echo esc_attr($this->get_field_id('effect_style')); ?>">
 						<?php foreach( $effect_style_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($effect_style==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -67,49 +67,49 @@ if( !class_exists( 'tvlgiao_wpdance_widget_banner_image' ) ) {
 				</p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Button Text:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'button_text' ); ?>" name="<?php echo $this->get_field_name( 'button_text' ); ?>" type="text" value="<?php echo $button_text; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'link_url' ); ?>"><?php esc_html_e( 'Button Link:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'link_url' ); ?>"><?php esc_html_e( 'Button Link:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'link_url' ); ?>" name="<?php echo $this->get_field_name( 'link_url' ); ?>" type="text" value="<?php echo $link_url; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'button_class' ); ?>"><?php esc_html_e( 'Button Class:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'button_class' ); ?>"><?php esc_html_e( 'Button Class:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'button_class' ); ?>" name="<?php echo $this->get_field_name( 'button_class' ); ?>" type="text" value="<?php echo $button_class; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'top' ); ?>"><?php esc_html_e( 'Top:', 'wpdancelaparis' ); ?>
-	                <input class="widefat" id="<?php echo $this->get_field_id( 'top' ); ?>" name="<?php echo $this->get_field_name( 'top' ); ?>" type="text" value="<?php echo $top; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wpdancelaparis') ?>" />
+	                <label for="<?php echo $this->get_field_id( 'top' ); ?>"><?php esc_html_e( 'Top:', 'wd_package' ); ?>
+	                <input class="widefat" id="<?php echo $this->get_field_id( 'top' ); ?>" name="<?php echo $this->get_field_name( 'top' ); ?>" type="text" value="<?php echo $top; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wd_package') ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'right' ); ?>"><?php esc_html_e( 'Right:', 'wpdancelaparis' ); ?>
-	                <input class="widefat" id="<?php echo $this->get_field_id( 'right' ); ?>" name="<?php echo $this->get_field_name( 'right' ); ?>" type="text" value="<?php echo $right; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wpdancelaparis') ?>" />
+	                <label for="<?php echo $this->get_field_id( 'right' ); ?>"><?php esc_html_e( 'Right:', 'wd_package' ); ?>
+	                <input class="widefat" id="<?php echo $this->get_field_id( 'right' ); ?>" name="<?php echo $this->get_field_name( 'right' ); ?>" type="text" value="<?php echo $right; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wd_package') ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'bottom' ); ?>"><?php esc_html_e( 'Bottom:', 'wpdancelaparis' ); ?>
-	                    <input class="widefat" id="<?php echo $this->get_field_id( 'bottom' ); ?>" name="<?php echo $this->get_field_name( 'bottom' ); ?>" type="text" value="<?php echo $bottom; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wpdancelaparis') ?>" />
+	                <label for="<?php echo $this->get_field_id( 'bottom' ); ?>"><?php esc_html_e( 'Bottom:', 'wd_package' ); ?>
+	                    <input class="widefat" id="<?php echo $this->get_field_id( 'bottom' ); ?>" name="<?php echo $this->get_field_name( 'bottom' ); ?>" type="text" value="<?php echo $bottom; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wd_package') ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'left' ); ?>"><?php esc_html_e( 'Left:', 'wpdancelaparis' ); ?>
-            		<input class="widefat" id="<?php echo $this->get_field_id( 'left' ); ?>" name="<?php echo $this->get_field_name( 'left' ); ?>" type="text" value="<?php echo $left; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wpdancelaparis') ?>" />
+	                <label for="<?php echo $this->get_field_id( 'left' ); ?>"><?php esc_html_e( 'Left:', 'wd_package' ); ?>
+            		<input class="widefat" id="<?php echo $this->get_field_id( 'left' ); ?>" name="<?php echo $this->get_field_name( 'left' ); ?>" type="text" value="<?php echo $left; ?>" placeholder="<?php esc_html_e("ex: 5%", 'wd_package') ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

@@ -13,9 +13,9 @@ if(!function_exists ('tvlgiao_wpdance_custom_post_password_protect_form')){
 	    global $post;
 	    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
 	    $password_protect_form = '<div class="wd-password-protect-form"><form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">';
-	    $password_protect_form .= '<p>' . esc_html__( 'To view this protected post, enter the password below: ', 'laparis' ) . '</p>';
-	    $password_protect_form .= '<label for="' . $label . '">' . esc_html__( 'Password: ', 'laparis' ) . ' </label>';
-	    $password_protect_form .= '<input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><input type="submit" name="Submit" value="' . esc_attr__( 'Submit ', 'laparis' ) . '" />';
+	    $password_protect_form .= '<p>' . esc_html__( 'To view this protected post, enter the password below: ', 'solar' ) . '</p>';
+	    $password_protect_form .= '<label for="' . $label . '">' . esc_html__( 'Password: ', 'solar' ) . ' </label>';
+	    $password_protect_form .= '<input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><input type="submit" name="Submit" value="' . esc_attr__( 'Submit ', 'solar' ) . '" />';
 	    $password_protect_form .= '</form></div>';
 	    return $password_protect_form;
 	}
@@ -309,7 +309,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_title')){
 		<?php if ($display == '1'): ?>
 			<div class="wd-title-post <?php echo esc_attr($custom_class); ?>">
 				<?php echo $before; ?>
-					<?php $title_content = (get_the_title() != '') ? esc_html(get_the_title()) : esc_html('View detail (No title)','laparis'); ?>
+					<?php $title_content = (get_the_title() != '') ? esc_html(get_the_title()) : esc_html('View detail (No title)','solar'); ?>
 					<a itemprop="name" href="<?php the_permalink() ; ?>"><?php echo $title_content; ?></a>
 				<?php echo $after; ?>
 			</div>
@@ -326,7 +326,7 @@ if(!function_exists ('tvlgiao_wpdance_display_single_post_title')){
 		<?php if ($display == '1'): ?>
 			<div class="wd-title-post <?php echo esc_attr($custom_class); ?>">
 				<?php echo $before; ?>
-					<?php $title_content = (get_the_title() != '') ? esc_html(get_the_title()) : esc_html('View detail (No title)','laparis'); ?>
+					<?php $title_content = (get_the_title() != '') ? esc_html(get_the_title()) : esc_html('View detail (No title)','solar'); ?>
 					<?php echo $title_content; ?>
 				<?php echo $after; ?>
 			</div>
@@ -342,7 +342,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_sticky')){
 		global $post; ?>
 		<?php if ( is_sticky() ) : ?>
 			<span class="sticky-post <?php echo esc_attr($custom_class); ?>">
-				<?php esc_html_e( 'Sticky', 'laparis' ); ?>
+				<?php esc_html_e( 'Sticky', 'solar' ); ?>
 			</span>
 		<?php endif ?>
 		<?php 
@@ -372,7 +372,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_category')){
 		<?php if ($display == '1' && has_category()): ?>
 			<div class="wd-category-post <?php echo esc_attr($custom_class); ?>">
 				<span class="lnr lnr-pushpin"></span>
-				<?php the_category(esc_html__(', ', 'laparis')); ?>
+				<?php the_category(esc_html__(', ', 'solar')); ?>
 			</div>
 		<?php endif ?>
 		<?php 
@@ -407,7 +407,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_number_comment')){
 				<span class="lnr lnr-bubble"></span>
 				<?php
 					echo $comment_number = get_comments_number() < 10 && get_comments_number() > 0 ? '0'.get_comments_number() : get_comments_number() ;
-					//printf( _n( '%s Comment', '%s Comments', $comment_number, 'laparis' ), $comment_number);
+					//printf( _n( '%s Comment', '%s Comments', $comment_number, 'solar' ), $comment_number);
 				?>
 			</div>
 		<?php endif ?>
@@ -424,11 +424,11 @@ if(!function_exists ('tvlgiao_wpdance_display_post_tag')){
 			<?php if (has_tag()): ?>
 				<div class="wd-tag-post <?php echo esc_attr($custom_class); ?>">
 					<?php if (is_single()): ?>
-						<span><?php esc_html_e('Tags: ','laparis'); ?></span>
+						<span><?php esc_html_e('Tags: ','solar'); ?></span>
 					<?php else: ?>
 						<span class="lnr lnr-tag"></span>
 					<?php endif ?>
-					<?php the_tags(esc_html__('', 'laparis'),esc_html__(', ', 'laparis')); ?>
+					<?php the_tags(esc_html__('', 'solar'),esc_html__(', ', 'solar')); ?>
 				</div>
 			<?php endif ?>
 		<?php endif ?>
@@ -440,7 +440,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_tag')){
 /* Edit link on single post / page */
 if(!function_exists ('tvlgiao_wpdance_display_post_edit_link')){
 	function tvlgiao_wpdance_display_post_edit_link() {
-		edit_post_link(esc_html__( 'Edit', 'laparis' ), '<div class="wd-edit-link"><span class="lnr lnr-pencil"></span> ', '</div>' );
+		edit_post_link(esc_html__( 'Edit', 'solar' ), '<div class="wd-edit-link"><span class="lnr lnr-pencil"></span> ', '</div>' );
 	}
 }
 
@@ -471,7 +471,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_readmore')){
 		?>
 		<?php if ($display == '1' && !is_home()): ?>
 			<div class="readmore <?php echo esc_attr($custom_class); ?>">
-				<a itemprop="sameAs" class="readmore_link" href="<?php the_permalink(); ?>"><?php esc_html_e('Read More','laparis') ?></a>
+				<a itemprop="sameAs" class="readmore_link" href="<?php the_permalink(); ?>"><?php esc_html_e('Read More','solar') ?></a>
 			</div>
 		<?php endif ?>
 		<?php 
@@ -482,7 +482,7 @@ if(!function_exists ('tvlgiao_wpdance_display_post_readmore')){
 if(!function_exists ('tvlgiao_wpdance_display_post_page_link')){
 	function tvlgiao_wpdance_display_post_page_link(){ 
 		wp_link_pages( array(
-			'before'      => '<div class="wd-page-links"><span class="wd-page-links-title">' . esc_html__( 'Pages:', 'laparis' ) . '</span>',
+			'before'      => '<div class="wd-page-links"><span class="wd-page-links-title">' . esc_html__( 'Pages:', 'solar' ) . '</span>',
 			'after'       => '</div>',
 			'link_before' => '<span>',
 			'link_after'  => '</span>',
@@ -502,14 +502,14 @@ if(!function_exists ('tvlgiao_wpdance_display_post_previous_next_btn')){
 					$previous  = get_previous_post()
 				?>
 				<?php if($previous){
-					$title = esc_html('Previous Post','laparis'); ?>
+					$title = esc_html('Previous Post','solar'); ?>
 					<div class="wd-navi-prev">
 						<a class="wd-navi-icon" data-toggle="tooltip" title="<?php echo $title; ?>" href="<?php echo get_permalink( $previous->ID ); ?>"><span><i class="lnr lnr-chevron-left"></i></span></a>
 						<a class="wd-navi-tile" data-toggle="tooltip" title="<?php echo $title; ?>" href="<?php echo get_permalink( $previous->ID ); ?>"><span><?php echo $title; ?></span></a>
 					</div>
 				<?php } ?>
 				<?php if($next_post){ 
-					$title = esc_html('Next Post','laparis'); ?>
+					$title = esc_html('Next Post','solar'); ?>
 					<div class="wd-navi-next">
 						<a class="wd-navi-tile" data-toggle="tooltip" title="<?php echo $title; ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><span><?php echo $title; ?></span></a>
 						<a class="wd-navi-icon" data-toggle="tooltip" title="<?php echo $title; ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><span><i class="lnr lnr-chevron-right"></i></span></a>

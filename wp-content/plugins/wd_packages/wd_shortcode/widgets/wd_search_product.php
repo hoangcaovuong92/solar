@@ -2,16 +2,16 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_search_product' ) ) {
 	class tvlgiao_wpdance_widget_search_product extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_search_product', 'description' => esc_html__('Search Product Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_search_product', 'description' => esc_html__('Search Product Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('search_product', esc_html__('WD - Search Product','wpdancelaparis'), $widget_ops);
+			parent::__construct('search_product', esc_html__('WD - Search Product','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
 	        $class      			= esc_attr( isset( $instance['class'] ) ? $instance['class'] : '' );
 	        ?>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>
@@ -31,7 +31,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_search_product' ) ) {
 			);
 
 			$product_categories = get_terms( 'product_cat', $args ); 
-			$categories_show = '<option value="">'.esc_html__( 'All Categories', 'wpdancelaparis' ).'</option>';
+			$categories_show = '<option value="">'.esc_html__( 'All Categories', 'wd_package' ).'</option>';
 			$check = '';
 			if(is_search()){
 				if(isset($_GET['term']) && $_GET['term']!=''){
@@ -56,8 +56,8 @@ if( !class_exists( 'tvlgiao_wpdance_widget_search_product' ) ) {
 					 		<select class="wd_search_product" name="term"><?php echo balanceTags($categories_show); ?></select>
 				 		</div>
 					 	<div class="wd_search_form">
-						 	<input type="text" class="search-field" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php esc_html_e( 'Search for products', 'wpdancelaparis' ); ?> " />
-						 	<input type="submit" title="Search" id="searchsubmit" class="search-submit" value="<?php echo esc_attr__( 'Search', 'wpdancelaparis' ); ?>" />
+						 	<input type="text" class="search-field" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="<?php esc_html_e( 'Search for products', 'wd_package' ); ?> " />
+						 	<input type="submit" title="Search" id="searchsubmit" class="search-submit" value="<?php echo esc_attr__( 'Search', 'wd_package' ); ?>" />
 						 	<input type="hidden" name="post_type" value="product" />
 						 	<input type="hidden" name="taxonomy" value="product_cat" />
 					 	</div>

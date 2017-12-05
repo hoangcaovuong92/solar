@@ -1,11 +1,13 @@
 <?php 
 /*
-  Plugin Name: WD Packages
-  Plugin URI: http://www.wpdance.com
-  Description: Register Post type, taxonomy, style and script library used for WD Team packages ...
-  Version: 1.0.1
-  Author: WD Team
-  Author URI: http://www.wpdance.com
+ * Plugin Name: WD Packages
+ * Plugin URI: http://www.wpdance.com
+ * Description: Register Post type, taxonomy, style and script library used for WD Team packages ...
+ * Version: 1.0.1
+ * Author: WD Team
+ * Author URI: http://www.wpdance.com
+ * Text Domain: wd_package
+ * Domain Path: /languages/
  */
 if (!class_exists('WD_Packages')) {
 	class WD_Packages {
@@ -39,6 +41,7 @@ if (!class_exists('WD_Packages')) {
 
 		public function __construct(){
 			$this->constant();
+			add_action( 'plugins_loaded', array($this, 'load_textdomain' ));
 			$this->tvlgiao_wpdance_package_get_packages_setting();
 			add_action('init', array($this, 'init_setup'));
 			$this->package_include();
@@ -89,7 +92,11 @@ if (!class_exists('WD_Packages')) {
 		
 		// Session clear
 		public function session_end() {
-			   session_destroy();
+			session_destroy();
+		}
+
+		public function load_textdomain() {
+		  	load_plugin_textdomain( 'wd_package', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
 		}
 
 		public function package_js(){
@@ -136,17 +143,17 @@ if (!class_exists('WD_Packages')) {
 			register_post_type('wpdance_header', array(
 				'exclude_from_search' => true,
 				'labels' => array(
-					'name' 					=> esc_html__("Headers HTML", 'wpdancelaparis'),
-					'singular_name' 		=> esc_html__("Header HTML", 'wpdancelaparis'),
-		        	'add_new' 				=> esc_html__( 'Add New', 'wpdancelaparis' ),
-					'add_new_item' 			=> sprintf( __( 'Add New %s', 'wpdancelaparis' ), __( 'Header HTML', 'wpdancelaparis' ) ),
-					'edit_item' 			=> sprintf( __( 'Edit %s', 'wpdancelaparis' ), __( 'Header HTML', 'wpdancelaparis' ) ),
-					'new_item' 				=> sprintf( __( 'New %s', 'wpdancelaparis' ), __( 'Header HTML', 'wpdancelaparis' ) ),
-					'all_items' 			=> sprintf( __( 'All %s', 'wpdancelaparis' ), __( 'Headers HTML', 'wpdancelaparis' ) ),
-					'view_item' 			=> sprintf( __( 'View %s', 'wpdancelaparis' ), __( 'Header HTML', 'wpdancelaparis' ) ),
-					'search_items' 			=> sprintf( __( 'Search %a', 'wpdancelaparis' ), __( 'Headers HTML', 'wpdancelaparis' ) ),
-					'not_found' 			=>  sprintf( __( 'No %s Found', 'wpdancelaparis' ), __( 'Headers HTML', 'wpdancelaparis' ) ),
-					'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wpdancelaparis' ), __( 'Headers HTML', 'wpdancelaparis' ) ),
+					'name' 					=> esc_html__("Headers HTML", 'wd_package'),
+					'singular_name' 		=> esc_html__("Header HTML", 'wd_package'),
+		        	'add_new' 				=> esc_html__( 'Add New', 'wd_package' ),
+					'add_new_item' 			=> sprintf( __( 'Add New %s', 'wd_package' ), __( 'Header HTML', 'wd_package' ) ),
+					'edit_item' 			=> sprintf( __( 'Edit %s', 'wd_package' ), __( 'Header HTML', 'wd_package' ) ),
+					'new_item' 				=> sprintf( __( 'New %s', 'wd_package' ), __( 'Header HTML', 'wd_package' ) ),
+					'all_items' 			=> sprintf( __( 'All %s', 'wd_package' ), __( 'Headers HTML', 'wd_package' ) ),
+					'view_item' 			=> sprintf( __( 'View %s', 'wd_package' ), __( 'Header HTML', 'wd_package' ) ),
+					'search_items' 			=> sprintf( __( 'Search %a', 'wd_package' ), __( 'Headers HTML', 'wd_package' ) ),
+					'not_found' 			=>  sprintf( __( 'No %s Found', 'wd_package' ), __( 'Headers HTML', 'wd_package' ) ),
+					'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wd_package' ), __( 'Headers HTML', 'wd_package' ) ),
 				),
 				'public' 				=> true,
 				'has_archive' 			=> false,
@@ -156,17 +163,17 @@ if (!class_exists('WD_Packages')) {
 			register_post_type('wpdance_footer', array(
 				'exclude_from_search' => true,
 				'labels' => array(
-					'name' 					=> esc_html__("Footers HTML", 'wpdancelaparis'),
-					'singular_name' 		=> esc_html__("Footer HTML", 'wpdancelaparis'),
-		        	'add_new' 				=> esc_html__( 'Add New', 'wpdancelaparis' ),
-					'add_new_item' 			=> sprintf( __( 'Add New %s', 'wpdancelaparis' ), __( 'Footer HTML', 'wpdancelaparis' ) ),
-					'edit_item' 			=> sprintf( __( 'Edit %s', 'wpdancelaparis' ), __( 'Footer HTML', 'wpdancelaparis' ) ),
-					'new_item' 				=> sprintf( __( 'New %s', 'wpdancelaparis' ), __( 'Footer HTML', 'wpdancelaparis' ) ),
-					'all_items' 			=> sprintf( __( 'All %s', 'wpdancelaparis' ), __( 'Footers HTML', 'wpdancelaparis' ) ),
-					'view_item' 			=> sprintf( __( 'View %s', 'wpdancelaparis' ), __( 'Footer HTML', 'wpdancelaparis' ) ),
-					'search_items' 			=> sprintf( __( 'Search %a', 'wpdancelaparis' ), __( 'Footers HTML', 'wpdancelaparis' ) ),
-					'not_found' 			=>  sprintf( __( 'No %s Found', 'wpdancelaparis' ), __( 'Footers HTML', 'wpdancelaparis' ) ),
-					'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wpdancelaparis' ), __( 'Footers Template', 'wpdancelaparis' ) ),
+					'name' 					=> esc_html__("Footers HTML", 'wd_package'),
+					'singular_name' 		=> esc_html__("Footer HTML", 'wd_package'),
+		        	'add_new' 				=> esc_html__( 'Add New', 'wd_package' ),
+					'add_new_item' 			=> sprintf( __( 'Add New %s', 'wd_package' ), __( 'Footer HTML', 'wd_package' ) ),
+					'edit_item' 			=> sprintf( __( 'Edit %s', 'wd_package' ), __( 'Footer HTML', 'wd_package' ) ),
+					'new_item' 				=> sprintf( __( 'New %s', 'wd_package' ), __( 'Footer HTML', 'wd_package' ) ),
+					'all_items' 			=> sprintf( __( 'All %s', 'wd_package' ), __( 'Footers HTML', 'wd_package' ) ),
+					'view_item' 			=> sprintf( __( 'View %s', 'wd_package' ), __( 'Footer HTML', 'wd_package' ) ),
+					'search_items' 			=> sprintf( __( 'Search %a', 'wd_package' ), __( 'Footers HTML', 'wd_package' ) ),
+					'not_found' 			=>  sprintf( __( 'No %s Found', 'wd_package' ), __( 'Footers HTML', 'wd_package' ) ),
+					'not_found_in_trash' 	=> sprintf( __( 'No %s Found In Trash', 'wd_package' ), __( 'Footers Template', 'wd_package' ) ),
 				),
 				'public' 				=> true,
 				'has_archive' 			=> false,

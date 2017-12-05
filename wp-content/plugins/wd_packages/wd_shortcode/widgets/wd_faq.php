@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_faq' ) ) {
 	class tvlgiao_wpdance_widget_faq extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_faq', 'description' => esc_html__('FAQs Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_faq', 'description' => esc_html__('FAQs Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('widget_faq', esc_html__('WD - FAQs','wpdancelaparis'), $widget_ops);
+			parent::__construct('widget_faq', esc_html__('WD - FAQs','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -27,26 +27,26 @@ if( !class_exists( 'tvlgiao_wpdance_widget_faq' ) ) {
 			);
 	        ?>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'list_category_id' ); ?>"><?php esc_html_e( 'List categories ID:', 'wpdancelaparis' ); ?>
-	                <input class="widefat" id="<?php echo $this->get_field_id( 'list_category_id' ); ?>" name="<?php echo $this->get_field_name( 'list_category_id' ); ?>" type="text" value="<?php echo $list_category_id; ?>" placeholder="<?php echo esc_attr__('List Cat ID, separated by commas (-1 for show all categories)', 'wpdancelaparis'); ?>" />
+	                <label for="<?php echo $this->get_field_id( 'list_category_id' ); ?>"><?php esc_html_e( 'List categories ID:', 'wd_package' ); ?>
+	                <input class="widefat" id="<?php echo $this->get_field_id( 'list_category_id' ); ?>" name="<?php echo $this->get_field_name( 'list_category_id' ); ?>" type="text" value="<?php echo $list_category_id; ?>" placeholder="<?php echo esc_attr__('List Cat ID, separated by commas (-1 for show all categories)', 'wd_package'); ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'number_category' ); ?>"><?php esc_html_e( 'Number Categories:', 'wpdancelaparis' ); ?>
-	                <input class="widefat" id="<?php echo $this->get_field_id( 'number_category' ); ?>" name="<?php echo $this->get_field_name( 'number_category' ); ?>" type="text" value="<?php echo $number_category; ?>" placeholder="<?php echo esc_attr__('Limited number of categories displayed. Blank if unlimited...', 'wpdancelaparis'); ?>" />
+	                <label for="<?php echo $this->get_field_id( 'number_category' ); ?>"><?php esc_html_e( 'Number Categories:', 'wd_package' ); ?>
+	                <input class="widefat" id="<?php echo $this->get_field_id( 'number_category' ); ?>" name="<?php echo $this->get_field_name( 'number_category' ); ?>" type="text" value="<?php echo $number_category; ?>" placeholder="<?php echo esc_attr__('Limited number of categories displayed. Blank if unlimited...', 'wd_package'); ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'post_per_cat' ); ?>"><?php esc_html_e( 'Post Per Category:', 'wpdancelaparis' ); ?>
-	                <input class="widefat" id="<?php echo $this->get_field_id( 'post_per_cat' ); ?>" name="<?php echo $this->get_field_name( 'post_per_cat' ); ?>" type="text" value="<?php echo $post_per_cat; ?>" placeholder="<?php echo esc_attr__('-1 for show all post', 'wpdancelaparis'); ?>" />
+	                <label for="<?php echo $this->get_field_id( 'post_per_cat' ); ?>"><?php esc_html_e( 'Post Per Category:', 'wd_package' ); ?>
+	                <input class="widefat" id="<?php echo $this->get_field_id( 'post_per_cat' ); ?>" name="<?php echo $this->get_field_name( 'post_per_cat' ); ?>" type="text" value="<?php echo $post_per_cat; ?>" placeholder="<?php echo esc_attr__('-1 for show all post', 'wd_package'); ?>" />
 	                </label>
 	            </p>
 
 
 	            <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('sort')); ?>"><?php esc_html_e('Sort by:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('sort')); ?>"><?php esc_html_e('Sort by:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('sort')); ?>" id="<?php echo esc_attr($this->get_field_id('sort')); ?>">
 						<?php foreach( $sort_by_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($sort==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -55,7 +55,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_faq' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('order_by')); ?>"><?php esc_html_e('Order by:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('order_by')); ?>"><?php esc_html_e('Order by:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('order_by')); ?>" id="<?php echo esc_attr($this->get_field_id('order_by')); ?>">
 						<?php foreach( $order_by_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($order_by==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -66,7 +66,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_faq' ) ) {
 	            
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

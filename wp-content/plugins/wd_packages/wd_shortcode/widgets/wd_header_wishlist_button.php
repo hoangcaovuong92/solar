@@ -5,9 +5,9 @@ if ( in_array( "yith-woocommerce-wishlist/init.php", $_actived ) ) {
 	if( !class_exists( 'tvlgiao_wpdance_widget_wishlist_permarlink' ) ) {
 		class tvlgiao_wpdance_widget_wishlist_permarlink extends WP_Widget{
 		    function __construct() {
-				$widget_ops 		= array('classname' => 'widget_wishlist_permarlink', 'description' => esc_html__('Wishlist Permarlink Widget','wpdancelaparis'));
+				$widget_ops 		= array('classname' => 'widget_wishlist_permarlink', 'description' => esc_html__('Wishlist Permarlink Widget','wd_package'));
 				$control_ops 		= array('width' => 400, 'height' => 350);
-				parent::__construct('wishlist_permarlink', esc_html__('WD - Wishlist Permarlink','wpdancelaparis'), $widget_ops);
+				parent::__construct('wishlist_permarlink', esc_html__('WD - Wishlist Permarlink','wd_package'), $widget_ops);
 			}
 		    function form( $instance )
 		    {
@@ -16,19 +16,19 @@ if ( in_array( "yith-woocommerce-wishlist/init.php", $_actived ) ) {
 		        $class      		= esc_attr( isset( $instance['class'] ) ? $instance['class'] : '' );
 		        ?>
 		        	<p>
-		                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 		                </label>
 		            </p>
 
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'icon_class' ); ?>"><?php esc_html_e( 'Icon Class (Font awesome):', 'wpdancelaparis' ); ?>
-		                <input class="widefat" id="<?php echo $this->get_field_id( 'icon_class' ); ?>" name="<?php echo $this->get_field_name( 'icon_class' ); ?>" type="text" value="<?php echo $icon_class; ?>" placeholder="<?php esc_html_e( 'Ex: fa-heart', 'wpdancelaparis' ); ?>" />
+		                <label for="<?php echo $this->get_field_id( 'icon_class' ); ?>"><?php esc_html_e( 'Icon Class (Font awesome):', 'wd_package' ); ?>
+		                <input class="widefat" id="<?php echo $this->get_field_id( 'icon_class' ); ?>" name="<?php echo $this->get_field_name( 'icon_class' ); ?>" type="text" value="<?php echo $icon_class; ?>" placeholder="<?php esc_html_e( 'Ex: fa-heart', 'wd_package' ); ?>" />
 		                </label>
 		            </p>
 
 		            <p>
-		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+		                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 		                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 		                </label>
 		            </p>
@@ -44,7 +44,7 @@ if ( in_array( "yith-woocommerce-wishlist/init.php", $_actived ) ) {
 
 		        echo $before_widget; ?>
 					<div class="wd_wishlist_permarlink <?php echo esc_html($class); ?>">
-						<a href="<?php echo get_permalink( get_page_by_path( 'wishlist' ) ) ?>" title="<?php esc_html_e('Wishlist','wpdancelaparis');?>">
+						<a href="<?php echo get_permalink( get_page_by_path( 'wishlist' ) ) ?>" title="<?php esc_html_e('Wishlist','wd_package');?>">
 							<span>
 								<?php if($icon_class): ?>	
 									<i class="fa <?php echo esc_html($icon_class); ?>" aria-hidden="true"></i>

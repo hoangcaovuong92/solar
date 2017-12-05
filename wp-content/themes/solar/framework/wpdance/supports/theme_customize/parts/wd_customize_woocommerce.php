@@ -4,43 +4,43 @@ if (!tvlgiao_wpdance_is_woocommerce()) return;
 /*						 CUSTOM PRODUCT  						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_panel( 'tvlgiao_wpdance_woocommerce_config', array(
-    'title' 			=> esc_html__( 'WD - Woocommerce Config', 'laparis' ),
-    'description' 		=> esc_html__( 'Theme Sidebar Layout', 'laparis'),
+    'title' 			=> esc_html__( 'WD - Woocommerce Config', 'solar' ),
+    'description' 		=> esc_html__( 'Theme Sidebar Layout', 'solar'),
     'priority' 			=> 520,
 ));
 	$wp_customize->add_section( 'tvlgiao_wpdance_genneral_product' , array(
-		'title'       		=> esc_html__( 'Product Layout', 'laparis' ),
-		'description' 		=> esc_html__('General Product Config', 'laparis') ,
+		'title'       		=> esc_html__( 'Product Layout', 'solar' ),
+		'description' 		=> esc_html__('General Product Config', 'solar') ,
 		'panel'	 			=> 'tvlgiao_wpdance_woocommerce_config',
 		'priority'    		=> 5,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_product_effect' , array(
-		'title'       		=> esc_html__( 'Product Visual', 'laparis' ),
-		'description' 		=> esc_html__('Setting Product Visual Effect', 'laparis') ,
+		'title'       		=> esc_html__( 'Product Visual', 'solar' ),
+		'description' 		=> esc_html__('Setting Product Visual Effect', 'solar') ,
 		'panel'	 			=> 'tvlgiao_wpdance_woocommerce_config',
 		'priority'    		=> 5,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_archive_product' , array(
-		'title'       		=> esc_html__( 'Archive Product', 'laparis' ),
-		'description' 		=> esc_html__('Custom archive product page', 'laparis'),
+		'title'       		=> esc_html__( 'Archive Product', 'solar' ),
+		'description' 		=> esc_html__('Custom archive product page', 'solar'),
 		'panel'	 			=> 'tvlgiao_wpdance_woocommerce_config',
 		'priority'    		=> 10,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_single_product' , array(
-		'title'       		=> esc_html__( 'Single Product', 'laparis' ),
-		'description' 		=> esc_html__('Custom single product page', 'laparis') ,
+		'title'       		=> esc_html__( 'Single Product', 'solar' ),
+		'description' 		=> esc_html__('Custom single product page', 'solar') ,
 		'panel'	 			=> 'tvlgiao_wpdance_woocommerce_config',
 		'priority'    		=> 15,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_page_woocommerce' , array(
-		'title'       		=> esc_html__( 'Woocommerce Template', 'laparis' ),
-		'description' 		=> esc_html__('', 'laparis') ,
+		'title'       		=> esc_html__( 'Woocommerce Template', 'solar' ),
+		'description' 		=> esc_html__('', 'solar') ,
 		'panel'	 			=> 'tvlgiao_wpdance_woocommerce_config',
 		'priority'    		=> 20,
 	));
 	$wp_customize->add_section( 'tvlgiao_wpdance_cart_product' , array(
-		'title'       		=> esc_html__( 'Page Cart', 'laparis' ),
-		'description' 		=> esc_html__('Custom page cart product', 'laparis') ,
+		'title'       		=> esc_html__( 'Page Cart', 'solar' ),
+		'description' 		=> esc_html__('Custom page cart product', 'solar') ,
 		'panel'	 			=> 'tvlgiao_wpdance_woocommerce_config',
 		'priority'    		=> 25,
 	));
@@ -64,8 +64,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_display_buttons', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_display_buttons_control', array(
-	'label'   			=> esc_html__( 'Display Buttons', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Add To Cart, Compare, Wishlist button on your site', 'laparis'),
+	'label'   			=> esc_html__( 'Display Buttons', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Add To Cart, Compare, Wishlist button on your site', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_display_buttons',
 	'type'    			=> 'select',
@@ -81,8 +81,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_button_group_position', arr
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_button_group_position_control', array(
-	'label'   			=> esc_html__( 'Button Position', 'laparis' ),
-	'description' 		=> esc_html__( 'Position of the buttons: add to cart, compare, wishlist on shop loop', 'laparis'),
+	'label'   			=> esc_html__( 'Button Position', 'solar' ),
+	'description' 		=> esc_html__( 'Position of the buttons: add to cart, compare, wishlist on shop loop', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_button_group_position',
 	'type'    			=> 'select',
@@ -98,8 +98,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_wishlist_default', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_disable_wishlist_default_control', array(
-	'label'   			=> esc_html__( 'Wishlist Button Default', 'laparis' ),
-	'description' 		=> esc_html__( 'In some cases, the layout will have surplus wishlist buttons on single product page. Disable them to avoid errors.', 'laparis'),
+	'label'   			=> esc_html__( 'Wishlist Button Default', 'solar' ),
+	'description' 		=> esc_html__( 'In some cases, the layout will have surplus wishlist buttons on single product page. Disable them to avoid errors.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_disable_wishlist_default',
 	'type'    			=> 'select',
@@ -114,8 +114,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_compare_default', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_disable_compare_default_control', array(
-	'label'   			=> esc_html__( 'Compare Button Default', 'laparis' ),
-	'description' 		=> esc_html__( 'In some cases, the layout will have surplus compare buttons on single product page. Disable them to avoid errors.', 'laparis'),
+	'label'   			=> esc_html__( 'Compare Button Default', 'solar' ),
+	'description' 		=> esc_html__( 'In some cases, the layout will have surplus compare buttons on single product page. Disable them to avoid errors.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_disable_compare_default',
 	'type'    			=> 'select',
@@ -131,8 +131,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_title', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_show_title_control', array(
-	'label'   			=> esc_html__( 'Show Title Product', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide title product', 'laparis'),
+	'label'   			=> esc_html__( 'Show Title Product', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide title product', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_show_title',
 	'type'    			=> 'select',
@@ -148,11 +148,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_number_title_word',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_genneral_number_title_word_control',array(
-	'label'         	=> esc_html__( 'Number Title Word', 'laparis' ),
+	'label'         	=> esc_html__( 'Number Title Word', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_genneral_number_title_word',
 	'section'       	=> 'tvlgiao_wpdance_genneral_product',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( 'Set -1 to display the full title.', 'laparis' )
+	'description'   	=> esc_html__( 'Set -1 to display the full title.', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_description', array(
@@ -161,8 +161,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_description', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_show_description_control', array(
-	'label'   			=> esc_html__( 'Show Description Product', 'laparis' ),
-	'description' 		=> esc_html__( 'Hide Product Description may not work with some cases: list view mode in the shop page, shortcode single product detail...', 'laparis'),
+	'label'   			=> esc_html__( 'Show Description Product', 'solar' ),
+	'description' 		=> esc_html__( 'Hide Product Description may not work with some cases: list view mode in the shop page, shortcode single product detail...', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_show_description',
 	'type'    			=> 'select',
@@ -178,11 +178,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_number_description_word',ar
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_genneral_number_description_word_control',array(
-	'label'         	=> esc_html__( 'Number Description Word', 'laparis' ),
+	'label'         	=> esc_html__( 'Number Description Word', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_genneral_number_description_word',
 	'section'       	=> 'tvlgiao_wpdance_genneral_product',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( 'Set -1 to display the full description.', 'laparis' )
+	'description'   	=> esc_html__( 'Set -1 to display the full description.', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_rating', array(
@@ -191,8 +191,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_rating', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_show_rating_control', array(
-	'label'   			=> esc_html__( 'Show Rating Product', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide rating product', 'laparis'),
+	'label'   			=> esc_html__( 'Show Rating Product', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide rating product', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_show_rating',
 	'type'    			=> 'select',
@@ -207,8 +207,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_price', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_show_price_control', array(
-	'label'   			=> esc_html__( 'Show Price Product', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide price product', 'laparis'),
+	'label'   			=> esc_html__( 'Show Price Product', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide price product', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_show_price',
 	'type'    			=> 'select',
@@ -224,8 +224,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_price_decimal', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_show_price_decimal_control', array(
-	'label'   			=> esc_html__( 'Price Decimals', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide price decimal', 'laparis'),
+	'label'   			=> esc_html__( 'Price Decimals', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide price decimal', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_show_price_decimal',
 	'type'    			=> 'select',
@@ -242,8 +242,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_show_meta', array(
 ));
 
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_show_meta_control', array(
-	'label'   			=> esc_html__( 'Show Meta Product', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide sale/featured product', 'laparis'),
+	'label'   			=> esc_html__( 'Show Meta Product', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide sale/featured product', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_product',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_show_meta',
 	'type'    			=> 'select',
@@ -262,8 +262,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_product_effect_popup_cart', array(
 ));
 
 $wp_customize->add_control( 'tvlgiao_wpdance_product_effect_popup_cart_control', array(
-	'label'   			=> esc_html__( 'Popup Add To Cart', 'laparis' ),
-	'description' 		=> esc_html__( 'Enable / Disable popup display mini cart info after add to cart with ajax.', 'laparis'),
+	'label'   			=> esc_html__( 'Popup Add To Cart', 'solar' ),
+	'description' 		=> esc_html__( 'Enable / Disable popup display mini cart info after add to cart with ajax.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_product_effect',
 	'settings' 			=> 'tvlgiao_wpdance_product_effect_popup_cart',
 	'type'    			=> 'select',
@@ -280,8 +280,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_product_effect_hover_thumbnail', arr
 ));
 
 $wp_customize->add_control( 'tvlgiao_wpdance_product_effect_hover_thumbnail_control', array(
-	'label'   			=> esc_html__( 'Hover Change Thumbnail', 'laparis' ),
-	'description' 		=> esc_html__( 'Enable / Disable thumbnail change effect when hover product image. Effects disabled on mobile devices.', 'laparis'),
+	'label'   			=> esc_html__( 'Hover Change Thumbnail', 'solar' ),
+	'description' 		=> esc_html__( 'Enable / Disable thumbnail change effect when hover product image. Effects disabled on mobile devices.', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_product_effect',
 	'settings' 			=> 'tvlgiao_wpdance_product_effect_hover_thumbnail',
 	'type'    			=> 'select',
@@ -298,7 +298,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_product_effect_hover_button', array(
 ));
 
 $wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_product_effect_hover_button',array(
-	'label'          	=> esc_html__( 'Select Style Hover Product', 'laparis' ),
+	'label'          	=> esc_html__( 'Select Style Hover Product', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_product_effect',
 	'settings'       	=> 'tvlgiao_wpdance_product_effect_hover_button',
 	'choices'			=> array(
@@ -314,7 +314,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_product_layout', array(
 	'capability' 		=> 'edit_theme_options'		
 ));
 $wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_single_product_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_single_product',
 	'settings'       	=> 'tvlgiao_wpdance_single_product_layout',
 	'choices'			=> array(
@@ -354,7 +354,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_product_additional_image', ar
 		'capability' 		=> 'edit_theme_options'		
 )); 
 $wp_customize->add_control( 'tvlgiao_wpdance_single_product_additional_image_control', array(
-	'label'   			=> esc_html__( 'Select the position', 'laparis' ),
+	'label'   			=> esc_html__( 'Select the position', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_single_product',
 	'settings' 			=> 'tvlgiao_wpdance_single_additional_image',
 	'type'    			=> 'select',
@@ -369,11 +369,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_product_thumbnail_number',arr
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_single_product_thumbnail_number_control',array(
-	'label'         	=> esc_html__( 'Thumbnail Number', 'laparis' ),
+	'label'         	=> esc_html__( 'Thumbnail Number', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_single_product_thumbnail_number',
 	'section'       	=> 'tvlgiao_wpdance_single_product',
 	'type'          	=> 'text',
-	'description'   	=> esc_html__( 'The maximum number of thumbnails appears on the slider thumbnail single product.', 'laparis' )
+	'description'   	=> esc_html__( 'The maximum number of thumbnails appears on the slider thumbnail single product.', 'solar' )
 ));
 
 $wp_customize->add_setting('tvlgiao_wpdance_single_recently_product', array(
@@ -382,7 +382,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_recently_product', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_recently_product_control', array(
-	'label'   			=> esc_html__( 'Show Recent Product', 'laparis' ),
+	'label'   			=> esc_html__( 'Show Recent Product', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_single_product',
 	'settings' 			=> 'tvlgiao_wpdance_single_recently_product',
 	'type'    			=> 'select',
@@ -397,7 +397,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_upsell_product', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_upsell_product_control', array(
-	'label'   			=> esc_html__( 'Upsell Product', 'laparis' ),
+	'label'   			=> esc_html__( 'Upsell Product', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_single_product',
 	'settings' 			=> 'tvlgiao_wpdance_single_upsell_product',
 	'type'    			=> 'select',
@@ -412,11 +412,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_product_full_width', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_product_full_width_control', array(
-	'label'   			=> esc_html__( 'Full Content Detail', 'laparis' ),
+	'label'   			=> esc_html__( 'Full Content Detail', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_single_product',
 	'settings' 			=> 'tvlgiao_wpdance_single_product_full_width',
 	'type'    			=> 'select',
-	'description'   	=> esc_html__( 'If you want full width detail, you must select layout the full width', 'laparis' ),
+	'description'   	=> esc_html__( 'If you want full width detail, you must select layout the full width', 'solar' ),
 	'choices' 			=> array(
 		'0'	=> "NOT FULL",
 		'1'	=> "FULL"
@@ -429,11 +429,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_product_shortcode',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_single_product_shortcode_control',array(
-	'label'         	=> esc_html__( 'Custom Shortcode', 'laparis' ),
+	'label'         	=> esc_html__( 'Custom Shortcode', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_single_product_shortcode',
 	'section'       	=> 'tvlgiao_wpdance_single_product',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( 'Custom content will appear below the Product Summary section. You can create a shortcode from the new page creation interface.', 'laparis' )
+	'description'   	=> esc_html__( 'Custom content will appear below the Product Summary section. You can create a shortcode from the new page creation interface.', 'solar' )
 ));	
 
 //Content Custom Archive Product
@@ -443,7 +443,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_archive_product_layout', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_archive_product_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_archive_product',
 	'settings'       	=> 'tvlgiao_wpdance_archive_product_layout',
 	'choices'			=> array(
@@ -484,10 +484,10 @@ $wp_customize->add_setting('tvlgiao_wpdance_archive_number_perpage',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_archive_number_perpage_control',array(
-	'label'         	=> esc_html__( 'Number Product Of Page', 'laparis' ),
+	'label'         	=> esc_html__( 'Number Product Of Page', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_archive_number_perpage',
 	'section'       	=> 'tvlgiao_wpdance_archive_product',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));
 $wp_customize->add_setting('tvlgiao_wpdance_archive_columns_product', array(
 	'default' 			=> '4',
@@ -495,14 +495,14 @@ $wp_customize->add_setting('tvlgiao_wpdance_archive_columns_product', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_control_columns_product', array(
-	'label'   			=> esc_html__( 'Columns Product', 'laparis' ),
+	'label'   			=> esc_html__( 'Columns Product', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_archive_product',
 	'settings' 			=> 'tvlgiao_wpdance_archive_columns_product',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-		'2'	=> esc_html__( '2 Columns', 'laparis' ),
-		'3'	=> esc_html__( '3 Columns', 'laparis' ),
-		'4'	=> esc_html__( '4 Columns', 'laparis' ),
+		'2'	=> esc_html__( '2 Columns', 'solar' ),
+		'3'	=> esc_html__( '3 Columns', 'solar' ),
+		'4'	=> esc_html__( '4 Columns', 'solar' ),
 	)
 ));
 
@@ -512,11 +512,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_archive_product_shortcode',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_archive_product_shortcode_control',array(
-	'label'         	=> esc_html__( 'Custom Shortcode', 'laparis' ),
+	'label'         	=> esc_html__( 'Custom Shortcode', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_archive_product_shortcode',
 	'section'       	=> 'tvlgiao_wpdance_archive_product',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( 'Custom content will appear below the content of Archive Product page. You can create a shortcode from the new page creation interface.', 'laparis' )
+	'description'   	=> esc_html__( 'Custom content will appear below the content of Archive Product page. You can create a shortcode from the new page creation interface.', 'solar' )
 ));	
 
 
@@ -527,7 +527,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_woocommerce_layout', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_page_woocommerce_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_page_woocommerce',
 	'settings'       	=> 'tvlgiao_wpdance_page_woocommerce_layout',
 	'choices'			=> array(
@@ -568,11 +568,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_page_woocommerce_shortcode',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_page_woocommerce_shortcode_control',array(
-	'label'         	=> esc_html__( 'Custom Shortcode', 'laparis' ),
+	'label'         	=> esc_html__( 'Custom Shortcode', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_page_woocommerce_shortcode',
 	'section'       	=> 'tvlgiao_wpdance_page_woocommerce',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( 'Custom content will appear below the content of the page use Woocommerce Template. You can create a shortcode from the new page creation interface.', 'laparis' )
+	'description'   	=> esc_html__( 'Custom content will appear below the content of the page use Woocommerce Template. You can create a shortcode from the new page creation interface.', 'solar' )
 ));	
 
 //Page Cart
@@ -582,11 +582,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_cart_payment_method',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_cart_payment_method_control',array(
-	'label'         	=> esc_html__( 'Payment Method', 'laparis' ),
+	'label'         	=> esc_html__( 'Payment Method', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_cart_payment_method',
 	'section'       	=> 'tvlgiao_wpdance_cart_product',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));
 $wp_customize->add_setting('tvlgiao_wpdance_cart_shortcode',array(
 	'default'           => $wd_default_data['woo']['cart_page']['default']['custom_shortcode'],
@@ -594,10 +594,10 @@ $wp_customize->add_setting('tvlgiao_wpdance_cart_shortcode',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_cart_shortcode_control',array(
-	'label'         	=> esc_html__( 'Shortcode Cart', 'laparis' ),
+	'label'         	=> esc_html__( 'Shortcode Cart', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_cart_shortcode',
 	'section'       	=> 'tvlgiao_wpdance_cart_product',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));	
 ?>

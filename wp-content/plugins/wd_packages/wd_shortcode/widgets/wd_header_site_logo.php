@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_site_header' ) ) {
 	class tvlgiao_wpdance_widget_site_header extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_site_header', 'description' => esc_html__('Site Header Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_site_header', 'description' => esc_html__('Site Header Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('site_header', esc_html__('WD - Site Logo','wpdancelaparis'), $widget_ops);
+			parent::__construct('site_header', esc_html__('WD - Site Logo','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -18,7 +18,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_site_header' ) ) {
 	        $class      	= esc_attr( isset( $instance['class'] ) ? $instance['class'] : '' );
 	        ?>
 	            <p>
-	                <label><?php esc_html_e( 'Logo:', 'wpdancelaparis' ); ?></label>
+	                <label><?php esc_html_e( 'Logo:', 'wd_package' ); ?></label>
 	                <div class="wd_banner_image_widget_img">
 	                	<img class="wd_banner_image_view_image" src="<?php echo $image_url; ?>" alt="" width="172px">
 	                </div>
@@ -29,7 +29,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_site_header' ) ) {
 				
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

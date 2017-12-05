@@ -3,33 +3,33 @@
 /*						 CUSTOM BLOG 	 						*/
 /*--------------------------------------------------------------*/
 $wp_customize->add_panel( 'tvlgiao_wpdance_blog_config', array(
-    'title' 			=> esc_html__( 'WD - Blog Setting', 'laparis' ),
-    'description' 		=> esc_html__( '', 'laparis'),
+    'title' 			=> esc_html__( 'WD - Blog Setting', 'solar' ),
+    'description' 		=> esc_html__( '', 'solar'),
     'priority' 			=> 515,
 ));
 $wp_customize->add_section( 'tvlgiao_wpdance_genneral_blog' , array(
-	'title'       		=> esc_html__( 'Blog Config', 'laparis' ),
-	'description' 		=> esc_html__('', 'laparis') ,
+	'title'       		=> esc_html__( 'Blog Config', 'solar' ),
+	'description' 		=> esc_html__('', 'solar') ,
 	'panel'	 			=> 'tvlgiao_wpdance_blog_config',
 	'priority'    		=> 5,
 ));
 
 $wp_customize->add_section( 'tvlgiao_wpdance_default_blog' , array(
-	'title'       		=> esc_html__( 'Blog Default', 'laparis' ),
-	'description' 		=> esc_html__('Set properties for the default blog...', 'laparis'),
+	'title'       		=> esc_html__( 'Blog Default', 'solar' ),
+	'description' 		=> esc_html__('Set properties for the default blog...', 'solar'),
 	'panel'	 			=> 'tvlgiao_wpdance_blog_config',
 	'priority'    		=> 10,
 ));
 
 $wp_customize->add_section( 'tvlgiao_wpdance_archive_blog' , array(
-	'title'       		=> esc_html__( 'Archive Blog', 'laparis' ),
-	'description' 		=> esc_html__('', 'laparis'),
+	'title'       		=> esc_html__( 'Archive Blog', 'solar' ),
+	'description' 		=> esc_html__('', 'solar'),
 	'panel'	 			=> 'tvlgiao_wpdance_blog_config',
 	'priority'    		=> 20,
 ));
 $wp_customize->add_section( 'tvlgiao_wpdance_single_blog' , array(
-	'title'       		=> esc_html__( 'Single Blog', 'laparis' ),
-	'description' 		=> esc_html__('', 'laparis') ,
+	'title'       		=> esc_html__( 'Single Blog', 'solar' ),
+	'description' 		=> esc_html__('', 'solar') ,
 	'panel'	 			=> 'tvlgiao_wpdance_blog_config',
 	'priority'    		=> 25,
 ));
@@ -42,8 +42,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_title', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_title_control', array(
-	'label'   			=> esc_html__( 'Show Title Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide title blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show Title Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide title blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_title',
 	'type'    			=> 'select',
@@ -58,8 +58,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_thumbnail', array
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_thumbnail_control', array(
-	'label'   			=> esc_html__( 'Placeholder Image', 'laparis' ),
-	'description' 		=> esc_html__( 'Placeholder image display when post no thumbnail', 'laparis'),
+	'label'   			=> esc_html__( 'Placeholder Image', 'solar' ),
+	'description' 		=> esc_html__( 'Placeholder image display when post no thumbnail', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_thumbnail',
 	'type'    			=> 'select',
@@ -75,8 +75,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_by_post_format', 
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_by_post_format_control', array(
-	'label'   			=> esc_html__( 'Show By Post Format', 'laparis' ),
-	'description' 		=> esc_html__( 'Enable to display posts by post format (video, audio, quote, gallery ...)', 'laparis'),
+	'label'   			=> esc_html__( 'Show By Post Format', 'solar' ),
+	'description' 		=> esc_html__( 'Enable to display posts by post format (video, audio, quote, gallery ...)', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_by_post_format',
 	'type'    			=> 'select',
@@ -92,8 +92,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_placeholder_image
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_placeholder_image_control', array(
-	'label'   			=> esc_html__( 'Show placeholder_image Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide placeholder_image blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show placeholder_image Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide placeholder_image blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_placeholder_image',
 	'type'    			=> 'select',
@@ -109,8 +109,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_date', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_date_control', array(
-	'label'   			=> esc_html__( 'Show Date Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide date blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show Date Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide date blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_date',
 	'type'    			=> 'select',
@@ -126,8 +126,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_meta', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_meta_control', array(
-	'label'   			=> esc_html__( 'Show Meta Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'show author, category or number facebook comment...', 'laparis'),
+	'label'   			=> esc_html__( 'Show Meta Blog', 'solar' ),
+	'description' 		=> esc_html__( 'show author, category or number facebook comment...', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_meta',
 	'type'    			=> 'select',
@@ -143,8 +143,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_author', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_author_control', array(
-	'label'   			=> esc_html__( 'Show Author Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide author blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show Author Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide author blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_author',
 	'type'    			=> 'select',
@@ -160,8 +160,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_category', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_category_control', array(
-	'label'   			=> esc_html__( 'Show Category Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide category blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show Category Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide category blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_category',
 	'type'    			=> 'select',
@@ -177,8 +177,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_number_comment', 
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_number_comment_control', array(
-	'label'   			=> esc_html__( 'Show Number Comment', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Number Comment', 'laparis'),
+	'label'   			=> esc_html__( 'Show Number Comment', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Number Comment', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_number_comment',
 	'type'    			=> 'select',
@@ -194,8 +194,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_tag', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_tag_control', array(
-	'label'   			=> esc_html__( 'Show Tags', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Tags', 'laparis'),
+	'label'   			=> esc_html__( 'Show Tags', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Tags', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_tag',
 	'type'    			=> 'select',
@@ -211,8 +211,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_excerpt', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_excerpt_control', array(
-	'label'   			=> esc_html__( 'Show Excerpt Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide excerpt blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show Excerpt Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide excerpt blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_excerpt',
 	'type'    			=> 'select',
@@ -227,8 +227,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_show_read_more', array
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_genneral_blog_show_read_more_control', array(
-	'label'   			=> esc_html__( 'Show Read More Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide read more blog', 'laparis'),
+	'label'   			=> esc_html__( 'Show Read More Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide read more blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_genneral_blog',
 	'settings' 			=> 'tvlgiao_wpdance_genneral_blog_show_read_more',
 	'type'    			=> 'select',
@@ -244,11 +244,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_genneral_blog_number_excerpt',array(
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_genneral_blog_number_excerpt_control',array(
-	'label'         	=> esc_html__( 'Number Excerpt Word', 'laparis' ),
+	'label'         	=> esc_html__( 'Number Excerpt Word', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_genneral_blog_number_excerpt',
 	'section'       	=> 'tvlgiao_wpdance_genneral_blog',
 	'type'          	=> 'textarea',
-	'description'   	=> esc_html__( '', 'laparis' )
+	'description'   	=> esc_html__( '', 'solar' )
 ));
 //---------------------------------------------------------------//
 //Content Custom Single Blog
@@ -258,7 +258,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_blog_layout', array(
 	'capability' 		=> 'edit_theme_options'		
 ));
 $wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_single_blog_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_single_blog',
 	'settings'       	=> 'tvlgiao_wpdance_single_blog_layout',
 	'choices'			=> array(
@@ -299,8 +299,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_blog_author_information', arr
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_blog_author_information_control', array(
-	'label'   			=> esc_html__( 'Author Information', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Author Information', 'laparis'),
+	'label'   			=> esc_html__( 'Author Information', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Author Information', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_single_blog',
 	'settings' 			=> 'tvlgiao_wpdance_single_blog_author_information',
 	'type'    			=> 'select',
@@ -316,8 +316,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_blog_previous_next_button', a
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_blog_previous_next_button_control', array(
-	'label'   			=> esc_html__( 'Previous/Next Button', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Previous/Next Button', 'laparis'),
+	'label'   			=> esc_html__( 'Previous/Next Button', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Previous/Next Button', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_single_blog',
 	'settings' 			=> 'tvlgiao_wpdance_single_blog_previous_next_button',
 	'type'    			=> 'select',
@@ -333,8 +333,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_blog_recent_post', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_blog_recent_post_control', array(
-	'label'   			=> esc_html__( 'Recent Blog', 'laparis' ),
-	'description' 		=> esc_html__( 'Show/Hide Recent Blog', 'laparis'),
+	'label'   			=> esc_html__( 'Recent Blog', 'solar' ),
+	'description' 		=> esc_html__( 'Show/Hide Recent Blog', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_single_blog',
 	'settings' 			=> 'tvlgiao_wpdance_single_blog_recent_post',
 	'type'    			=> 'select',
@@ -350,8 +350,8 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_blog_recent_post_style', arra
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_single_blog_recent_post_style_control', array(
-	'label'   			=> esc_html__( 'Recent Blog Style', 'laparis' ),
-	'description' 		=> esc_html__( '', 'laparis'),
+	'label'   			=> esc_html__( 'Recent Blog Style', 'solar' ),
+	'description' 		=> esc_html__( '', 'solar'),
 	'section'  			=> 'tvlgiao_wpdance_single_blog',
 	'settings' 			=> 'tvlgiao_wpdance_single_blog_recent_post_style',
 	'type'    			=> 'select',
@@ -367,11 +367,11 @@ $wp_customize->add_setting('tvlgiao_wpdance_single_blog_recent_post_columns',arr
 ));
 
 $wp_customize->add_control('tvlgiao_wpdance_single_blog_recent_post_columns_control',array(
-	'label'         	=> esc_html__( 'Columns', 'laparis' ),
+	'label'         	=> esc_html__( 'Columns', 'solar' ),
 	'settings'      	=> 'tvlgiao_wpdance_single_blog_recent_post_columns',
 	'section'       	=> 'tvlgiao_wpdance_genneral_blog',
 	'type'          	=> 'text',
-	'description'   	=> esc_html__( 'The number of columns displayed with the slider', 'laparis' )
+	'description'   	=> esc_html__( 'The number of columns displayed with the slider', 'solar' )
 ));
 
 //Content Custom Archive Blog
@@ -381,7 +381,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_archive_blog_layout', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_archive_blog_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_archive_blog',
 	'settings'       	=> 'tvlgiao_wpdance_archive_blog_layout',
 	'choices'			=> array(
@@ -421,13 +421,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_archive_blog_style', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_archive_blog_style_control', array(
-	'label'   			=> esc_html__( 'Layout Style', 'laparis' ),
+	'label'   			=> esc_html__( 'Layout Style', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_default_blog',
 	'settings' 			=> 'tvlgiao_wpdance_archive_blog_style',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-		'list'		=> esc_html__( 'List', 'laparis' ),
-		'grid'		=> esc_html__( 'Grid', 'laparis' ),
+		'list'		=> esc_html__( 'List', 'solar' ),
+		'grid'		=> esc_html__( 'Grid', 'solar' ),
 	)
 ));
 
@@ -439,7 +439,7 @@ $wp_customize->add_setting('tvlgiao_wpdance_default_blog_layout', array(
 		'capability' 		=> 'edit_theme_options'		
 ));
 	$wp_customize->add_control( new Theme_Slug_Custom_Radio_Image_Control($wp_customize,'tvlgiao_wpdance_default_blog_layout',array(
-	'label'          	=> esc_html__( 'Select the layout', 'laparis' ),
+	'label'          	=> esc_html__( 'Select the layout', 'solar' ),
 	'section'        	=> 'tvlgiao_wpdance_default_blog',
 	'settings'       	=> 'tvlgiao_wpdance_default_blog_layout',
 	'choices'			=> array(
@@ -479,13 +479,13 @@ $wp_customize->add_setting('tvlgiao_wpdance_default_blog_style', array(
 	'capability' 		=> 'edit_theme_options'
 ));
 $wp_customize->add_control( 'tvlgiao_wpdance_default_blog_style_control', array(
-	'label'   			=> esc_html__( 'Layout Style', 'laparis' ),
+	'label'   			=> esc_html__( 'Layout Style', 'solar' ),
 	'section'  			=> 'tvlgiao_wpdance_default_blog',
 	'settings' 			=> 'tvlgiao_wpdance_default_blog_style',
 	'type'    			=> 'select',
 	'choices' 			=> array(
-		'list'		=> esc_html__( 'List', 'laparis' ),
-		'grid'		=> esc_html__( 'Grid', 'laparis' ),
+		'list'		=> esc_html__( 'List', 'solar' ),
+		'grid'		=> esc_html__( 'Grid', 'solar' ),
 	)
 ));
 

@@ -81,7 +81,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=741 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=970 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `wp_postmeta`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -94,7 +94,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=576 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=644 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `wp_posts`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -128,7 +128,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=123 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `wp_revslider_css`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -268,7 +268,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `wp_users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -419,7 +419,7 @@ CREATE TABLE `wp_woocommerce_sessions` (
   `session_expiry` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`session_key`),
   UNIQUE KEY `session_id` (`session_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `wp_woocommerce_shipping_zone_locations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -521,6 +521,29 @@ CREATE TABLE `wp_yith_wcwl_lists` (
   UNIQUE KEY `wishlist_token_3` (`wishlist_token`),
   KEY `wishlist_slug` (`wishlist_slug`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+DROP TABLE IF EXISTS `wp_yoast_seo_links`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wp_yoast_seo_links` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `post_id` bigint(20) unsigned NOT NULL,
+  `target_post_id` bigint(20) unsigned NOT NULL,
+  `type` varchar(8) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `link_direction` (`post_id`,`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+DROP TABLE IF EXISTS `wp_yoast_seo_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wp_yoast_seo_meta` (
+  `object_id` bigint(20) unsigned NOT NULL,
+  `internal_link_count` int(10) unsigned DEFAULT NULL,
+  `incoming_link_count` int(10) unsigned DEFAULT NULL,
+  UNIQUE KEY `object_id` (`object_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

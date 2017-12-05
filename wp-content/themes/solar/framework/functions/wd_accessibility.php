@@ -130,7 +130,7 @@ if(!function_exists ('tvlgiao_wpdance_accessibility_facebook_chatbox')){
 		if ($chatbox_status) {
 			ob_start(); ?>
 				<div data-toggle="<?php echo $default_mode; ?>" class="wd-facebook-chatbox-wrap">
-					<span class="wd-facebook-chatbox-close-btn"><?php esc_html_e( 'X', 'laparis' ); ?></span>
+					<span class="wd-facebook-chatbox-close-btn"><?php esc_html_e( 'X', 'solar' ); ?></span>
 				    <div class="fb-page wd-facebook-chatbox-content" data-adapt-container-width="true" data-height="<?php echo esc_attr($height); ?>" data-hide-cover="false" data-href="<?php echo esc_url($url); ?>" data-show-facepile="true" data-show-posts="false" data-small-header="false" data-tabs="messages" data-width="<?php echo esc_attr($width); ?>"></div>
 				    <p class="wd-facebook-chatbox-permarlink-wrap">
 				    	<a class="wd-facebook-chatbox-permarlink" href="<?php echo esc_url($link_url); ?>" target="_blank">
@@ -192,7 +192,7 @@ if(!function_exists ('tvlgiao_wpdance_accessibility_loading_email_subscribe_popu
 	    		<?php endif ?>
 					<div class="wd-email-subscribe-main-content">
 		    			<div class="wd-tb-title">
-			    			<div class="wd-tb-closeAjaxWindow"><button type="button" class="wd-tb-closeWindowButton"><span class="screen-reader-text"><?php esc_html_e( 'Close', 'laparis' ) ?></span><span class="tb-close-icon"></span></button></div>
+			    			<div class="wd-tb-closeAjaxWindow"><button type="button" class="wd-tb-closeWindowButton"><span class="screen-reader-text"><?php esc_html_e( 'Close', 'solar' ) ?></span><span class="tb-close-icon"></span></button></div>
 			    		</div>
 
 			    		<?php if ($source == 'feedburner'): ?>
@@ -222,7 +222,7 @@ if(!function_exists ('tvlgiao_wpdance_accessibility_loading_email_subscribe_popu
 			    		<?php endif ?>
 
 			    		<p class="row">
-							<label><input name="disabled" class="wd-email-subscribe-popup-disabled" data-expire="<?php echo esc_attr($session_expire); ?>" type="checkbox" data-val="true" value="true"> <?php esc_html_e( 'Dont show this again', 'laparis' ); ?></label>
+							<label><input name="disabled" class="wd-email-subscribe-popup-disabled" data-expire="<?php echo esc_attr($session_expire); ?>" type="checkbox" data-val="true" value="true"> <?php esc_html_e( 'Dont show this again', 'solar' ); ?></label>
 						</p>
     				</div>
     			<?php if (is_array($banner) && $banner['url']): ?>
@@ -307,7 +307,7 @@ if(!function_exists ('tvlgiao_wpdance_accessibility_template_single_social_shari
 		if ($display_social) {
 		?>
 			<div class="wd-social-share">
-				<span><?php esc_html_e('Share ','laparis'); ?></span>
+				<span><?php esc_html_e('Share ','solar'); ?></span>
 				<div class="addthis_sharing_toolbox"></div>
 			</div>
 		<?php
@@ -336,7 +336,7 @@ if(!function_exists ('tvlgiao_wpdance_accessibility_scroll_button_site_function'
 	    if($scroll_button){
 	        if(!wp_is_mobile()): ?>
 	            <div id="tvlgiao-back-to-top" class="scroll-button">
-	                <a class="scroll-button" href="javascript:void(0)" data-toggle="tooltip" title="<?php esc_html_e('To Top','laparis');?>">
+	                <a class="scroll-button" href="javascript:void(0)" data-toggle="tooltip" title="<?php esc_html_e('To Top','solar');?>">
 	                	<i class="<?php echo esc_attr($class_icon); ?>"></i>
 	                </a>
 	            </div>

@@ -71,15 +71,15 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		            'page_default'  	=> '0-0-0',
 		            'page_search'  		=> '0-0-0',
 		            'single_product'	=> '0-0-0',
-		            'product_archive'	=> '1-0-0',
+		            'product_archive'	=> '0-0-0',
 		        )
 	    	),
 	    	'columns'       	=> array(
 		    	'choose'        	=>  array(
-				        '1' => esc_html__( '1 Column', 'laparis' ),
-				        '2' => esc_html__( '2 Columns', 'laparis' ),
-				        '3' => esc_html__( '3 Columns', 'laparis' ),
-				        '4' => esc_html__( '4 Columns', 'laparis' ),
+				        '1' => esc_html__( '1 Column', 'solar' ),
+				        '2' => esc_html__( '2 Columns', 'solar' ),
+				        '3' => esc_html__( '3 Columns', 'solar' ),
+				        '4' => esc_html__( '4 Columns', 'solar' ),
 				    ),
 		        'default'       => array(
 		            'product_archive'  	=> '4',
@@ -90,13 +90,13 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 	    	'header'    => array(
 		        'choose'         => array(
 		            'site_title'        => array(
-                        '0'    => __( 'Show Logo', 'laparis' ),
-                        '1'    => __( 'Show Site Title', 'laparis' ),
+                        '0'    => __( 'Show Logo', 'solar' ),
+                        '1'    => __( 'Show Site Title', 'solar' ),
                     ),
                     'menu_location'     => array(
-						'primary' 			=> esc_html__('Primary Menu', 'laparis'),
-				        'primary_right' 	=> esc_html__('Secondary Menu', 'laparis'),
-				        'primary_mobile' 	=> esc_html__('Mobile Menu', 'laparis'),
+						'primary' 			=> esc_html__('Primary Menu', 'solar'),
+				        'primary_right' 	=> esc_html__('Secondary Menu', 'solar'),
+				        'primary_mobile' 	=> esc_html__('Mobile Menu', 'solar'),
 					),
 		        ),
 		        'default'        => array(
@@ -108,25 +108,25 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		        'choose'         => array(
 		        ),
 		        'default'        => array(
-		            'copyright_text'    => sprintf(__( 'Copyright %s. All rights reserved.', 'laparis' ), esc_html( get_bloginfo('name')) ),
+		            'copyright_text'    => sprintf(__( 'Copyright %s. All rights reserved.', 'solar' ), esc_html( get_bloginfo('name')) ),
 		        ),
 		    ),
 		    'breadcrumb'    => array(
 		        'choose'         => array(
 		            'type'              => array(
-		                'breadcrumb_default'=> __( 'Background Color', 'laparis' ),
-		                'breadcrumb_banner' => __( 'Background Image', 'laparis' ),
-		                'no_breadcrumb'     => __( 'No Breadcrumb', 'laparis' )
+		                'breadcrumb_default'=> __( 'Background Color', 'solar' ),
+		                'breadcrumb_banner' => __( 'Background Image', 'solar' ),
+		                'no_breadcrumb'     => __( 'No Breadcrumb', 'solar' )
 		            ),
 		            'text_style'        => array(
-		                'inline'            => __( 'Inline', 'laparis' ),
-		                'block'             => __( 'Block', 'laparis' ),
+		                'inline'            => __( 'Inline', 'solar' ),
+		                'block'             => __( 'Block', 'solar' ),
 		            ),
 		            'text_align'        => array(
-		                'text-center'       => __( 'Text Center', 'laparis' ),
-		                'text-left'         => __( 'Text Left', 'laparis' ),
-		                'text-right'        => __( 'Text Right', 'laparis' ),
-		                'text-justify'      => __( 'Text Justified', 'laparis' ),
+		                'text-center'       => __( 'Text Center', 'solar' ),
+		                'text-left'         => __( 'Text Left', 'solar' ),
+		                'text-right'        => __( 'Text Right', 'solar' ),
+		                'text-justify'      => __( 'Text Justified', 'solar' ),
 		            ),
 		        ),
 		        'default'        => array(
@@ -148,8 +148,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    	'config'   		=> array(
 			        'choose'        => array(
 			        	'button_position'	=> array(
-	                        'after-content'    => __( 'After Content Detail', 'laparis' ),
-	                        'before-content'   => __( 'Before Content Detail', 'laparis' ),
+	                        'after-content'    => __( 'After Content Detail', 'solar' ),
+	                        'before-content'   => __( 'Before Content Detail', 'solar' ),
 	                    ),
 			        ),
 			        'default'       => array(
@@ -202,17 +202,17 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		        'single'  	 	=> array(
 			        'choose'        => array(
 			        	'position_thumbnail'	=> array(
-		                    'left'      => __( 'Left', 'laparis' ),
-		                    'bottom'    => __( 'Bottom', 'laparis' ), 
+		                    'left'      => __( 'Left', 'solar' ),
+		                    'bottom'    => __( 'Bottom', 'solar' ), 
 		                ),
 		                'summary_layout'		=> array(
-		                    'woocommerce_template_single_price'             => __( 'Price', 'laparis' ),
-		                    'tvlgiao_wpdance_template_single_review'        => __( 'Review', 'laparis' ),
-		                    'tvlgiao_wpdance_template_single_sku'           => __( 'Sku', 'laparis' ),
-		                    'tvlgiao_wpdance_template_single_availability'  => __( 'Availability', 'laparis' ),
-		                    'woocommerce_template_single_excerpt'			=> __( 'Excerpt', 'laparis' ),
-		                    'woocommerce_template_single_add_to_cart'       => __( 'Add To Cart', 'laparis' ),
-		                    'tvlgiao_wpdance_get_product_categories'        => __( 'Categories', 'laparis' ),
+		                    'woocommerce_template_single_price'             => __( 'Price', 'solar' ),
+		                    'tvlgiao_wpdance_template_single_review'        => __( 'Review', 'solar' ),
+		                    'tvlgiao_wpdance_template_single_sku'           => __( 'Sku', 'solar' ),
+		                    'tvlgiao_wpdance_template_single_availability'  => __( 'Availability', 'solar' ),
+		                    'woocommerce_template_single_excerpt'			=> __( 'Excerpt', 'solar' ),
+		                    'woocommerce_template_single_add_to_cart'       => __( 'Add To Cart', 'solar' ),
+		                    'tvlgiao_wpdance_get_product_categories'        => __( 'Categories', 'solar' ),
 		                )
 			        ),
 			        'default'       => array(
@@ -244,10 +244,10 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		        'mini_cart'   	=> array(
 			        'choose'        => array(
 			        	'sorter'		=> array(
-		                    'cart_icon'     => __( 'Cart Icon', 'laparis' ),
-		                    'cart_text'     => __( 'Cart Text', 'laparis' ),
-		                    'cart_item'     => __( 'Cart Item', 'laparis' ),
-		                    'cart_total'    => __( 'Cart Total', 'laparis' ),
+		                    'cart_icon'     => __( 'Cart Icon', 'solar' ),
+		                    'cart_text'     => __( 'Cart Text', 'solar' ),
+		                    'cart_item'     => __( 'Cart Item', 'solar' ),
+		                    'cart_total'    => __( 'Cart Total', 'solar' ),
 		                ),
 		                'cart_icon'		=> array(
 		                    'lnr lnr-cart'        	   	=> 'lnr lnr-cart',
@@ -300,8 +300,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		        'archive'   	=> array(
 			        'choose'        => array(
 			        	'style'			=> array(
-		                    'list'      => esc_html__( 'List', 'laparis' ),
-		                    'grid'      => esc_html__( 'Grid', 'laparis' ),
+		                    'list'      => esc_html__( 'List', 'solar' ),
+		                    'grid'      => esc_html__( 'Grid', 'solar' ),
 		                ),
 			        ),
 			        'default'       => array(
@@ -311,8 +311,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		        'single'  	 	=> array(
 			        'choose'        => array(
 			        	'recent_style'		=> array(
-		                    'list'      => esc_html__( 'List', 'laparis' ),
-		                    'grid'      => esc_html__( 'Grid', 'laparis' ),
+		                    'list'      => esc_html__( 'List', 'solar' ),
+		                    'grid'      => esc_html__( 'Grid', 'solar' ),
 		                ),
 			        ),
 			        'default'       => array(
@@ -325,8 +325,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		        'index'   		=> array(
 			        'choose'        => array(
 			        	'style'			=> array(
-		                    'list'      => esc_html__( 'List', 'laparis' ),
-		                    'grid'      => esc_html__( 'Grid', 'laparis' ),
+		                    'list'      => esc_html__( 'List', 'solar' ),
+		                    'grid'      => esc_html__( 'Grid', 'solar' ),
 		                ),
 			        ),
 			        'default'       => array(
@@ -337,8 +337,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    '404_page'   	=> array(
 		        'choose'        => array(
 		            'bg_style'         => array(
-	                    'bg_image'          => esc_html__( 'Background Image', 'laparis' ),
-	                    'bg_color'          => esc_html__( 'Background Color', 'laparis' ),
+	                    'bg_image'          => esc_html__( 'Background Image', 'solar' ),
+	                    'bg_color'          => esc_html__( 'Background Color', 'solar' ),
 	                ),
 		        ),
 		        'default'       => array(
@@ -356,12 +356,12 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    'search_page'   => array(
 		        'choose'        => array(
 		            'bg_style'         	=> array(
-	                    'bg_image'          => esc_html__( 'Background Image', 'laparis' ),
-	                    'bg_color'          => esc_html__( 'Background Color', 'laparis' ),
+	                    'bg_image'          => esc_html__( 'Background Image', 'solar' ),
+	                    'bg_color'          => esc_html__( 'Background Color', 'solar' ),
 	                ),
 	                'type'         		=> array(
-	                    'post'          	=> esc_html__( 'Search Blog', 'laparis' ),
-	                    'product'          	=> esc_html__( 'Search Product', 'laparis' ),
+	                    'post'          	=> esc_html__( 'Search Blog', 'solar' ),
+	                    'product'          	=> esc_html__( 'Search Product', 'solar' ),
 	                ),
 		        ),
 		        'default'       => array(
@@ -376,12 +376,12 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    'back_to_top'   => array(
 		        'choose'        => array(
 		            'style'         => array(
-		                '1'             => __( 'Icon Only', 'laparis' ),
-		                '0'             => __( 'Icon & Background', 'laparis' ),
+		                '1'             => __( 'Icon Only', 'solar' ),
+		                '0'             => __( 'Icon & Background', 'solar' ),
 		            ),
 		            'bg_shape'      => array(
-		                '1'             => __( 'Rounded', 'laparis' ),
-		                '0'             => __( 'Square', 'laparis' ),
+		                '1'             => __( 'Rounded', 'solar' ),
+		                '0'             => __( 'Square', 'solar' ),
 		            ),
 		        ),
 		        'default'       => array(
@@ -410,8 +410,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    'email_popup'   => array(
 		    	'choose'        => array(
 		    		'source'   => array(
-		                'feedburner'         => __( 'Feedburner Form', 'laparis' ),
-		                'custom'             => __( 'Custom Content', 'laparis' ),
+		                'feedburner'         => __( 'Feedburner Form', 'solar' ),
+		                'custom'             => __( 'Custom Content', 'solar' ),
 		            ),
 		        ),
 		        'default'       => array(
@@ -436,8 +436,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    'fb_chatbox' => array(
 		    	'choose'        => array(
 		            'default_mode'   => array(
-		                '1'             => __( 'Show', 'laparis' ),
-		                '0'             => __( 'Hide', 'laparis' ),
+		                '1'             => __( 'Show', 'solar' ),
+		                '0'             => __( 'Hide', 'solar' ),
 		            ),
 		        ),
 		        'default'       => array(
@@ -450,8 +450,8 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		            'default_mode' 	=> '0', //0 = hide , 1 = show
 		            'bg_color' 		=> '#3b5998',
 		            'logo'      	=> TVLGIAO_WPDANCE_THEME_IMAGES.'/logo_footer.png',
-		            'text_footer'   => __( 'Send a message to us...', 'laparis' ),
-		            'link_caption'  => __( 'Visit us on facebook', 'laparis' ),
+		            'text_footer'   => __( 'Send a message to us...', 'solar' ),
+		            'link_caption'  => __( 'Visit us on facebook', 'solar' ),
 		            'link_url'  	=> '#',
 		        )
 		    ),
@@ -464,16 +464,16 @@ if(!function_exists ('tvlgiao_wpdance_get_theme_option_default_data')){
 		    'comment'       => array(
 		    	'choose'        => array(
 		            'sorter'        => array(
-	                    'wordpress' 	=> __( 'Wordpress Comment', 'laparis' ),
-	                    'facebook'  	=> __( 'Facebook Comment', 'laparis' ),
+	                    'wordpress' 	=> __( 'Wordpress Comment', 'solar' ),
+	                    'facebook'  	=> __( 'Facebook Comment', 'solar' ),
 	                ),
 	                'mode'         	=> array(
-                        '1'    			=> __( 'Multi Domain', 'laparis' ),
-                        '0'    			=> __( 'Single Domain', 'laparis' ),
+                        '1'    			=> __( 'Multi Domain', 'solar' ),
+                        '0'    			=> __( 'Single Domain', 'solar' ),
                     ),
                     'layout'        => array(
-                        '1'    			=> __( 'Tab', 'laparis' ),
-                        '0'    			=> __( 'Normal', 'laparis' ),
+                        '1'    			=> __( 'Tab', 'solar' ),
+                        '0'    			=> __( 'Normal', 'solar' ),
                     ),
 		        ),
 		        'default'       => array(

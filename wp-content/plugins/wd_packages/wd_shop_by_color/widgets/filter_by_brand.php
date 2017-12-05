@@ -11,9 +11,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			function __construct() {
 				/* Widget variable settings. */
 				$this->wpdance_widget_cssclass 		= 'wd_widget_product_filter_by_brand';
-				$this->wpdance_widget_description	= __( 'Shows brands filter for product category/shop page.', 'wpdancelaparis' );
+				$this->wpdance_widget_description	= __( 'Shows brands filter for product category/shop page.', 'wd_package' );
 				$this->wpdance_widget_idbase 		= 'wd_widget_product_filter_by_brand';
-				$this->wpdance_widget_name 			= __( 'WD - Product Brands Filter', 'wpdancelaparis' );
+				$this->wpdance_widget_name 			= __( 'WD - Product Brands Filter', 'wd_package' );
 
 				/* Widget settings. */
 				$widget_ops = array( 'classname' => $this->wpdance_widget_cssclass, 'description' => $this->wpdance_widget_description );
@@ -262,14 +262,14 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					$instance['query_type'] = 'and';
 
 				?>
-				<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ) ?></label>
+				<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ) ?></label>
 				<input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" value="<?php if ( isset( $instance['title'] ) ) echo esc_attr( $instance['title'] ); ?>" /></p>
 
 
-				<p><label for="<?php echo $this->get_field_id( 'query_type' ); ?>"><?php esc_html_e( 'Query Type:', 'wpdancelaparis' ) ?></label>
+				<p><label for="<?php echo $this->get_field_id( 'query_type' ); ?>"><?php esc_html_e( 'Query Type:', 'wd_package' ) ?></label>
 				<select id="<?php echo esc_attr( $this->get_field_id( 'query_type' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'query_type' ) ); ?>">
-					<option value="and" <?php selected( $instance['query_type'], 'and' ); ?>><?php esc_html_e( 'AND', 'wpdancelaparis' ); ?></option>
-					<option value="or" <?php selected( $instance['query_type'], 'or' ); ?>><?php esc_html_e( 'OR', 'wpdancelaparis' ); ?></option>
+					<option value="and" <?php selected( $instance['query_type'], 'and' ); ?>><?php esc_html_e( 'AND', 'wd_package' ); ?></option>
+					<option value="or" <?php selected( $instance['query_type'], 'or' ); ?>><?php esc_html_e( 'OR', 'wd_package' ); ?></option>
 				</select></p>
 				<?php
 			}

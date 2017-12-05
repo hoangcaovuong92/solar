@@ -47,7 +47,7 @@ if(!function_exists('tvlgiao_wpdance_masonry_blog_function')){
 							<a 	data-random_id="<?php echo esc_html($random_id); ?>" 
 								data-posts_per_page="<?php echo esc_html($number_loadmore); ?>" 
 								data-columns="<?php echo esc_html($columns); ?>" 
-								class="button btn_loadmore_masonry"><?php _e('LOAD MORE','wpdancelaparis') ?></a>
+								class="button btn_loadmore_masonry"><?php _e('LOAD MORE','wd_package') ?></a>
 						</div>
 					</div>
 				<?php endif; ?>

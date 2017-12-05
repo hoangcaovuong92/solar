@@ -28,7 +28,7 @@ if (!function_exists('tvlgiao_wpdance_title_function')) {
 								<?php echo esc_html($description); ?>
 							<?php endif ?>
 							<?php if($description != "" && $display_button) : ?>
-								<?php _e(' | ','wpdancelaparis') ?>
+								<?php _e(' | ','wd_package') ?>
 							<?php endif; ?>
 							<?php if($display_button) : ?>
 								<a target="_blank" href="<?php echo esc_url($button_url);?>"><?php echo esc_html($button_text); ?></a>

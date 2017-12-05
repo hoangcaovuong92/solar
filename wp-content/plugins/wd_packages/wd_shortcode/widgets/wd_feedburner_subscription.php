@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_feedburner_subscription' ) ) {
 	class tvlgiao_wpdance_widget_feedburner_subscription extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_feedburner_subscription', 'description' => esc_html__('Feedburner Subscription Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_feedburner_subscription', 'description' => esc_html__('Feedburner Subscription Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('feedburner_subscription', esc_html__('WD - Feedburner Subscription','wpdancelaparis'), $widget_ops);
+			parent::__construct('feedburner_subscription', esc_html__('WD - Feedburner Subscription','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -17,31 +17,31 @@ if( !class_exists( 'tvlgiao_wpdance_widget_feedburner_subscription' ) ) {
 	        $class      			= esc_attr( isset( $instance['class'] ) ? $instance['class'] : '' );
 	        ?>
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'intro_text' ); ?>"><?php esc_html_e( 'Enter your Intro Text:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'intro_text' ); ?>"><?php esc_html_e( 'Enter your Intro Text:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'intro_text' ); ?>" name="<?php echo $this->get_field_name( 'intro_text' ); ?>" type="text" value="<?php echo $intro_text; ?>" />
 	                </label>
 	            </p>
 				
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Enter your Button:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'button_text' ); ?>"><?php esc_html_e( 'Enter your Button:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'button_text' ); ?>" name="<?php echo $this->get_field_name( 'button_text' ); ?>" type="text" value="<?php echo $button_text; ?>" />
 	                </label>
 	            </p>
 
 				<p>
-	                <label for="<?php echo $this->get_field_id( 'feedburner_id' ); ?>"><?php esc_html_e( 'Enter your Feedburner ID:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'feedburner_id' ); ?>"><?php esc_html_e( 'Enter your Feedburner ID:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'feedburner_id' ); ?>" name="<?php echo $this->get_field_name( 'feedburner_id' ); ?>" type="text" value="<?php echo $feedburner_id; ?>" />
 	                </label>
 	            </p>
 
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>
@@ -68,7 +68,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_feedburner_subscription' ) ) {
 				<?php echo ($intro_text) ? '<div class="textwidget">'.esc_html($intro_text).'</div>' : ''; ?>		
 				<div class="subscribe_form">
 					<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=<?php echo esc_attr($feedburner_id); ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-						<p class="subscribe-email"><input type="text" name="email" class="subscribe_email" value="" placeholder="<?php esc_html_e('Enter your email address','wpdancelaparis');?>" /></p>
+						<p class="subscribe-email"><input type="text" name="email" class="subscribe_email" value="" placeholder="<?php esc_html_e('Enter your email address','wd_package');?>" /></p>
 						<input type="hidden" value="<?php echo esc_attr($feedburner_id);?>" name="uri"/>
 						<input type="hidden" value="<?php echo get_bloginfo( 'name' );?>" name="title"/>
 						<input type="hidden" name="loc" value="en_US"/>

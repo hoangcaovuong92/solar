@@ -35,8 +35,8 @@ extract(tvlgiao_wpdance_get_data_package( '404' )); ?>
 <div id="main-content" class="main-content wd-404-error <?php echo esc_attr($class_style_select); ?>">
 	<section class="wd-error-404 wd-error-404-page-content">
 		<div class="wd-page-header">
-			<span class="wd-text-title"><?php esc_html_e( 'Sorry, Page Not Found!', 'laparis' ); ?></span>
-			<h1 class="wd-page-title"><?php esc_html_e( '404', 'laparis' ); ?></h1>
+			<span class="wd-text-title"><?php esc_html_e( 'Sorry, Page Not Found!', 'solar' ); ?></span>
+			<h1 class="wd-page-title"><?php esc_html_e( '404', 'solar' ); ?></h1>
 		</div><!-- .page-header -->
 		<div class="wd-page-content">
 			<?php if ($show_search_form): ?>

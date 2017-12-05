@@ -6,14 +6,14 @@
 		$testimonials_array 		= tvlgiao_wpdance_vc_get_data_by_post_type('wd_testimonials');
 		$testimonials_category 		= tvlgiao_wpdance_vc_get_list_category('wd_testimonials_categories');		
 		vc_map( array(
-			'name' 		=> esc_html__( 'WD - Testimonials', 'wpdancelaparis' ),
+			'name' 		=> esc_html__( 'WD - Testimonials', 'solar' ),
 			'base' 		=> 'tvlgiao_wpdance_testimonials',
-			'category' 	=> esc_html__("WPDance Shortcode", 'wpdancelaparis'),
+			'category' 	=> esc_html__("WPDance Shortcode", 'solar'),
 			'icon'      => 'icon-wpb-call-to-action',
 			'params' 	=> array(
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Single or Slider', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Single or Slider', 'solar' ),
 					'param_name' 		=> 'type',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -24,7 +24,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Select Testimonials', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Select Testimonials', 'solar' ),
 					'param_name' 		=> 'id_testimonial',
 					'admin_label' 		=> true,
 					'value' 			=> $testimonials_array,
@@ -33,7 +33,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Select Category', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Select Category', 'solar' ),
 					'param_name' 		=> 'id_category',
 					'admin_label' 		=> true,
 					'value' 			=> $testimonials_category,
@@ -42,18 +42,18 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Columns', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Columns', 'solar' ),
 					'param_name' 		=> 'columns',
 					'admin_label' 		=> true,
 					'value' 			=> tvlgiao_wpdance_vc_get_list_tvgiao_columns(),
 					'std'				=> 4,
-					'description' 		=> esc_html__( '', 'wpdancelaparis' ),
+					'description' 		=> esc_html__( '', 'solar' ),
 					'edit_field_class' 	=> 'vc_col-sm-6',
 					'dependency'		=> Array('element' => "type", 'value' => array('slider'))
 				),
 				array(
 					'type'				=> 'textfield',
-					'heading' 			=> esc_html__( 'Number Of Testimonials', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Number Of Testimonials', 'solar' ),
 					'param_name' 		=> 'number_testimonials',
 					'admin_label' 		=> true,
 					'value' 			=> '4',
@@ -62,7 +62,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Style', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Style', 'solar' ),
 					'param_name' 		=> 'style_testimonial',
 					'admin_label' 		=> true,
 					'value' => array(
@@ -75,7 +75,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Text Align', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Text Align', 'solar' ),
 					'param_name' 		=> 'text_align',
 					'admin_label' 		=> true,
 					'value' 			=> tvlgiao_wpdance_vc_get_list_text_align_bootstrap(),
@@ -85,7 +85,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Avatar', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Avatar', 'solar' ),
 					'param_name' 		=> 'show_avatar',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -97,7 +97,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Avatar Size', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Avatar Size', 'solar' ),
 					'param_name' 		=> 'image_size',
 					'admin_label' 		=> true,
 					'value' 			=> tvlgiao_wpdance_vc_get_list_image_size(),
@@ -108,7 +108,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Customer Name', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Customer Name', 'solar' ),
 					'param_name' 		=> 'show_customer_name',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -120,7 +120,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Role', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Role', 'solar' ),
 					'param_name' 		=> 'show_role',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -132,7 +132,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Rating', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Rating', 'solar' ),
 					'param_name' 		=> 'show_rating',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -144,7 +144,7 @@
 				),
 				array(
 					'type' 				=> 'dropdown',
-					'heading' 			=> esc_html__( 'Show Excerpt', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Show Excerpt', 'solar' ),
 					'param_name' 		=> 'show_excerpt',
 					'admin_label' 		=> true,
 					'value' 			=> array(
@@ -156,7 +156,7 @@
 				),
 				array(
 					'type' 				=> 'textfield',
-					'heading' 			=> esc_html__( 'Number Of Excerpt Words', 'wpdancelaparis' ),
+					'heading' 			=> esc_html__( 'Number Of Excerpt Words', 'solar' ),
 					'param_name' 		=> 'number_word_excerpt',
 					'admin_label' 		=> true,
 					'value' 			=> '20',
@@ -167,8 +167,8 @@
 				array(
 					'type' 				=> 'textfield',
 					'class' 			=> '',
-					'heading' 			=> esc_html__("Extra class name", 'wpdancelaparis'),
-					'description'		=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wpdancelaparis'),
+					'heading' 			=> esc_html__("Extra class name", 'solar'),
+					'description'		=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'solar'),
 					'admin_label' 		=> true,
 					'param_name' 		=> 'class',
 					'value' 			=> ''

@@ -41,8 +41,85 @@ if (!class_exists('WD_Product_Custom_Field')) {
 
 
 		/******************************** product_field POST TYPE INIT START ***********************************/
-		public function product_field_hook() {
+		public function product_field_hook() { 
+			add_action('tvlgiao_wpdance_before_single_product_desc', array($this, 'get_specifications_content'), 5); 
+			add_action('tvlgiao_wpdance_after_single_product_desc', array($this, 'get_wd_product_field_advantages_content'), 5); 
+			add_action('tvlgiao_wpdance_after_single_product_desc', array($this, 'get_specifications_detail_content'), 10); 
 		}
+
+		public function get_specifications_content() { 
+			$data 		=  $this->get_product_field_meta_data('wd_product_field_specifications');
+
+			$list_field_name 	=  array(
+					'type'				=> esc_html__( 'Loại sản phẩm', 'wd_package' ),
+					'capacity'			=> esc_html__( 'Công suất', 'wd_package' ),
+					'origin'			=> esc_html__( 'Xuất xứ', 'wd_package' ),
+					'weight'			=> esc_html__( 'Trọng Lượng', 'wd_package' ),
+					'size'				=> esc_html__( 'Kích thước (Cao/Ngang/Rộng)', 'wd_package' ),
+				);
+			$list_field_unit 	=  array('capacity_unit','weight_unit');
+			if ($data) {
+				$data['capacity'] 	= $data['capacity'].$data['capacity_unit'];
+				$data['weight'] 	= $data['weight'].$data['weight_unit'];
+				echo '<div class="wd-single-product-specifications-wrap">';
+				echo '<table class="wd-single-product-specifications-list">';
+				foreach ($data as $key => $value) {
+					if ($value != '' && !in_array($key, $list_field_unit)) {
+						echo '<tr class="wd-single-product-specifications-item">';
+						echo '<td>'.$list_field_name[$key].'</td>';
+						echo '<td>'.$value.'</td>';
+						echo '</tr>';
+					}
+				}
+				echo '</table>';
+				echo '</div>';
+			}
+		}
+
+		public function get_wd_product_field_advantages_content() { 
+			$data 		=  $this->get_product_field_meta_data('wd_product_field_advantages');
+			if ($data) {
+				echo '<div class="wd-single-product-title">'.esc_html__( 'Ưu điểm sản phẩm', 'wd_package' ).'</div>';
+				echo '<div class="wd-single-product-wd_product_field-advantages-wrap">';
+				echo '<ul class="wd-single-product-wd_product_field-advantages-list">';
+				foreach ($data as $key => $value) {
+					echo '<li>'.$value['advantage'].'</li>';
+				}
+				echo '</ul>';
+				echo '</div>';
+			}
+		}
+
+		public function get_specifications_detail_content() { 
+			$data 		=  $this->get_product_field_meta_data('wd_product_field_specifications');
+
+			$list_field_name 	=  array(
+					'type'				=> esc_html__( 'Loại sản phẩm', 'wd_package' ),
+					'capacity'			=> esc_html__( 'Công suất', 'wd_package' ),
+					'origin'			=> esc_html__( 'Xuất xứ', 'wd_package' ),
+					'weight'			=> esc_html__( 'Trọng Lượng', 'wd_package' ),
+					'size'				=> esc_html__( 'Kích thước (Cao/Ngang/Rộng)', 'wd_package' ),
+				);
+			$list_field_unit 	=  array('capacity_unit','weight_unit');
+			if ($data) {
+				$data['capacity'] 	= $data['capacity'].$data['capacity_unit'];
+				$data['weight'] 	= $data['weight'].$data['weight_unit'];
+				echo '<div class="wd-single-product-title">'.esc_html__( 'Thông số kỹ thuật chi tiết', 'wd_package' ).'</div>';
+				echo '<div class="wd-single-product-specifications-detail-wrap">';
+				echo '<table class="wd-single-product-specifications-detail-list">';
+				foreach ($data as $key => $value) {
+					if ($value != '' && !in_array($key, $list_field_unit)) {
+						echo '<tr class="wd-single-product-specifications-detail-item">';
+						echo '<td>'.$list_field_name[$key].'</td>';
+						echo '<td>'.$value.'</td>';
+						echo '</tr>';
+					}
+				}
+				echo '</table>';
+				echo '</div>';
+			}
+		}
+
 
 		public function product_field_metabox_save_data($post_id) {
 
@@ -56,8 +133,13 @@ if (!class_exists('WD_Product_Custom_Field')) {
 				return $post->ID;
 
 			$data = array();
-			if (isset($_POST['wd_product_field'])) {
-				$data['wd_product_field'] = $_POST['wd_product_field'];
+			if (isset($_POST['wd_product_field_specifications'])) {
+				$data['wd_product_field_specifications'] = $_POST['wd_product_field_specifications'];
+			}
+			if (isset($_POST['wd_product_field_advantages'])) {
+				$meta_key 				= 'wd_product_field_advantages';
+				$list_meta_name 		= array('advantage');
+				$data['wd_product_field_advantages'] 	= $this->process_meta_data_repeatable_field_after_save($meta_key, $list_meta_name);
 			}
 			update_post_meta($post_id,'wd_product_field_meta_data', serialize($data));
 			
@@ -82,19 +164,30 @@ if (!class_exists('WD_Product_Custom_Field')) {
 		public function get_product_field_meta_data_default($field = ''){
 			$default = array(
 				'wd_product_field_specifications' 	=> array(
-					'role'				=> '',
-					'url'				=> '#',
-					'rating'			=> '5',
+					'type'				=> '',
+					'capacity'			=> '200',
+					'capacity_unit'		=> 'W',
+					'origin'			=> 'VN',
+					'weight'			=> '1',
+					'weight_unit'		=> 'kg',
+					'size'				=> '10x10x10mm',
 				),
 				'wd_product_field_specifications_detail' 	=> array(
-					'role'				=> '',
-					'url'				=> '#',
-					'rating'			=> '5',
+					'model'					=> '',
+					'warranty_period'		=> '',
+					'maximum_power_period'	=> '100',
+					'maximum_power_period_unit'	=> 'W',
+					'panel_efficiency'		=> '',
+					'heat_resistance'		=> '',
+					'panel_size'			=> '10x10x10mm',
+					'energy_size'			=> '',
+					'glass_thickness'		=> '',
+					'battery_type'			=> '',
 				),
 				'wd_product_field_advantages' 	=> array(
-					'role'				=> '',
-					'url'				=> '#',
-					'rating'			=> '5',
+					array(
+						'advantage'		=> '',
+					),
 				),
 			);
 			return ($field && isset($default[$field])) ? $default[$field] : $default;
@@ -107,12 +200,10 @@ if (!class_exists('WD_Product_Custom_Field')) {
 			return ($field && isset($meta_data[$field])) ? $meta_data[$field] : $meta_data;
 		}	
 		
-
-		
 		public function product_field_create_metabox() {
 			if(post_type_exists('product')) {
 				add_meta_box("wp_cp_product_field_specifications", "Thông số kỹ thuật", array($this,"metabox_form_specifications"), "product", "normal", "high");
-				add_meta_box("wp_cp_product_field_specifications_detail", "Thông số kỹ thuật chi tiết", array($this,"metabox_form_specifications"), "product", "normal", "high");
+				add_meta_box("wp_cp_product_field_specifications_detail", "Thông số kỹ thuật chi tiết", array($this,"metabox_form_specifications_detail"), "product", "normal", "high");
 				add_meta_box("wp_cp_product_field_advantages", "Ưu điểm sản phẩm", array($this,"metabox_form_advantages"), "product", "normal", "high");
 			}
 		}
@@ -124,26 +215,33 @@ if (!class_exists('WD_Product_Custom_Field')) {
 			$meta_data 	= $this->get_product_field_meta_data($meta_key);
 			$meta_data 	= empty($meta_data) ? $this->get_product_field_meta_data_default($meta_key) : $meta_data;
 			?>
-			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product_field-custom-meta-box wd-custom-meta-box-width">
+			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product-field-custom-meta-box wd-custom-meta-box-width">
 				<tbody>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Role', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[role]" value="<?php echo esc_attr($meta_data['role']);?>"/></td>
+						<th scope="row" style="width:20%"><label><?php esc_html_e( 'Loại sản phẩm', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[type]" value="<?php echo esc_attr($meta_data['type']);?>"/></td>
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'URL', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[url]" value="<?php echo esc_attr($meta_data['url']);?>"/></td> 
+						<th scope="row"><label><?php esc_html_e( 'Công suất', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[capacity]" value="<?php echo esc_attr($meta_data['capacity']);?>"/></td> 
+						<th scope="row"><label><?php esc_html_e( 'Đơn vị', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[capacity_unit]" value="<?php echo esc_attr($meta_data['capacity_unit']);?>"/></td> 
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Rating', 'wpdancelaparis' ); ?>:</label></th>
-						<td class="rating-wrap">
-							<?php for ($i = 5; $i >= 1 ; $i--) { 
-								$checked = $meta_data['rating'] == $i ? 'checked="true"' : '';
-								echo '<input class="star star-'.$i.'" id="star-'.$i.'" value="'.$i.'" type="radio" name="wd_product_field_specifications[rating]" '.$checked.' />';
-								echo '<label class="star star-'.$i.'" for="star-'.$i.'"></label>';
-							} ?>
-						</td>
+						<th scope="row"><label><?php esc_html_e( 'Xuất xứ', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[origin]" value="<?php echo esc_attr($meta_data['origin']);?>"/></td> 
 					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Trọng lượng', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[weight]" value="<?php echo esc_attr($meta_data['weight']);?>"/></td> 
+						<th scope="row"><label><?php esc_html_e( 'Đơn vị', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[weight_unit]" value="<?php echo esc_attr($meta_data['weight_unit']);?>"/></td>
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Kích thước (Cao/Ngang/Rộng)', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[size]" value="<?php echo esc_attr($meta_data['size']);?>"/></td> 
+					</tr>
+					
 				</tbody>
 			</table>
 		<?php
@@ -155,25 +253,46 @@ if (!class_exists('WD_Product_Custom_Field')) {
 			$meta_data 	= $this->get_product_field_meta_data($meta_key);
 			$meta_data 	= empty($meta_data) ? $this->get_product_field_meta_data_default($meta_key) : $meta_data;
 			?>
-			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product_field-custom-meta-box wd-custom-meta-box-width">
+			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product-field-custom-meta-box wd-custom-meta-box-width">
 				<tbody>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Role', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[role]" value="<?php echo esc_attr($meta_data['role']);?>"/></td>
+						<th scope="row" style="width:20%"><label><?php esc_html_e( 'Model', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[model]" value="<?php echo esc_attr($meta_data['model']);?>"/></td>
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'URL', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[url]" value="<?php echo esc_attr($meta_data['url']);?>"/></td> 
+						<th scope="row"><label><?php esc_html_e( 'Thời hạn bảo hành', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[warranty_period]" value="<?php echo esc_attr($meta_data['warranty_period']);?>"/></td> 
+						</td> 
 					</tr>
 					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Rating', 'wpdancelaparis' ); ?>:</label></th>
-						<td class="rating-wrap">
-							<?php for ($i = 5; $i >= 1 ; $i--) { 
-								$checked = $meta_data['rating'] == $i ? 'checked="true"' : '';
-								echo '<input class="star star-'.$i.'" id="star-'.$i.'" value="'.$i.'" type="radio" name="wd_product_field_specifications_detail[rating]" '.$checked.' />';
-								echo '<label class="star star-'.$i.'" for="star-'.$i.'"></label>';
-							} ?>
-						</td>
+						<th scope="row"><label><?php esc_html_e( 'Công suất tối đa', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[maximum_power_period]" value="<?php echo esc_attr($meta_data['maximum_power_period']);?>"/></td> 
+						<th scope="row"><label><?php esc_html_e( 'Đơn vị', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[maximum_power_period_unit]" value="<?php echo esc_attr($meta_data['maximum_power_period_unit']);?>"/></td> 
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Panel Efficiency', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[panel_efficiency]" value="<?php echo esc_attr($meta_data['panel_efficiency']);?>"/></td> 
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Độ chịu nhiệt', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[heat_resistance]" value="<?php echo esc_attr($meta_data['heat_resistance']);?>"/></td> 
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Kích thước Panel (Cao/Ngang/Rộng)', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications_detail[panel_size]" value="<?php echo esc_attr($meta_data['panel_size']);?>"/></td> 
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Kích thước ô năng lượng', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[energy_size]" value="<?php echo esc_attr($meta_data['energy_size']);?>"/></td> 
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Độ dày kính', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[glass_thickness]" value="<?php echo esc_attr($meta_data['glass_thickness']);?>"/></td> 
+					</tr>
+					<tr>
+						<th scope="row"><label><?php esc_html_e( 'Loại pin', 'wd_package' ); ?>:</label></th>
+						<td><input type="text" class="wd-full-width" name="wd_product_field_specifications[battery_type]" value="<?php echo esc_attr($meta_data['battery_type']);?>"/></td> 
 					</tr>
 				</tbody>
 			</table>
@@ -181,34 +300,63 @@ if (!class_exists('WD_Product_Custom_Field')) {
 		}
 
 		public function metabox_form_advantages(){
-			$random_id 	= 'wd-product_field-metabox-'.mt_rand();
-			$meta_key 	= 'wd_product_field_advantages';
-			$meta_data 	= $this->get_product_field_meta_data($meta_key);
-			$meta_data 	= empty($meta_data) ? $this->get_product_field_meta_data_default($meta_key) : $meta_data;
+			echo $this->get_metabox_repeatable_form( 'wd_product_field_advantages' );
+		}
+
+		public function get_metabox_repeatable_form( $meta_key = '' ){
+			if (!$meta_key) return;
+			$random_id 		= 'wd-product_field-metabox'.mt_rand();
+			$meta_data 		= $this->get_product_field_meta_data($meta_key);
+			$meta_default 	= $this->get_product_field_meta_data_default($meta_key)[0];
+			ob_start();
 			?>
-			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product_field-custom-meta-box wd-custom-meta-box-width">
-				<tbody>
-					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Role', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_advantages[role]" value="<?php echo esc_attr($meta_data['role']);?>"/></td>
-					</tr>
-					<tr>
-						<th scope="row"><label><?php esc_html_e( 'URL', 'wpdancelaparis' ); ?>:</label></th>
-						<td><input type="text" class="wd-full-width" name="wd_product_field_advantages[url]" value="<?php echo esc_attr($meta_data['url']);?>"/></td> 
-					</tr>
-					<tr>
-						<th scope="row"><label><?php esc_html_e( 'Rating', 'wpdancelaparis' ); ?>:</label></th>
-						<td class="rating-wrap">
-							<?php for ($i = 5; $i >= 1 ; $i--) { 
-								$checked = $meta_data['rating'] == $i ? 'checked="true"' : '';
-								echo '<input class="star star-'.$i.'" id="star-'.$i.'" value="'.$i.'" type="radio" name="wd_product_field_advantages[rating]" '.$checked.' />';
-								echo '<label class="star star-'.$i.'" for="star-'.$i.'"></label>';
-							} ?>
-						</td>
-					</tr>
-				</tbody>
+			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product_field-metabox-custom-meta-box wd-custom-meta-box-width">
+			   <tbody>
+				   	<?php
+			        if ( $meta_data ) :
+			          	foreach ( $meta_data as $value ) {
+					         ?>
+					      	<tr>
+						        <?php echo $this->get_metabox_repeatable_field( $meta_key, $value ); ?>
+						        <td width="10%"><a class="button wd-metabox-remove-row" href="#1"><?php esc_html_e( 'Remove', 'wd_package' ); ?></a></td>
+					     	 </tr>
+					      <?php
+			         	}
+			        else :
+			         // show a blank one ?>
+					     <tr>
+			          		<?php echo $this->get_metabox_repeatable_field( $meta_key, $meta_default ); ?>
+					        <td width="10%"><a class="button wd-metabox-remove-row button-disabled" href="#"><?php esc_html_e( 'Remove', 'wd_package' ); ?></a></td>
+					      </tr>
+			     	<?php endif; ?>
+			
+			      <!-- empty hidden one for jQuery -->
+			      	<tr class="hidden wd_metabox_content_repeatable">
+			         	<?php echo $this->get_metabox_repeatable_field( $meta_key, $meta_default ); ?>
+			         	<td width="10%"><a class="button wd-metabox-remove-row" href="#"><?php esc_html_e( 'Remove', 'wd_package' ); ?></a></td>
+			      	</tr>
+			   	</tbody>
 			</table>
-		<?php
+			<p><a class="wd-metabox-add-row" data-id="<?php echo esc_attr( $random_id ); ?>" class="button" href="#"><?php esc_html_e( 'Add Another', 'wd_package' ); ?></a></p>
+			<?php
+			return ob_get_clean();
+		}
+
+		public function get_metabox_repeatable_field( $meta_key, $data = array() ){
+			if (!empty($meta_key) && !empty($data)) {
+				ob_start();
+				switch ($meta_key) {
+					case 'wd_product_field_advantages': ?>
+							<td width="90%">
+					            <input type="text" class="wd-full-width" name="wd_product_field_advantages[advantage][]" value="<?php echo esc_attr( $data['advantage'] ); ?>" />
+					        </td>
+						<?php
+						break;
+					default:
+						break;
+				}
+				return ob_get_clean();
+			}
 		}
 
 		public function init_admin_script($hook) {

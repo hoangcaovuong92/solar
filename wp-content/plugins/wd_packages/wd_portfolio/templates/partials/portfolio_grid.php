@@ -30,18 +30,18 @@ $light_box_class = WD_Portfolio::wd_portfolio_get_filetype( $light_box_url );
 						<a class="zoom-gallery wd-fancybox-thumbs <?php echo esc_attr( $light_box_class ); ?>"
 						   data-toggle="tooltip"
 						   data-fancybox-group="<?php echo $tab_rand; ?>"
-						   title="<?php _e( 'Quick View', 'wpdanceelectronics' ) ?>"
+						   title="<?php _e( 'Quick View', 'wd_package' ) ?>"
 						   data-caption="<?php the_title(); ?>"
 						   href="<?php echo esc_url( $light_box_url ); ?>">
-							<?php esc_html_e( 'Quick view', 'wpdance' ); ?>
+							<?php esc_html_e( 'Quick view', 'wd_package' ); ?>
 							<?php if ( esc_attr( $light_box_class ) === 'wd-fancybox-video' ): ?>
 								<?php the_post_thumbnail( 'portfolio_image', array( 'class' => 'hidden' ) ); ?>
 							<?php endif; ?>
 						</a>
 						<a class="link-gallery"
 						   data-toggle="tooltip"
-						   title="<?php _e( "View Details", "wpdance" ); ?>"
-						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wpdance' ); ?></a>
+						   title="<?php _e( "View Details", 'wd_package' ); ?>"
+						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wd_package' ); ?></a>
 					</div><!-- .icons -->
 				</div><!-- .hover-default -->
 			<?php endif; ?>
@@ -62,18 +62,18 @@ $light_box_class = WD_Portfolio::wd_portfolio_get_filetype( $light_box_url );
 						<a class="zoom-gallery wd-fancybox-thumbs <?php echo esc_attr( $light_box_class ); ?>"
 						   data-toggle="tooltip"
 						   data-fancybox-group="<?php echo $tab_rand; ?>"
-						   title="<?php _e( 'Quick View', 'wpdanceelectronics' ) ?>"
+						   title="<?php _e( 'Quick View', 'wd_package' ) ?>"
 						   data-caption="<?php the_title(); ?>"
 						   href="<?php echo esc_url( $light_box_url ); ?>">
-							<?php esc_html_e( 'Quick view', 'wpdance' ); ?>
+							<?php esc_html_e( 'Quick view', 'wd_package' ); ?>
 							<?php if ( esc_attr( $light_box_class ) === 'wd-fancybox-video' ): ?>
 								<?php the_post_thumbnail( 'portfolio_image', array( 'class' => 'hidden' ) ); ?>
 							<?php endif; ?>
 						</a>
 						<a class="link-gallery"
 						   data-toggle="tooltip"
-						   title="<?php _e( "View Details", "wpdance" ); ?>"
-						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wpdance' ); ?></a>
+						   title="<?php _e( "View Details", 'wd_package' ); ?>"
+						   href="<?php the_permalink(); ?>"><?php esc_html_e( 'Read', 'wd_package' ); ?></a>
 					</div><!-- .icons -->
 				</div><!-- .hover-default -->
 			</div><!-- .wd-content-portfolio -->

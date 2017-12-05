@@ -5,9 +5,9 @@
 if(!class_exists('tvlgiao_wpdance_widget_product_categories_accordion')){
 	class tvlgiao_wpdance_widget_product_categories_accordion extends WP_Widget {
 		function __construct() {
-			$widget_ops 		= array('classname' => 'wd_widget_product_categories_accordion', 'description' => __('Display Woocommerce Product Categories list with Accordion','wpdance'));
+			$widget_ops 		= array('classname' => 'wd_widget_product_categories_accordion', 'description' => __('Display Woocommerce Product Categories list with Accordion','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('wd_product_categories', __('WD - Product Categories Accordion','wpdance'), $widget_ops);
+			parent::__construct('wd_product_categories', __('WD - Product Categories Accordion','wd_package'), $widget_ops);
 		}
 
 		function widget( $args, $instance ) {
@@ -148,39 +148,39 @@ if(!class_exists('tvlgiao_wpdance_widget_product_categories_accordion')){
 			$instance = wp_parse_args( (array) $instance, array( 'title' => 'Categories','show_post_count'=>true,'show_sub_cat'=>true,'is_dropdown'=>false,'orderby'=>'name','order'=>'asc','number' => 0) );
 			$instance['title'] = esc_attr($instance['title']);
 		?>
-			<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Enter your title','wpdance'); ?> : </label>
+			<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Enter your title','wd_package'); ?> : </label>
 			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" /></p>
 			<p>
 				<input type="checkbox" id="<?php echo $this->get_field_id('show_post_count'); ?>" name="<?php echo $this->get_field_name('show_post_count'); ?>" <?php echo ($instance['show_post_count'])?'checked':''; ?> />
-				<label for="<?php echo $this->get_field_id('show_post_count'); ?>"><?php _e('Show post count','wpdance'); ?></label>
+				<label for="<?php echo $this->get_field_id('show_post_count'); ?>"><?php _e('Show post count','wd_package'); ?></label>
 			</p>
 			<p>
 				<input type="checkbox" id="<?php echo $this->get_field_id('show_sub_cat'); ?>" name="<?php echo $this->get_field_name('show_sub_cat'); ?>" <?php echo ($instance['show_sub_cat'])?'checked':''; ?> />
-				<label for="<?php echo $this->get_field_id('show_sub_cat'); ?>"><?php _e('Show sub categories','wpdance'); ?></label>
+				<label for="<?php echo $this->get_field_id('show_sub_cat'); ?>"><?php _e('Show sub categories','wd_package'); ?></label>
 			</p>
 			<p>
 				<input type="checkbox" id="<?php echo $this->get_field_id('is_dropdown'); ?>" name="<?php echo $this->get_field_name('is_dropdown'); ?>" <?php echo ($instance['is_dropdown'])?'checked':''; ?> />
-				<label for="<?php echo $this->get_field_id('is_dropdown'); ?>"><?php _e('Dropdown mode','wpdance'); ?></label>
+				<label for="<?php echo $this->get_field_id('is_dropdown'); ?>"><?php _e('Dropdown mode','wd_package'); ?></label>
 			</p>
 			<p>
-				<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of highest parent categories to show','wpdance'); ?></label>
+				<label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of highest parent categories to show','wd_package'); ?></label>
 				<input class="widefat" type="number" min="0" id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" value="<?php echo $instance['number']; ?>" />
 			</p>
 			<p>
-				<label for="<?php echo $this->get_field_id('orderby'); ?>"><?php _e('Order by','wpdance'); ?></label>
+				<label for="<?php echo $this->get_field_id('orderby'); ?>"><?php _e('Order by','wd_package'); ?></label>
 				<select class="widefat" id="<?php echo $this->get_field_id('orderby'); ?>" name="<?php echo $this->get_field_name('orderby'); ?>" >
-					<option value="name" <?php echo ($instance['orderby']=="name")?'selected':''; ?> ><?php _e('Name','wpdance'); ?></option>
-					<option value="slug" <?php echo ($instance['orderby']=="slug")?'selected':''; ?> ><?php _e('Slug','wpdance'); ?></option>
-					<option value="count" <?php echo ($instance['orderby']=="count")?'selected':''; ?> ><?php _e('Number product','wpdance'); ?></option>
-					<option value="rand" <?php echo ($instance['orderby']=="rand")?'selected':''; ?> ><?php _e('Random','wpdance'); ?></option>
-					<option value="none" <?php echo ($instance['orderby']=="none")?'selected':''; ?> ><?php _e('None','wpdance'); ?></option>
+					<option value="name" <?php echo ($instance['orderby']=="name")?'selected':''; ?> ><?php _e('Name','wd_package'); ?></option>
+					<option value="slug" <?php echo ($instance['orderby']=="slug")?'selected':''; ?> ><?php _e('Slug','wd_package'); ?></option>
+					<option value="count" <?php echo ($instance['orderby']=="count")?'selected':''; ?> ><?php _e('Number product','wd_package'); ?></option>
+					<option value="rand" <?php echo ($instance['orderby']=="rand")?'selected':''; ?> ><?php _e('Random','wd_package'); ?></option>
+					<option value="none" <?php echo ($instance['orderby']=="none")?'selected':''; ?> ><?php _e('None','wd_package'); ?></option>
 				</select>
 			</p>
 			<p>
-				<label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order','wpdance'); ?></label>
+				<label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order','wd_package'); ?></label>
 				<select class="widefat" id="<?php echo $this->get_field_id('order'); ?>" name="<?php echo $this->get_field_name('order'); ?>" >
-					<option value="asc" <?php echo ($instance['order']=="asc")?'selected':''; ?> ><?php _e('Ascending','wpdance'); ?></option>
-					<option value="desc" <?php echo ($instance['order']=="desc")?'selected':''; ?> ><?php _e('Descending','wpdance'); ?></option>
+					<option value="asc" <?php echo ($instance['order']=="asc")?'selected':''; ?> ><?php _e('Ascending','wd_package'); ?></option>
+					<option value="desc" <?php echo ($instance['order']=="desc")?'selected':''; ?> ><?php _e('Descending','wd_package'); ?></option>
 				</select>
 			</p>
 			<?php }

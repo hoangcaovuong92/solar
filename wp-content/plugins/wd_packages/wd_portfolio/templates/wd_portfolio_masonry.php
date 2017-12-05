@@ -91,7 +91,7 @@ if ( ! function_exists( 'tvlgiao_wpdance_portfolio_masonry_function' ) ) {
 							   data-style="<?php esc_html_e( $style ); ?>"
 							   data-width-rand="<?php echo esc_attr( $random_width ); ?>"
 							   data-layout-mode="<?php echo esc_attr( $layout_mode ); ?>">
-								<?php _e( 'LOAD MORE', 'wpdance' ) ?>
+								<?php _e( 'LOAD MORE', 'wd_package' ) ?>
 							</a>
 						</div><!-- .load_more_masonry -->
 					</div><!-- .loadmore -->

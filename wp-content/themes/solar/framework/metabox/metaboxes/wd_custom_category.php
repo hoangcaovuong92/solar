@@ -21,8 +21,8 @@ if (is_admin()) {
 	 
 	$taxonomy_meta = new Tax_Meta_Class($config);
 
-	$html_header 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_header',__('Select Header', 'laparis'),'name');
-	$html_footer 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',__('Select Footer', 'laparis'),'name'); 
+	$html_header 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_header',__('Select Header', 'solar'),'name');
+	$html_footer 		= tvlgiao_wpdance_get_html_block_layout_choices('wpdance_footer',__('Select Footer', 'solar'),'name'); 
 	 
 	/*
 	* Add fields 

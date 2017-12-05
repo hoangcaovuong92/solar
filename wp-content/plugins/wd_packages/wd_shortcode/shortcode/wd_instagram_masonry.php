@@ -21,7 +21,7 @@ if (!function_exists('tvlgiao_wpdance_instagram_masonry_function')) {
 		ob_start(); ?>
 			<?php 
 			if ( is_wp_error( $media_array ) ) {
-				echo esc_html( "error_log", 'wpdancelaparis' );
+				echo esc_html( "error_log", 'wd_package' );
 			} else {
 				// filter for images only?
 				if ( $images_only = apply_filters( 'wpiw_images_only', FALSE ) ) {

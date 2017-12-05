@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_title' ) ) {
 	class tvlgiao_wpdance_widget_title extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_title', 'description' => esc_html__('Title Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_title', 'description' => esc_html__('Title Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('title', esc_html__('WD - Title','wpdancelaparis'), $widget_ops);
+			parent::__construct('title', esc_html__('WD - Title','wd_package'), $widget_ops);
 		}
 	    function form( $instance )
 	    {
@@ -32,7 +32,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_title' ) ) {
 			);
 	        ?>
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Widget Title:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Widget Title:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 	                </label>
 	            </p>
@@ -40,12 +40,12 @@ if( !class_exists( 'tvlgiao_wpdance_widget_title' ) ) {
 	            
 
 				<p>
-			       <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php _e( 'Description:', 'wpdancelaparis' ); ?></label>
+			       <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php _e( 'Description:', 'wd_package' ); ?></label>
 			        <textarea class="widefat" rows="5" cols="20" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>"><?php echo $description; ?></textarea>
 			    </p>
 
 			    <p>
-					<label for="<?php echo esc_attr( $this->get_field_id('position')); ?>"><?php esc_html_e('Position:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('position')); ?>"><?php esc_html_e('Position:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('position')); ?>" id="<?php echo esc_attr($this->get_field_id('position')); ?>">
 						<?php foreach( $position_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($position==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -54,7 +54,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_title' ) ) {
 				</p>
 
 				<p>
-					<label for="<?php echo esc_attr( $this->get_field_id('type')); ?>"><?php esc_html_e('Title Format:','wpdancelaparis'); ?></label>
+					<label for="<?php echo esc_attr( $this->get_field_id('type')); ?>"><?php esc_html_e('Title Format:','wd_package'); ?></label>
 					<select class="widefat" name="<?php echo esc_attr( $this->get_field_name('type')); ?>" id="<?php echo esc_attr($this->get_field_id('type')); ?>">
 						<?php foreach( $type_arr as $key => $value ){ ?>
 						<option value="<?php echo esc_attr($key); ?>" <?php echo ($type==$key)?'selected':'' ?> ><?php echo esc_attr($value); ?></option>
@@ -63,7 +63,7 @@ if( !class_exists( 'tvlgiao_wpdance_widget_title' ) ) {
 				</p>
 			    
 	            <p>
-	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wpdancelaparis' ); ?>
+	                <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php esc_html_e( 'Extra class name:', 'wd_package' ); ?>
 	                <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
 	                </label>
 	            </p>

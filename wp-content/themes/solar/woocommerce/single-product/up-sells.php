@@ -23,7 +23,7 @@ if ( $upsells ) : ?>
 	<?php $is_slider = true; ?>
 	<div class="wd-ralated-product">
 		<div class="wd-title wd-title-section-style-1">
-			<h2 class="wd-title-heading text-center"><?php esc_html_e('YOU MAY ALSO LIKE...','laparis'); ?></h2>
+			<h2 class="wd-title-heading text-center"><?php esc_html_e('YOU MAY ALSO LIKE...','solar'); ?></h2>
 		</div>
 		<div class="wd-ralated-content row">
 			<div class="related products grid">

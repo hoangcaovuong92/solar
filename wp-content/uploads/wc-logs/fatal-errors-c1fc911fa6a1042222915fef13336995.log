@@ -78,3 +78,7 @@
 
 2017-12-02T03:50:02+00:00 CRITICAL Call to undefined function tvlgiao_wpdance_get_list_blog_special_layout()
 
+2017-12-03T14:34:14+00:00 CRITICAL Call to undefined method WD_Product_Custom_Field::get_team_meta_data()
+
+2017-12-04T14:38:34+00:00 CRITICAL Call to undefined function get_product_field_meta_data()
+

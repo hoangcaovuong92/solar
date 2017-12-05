@@ -24,7 +24,7 @@ do_action( 'woocommerce_before_account_navigation' );
 ?>
 
 <nav class="woocommerce-MyAccount-navigation">
-	<h2 class="wd-sidebar-title"><?php esc_html_e( 'My Account', 'laparis' ) ?></h2>
+	<h2 class="wd-sidebar-title"><?php esc_html_e( 'My Account', 'solar' ) ?></h2>
 	<ul>
 		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">

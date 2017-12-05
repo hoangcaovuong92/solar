@@ -1,9 +1,9 @@
 <?php
 	vc_map(array(
-		'name' 				=> esc_html__("WD - Title/Heading", 'wpdancelaparis'),
+		'name' 				=> esc_html__("WD - Title/Heading", 'wd_package'),
 		'base' 				=> 'tvlgiao_wpdance_title',
-		'description' 		=> esc_html__("Custom title for everywhere", 'wpdancelaparis'),
-		'category' 			=> esc_html__("WPDance Shortcode", 'wpdancelaparis'),
+		'description' 		=> esc_html__("Custom title for everywhere", 'wd_package'),
+		'category' 			=> esc_html__("WPDance Shortcode", 'wd_package'),
 		'icon'        		=> 'icon-wpb-ui-custom_heading',
 		"params" => array(
 			/*-----------------------------------------------------------------------------------
@@ -12,14 +12,14 @@
 			array(
 				"type" 			=> "textfield",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Title", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Title", 'wd_package'),
 				"param_name" 	=> "title",
 				"description" 	=> '',
 			),
 			array(
 				"type" 			=> "textarea",
 				"class" 		=> "",
-				"heading" 		=> esc_html__("Description", 'wpdancelaparis'),
+				"heading" 		=> esc_html__("Description", 'wd_package'),
 				"param_name" 	=> "description",
 				"description" 	=> '',
 			),
@@ -28,7 +28,7 @@
 			-------------------------------------------------------------------------------------*/
 			array(
 				'type' 			=> 'dropdown',
-				'heading' 		=> esc_html__( 'Heading Type', 'wpdancelaparis' ),
+				'heading' 		=> esc_html__( 'Heading Type', 'wd_package' ),
 				'param_name' 	=> 'heading_type',
 				'admin_label' 	=> true,
 				'value' 		=> array(
@@ -40,7 +40,7 @@
 			),
 			array(
 				'type' 			=> 'dropdown',
-				'heading' 		=> esc_html__( 'Heading Element', 'wpdancelaparis' ),
+				'heading' 		=> esc_html__( 'Heading Element', 'wd_package' ),
 				'param_name' 	=> 'heading_element',
 				'admin_label' 	=> true,
 				'value' 		=> array(
@@ -55,7 +55,7 @@
 			),
 			array(
 				'type' 			=> 'dropdown',
-				'heading' 		=> esc_html__( 'Text Align', 'wpdancelaparis' ),
+				'heading' 		=> esc_html__( 'Text Align', 'wd_package' ),
 				'param_name' 	=> 'text_align',
 				'admin_label' 	=> true,
 				'value' 		=> tvlgiao_wpdance_vc_get_list_text_align_bootstrap(),
@@ -64,8 +64,8 @@
 			),
 			array(
 				'type'        	=> 'dropdown',
-				'heading'     	=> __( 'Display Button', 'wpdancelaparis' ),
-				'description' 	=> __( 'The button with custom link will display after the description', 'wpdancelaparis' ),
+				'heading'     	=> __( 'Display Button', 'wd_package' ),
+				'description' 	=> __( 'The button with custom link will display after the description', 'wd_package' ),
 				'param_name'  	=> 'display_button',
 				'value'       	=> array(
 					'Yes' 	=> '1',
@@ -77,28 +77,28 @@
 			array(
 				"type" 			=> "textfield",
 				"class" 		=> "",
-				"heading" 		=> __( "Button Text", 'wpdancelaparis' ),
+				"heading" 		=> __( "Button Text", 'wd_package' ),
 				"param_name" 	=> "button_text",
 				"value" 		=> 'View All', 
-				"description" 	=> __( "", 'wpdancelaparis' ),
+				"description" 	=> __( "", 'wd_package' ),
 				'edit_field_class' => 'vc_col-sm-6',
 				'dependency'  	=> Array('element' => "display_button", 'value' => array('1')),
 			),
 			array(
 				"type" 			=> "textfield",
 				"class" 		=> "",
-				"heading" 		=> __( "Button URL", 'wpdancelaparis' ),
+				"heading" 		=> __( "Button URL", 'wd_package' ),
 				"param_name" 	=> "button_url",
 				"value" 		=> '#', 
-				"description" 	=> __( "", 'wpdancelaparis' ),
+				"description" 	=> __( "", 'wd_package' ),
 				'edit_field_class' => 'vc_col-sm-6',
 				'dependency'  	=> Array('element' => "display_button", 'value' => array('1'))
 			),
 			array(
 				'type' 			=> 'textfield',
 				'class' 		=> '',
-				'heading' 		=> esc_html__("Extra class name", 'wpdancelaparis'),
-				'description'	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wpdancelaparis'),
+				'heading' 		=> esc_html__("Extra class name", 'wd_package'),
+				'description'	=> esc_html__("Style particular content element differently - add a class name and refer to it in custom CSS.", 'wd_package'),
 				'admin_label' 	=> true,
 				'param_name' 	=> 'class',
 				'value' 		=> ''

@@ -2,9 +2,9 @@
 if( !class_exists( 'tvlgiao_wpdance_widget_banner_ads' ) ) {
 	class tvlgiao_wpdance_widget_banner_ads extends WP_Widget{
 	    function __construct() {
-			$widget_ops 		= array('classname' => 'widget_banner_ads', 'description' => esc_html__('Banner Ads Widget','wpdancelaparis'));
+			$widget_ops 		= array('classname' => 'widget_banner_ads', 'description' => esc_html__('Banner Ads Widget','wd_package'));
 			$control_ops 		= array('width' => 400, 'height' => 350);
-			parent::__construct('widget_banner_ads', esc_html__('WD - Banner Ads','wpdancelaparis'), $widget_ops);
+			parent::__construct('widget_banner_ads', esc_html__('WD - Banner Ads','wd_package'), $widget_ops);
 		}
 
 		function form( $instance ) {
@@ -15,15 +15,15 @@ if( !class_exists( 'tvlgiao_wpdance_widget_banner_ads' ) ) {
 			$imageTitle 	= isset($instance['img_title']) ? esc_attr($instance['img_title']) : '';
 			$imgHeight 		= isset($instance['img_height']) ? absint($instance['img_height']) : '';
 			$imgWidth 		= isset($instance['img_width']) ? absint($instance['img_width']) : ''; ?>
-			<p><label for="<?php echo esc_attr( $this->get_field_id('img') ); ?>"><?php esc_html_e('Image Url','wpdancelaparis'); ?> : </label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('img') ); ?>"><?php esc_html_e('Image Url','wd_package'); ?> : </label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('img') ); ?>" name="<?php echo esc_attr( $this->get_field_name('img') ); ?>" type="text" value="<?php echo esc_attr($img); ?>" /></p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id('url') ); ?>"><?php esc_html_e('Ads Url','wpdancelaparis'); ?> : </label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('url') ); ?>"><?php esc_html_e('Ads Url','wd_package'); ?> : </label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('url') ); ?>" name="<?php echo esc_attr( $this->get_field_name('url') ); ?>" type="text" value="<?php echo esc_attr($url); ?>" /></p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id('img_title') ); ?>"><?php esc_html_e('Image title','wpdancelaparis'); ?> : </label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('img_title') ); ?>"><?php esc_html_e('Image title','wd_package'); ?> : </label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id('img_title') ); ?>" name="<?php echo esc_attr( $this->get_field_name('img_title') ); ?>" type="text" value="<?php echo esc_attr( esc_attr($imageTitle) ); ?>" /></p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id('img_width') ); ?>"><?php esc_html_e('Image Width','wpdancelaparis'); ?> : </label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('img_width') ); ?>"><?php esc_html_e('Image Width','wd_package'); ?> : </label>
 			<input id="<?php echo esc_attr( $this->get_field_id('img_width') ); ?>" name="<?php echo esc_attr( $this->get_field_name('img_width') ); ?>" type="text" value="<?php echo esc_attr($imgHeight); ?>" /> px</p>
-			<p><label for="<?php echo esc_attr( $this->get_field_id('img_height') ); ?>"><?php esc_html_e('Image Height','wpdancelaparis'); ?> : </label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id('img_height') ); ?>"><?php esc_html_e('Image Height','wd_package'); ?> : </label>
 			<input id="<?php echo esc_attr( $this->get_field_id('img_height') ); ?>" name="<?php echo esc_attr( $this->get_field_name('img_height') ); ?>" type="text" value="<?php echo esc_attr( esc_attr($imgWidth) ); ?>" /> px</p>
 
 			<p>If you dont special the image width and height,system will use image size </p> <?php

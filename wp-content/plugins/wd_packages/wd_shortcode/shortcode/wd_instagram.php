@@ -28,7 +28,7 @@ if (!function_exists('tvlgiao_wpdance_instagram_function')) {
 		ob_start(); ?>
 			<?php 
 			if ( is_wp_error( $media_array ) ) {
-				echo esc_html( "error_log", 'wpdancelaparis' );
+				echo esc_html( "error_log", 'wd_package' );
 			} else {
 				// filter for images only?
 				if ( $images_only = apply_filters( 'wpiw_images_only', FALSE ) ) {
@@ -65,7 +65,7 @@ if (!function_exists('tvlgiao_wpdance_instagram_function')) {
 										<?php echo esc_html($insta_desc); ?>
 									<?php endif; ?>
 									<?php if($insta_desc != '' && $insta_follow) : ?>
-										<?php _e(' | ','wpdancelaparis') ?>
+										<?php _e(' | ','wd_package') ?>
 									<?php endif; ?>
 									<?php if($insta_follow) : ?>
 										<a target="_blank" href="https://www.instagram.com/<?php echo esc_attr($insta_user);?>"><?php echo esc_html($insta_follow_text); ?></a>

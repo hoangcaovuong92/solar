@@ -73,9 +73,9 @@ $product_image_class = $attachment_ids ? 'wd-single-product-with-thumbnail' : 'w
 		<a href="#TB_inline?width=800&height=600&inlineId=wd-product-thumbnail-mobile-popup&modal=true" id="show-product-thumbnail-mobile-popup" class="thickbox hidden"></a>
 	    <div id="wd-product-thumbnail-mobile-popup" class="subscribe_widget" style="display:none;">
 	    	<div id="TB_title">
-    			<div id="TB_closeAjaxWindow"><button type="button" id="TB_closeWindowButton"><span class="screen-reader-text"><?php esc_html_e( 'Close', 'laparis' ) ?></span><span class="tb-close-icon"></span></button></div>
+    			<div id="TB_closeAjaxWindow"><button type="button" id="TB_closeWindowButton"><span class="screen-reader-text"><?php esc_html_e( 'Close', 'solar' ) ?></span><span class="tb-close-icon"></span></button></div>
     		</div>
-	    	<img alt="<?php esc_html_e( 'Product Image Popup', 'laparis' ) ?>" title="<?php esc_html_e( 'Product Image Popup', 'laparis' ) ?>">
+	    	<img alt="<?php esc_html_e( 'Product Image Popup', 'solar' ) ?>" title="<?php esc_html_e( 'Product Image Popup', 'solar' ) ?>">
 		</div>
 	<?php } ?>
 </div>

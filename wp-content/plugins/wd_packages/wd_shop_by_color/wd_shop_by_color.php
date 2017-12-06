@@ -134,27 +134,23 @@ if (!class_exists('WD_Shopbycolor')) {
 		
 		protected function init_handle(){
 			if( $this->color_ready && $this->woo_ready ){
-				$_edit_hook_name = $this->tax_slug.'_edit_form_fields';
-				$_add_hook_name = $this->tax_slug.'_add_form_fields';
-				add_action( $_edit_hook_name, array($this,'wd_pc_edit_attribute'), 100000, 2 );
-				add_action( $_add_hook_name, array($this,'wd_pc_add_attribute'), 100000 );
 				add_action('wp_ajax_wd_pc_find_media_thumbnail', array( $this, 'find_media_thumbnail'));
 				add_action('wp_ajax_nopriv_wd_pc_find_media_thumbnail', array( $this, 'find_media_thumbnail') );	
+
+				add_action( $this->tax_slug.'_edit_form_fields', array($this,'wd_pc_edit_attribute'), 100000, 2 );
+				add_action( $this->tax_slug.'_add_form_fields', array($this,'wd_pc_add_attribute'), 100000 );
 
 				add_action( 'created_term', array( $this, 'wd_pc_color_fields_save'), 10,3 );
 				add_action( 'edit_term', array( $this, 'wd_pc_color_fields_save'), 10,3 );
 				add_action( 'delete_term', array( $this, 'wd_pc_color_fields_remove'), 10,3 );		
 
-				add_action( 'widgets_init', array($this,'load_color_nav_widget'));	
-
-				$edit_title_color_column_hook = 'manage_edit-'. $this->tax_slug .'_columns';
-				$edit_color_column_hook = 'manage_'. $this->tax_slug .'_custom_column';
 				
-				add_filter( $edit_title_color_column_hook, array($this,'wd_pc_color_color_columns') );
-				add_filter( $edit_color_column_hook , array($this,'wd_pc_color_color_column'), 10, 3 );				
+				add_filter( 'manage_edit-'. $this->tax_slug .'_columns', array($this,'wd_pc_color_color_columns') );
+				add_filter( 'manage_'. $this->tax_slug .'_custom_column', array($this,'wd_pc_color_color_column'), 10, 3 );	
+							
+				add_action( 'widgets_init', array($this,'load_color_nav_widget'));	
 				add_action( 'init', array( $this, 'color_layered_nav_init' ) );
 			}
-
 		}	
 		
 		protected function init_script(){
@@ -168,10 +164,8 @@ if (!class_exists('WD_Shopbycolor')) {
 		public function wd_pc_color_color_columns( $columns ) {
 			$new_columns = array();
 			$new_columns['cb'] = $columns['cb'];
-			$new_columns['color'] = __( 'Color', 'wd_package' );
-
+			$new_columns['color'] = __( 'Color', 'thefuture' );
 			unset( $columns['cb'] );
-
 			return array_merge( $new_columns, $columns );
 		}
 
@@ -179,38 +173,30 @@ if (!class_exists('WD_Shopbycolor')) {
 
 		public function wd_pc_color_color_column( $columns, $column, $id ) {
 			global $woocommerce;
-
 			if ( $column == 'color' ) {
-
 				$datas = get_metadata( 'term', $id, "wd_pc_color_config", true );
 				if( strlen($datas) > 0 ){
 					$datas = unserialize($datas);	
 				}else{
 					$datas = array(
-								'wd_pc_color_color' 				=> "#aaaaaa",
-								'wd_pc_color_image' 				=> 0
-							);
+						'wd_pc_color_color' 				=> "#aaaaaa",
+						'wd_pc_color_image' 				=> 0
+					);
 			
 				}
-
 				$columns .= "<span style='background-color:{$datas['wd_pc_color_color']}'></span>";
-
 			}
-
 			return $columns;
 		}
 
 
 		public function wd_pc_color_fields_save( $term_id, $tt_id, $taxonomy ){
-			
 			$_term_config = array();
 			
-			$_term_config["wd_pc_color_image"] = isset( $_POST['wd_pc_color_image'] ) ? absint( $_POST['wd_pc_color_image'] ) : 0 ;
 			$_term_config["wd_pc_color_color"] = isset( $_POST['wd_pc_color_color'] ) ? esc_attr( $_POST['wd_pc_color_color'] ) : "#aaaaaa" ;
-
+			$_term_config["wd_pc_color_image"] = isset( $_POST['wd_pc_color_image'] ) ? absint( $_POST['wd_pc_color_image'] ) : 0 ;
 			
 			$_term_config_str = serialize($_term_config);
-			
 			$result = update_metadata( 'term',$term_id,"wd_pc_color_config",$_term_config_str );
 
 		}
@@ -221,47 +207,61 @@ if (!class_exists('WD_Shopbycolor')) {
 		
 		
 		public function wd_pc_edit_attribute( $term, $taxonomy ){
-				
-			$datas = get_metadata( 'term', $term->term_id, "wd_pc_color_config", true );
-			if( strlen($datas) > 0 ){
-				$datas = unserialize($datas);	
+			echo $this->get_meta_field('edit', $term);
+		}
+
+		public function wd_pc_add_attribute(){ 
+			echo $this->get_meta_field('add');
+		}
+
+		public function get_meta_field($action = 'add', $term = ''){
+			if ($action = 'edit' && is_object($term)) { 
+				$datas = get_metadata( 'term', $term->term_id, "wd_pc_color_config", true );
+				if( strlen($datas) > 0 ){
+					$datas = unserialize($datas);	
+				}else{
+					$datas = array(
+						'wd_pc_color_color' 				=> "#aaaaaa"
+						,'wd_pc_color_image' 				=> 0
+					);
+				}
+				$_img = (absint($datas['wd_pc_color_image']) > 0 ) ? wp_get_attachment_image_src( absint($datas['wd_pc_color_image']), 'wd_small_thumbnail', true )[0] :  ''; 
 			}else{
 				$datas = array(
-							'wd_pc_color_color' 				=> "#aaaaaa"
-							,'wd_pc_color_image' 				=> 0
-						);
-		
-			}
+					'wd_pc_color_color' 				=> "#aaaaaa"
+					,'wd_pc_color_image' 				=> 0,
+				);
+				$_img = '';
+			} 
+			ob_start(); ?>
+			<div class="form-field">
+				<p><label><?php esc_html_e( 'Color', 'thefuture' ); ?></label></p>
+				<p>
+					<input class="wd_colorpicker_select" name="wd_pc_color_color" type="text" value="<?php echo esc_attr($datas['wd_pc_color_color']);?>" size="40" aria-required="true">
+					<span class="description"><?php esc_html_e( 'Use color picker to pick one color.', 'thefuture' ); ?></span>
+				</p>
+			</div>
+
+			<input type="hidden" name="wd_pc_color_image" value="0" />
+			<!-- <div class="form-field">
+				<p><label><?php esc_html_e( 'Thumbnail Image', 'thefuture' ); ?></label></p>
+				<p>
+					<img id="wd_pc_color_image_view" src="<?php echo esc_url($_img); ?>" style="max-width:100px" /><br/>
+					<input type="hidden" name="wd_pc_color_image" id="wd_pc_color_image" value="<?php echo esc_attr($datas['wd_pc_color_image']);?>" />
 			
-			$_img =  PC_IMAGE.'/default.png';
-			if( absint($datas['wd_pc_color_image']) > 0 ){
-				$_img = wp_get_attachment_image_src( absint($datas['wd_pc_color_image']), 'wd_small_thumbnail', true ); 
-				$_img = $_img[0];
-			}
-		?>
-
-			<tr class="form-field form-required">
-				<th scope="row" valign="top"><label><?php esc_html_e( 'Color', 'wd_package' ); ?></label></th>
-				<td>
-					<input name="wd_pc_color_color" id="hex-color" class="wd_pc_colorpicker" data-default-color="<?php echo esc_attr($datas['wd_pc_color_color']);?>" type="text" value="<?php echo esc_attr($datas['wd_pc_color_color']);?>" size="40" aria-required="true">
-					<span class="description"><?php esc_html_e( 'Use color picker to pick one color.', 'wd_package' ); ?></span>
-				</td>
-			</tr>
-
-			<tr class="form-field">
-				<th scope="row" valign="top"><label><?php esc_html_e( 'Thumbnail Image', 'wd_package' ); ?></label></th>
-				<td>
-					<input name="wd_pc_color_image" type="hidden" class="wd_pc_custom_image" value="<?php echo absint($datas['wd_pc_color_image']);?>" />
-					<img style="padding-bottom:5px;" src="<?php echo esc_url( $_img ) ;?>" class="wd_pc_preview_image" /><br />
-					<input class="wd_pc_upload_image_button button" type="button"  size="40" value="Choose Image" />
-					<small>&nbsp;<a href="#" class="wd_pc_clear_image_button"><?php esc_html_e( 'Remove Image', 'wd_package' ); ?></a></small>
-					<br clear="all" />		
-					<span class="description"><?php esc_html_e( 'Choose one thumbnail.', 'wd_package' ); ?></span>
-				</td>
-			</tr>
-				
-		<?php
-		}		
+					<a 	class="wd_media_lib_select_btn button button-primary button-large" 
+						data-image_value="wd_pc_color_image" 
+						data-image_preview="wd_pc_color_image_view"><?php esc_html_e('Select Image','wd_package'); ?></a>
+			
+					<a 	class="wd_media_lib_clear_btn button" 
+						data-image_value="wd_pc_color_image" 
+						data-image_preview="wd_pc_color_image_view" 
+						data-image_default=""><?php esc_html_e('Reset','wd_package'); ?></a>
+				</p>
+			</div> -->
+			<?php
+			return ob_get_clean();
+		}
 		
 		public function find_media_thumbnail(){
 			$thumbnail_id = absint($_POST['img_id']);
@@ -283,8 +283,6 @@ if (!class_exists('WD_Shopbycolor')) {
 		
 		public function wd_admin_enqueue_color_picker(  ) {
 			wp_enqueue_style( 'wp-color-picker' );
-			wp_enqueue_style( 'thickbox' );
-			wp_enqueue_script( 'thickbox' );
 			wp_enqueue_script( 'wd-product.color.js', PC_JS.'/backend_product_color.js', array( 'wp-color-picker','jquery' ));
 			wp_enqueue_style( 'wd-product.color.css', PC_CSS.'/backend_product_color.css');				
 		}	
@@ -293,30 +291,6 @@ if (!class_exists('WD_Shopbycolor')) {
 			wp_enqueue_script( 'wd-product.color.js', PC_JS.'/frontend_product_color.js', array( 'jquery' ));
 			wp_enqueue_style( 'wd-product.color.css', PC_CSS.'/frontend_product_color.css');				
 		}	
-		
-		public function wd_pc_add_attribute(){
-		?>
-		
-		<div class="form-field form-required">
-			<label for="display_type"><?php esc_html_e( 'Color', 'wd_package' ); ?></label>
-			<input name="wd_pc_color_color" id="hex-color" class="wd_pc_colorpicker" type="text" value="#aaaaaa" size="40" aria-required="true">
-			<p><?php esc_html_e( 'Use color picker to pick one color.', 'wd_package' ); ?></p>
-		</div>
-
-		<div class="form-field">
-			<label for="display_type"><?php esc_html_e( 'Thumbnail Image', 'wd_package' ); ?></label>
-			<input name="wd_pc_color_image" type="hidden" class="wd_pc_custom_image" value="" />
-			<img style="padding-bottom:5px;" src="" class="wd_pc_preview_image" /><br />
-			<input class="wd_pc_upload_image_button button" type="button"  size="40" value="Choose Image" />
-			<small>&nbsp;<a href="#" class="wd_pc_clear_image_button"><?php esc_html_e( 'Remove Image', 'wd_package' ); ?></a></small>
-			<br clear="all" />		
-			<p><?php esc_html_e( 'Choose one thumbnail.', 'wd_package' ); ?></p>
-		</div>
-
-
-		
-		<?php
-		}
 		
 		/******************* All Handle Function End *******************/
 	}	

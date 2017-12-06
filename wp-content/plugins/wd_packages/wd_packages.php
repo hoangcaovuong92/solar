@@ -45,7 +45,9 @@ if (!class_exists('WD_Packages')) {
 			$this->tvlgiao_wpdance_package_get_packages_setting();
 			add_action('init', array($this, 'init_setup'));
 			$this->package_include();
-			add_action('wp_enqueue_scripts', array($this, 'package_js'));
+
+			add_action('wp_enqueue_scripts', array($this, 'front_end_package_js'));
+			add_action('admin_enqueue_scripts', array($this, 'back_end_package_js'));
 
 			add_filter( 'single_template', array( $this, 'single_header_footer_template' ) );
 
@@ -58,7 +60,9 @@ if (!class_exists('WD_Packages')) {
 		protected function constant(){
 			define('WD_PACKAGE'			,   plugin_dir_path( __FILE__ ) );
 			define('WD_PACKAGE_URI'		,   plugins_url( '', __FILE__ ) );
-			define('WD_PACKAGE_LIBS'	,   WD_PACKAGE_URI.'/libs' );
+			define('WD_PACKAGE_ASSETS' 	,   WD_PACKAGE_URI. '/assets');
+			define('WD_PACKAGE_JS' 		,   WD_PACKAGE_ASSETS. '/js');
+			define('WD_PACKAGE_LIBS'	,   WD_PACKAGE_ASSETS. '/libs' );
 		}
 
 		protected function tvlgiao_wpdance_package_get_packages_setting(){
@@ -99,7 +103,7 @@ if (!class_exists('WD_Packages')) {
 		  	load_plugin_textdomain( 'wd_package', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
 		}
 
-		public function package_js(){
+		public function front_end_package_js(){
 			//smooth_scroll
 			if(!wp_is_mobile() && $this->tvlgiao_wpdance_is_windows() && $this->tvlgiao_wpdance_is_chrome()) { 
 				$special_template = is_page_template( 'page-templates/template-home-header-left.php' );
@@ -108,6 +112,11 @@ if (!class_exists('WD_Packages')) {
 					wp_enqueue_script( 'tvlgiao-wpdance-smooth-scroll-run', WD_PACKAGE_LIBS.'/smooth_scroll/run.js',false,false,true);
 				}
 			}
+		}
+
+		public function back_end_package_js(){
+			wp_enqueue_style( 'wp-color-picker' );
+			wp_enqueue_script( 'wd-media-js', WD_PACKAGE_JS.'/wd_media.js',false,false,true);
 		}
 
 		public function init_setup(){ 

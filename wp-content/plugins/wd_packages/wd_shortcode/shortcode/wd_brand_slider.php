@@ -59,7 +59,7 @@ if (!function_exists('tvlgiao_wpdance_brand_slider_function')) {
 				}
 				$image_list[] 	= array(
 					'url'	=> $brand_url,
-					'image'	=> $brand_image,
+					'image'	=> ($brand_image) ? $brand_image : '<img src="'.SC_IMAGE.'/logo.png" alt="'.esc_html__('Brand Icon Default', 'wd_package').'" title="'.esc_html__('Brand Icon Default', 'wd_package').'" />',
 				);
 			}
 		}

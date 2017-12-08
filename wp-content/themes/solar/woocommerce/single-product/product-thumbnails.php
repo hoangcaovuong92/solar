@@ -43,7 +43,7 @@ $attachment_ids = tvlgiao_wpdance_get_product_attachment_ids( $product ); ?>
 					$image_link = wp_get_attachment_url( $attachment_id );
 
 					if ( ! $image_link ) 
-						continue;	
+						continue;	 
 						
 					$image_class = esc_attr( implode( ' ', $classes ) );
 					$image_class .= ' woocommerce-gallery-image';
@@ -59,7 +59,7 @@ $attachment_ids = tvlgiao_wpdance_get_product_attachment_ids( $product ); ?>
 					if (wp_is_mobile()) {
 						echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<li><a href="%s" class="%s" title="%s">%s</a></li>', $image_link, $image_class, $image_title, $image ), $attachment_id, $product_id , $image_class );
 					}else{
-						echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<li><a href="%s" class="%s" title="%s"  rel="useZoom: \'zoom1\', smallImage: \'%s\'">%s</a></li>', $image_link, $image_class, $image_title, $image_src[0], $image ), $attachment_id, $product_id , $image_class );
+						echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<li><a href="%s" class="woocommerce-main-image cloud-zoom zoom on_pc %s" title="%s" rel="position:\'right\',showTitle:1,titleOpacity:0.5,lensOpacity:0.5,fixWidth:362,fixThumbWidth:72,fixThumbHeight:72, adjustY:-4">%s</a></li>', $image_link, $image_class, $image_title, $image ), $attachment_id, $product_id , $image_class );
 					}
 					
 					$loop++;

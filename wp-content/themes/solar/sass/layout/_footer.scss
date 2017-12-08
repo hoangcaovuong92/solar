@@ -1,589 +1,639 @@
-.wd-footer-default.wd-footer-content{
-	padding:30px 0;
-	margin-top:30px;
-	@media (min-width: 768px) {
-		margin-top:80px;
-	}
-}
+// .wd-footer-default.wd-footer-content{
+// 	padding:30px 0;
+// 	margin-top:30px;
+// 	@media (min-width: 768px) {
+// 		margin-top:80px;
+// 	}
+// }
+// .wd-content-footer{
+// 	margin-bottom:-1px;
+// 	@media (max-width: 767px) {
+// 		text-align: center;
+// 	}
+// 	.wd-footer-bottom{
+// 		padding-bottom:0px;
+// 	}
+// }
+// .wd-home-09.wd-footer-top{
+// 	margin-top:0;
+// }
+// .wd-footer-top{
+// 	padding: 80px 0 0;
+// 	margin-top: 80px;
+// 	.wd-subscribe-header{
+// 		float:left;
+// 		width: 16.67%;
+// 		h2{
+// 			font-size: 13px;
+// 			color: #fff;
+// 			font-weight: 500;
+// 			margin: 0;
+// 			margin-top: 5px;
+// 			text-transform: uppercase;
+// 		}
+// 	}
+// 	.subscribe_intro_text{
+// 		color:#8b8b8b;
+// 		float: left;
+// 		width: 40%;
+// 		margin-bottom:26px;
+// 	}
+// 	.subscribe_form{
+// 		overflow:hidden;
+// 		position:relative;
+// 		float: left;
+// 		width: 43.33%;
+// 		margin-top: -25px;
+// 		form {
+// 			position:relative;
+// 			.subscribe-email{
+// 				margin:0;
+// 				width:100%;
+// 				border:none;
+// 				color:#fff;
+// 				input[type='text']{
+// 					width: 100%;
+// 					border-radius:0;						
+// 					color:#fff;
+// 					font-size:13px;
+// 					border: none;
+// 					border-bottom: 1px solid #282828;
+// 					padding: 0 0 0px 0;
+// 					height: 70px;
+// 				}
+// 				@media (max-width: 767px) {
+// 					margin-top: 20px;
+// 					input[type='text']{
+// 						height: 60px;
+// 					}
+// 				}
+// 				input::placeholder{color: #8b8b8b;text-transform: capitalize;}
+// 			}				
+// 		}		
+// 		.button{
+// 			background: transparent;
+// 			color: #fff;
+// 			padding: 10px 15px 8px 15px;
+// 			font-weight:600;
+// 			border-radius: 0;
+// 			border:none;
+// 			position:absolute;
+// 			right: 0;
+// 			top:10px;
+// 			border: 1px solid #fff;
+// 			line-height: 1;
+// 			&:hover {
+// 				background: #fff;
+// 				color: #000;
+// 			}
+// 		}
+// 	}
+// 	@media only screen and (max-width: 767px){
+// 		.wd-subscribe-header{
+// 			width:100%;
+// 			margin:0 0 10px;
+// 		}
+// 		.subscribe_intro_text{
+// 			margin-bottom: 10px;
+// 			width: 100%;
+// 		}
+// 		.subscribe_form{
+// 			width: 100%;
+// 			form .subscribe-email input[type='text']{
+// 				padding: 0;
+// 				border-color: #fff;
+// 				margin-bottom: 10px;
+// 			}
+// 			.button{
+// 				position: initial;
+// 				width: 100%;
+// 			}
+// 		}
+// 	}
+// 	@media (min-width: 768px) and (max-width: 1024px){
+// 		.wd-subscribe-header{
+// 			width:100%;
+// 			margin:0 0 10px;
+// 		}
+// 		.subscribe_intro_text{
+// 			margin-bottom: 10px;
+// 			width: 100%;
+// 		}
+// 		.subscribe_form{
+// 			width: 100%;
+// 			form .subscribe-email{
+// 				margin-top: 40px;
+// 				input[type='text']{
+// 					padding: 0;
+// 					border-color: #fff;
+// 					margin-bottom: 10px;
+// 					height: 60px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .wd-footer-main{
+// 	.wpb_wrapper{
+// 		ul{
+// 			list-style-type: none;
+// 			margin: 0;
+// 			padding: 0;
+// 			li a{
+// 				color: #8b8b8b;
+// 				&:hover{
+// 					color: #fff;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.wp-footer-main-list{
+// 		h4{
+// 			font-weight: 600;
+// 			letter-spacing: 1.3px;
+// 			margin-bottom: 30px;
+// 		}
+// 		ul li{
+// 			padding-bottom: 8px;
+// 		}
+// 	}
+// 	.wd-icon-widget-payment{
+// 		margin-left: -8px !important;
+// 		li{
+// 			display: inline-block;
+// 			padding-left: 8px;
+// 			cursor: pointer;
+// 			i{
+// 				color: #505050;
+// 			}
+// 			&:hover{
+// 				i{
+// 					color: #000;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .footer-copyright-links-list{
+// 	margin-top: 20px;
+// }
+// .wd-home-01.wd-footer-main, .wd-home-04.wd-footer-main{
+// 	.wd-icon-widget-payment{
+// 		margin-left: -8px !important;
+// 		li{
+// 			display: inline-block;
+// 			padding-left: 8px;
+// 			cursor: pointer;
+// 			i{
+// 				color: #505050;
+// 			}
+// 			&:hover{
+// 				i{
+// 					color: #fff;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .wd-home-07{
+// 	.wd-icon-widget-payment{
+// 		margin-left: -8px !important;
+// 		li{
+// 			display: inline-block;
+// 			padding-left: 8px;
+// 			cursor: pointer;
+// 			i{
+// 				color: #c9c9c9;
+// 			}
+// 			&:hover{
+// 				i{
+// 					color: #fff;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// .wd-social-icons{
+// 	&.style-1{
+// 		ul li{
+// 			i{
+// 				min-width: 20px;
+// 			}
+// 		}
+// 	}
+// }
+// .footer-copyright-links-list{
+// 	list-style-type: none;
+// 	text-align: right;
+// 	font-size: 12px;
+// 	text-transform: uppercase;
+// 	li{
+// 		display: inline;
+// 		padding: 0 4px;
+// 		color: #8b8b8b;
+// 		a{
+// 			text-decoration: none;
+// 			text-transform: uppercase;
+//     		color: #8b8b8b;
+//     		&:after{
+// 		    	content: '|';
+// 			    color: rgba(152,152,152,.2);
+// 			    padding-left: 10px;
+// 		    }
+// 		    &:hover{
+// 		    	color: #fff;
+// 		    }
+// 		}
+// 		&:last-child{
+// 			a{
+// 				color: #8b8b8b;
+// 			}
+// 			a:after{
+// 				display: none;
+// 			}
+// 		}
+// 	}
+// }
+// .wd-footer-bottom{
+// 	border-top: 1px solid #dbdbdb;
+// 	@media only screen and (max-width: 767px){
+// 		.header-main,.footer-copyright-links-list{
+// 			text-align: center;
+// 		}
+// 	}
+// 	&.wd-home-02{
+// 		border-color: #dbdbdb;
+// 	}
+// }
+// .wd-home-02{
+// 	&.wd-footer-top{
+// 		margin-top: 0;
+// 		.wd-subscribe-header{
+// 			h2{
+// 				color:#000;
+// 			}
+// 		}
+// 		.subscribe_intro_text {
+// 			color: #515151;
+// 		}
+// 		.subscribe_form{
+// 			margin-bottom: 30px;
+// 			form{
+// 				.subscribe-email{
+// 					input[type='text']{
+// 						color: #000;
+// 						border-bottom: 1px solid #dcdcdc;
+// 					}
+// 				}
+// 			}
+// 			.button{
+// 				color: #000;
+// 				border: 1px solid #000;
+// 			}
+// 		}
+// 	}
+// 	&.wd-footer-main{
+// 		.wpb_wrapper{
+// 			ul{
+// 				li{
+// 					a{
+// 						color:#505050;
+// 						&:hover,&:active,&:focus{
+// 							color: #a5a5a5;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.wd-shortcode-pages-list {
+// 		.footer-copyright-links-list{
+// 			li a{
+// 				color: #282828;
+// 				&:hover{
+// 					color: #000;
+// 				}
+// 			}
+// 		} 
+// 	}
+// }
+
+// .wd-home-04{
+// 	&.wd-footer-top{
+// 		.wd-subscribe-header h2{
+// 			color: #000;
+// 		}
+// 		.subscribe_intro_text{
+// 			color: #8b8b8b;
+// 		}
+// 		.subscribe_form{
+// 			form{
+// 				.subscribe-email {
+// 					input[type='text']{
+// 						border-bottom: 1px solid #8b8b8b;
+// 						color: #8b8b8b;
+// 					}
+// 				}
+// 				.button {
+// 				    color: #000;
+// 				    border: 2px solid #000;
+// 			    	letter-spacing: 1.3px;
+// 				}
+// 			} 
+// 		} 
+// 	} 
+// }
+// .wd-home-05{
+// 	&.wd-footer-top{
+// 		padding: 40px 0 20px;
+// 		margin: 0;
+// 	}
+// 	&.wd-footer-main{
+// 		.wpb_wrapper{
+// 			ul{
+// 				li{
+// 					a{
+// 						color:#505050;
+// 						&:hover,&:active,&:focus{
+// 							color: #a5a5a5;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.wd-shortcode-pages-list {
+// 		.footer-copyright-links-list{
+// 			margin-top: 30px;
+// 			li a{
+// 				color: #282828;
+// 				&:hover{
+// 					color: #000;
+// 				}
+// 			}
+// 		} 
+// 	}
+// } 
+// .wd-home-06, .wd-home-11{
+// 	h4{
+// 		font-weight: 600;
+// 	}
+// 	.footer-copyright-links-list {
+// 	    text-align: center;
+// 	}
+// }
+// .wd-home-07{
+// 	&.wd-footer-top{
+// 		padding:0;
+// 		margin-top: 0;
+// 		.subscribe_widget {
+// 			padding-bottom:55px;
+// 		}
+// 		.wd-subscribe-header {
+// 		    float: left;
+// 		    width: auto;
+// 		    margin-right: 30px;
+// 		}
+// 		.subscribe_intro_text {
+// 		    color: #8b8b8b;
+// 		    float: left;
+// 		    width: auto;
+// 		    margin-bottom: 0;
+// 		}
+// 		.subscribe_form {
+// 		    overflow: hidden;
+// 		    position: relative;
+// 		    float: right;
+// 		    margin-right: 30px;
+// 		    margin-top: -15px;
+// 		    form .subscribe-email input[type='text'] {
+// 			    height: 50px;
+// 			}
+// 			@media (max-width: 1200px){
+// 				float: left;
+// 				margin-top: 10px;
+// 				margin-bottom: 10px;
+// 			}
+// 		}
+// 	}
+// 	.feature_information{
+// 		.feature_title.heading_title{
+// 		    font-size: 16px;
+// 		    font-weight: 500;
+// 		    color: #a0a0a0;
+// 		    text-transform: uppercase;
+// 		    margin-bottom: 15px;
+// 		}
+// 		.feature_excerpt{
+// 			font-size: 14px;
+// 		    font-weight: 500;
+// 		    text-transform: uppercase;
+// 		    color: #282828;
+// 		}
+// 	}
+// 	.wd-feature-content-list-item{
+// 		padding:40px 0 45px;
+// 		.feature_icon{
+// 			margin-bottom: 10px;
+// 		}
+// 	}
+// 	.wd-shortcode-site-header{
+// 		max-width: 200px;
+//     	margin: 0 auto;
+// 	}
+// 	.footer-copyright-links-list{
+// 		text-align: center;
+// 	}
+// 	.payment.wd-icon-widget-payment{
+// 		text-align: center;
+// 		li{
+// 			display: inline;
+// 		    padding: 0 4px;
+// 		    color: #8b8b8b;
+// 		}
+// 	}
+// 	.wd-content.wd-has-title{
+// 		text-align: center;
+// 		margin-bottom: 40px;
+// 		ul li{
+// 			display: inline-block;
+// 			margin: 0 5px;
+// 		    a{
+// 		    	display: inline-block;
+// 			    width: 40px;
+// 			    height: 40px;
+// 			    color: #fff;
+// 			    border: 1px solid #fff;
+// 			    border-radius: 50%;
+// 			    text-align: center;
+// 			    padding: 10px;
+// 			    span{
+// 			    	font-size: 0;
+// 			    }
+// 			    &:hover{
+// 			    	background:#fff;
+// 			    	color: #282828;
+// 			    }
+// 		    }
+// 		}
+// 	}
+// 	.footer-copyright-links-list{
+// 		padding:0;
+// 		margin-top: 12px;
+// 		margin-bottom: 30px;
+// 	}
+// }
+// .wd-footer-logo{
+// 	margin-top:10px;
+//     margin: 0 auto;
+//     max-width: 200px;
+//     margin-bottom: 20px;
+// }
+// .wd-footer-info{
+// 	text-align:center;
+// }
+// .wd-home-01,.wd-home-04,.wd-home-05, .wd-home-08, .wd-home-09 {
+// 	.wp-footer-main-list {
+// 		margin-bottom: 45px;
+// 	}
+// }
+// .wd-content-footer .wd-home-07{
+// 	padding-left:280px;
+// 	@media (max-width: 991px) {
+// 		padding-left: 10px;
+//    		padding-bottom: 20px;
+// 	}
+// }
+// .commingsoon, .wd-404-custom-content{
+// 	.footer-copyright-links-list {
+// 	    position: fixed;
+// 	    bottom:45px;
+// 	    right: 50px;
+// 	}
+// 	.header-main {
+// 		position: fixed;
+// 	    bottom:20px;
+// 	    left: 60px;
+// 	    @media only screen and (max-width: 992px){
+// 			bottom:10%;
+// 			left: 50%;
+// 			-webkit-transform: translateX(-50%);
+// 	   		-moz-transform: translateX(-50%);
+// 	    	transform: translateX(-50%);
+// 		}
+// 		@media only screen and (max-width: 768px){
+// 			bottom:20%;
+// 			left: 50%;
+// 			-webkit-transform: translateX(-50%);
+// 	   		-moz-transform: translateX(-50%);
+// 	    	transform: translateX(-50%);
+// 		}
+// 	}
+// }
+// .wd-shortcode-pages-list {
+// 	.footer-copyright-links-list li a{
+// 		color: #c9c9c9;
+// 		&:hover{
+// 			color: #fff;
+// 		}
+// 	}
+// }
+// .wd-home-06.wd-footer-main{
+// 	padding: 30px 0 30px;
+// }
+// .wd-home-04.wd-footer-top{
+// 	padding: 50px 0 30px;
+//     margin-top: 40px;
+//     @media (min-width: 992px){
+// 		.wd-footer-top {
+// 		    padding: 80px 0 50px;
+// 		    margin-top: 80px;
+// 		}
+// 	}
+// }
+// .wd-home-08.wd-footer-top{
+// 	margin-top:0;
+// 	padding:0;
+// 	.footer-home8-sub{
+// 		color:#282828;
+// 		padding:80px 0 30px;
+// 		.wd-subscribe-header h2{
+// 			color:#282828;
+// 		}
+// 		.subscribe_form .button {
+// 		    color: #282828;
+// 		    padding: 10px 15px 8px 15px;
+// 		    font-weight: 600;
+// 		    border-radius: 0;
+// 		    top: 10px;
+// 		    border: solid 1px #282828;
+// 		    line-height: 1;
+// 		    &:hover{
+// 		    	background:#282828;
+// 		    	color:#fff;
+// 		    }
+// 		    @media (min-width: 768px) {
+// 		    	position: absolute;
+// 		    	right: 0;
+// 		    }
+// 		}
+// 	}
+// }
+// .footer{
+// 	margin-bottom:-1px;
+// }
+// #fullpage{
+// 	.wd-content-footer .wd-footer-bottom {
+// 	    padding-bottom: 30px;
+// 	}
+// }
 .wd-content-footer{
-	margin-bottom:-1px;
-	@media (max-width: 767px) {
-		text-align: center;
-	}
-	.wd-footer-bottom{
-		padding-bottom:0px;
-	}
-}
-.wd-home-09.wd-footer-top{
-	margin-top:0;
-}
-.wd-footer-top{
-	padding: 80px 0 0;
-	margin-top: 80px;
-	.wd-subscribe-header{
-		float:left;
-		width: 16.67%;
-		h2{
-			font-size: 13px;
-			color: #fff;
-			font-weight: 500;
-			margin: 0;
-			margin-top: 5px;
+	.wd-title-section-style-1{
+		.wd-title-heading{
+			color: #000046;
 			text-transform: uppercase;
-		}
-	}
-	.subscribe_intro_text{
-		color:#8b8b8b;
-		float: left;
-		width: 40%;
-		margin-bottom:26px;
-	}
-	.subscribe_form{
-		overflow:hidden;
-		position:relative;
-		float: left;
-		width: 43.33%;
-		margin-top: -25px;
-		form {
-			position:relative;
-			.subscribe-email{
-				margin:0;
-				width:100%;
-				border:none;
-				color:#fff;
-				input[type='text']{
-					width: 100%;
-					border-radius:0;						
-					color:#fff;
-					font-size:13px;
-					border: none;
-					border-bottom: 1px solid #282828;
-					padding: 0 0 0px 0;
-					height: 70px;
-				}
-				@media (max-width: 767px) {
-					margin-top: 20px;
-					input[type='text']{
-						height: 60px;
-					}
-				}
-				input::placeholder{color: #8b8b8b;text-transform: capitalize;}
-			}				
-		}		
-		.button{
-			background: transparent;
-			color: #fff;
-			padding: 10px 15px 8px 15px;
-			font-weight:600;
-			border-radius: 0;
-			border:none;
-			position:absolute;
-			right: 0;
-			top:10px;
-			border: 1px solid #fff;
-			line-height: 1;
-			&:hover {
-				background: #fff;
-				color: #000;
-			}
-		}
-	}
-	@media only screen and (max-width: 767px){
-		.wd-subscribe-header{
-			width:100%;
-			margin:0 0 10px;
-		}
-		.subscribe_intro_text{
-			margin-bottom: 10px;
-			width: 100%;
-		}
-		.subscribe_form{
-			width: 100%;
-			form .subscribe-email input[type='text']{
-				padding: 0;
-				border-color: #fff;
-				margin-bottom: 10px;
-			}
-			.button{
-				position: initial;
-				width: 100%;
-			}
-		}
-	}
-	@media (min-width: 768px) and (max-width: 1024px){
-		.wd-subscribe-header{
-			width:100%;
-			margin:0 0 10px;
-		}
-		.subscribe_intro_text{
-			margin-bottom: 10px;
-			width: 100%;
-		}
-		.subscribe_form{
-			width: 100%;
-			form .subscribe-email{
-				margin-top: 40px;
-				input[type='text']{
-					padding: 0;
-					border-color: #fff;
-					margin-bottom: 10px;
-					height: 60px;
-				}
-			}
-		}
-	}
-}
-.wd-footer-main{
-	.wpb_wrapper{
-		ul{
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			li a{
-				color: #8b8b8b;
-				&:hover{
-					color: #fff;
-				}
-			}
-		}
-	}
-	.wp-footer-main-list{
-		h4{
-			font-weight: 600;
-			letter-spacing: 1.3px;
-			margin-bottom: 30px;
-		}
-		ul li{
-			padding-bottom: 8px;
-		}
-	}
-	.wd-icon-widget-payment{
-		margin-left: -8px !important;
-		li{
-			display: inline-block;
-			padding-left: 8px;
-			cursor: pointer;
-			i{
-				color: #505050;
-			}
-			&:hover{
-				i{
-					color: #000;
-				}
-			}
-		}
-	}
-}
-.footer-copyright-links-list{
-	margin-top: 20px;
-}
-.wd-home-01.wd-footer-main, .wd-home-04.wd-footer-main{
-	.wd-icon-widget-payment{
-		margin-left: -8px !important;
-		li{
-			display: inline-block;
-			padding-left: 8px;
-			cursor: pointer;
-			i{
-				color: #505050;
-			}
-			&:hover{
-				i{
-					color: #fff;
-				}
-			}
-		}
-	}
-}
-.wd-home-07{
-	.wd-icon-widget-payment{
-		margin-left: -8px !important;
-		li{
-			display: inline-block;
-			padding-left: 8px;
-			cursor: pointer;
-			i{
-				color: #c9c9c9;
-			}
-			&:hover{
-				i{
-					color: #fff;
-				}
-			}
-		}
-	}
-}
-.wd-social-icons{
-	&.style-1{
-		ul li{
-			i{
-				min-width: 20px;
-			}
-		}
-	}
-}
-.footer-copyright-links-list{
-	list-style-type: none;
-	text-align: right;
-	font-size: 12px;
-	text-transform: uppercase;
-	li{
-		display: inline;
-		padding: 0 4px;
-		color: #8b8b8b;
-		a{
-			text-decoration: none;
-			text-transform: uppercase;
-    		color: #8b8b8b;
-    		&:after{
-		    	content: '|';
-			    color: rgba(152,152,152,.2);
-			    padding-left: 10px;
-		    }
-		    &:hover{
-		    	color: #fff;
-		    }
-		}
-		&:last-child{
-			a{
-				color: #8b8b8b;
-			}
-			a:after{
+			&:after{
 				display: none;
 			}
 		}
 	}
-}
-.wd-footer-bottom{
-	border-top: 1px solid #dbdbdb;
-	@media only screen and (max-width: 767px){
-		.header-main,.footer-copyright-links-list{
-			text-align: center;
+	.wd-wrap-content-blog{
+		.wd-thumbnail-post{
+			flex: 1 1 0 !important;
 		}
-	}
-	&.wd-home-02{
-		border-color: #dbdbdb;
-	}
-}
-.wd-home-02{
-	&.wd-footer-top{
-		margin-top: 0;
-		.wd-subscribe-header{
-			h2{
-				color:#000;
-			}
-		}
-		.subscribe_intro_text {
-			color: #515151;
-		}
-		.subscribe_form{
-			margin-bottom: 30px;
-			form{
-				.subscribe-email{
-					input[type='text']{
-						color: #000;
-						border-bottom: 1px solid #dcdcdc;
-					}
+		.wd-info-post{
+			flex: 1 1 30% !important;
+			padding: 0 20px !important;
+			.wd-date-post {
+				display: flex;
+				color: #000046;
+				.wd-date-post-day{
+					margin-right: 10px;
 				}
 			}
-			.button{
-				color: #000;
-				border: 1px solid #000;
+			.wd-date-post-my span{
+				margin-right: 10px;
+			}
+			.description{
+				color: #000046;
+				font-size: 12px;
 			}
 		}
 	}
-	&.wd-footer-main{
-		.wpb_wrapper{
-			ul{
-				li{
-					a{
-						color:#505050;
-						&:hover,&:active,&:focus{
-							color: #a5a5a5;
-						}
-					}
-				}
-			}
+	.wpb_text_column{
+		color: #000046;
+	}
+	.subscribe_form form{
+		display: flex;
+		.subscribe-email{
+			margin-bottom: 0;
 		}
-	}
-	.wd-shortcode-pages-list {
-		.footer-copyright-links-list{
-			li a{
-				color: #282828;
-				&:hover{
-					color: #000;
-				}
-			}
-		} 
-	}
-}
-
-.wd-home-04{
-	&.wd-footer-top{
-		.wd-subscribe-header h2{
-			color: #000;
+		input{
+			height: 45px;
 		}
-		.subscribe_intro_text{
-			color: #8b8b8b;
+		button{
+			background-color: #f16800 !important;
+			width: 50px;
 		}
-		.subscribe_form{
-			form{
-				.subscribe-email {
-					input[type='text']{
-						border-bottom: 1px solid #8b8b8b;
-						color: #8b8b8b;
-					}
-				}
-				.button {
-				    color: #000;
-				    border: 2px solid #000;
-			    	letter-spacing: 1.3px;
-				}
-			} 
-		} 
-	} 
-}
-.wd-home-05{
-	&.wd-footer-top{
-		padding: 40px 0 20px;
-		margin: 0;
-	}
-	&.wd-footer-main{
-		.wpb_wrapper{
-			ul{
-				li{
-					a{
-						color:#505050;
-						&:hover,&:active,&:focus{
-							color: #a5a5a5;
-						}
-					}
-				}
-			}
-		}
-	}
-	.wd-shortcode-pages-list {
-		.footer-copyright-links-list{
-			margin-top: 30px;
-			li a{
-				color: #282828;
-				&:hover{
-					color: #000;
-				}
-			}
-		} 
-	}
-} 
-.wd-home-06, .wd-home-11{
-	h4{
-		font-weight: 600;
-	}
-	.footer-copyright-links-list {
-	    text-align: center;
-	}
-}
-.wd-home-07{
-	&.wd-footer-top{
-		padding:0;
-		margin-top: 0;
-		.subscribe_widget {
-			padding-bottom:55px;
-		}
-		.wd-subscribe-header {
-		    float: left;
-		    width: auto;
-		    margin-right: 30px;
-		}
-		.subscribe_intro_text {
-		    color: #8b8b8b;
-		    float: left;
-		    width: auto;
-		    margin-bottom: 0;
-		}
-		.subscribe_form {
-		    overflow: hidden;
-		    position: relative;
-		    float: right;
-		    margin-right: 30px;
-		    margin-top: -15px;
-		    form .subscribe-email input[type='text'] {
-			    height: 50px;
-			}
-			@media (max-width: 1200px){
-				float: left;
-				margin-top: 10px;
-				margin-bottom: 10px;
-			}
-		}
-	}
-	.feature_information{
-		.feature_title.heading_title{
-		    font-size: 16px;
-		    font-weight: 500;
-		    color: #a0a0a0;
-		    text-transform: uppercase;
-		    margin-bottom: 15px;
-		}
-		.feature_excerpt{
-			font-size: 14px;
-		    font-weight: 500;
-		    text-transform: uppercase;
-		    color: #282828;
-		}
-	}
-	.wd-feature-content-list-item{
-		padding:40px 0 45px;
-		.feature_icon{
-			margin-bottom: 10px;
-		}
-	}
-	.wd-shortcode-site-header{
-		max-width: 200px;
-    	margin: 0 auto;
-	}
-	.footer-copyright-links-list{
-		text-align: center;
-	}
-	.payment.wd-icon-widget-payment{
-		text-align: center;
-		li{
-			display: inline;
-		    padding: 0 4px;
-		    color: #8b8b8b;
-		}
-	}
-	.wd-content.wd-has-title{
-		text-align: center;
-		margin-bottom: 40px;
-		ul li{
-			display: inline-block;
-			margin: 0 5px;
-		    a{
-		    	display: inline-block;
-			    width: 40px;
-			    height: 40px;
-			    color: #fff;
-			    border: 1px solid #fff;
-			    border-radius: 50%;
-			    text-align: center;
-			    padding: 10px;
-			    span{
-			    	font-size: 0;
-			    }
-			    &:hover{
-			    	background:#fff;
-			    	color: #282828;
-			    }
-		    }
-		}
-	}
-	.footer-copyright-links-list{
-		padding:0;
-		margin-top: 12px;
-		margin-bottom: 30px;
-	}
-}
-.wd-footer-logo{
-	margin-top:10px;
-    margin: 0 auto;
-    max-width: 200px;
-    margin-bottom: 20px;
-}
-.wd-footer-info{
-	text-align:center;
-}
-.wd-home-01,.wd-home-04,.wd-home-05, .wd-home-08, .wd-home-09 {
-	.wp-footer-main-list {
-		margin-bottom: 45px;
-	}
-}
-.wd-content-footer .wd-home-07{
-	padding-left:280px;
-	@media (max-width: 991px) {
-		padding-left: 10px;
-   		padding-bottom: 20px;
-	}
-}
-.commingsoon, .wd-404-custom-content{
-	.footer-copyright-links-list {
-	    position: fixed;
-	    bottom:45px;
-	    right: 50px;
-	}
-	.header-main {
-		position: fixed;
-	    bottom:20px;
-	    left: 60px;
-	    @media only screen and (max-width: 992px){
-			bottom:10%;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-	   		-moz-transform: translateX(-50%);
-	    	transform: translateX(-50%);
-		}
-		@media only screen and (max-width: 768px){
-			bottom:20%;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-	   		-moz-transform: translateX(-50%);
-	    	transform: translateX(-50%);
-		}
-	}
-}
-.wd-shortcode-pages-list {
-	.footer-copyright-links-list li a{
-		color: #c9c9c9;
-		&:hover{
-			color: #fff;
-		}
-	}
-}
-.wd-home-06.wd-footer-main{
-	padding: 30px 0 30px;
-}
-.wd-home-04.wd-footer-top{
-	padding: 50px 0 30px;
-    margin-top: 40px;
-    @media (min-width: 992px){
-		.wd-footer-top {
-		    padding: 80px 0 50px;
-		    margin-top: 80px;
-		}
-	}
-}
-.wd-home-08.wd-footer-top{
-	margin-top:0;
-	padding:0;
-	.footer-home8-sub{
-		color:#282828;
-		padding:80px 0 30px;
-		.wd-subscribe-header h2{
-			color:#282828;
-		}
-		.subscribe_form .button {
-		    color: #282828;
-		    padding: 10px 15px 8px 15px;
-		    font-weight: 600;
-		    border-radius: 0;
-		    top: 10px;
-		    border: solid 1px #282828;
-		    line-height: 1;
-		    &:hover{
-		    	background:#282828;
-		    	color:#fff;
-		    }
-		    @media (min-width: 768px) {
-		    	position: absolute;
-		    	right: 0;
-		    }
-		}
-	}
-}
-.footer{
-	margin-bottom:-1px;
-}
-#fullpage{
-	.wd-content-footer .wd-footer-bottom {
-	    padding-bottom: 30px;
 	}
 }

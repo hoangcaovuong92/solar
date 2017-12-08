@@ -363,6 +363,9 @@ if (!class_exists('WD_Product_Custom_Field')) {
 				$random_id 	= 'wd-related-project-wrapper-'.mt_rand();
 				?>
 				<?php if($related->have_posts()) : ?>
+					<div class="wd-title wd-title-section-style-1 ">
+						<h2 class="wd-title-heading wd-text-align-default"><?php esc_html_e( 'Dự án đã thực hiện', 'wd_package' ); ?></h2>		
+					</div>
 					<div class="wd-related-project-wrapper" id="<?php echo esc_attr($random_id); ?>" style="clear: both;">
 						<div class="wd-related-project-slider">
 							<?php while($related->have_posts()) : $related->the_post(); global $post;?>

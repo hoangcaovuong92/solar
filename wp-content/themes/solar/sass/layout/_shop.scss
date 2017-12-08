@@ -383,26 +383,26 @@ aside{
 		}
 	}
 }
-.widget{
-	h2.widget-title{
-		margin-top: 0;
-	    font-size: 14px;
-	    text-transform: uppercase;
-	    border-bottom: 1px dotted #454545;
-	    padding-bottom: 15px;
-	    margin-bottom: 15px;
-	    color: #282828;
-	    font-weight: 600;
-	}
-	ul li{
-		>a{
-			color: #282828;
-			&:hover{
-				color: #a5a5a5 !important;
-			}
-		}
-	}
-}
+// .widget{
+// 	h2.widget-title{
+// 		margin-top: 0;
+// 	    font-size: 14px;
+// 	    text-transform: uppercase;
+// 	    border-bottom: 1px dotted #454545;
+// 	    padding-bottom: 15px;
+// 	    margin-bottom: 15px;
+// 	    color: #282828;
+// 	    font-weight: 600;
+// 	}
+// 	ul li{
+// 		>a{
+// 			color: #282828;
+// 			&:hover{
+// 				color: #a5a5a5 !important;
+// 			}
+// 		}
+// 	}
+// }
 .wd-products-wrapper.grid-list-action{
 	.products.grid{
 		margin-left: -15px;

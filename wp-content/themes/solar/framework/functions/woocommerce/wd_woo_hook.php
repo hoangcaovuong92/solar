@@ -165,7 +165,7 @@ if(!function_exists ('tvlgiao_wpdance_woo_hook_action')){
 		add_filter( 'woocommerce_product_tabs', 'tvlgiao_wpdance_product_facebook_comment_form_tab' ); 
 
 		if ($show_recently_product) { //Show/hide recent product
-			add_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products',20);
+			add_action('tvlgiao_wpdance_after_main_single_product_content', 'woocommerce_output_related_products',5);
 		}
 		if ($show_upsell_product) { //Show/hide upsell product
 			add_action('woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 25 );

@@ -118,6 +118,18 @@ get_header( 'shop' ); ?>
 		</div>
 		<?php } ?>
 	</div>
+	<div class="wd-related-product-wrap container">
+			<div class="row">
+		<?php
+			/**
+			 * tvlgiao_wpdance_after_main_single_product_content hook.
+			 *
+			 * @hooked woocommerce_output_related_products - 5
+			 */
+			do_action( 'tvlgiao_wpdance_after_main_single_product_content' );
+		?>
+		</div>
+	</div>
 </div><!-- END CONTAINER  -->
 
 <?php get_footer( 'shop' ); ?>

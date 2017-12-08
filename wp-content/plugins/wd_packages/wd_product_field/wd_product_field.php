@@ -45,6 +45,7 @@ if (!class_exists('WD_Product_Custom_Field')) {
 			add_action('tvlgiao_wpdance_before_single_product_desc', array($this, 'get_specifications_content'), 5); 
 			add_action('tvlgiao_wpdance_after_single_product_desc', array($this, 'get_wd_product_field_advantages_content'), 5); 
 			add_action('tvlgiao_wpdance_after_single_product_desc', array($this, 'get_specifications_detail_content'), 10); 
+			add_action('tvlgiao_wpdance_after_single_product_summary', array($this, 'related_project_slider_frontend'), 5); 
 		}
 
 		public function get_specifications_content() { 
@@ -148,6 +149,9 @@ if (!class_exists('WD_Product_Custom_Field')) {
 			if (isset($_POST['wd_product_field_specifications_detail'])) {
 				$data['wd_product_field_specifications_detail'] = $_POST['wd_product_field_specifications_detail'];
 			}
+			if (isset($_POST['wd_related_project'])) {
+				$data['wd_related_project'] = $_POST['wd_related_project'];
+			}
 			update_post_meta($post_id,'wd_product_field_meta_data', serialize($data));
 			
 		}
@@ -197,6 +201,7 @@ if (!class_exists('WD_Product_Custom_Field')) {
 						'advantage'		=> '',
 					),
 				),
+				'wd_related_project' 	=> array(),
 			);
 			return ($field && isset($default[$field])) ? $default[$field] : $default;
 		}
@@ -213,6 +218,10 @@ if (!class_exists('WD_Product_Custom_Field')) {
 				add_meta_box("wp_cp_product_field_specifications", "Thông số kỹ thuật", array($this,"metabox_form_specifications"), "product", "normal", "high");
 				add_meta_box("wp_cp_product_field_specifications_detail", "Thông số kỹ thuật chi tiết", array($this,"metabox_form_specifications_detail"), "product", "normal", "high");
 				add_meta_box("wp_cp_product_field_advantages", "Ưu điểm sản phẩm", array($this,"metabox_form_advantages"), "product", "normal", "high");
+
+				if(post_type_exists('wd_project')) {
+					add_meta_box("wp_cp_project_related", "Dự án liên quan", array($this,"related_project"), "product", "normal", "high");
+				}
 			}
 		}
 
@@ -307,6 +316,68 @@ if (!class_exists('WD_Product_Custom_Field')) {
 				</tbody>
 			</table>
 		<?php
+		}
+
+		public function related_project(){
+			wp_nonce_field( 'wd_project_box', 'wd_project_box_nonce' );
+			$random_id 	= 'wd-product_field-metabox-'.mt_rand();
+			$meta_key 	= 'wd_related_project';
+			$meta_data 	= $this->get_product_field_meta_data($meta_key);
+			$meta_data 	= empty($meta_data) ? $this->get_product_field_meta_data_default($meta_key) : $meta_data;
+			$projects 	= tvlgiao_wpdance_vc_get_data_by_post_type('wd_project');
+			?>
+			<table id="<?php echo esc_attr( $random_id ); ?>" class="form-table wd-product-field-custom-meta-box wd-custom-meta-box-width">
+				<tbody>
+					<tr>
+						<?php $i = 1; ?>
+						<?php foreach ($projects as $key => $project): ?>
+							<?php $checked = in_array($project['value'], $meta_data) ? 'checked="true"' : '' ?>
+							<td>
+								<label class="container">
+								 	<input type="checkbox" class="" name="wd_related_project[]" <?php echo $checked; ?> value="<?php echo $project['value']; ?>"/>
+								 	<?php echo $project['label']; ?>
+								</label>
+							</td>
+							<?php if ($i %4 == 0): ?>
+								</tr></tr>
+							<?php endif ?>
+							<?php $i++; ?>
+						<?php endforeach ?>
+					</tr>
+				</tbody>
+			</table>
+		<?php
+		}
+
+		public function related_project_slider_frontend() {
+			if(post_type_exists('wd_project')) {
+				$meta_key 	= 'wd_related_project';
+				$meta_data 	= $this->get_product_field_meta_data($meta_key); 
+				$related_args 		= array(
+					'post_type' 		=> 'wd_project',
+					'post_status' 		=> 'publish',
+					'post__in' 			=> $meta_data,
+					'orderby' 			=> 'rand',
+				);
+				$related 	= new WP_Query($related_args);
+				$random_id 	= 'wd-related-project-wrapper-'.mt_rand();
+				?>
+				<?php if($related->have_posts()) : ?>
+					<div class="wd-related-project-wrapper" id="<?php echo esc_attr($random_id); ?>" style="clear: both;">
+						<div class="wd-related-project-slider">
+							<?php while($related->have_posts()) : $related->the_post(); global $post;?>
+								<div class="wd-related-project-item">
+									<?php echo tvlgiao_wpdance_get_content_blog( 'post-thumbnail', get_post_format() ); ?>
+								</div>
+							<?php endwhile; // End while ?>
+							
+						</div>
+						<?php echo tvlgiao_wpdance_related_slider_control(); ?>
+					</div>
+				<?php endif; ?>
+				<?php wp_reset_postdata(); ?>
+			<?php
+			}
 		}
 
 		public function metabox_form_advantages(){

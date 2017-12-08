@@ -3,7 +3,8 @@
 #wp_cp_custom_post_layout h2.ui-sortable-handle span:before,
 #wp_cp_custom_page_atts h2.ui-sortable-handle span:before,
 #wp_cp_custom_product_layout h2.ui-sortable-handle span:before,
-#wp_cp_custom_class_id_layout h2.ui-sortable-handle span:before {
+#wp_cp_custom_class_id_layout h2.ui-sortable-handle span:before,
+#wp_cp_custom_product_related_project h2.ui-sortable-handle span:before {
     content: "\f111";
     font: 400 20px/1 dashicons;
     speak: none;

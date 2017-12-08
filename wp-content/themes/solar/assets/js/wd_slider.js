@@ -14,6 +14,32 @@ jQuery(window).ready(function($) {
 
 	//woocommerce/single-product/product-thumbnails.php
 	wd_slider_product_thumbnail();
+
+	var $_this 	= jQuery('#'+jQuery('.wd-related-project-wrapper').attr('id'));
+	var owl 	= $_this.find('.wd-related-project-slider').owlCarousel({
+		loop : true,
+		nav : false,
+		dots : false,
+		slideBy: 1,
+		navRewind: false,
+		autoplay: false,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: false,
+		autoplaySpeed: false,
+		mouseDrag: true,
+		touchDrag: true,
+		responsiveBaseElement: $_this,
+		items : 1,
+	});
+	$_this.on('click', '.next', function(e){
+		e.preventDefault();
+		owl.trigger('next.owl.carousel');
+	});
+
+	$_this.on('click', '.prev', function(e){
+		e.preventDefault();
+		owl.trigger('prev.owl.carousel');
+	});
 });
 
 //****************************************************************//

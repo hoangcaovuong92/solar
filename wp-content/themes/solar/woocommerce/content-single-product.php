@@ -92,7 +92,9 @@ if ($_product_config['layout'] != '0' && $_product_config['layout'] != '0-0-0') 
 			</div>
 		<?php endif; ?>
 	</div><!-- .summary -->
-
+	
+	<?php do_action( 'tvlgiao_wpdance_after_single_product_summary' ); ?>
+	
 	<?php if($full_width_detail && $layout == '0-0-0'){ ?>
 		</div>
 	<div class="container">

@@ -8,7 +8,7 @@ if (is_admin()) {
 	$config = array(
 	   'id' => 'wd_layout_meta_box',                    // meta box id, unique per meta box
 	   'title' => 'Custom Layout',                      // meta box title
-	   'pages' => array('product_cat', 'category'),     // taxonomy name, accept categories, post_tag and custom taxonomies
+	   'pages' => array('wpdance_product_brand'),       // taxonomy name, accept categories, post_tag and custom taxonomies
 	   'context' => 'normal',                           // where the meta box appear: normal (default), advanced, side; optional
 	   'fields' => array(),                             // list of meta fields (can be added by field arrays)
 	   'local_images' => true,                          // Use local or hosted images (meta box images for add/remove)
